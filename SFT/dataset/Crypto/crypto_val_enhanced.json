@@ -1,0 +1,5442 @@
+[
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "Zionism",
+          "output": "Arlmrhn"
+        },
+        {
+          "input": "tyrannic",
+          "output": "gbizmmrx"
+        },
+        {
+          "input": "archeunuch",
+          "output": "zixsvfmfxs"
+        },
+        {
+          "input": "desiccate",
+          "output": "wvhrxxzgv"
+        },
+        {
+          "input": "corynine",
+          "output": "xlibmrmv"
+        },
+        {
+          "input": "recontract",
+          "output": "ivxlmgizxg"
+        },
+        {
+          "input": "uncabled",
+          "output": "fmxzyovw"
+        },
+        {
+          "input": "Woodruff",
+          "output": "Dllwifuu"
+        },
+        {
+          "input": "thrashing",
+          "output": "gsizhsrmt"
+        },
+        {
+          "input": "fistic",
+          "output": "urhgrx"
+        }
+      ],
+      "ood": [
+        {
+          "input": "lgoar",
+          "output": "otlzi"
+        },
+        {
+          "input": "toarzlydia",
+          "output": "glziaobwrz"
+        },
+        {
+          "input": "wekaedhw",
+          "output": "dvpzvwsd"
+        },
+        {
+          "input": "rnmilleiy",
+          "output": "imnroovrb"
+        },
+        {
+          "input": "riuteql",
+          "output": "irfgvjo"
+        }
+      ],
+      "noise": [
+        {
+          "input": "Jehovistic",
+          "output": "aylogrhgrf"
+        },
+        {
+          "input": "incantator",
+          "output": "tmuumtfrlp"
+        },
+        {
+          "input": "torsade",
+          "output": "gkcfmwv"
+        },
+        {
+          "input": "Danize",
+          "output": "Wzphav"
+        },
+        {
+          "input": "ficoid",
+          "output": "lvdlpl"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "tazia",
+        "output": "gzarz"
+      },
+      {
+        "input": "lexicalic",
+        "output": "ovcrxzorx"
+      },
+      {
+        "input": "woodrock",
+        "output": "dllwilxp"
+      },
+      {
+        "input": "tauten",
+        "output": "gzfgvm"
+      },
+      {
+        "input": "recursive",
+        "output": "ivxfihrev"
+      },
+      {
+        "input": "ozonation",
+        "output": "lalmzgrlm"
+      },
+      {
+        "input": "Mimbreno",
+        "output": "Nrnyivml"
+      },
+      {
+        "input": "unnarcotic",
+        "output": "fmmzixlgrx"
+      },
+      {
+        "input": "leisurely",
+        "output": "ovrhfivob"
+      },
+      {
+        "input": "pyraloid",
+        "output": "kbizolrw"
+      }
+    ],
+    "index": 87,
+    "split": "atbash",
+    "function": "def transform(s):\n    result = \"\"\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr(ord(\"z\") - (ord(ch) - ord(\"a\")))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr(ord(\"Z\") - (ord(ch) - ord(\"A\")))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation follows the Atbash cipher, where each letter is replaced by its opposite in the alphabet (e.g., 'a' becomes 'z', 'b' becomes 'y'). This mapping is applied independently to both lowercase and uppercase letters, while non-alphabetic characters remain unchanged. For instance, in Example 1, 'Z' maps to 'A' and 'i' maps to 'r', resulting in 'Arlmrhn'. The rule consistently accounts for all examples by reversing the position of each character within its respective case-sensitive alphabet."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "fuye",
+          "output": "ixbh"
+        },
+        {
+          "input": "neonatal",
+          "output": "qhrqdwdo"
+        },
+        {
+          "input": "oiticica",
+          "output": "rlwlflfd"
+        },
+        {
+          "input": "affrayer",
+          "output": "diiudbhu"
+        },
+        {
+          "input": "ineducable",
+          "output": "lqhgxfdeoh"
+        },
+        {
+          "input": "tautomeric",
+          "output": "wdxwrphulf"
+        },
+        {
+          "input": "Plastic",
+          "output": "Sodvwlf"
+        },
+        {
+          "input": "glossalgy",
+          "output": "jorvvdojb"
+        },
+        {
+          "input": "outvoter",
+          "output": "rxwyrwhu"
+        },
+        {
+          "input": "caged",
+          "output": "fdjhg"
+        }
+      ],
+      "ood": [
+        {
+          "input": "ekieknoyml",
+          "output": "hnlhnqrbpo"
+        },
+        {
+          "input": "iuqebdlot",
+          "output": "lxthegorw"
+        },
+        {
+          "input": "dgogo",
+          "output": "gjrjr"
+        },
+        {
+          "input": "rmHnnaat",
+          "output": "upKqqddw"
+        },
+        {
+          "input": "csbnAeu",
+          "output": "fveqDhx"
+        }
+      ],
+      "noise": [
+        {
+          "input": "underdog",
+          "output": "kxghrgab"
+        },
+        {
+          "input": "latexosis",
+          "output": "oxqcvxvlv"
+        },
+        {
+          "input": "antennula",
+          "output": "bqwhakxog"
+        },
+        {
+          "input": "spinalis",
+          "output": "vspbanfv"
+        },
+        {
+          "input": "nominatrix",
+          "output": "trplqdwula"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "thiever",
+        "output": "wklhyhu"
+      },
+      {
+        "input": "senicide",
+        "output": "vhqlflgh"
+      },
+      {
+        "input": "parentela",
+        "output": "sduhqwhod"
+      },
+      {
+        "input": "unpinioned",
+        "output": "xqslqlrqhg"
+      },
+      {
+        "input": "overbulky",
+        "output": "ryhuexonb"
+      },
+      {
+        "input": "Tzaam",
+        "output": "Wcddp"
+      },
+      {
+        "input": "zirconyl",
+        "output": "clufrqbo"
+      },
+      {
+        "input": "unessayed",
+        "output": "xqhvvdbhg"
+      },
+      {
+        "input": "zincite",
+        "output": "clqflwh"
+      },
+      {
+        "input": "scarabee",
+        "output": "vfdudehh"
+      }
+    ],
+    "index": 89,
+    "split": "caesar",
+    "function": "def transform(s):\n    result = \"\"\n    shift = 3\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr((ord(ch) - ord(\"a\") + shift) % 26 + ord(\"a\"))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr((ord(ch) - ord(\"A\") + shift) % 26 + ord(\"A\"))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation is a Caesar cipher with a fixed shift of +3. Each alphabetic character in the input string is shifted three positions forward in the alphabet, wrapping around from 'z' to 'a' or 'Z' to 'A'. For example, 'f' becomes 'i', 'u' becomes 'x', and 'y' becomes 'b'. Non-alphabetic characters remain unchanged, and the case of each letter is preserved."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "monastical",
+          "output": "npobtujdbm"
+        },
+        {
+          "input": "misenroll",
+          "output": "njtfospmm"
+        },
+        {
+          "input": "cupreine",
+          "output": "dvqsfjof"
+        },
+        {
+          "input": "planity",
+          "output": "qmbojuz"
+        },
+        {
+          "input": "mullock",
+          "output": "nvmmpdl"
+        },
+        {
+          "input": "shachly",
+          "output": "tibdimz"
+        },
+        {
+          "input": "falcular",
+          "output": "gbmdvmbs"
+        },
+        {
+          "input": "unctional",
+          "output": "vodujpobm"
+        },
+        {
+          "input": "hylotomous",
+          "output": "izmpupnpvt"
+        },
+        {
+          "input": "amacratic",
+          "output": "bnbdsbujd"
+        }
+      ],
+      "ood": [
+        {
+          "input": "leitrpoldf",
+          "output": "mfjusqpmeg"
+        },
+        {
+          "input": "leismpora",
+          "output": "mfjtnqpsb"
+        },
+        {
+          "input": "donneflud",
+          "output": "epoofgmve"
+        },
+        {
+          "input": "oudnucl",
+          "output": "pveovdm"
+        },
+        {
+          "input": "vosimarf",
+          "output": "wptjnbsg"
+        }
+      ],
+      "noise": [
+        {
+          "input": "pulleyless",
+          "output": "szkohcoovv"
+        },
+        {
+          "input": "Aglaos",
+          "output": "vjodiv"
+        },
+        {
+          "input": "treeify",
+          "output": "wuiqiia"
+        },
+        {
+          "input": "squelching",
+          "output": "ktxljfmhwj"
+        },
+        {
+          "input": "phonesis",
+          "output": "akrfhvlv"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "flippantly",
+        "output": "gmjqqboumz"
+      },
+      {
+        "input": "pylangium",
+        "output": "qzmbohjvn"
+      },
+      {
+        "input": "remarshal",
+        "output": "sfnbstibm"
+      },
+      {
+        "input": "bebilya",
+        "output": "cfcjmzb"
+      },
+      {
+        "input": "blimp",
+        "output": "cmjnq"
+      },
+      {
+        "input": "shallowy",
+        "output": "tibmmpxz"
+      },
+      {
+        "input": "obliquity",
+        "output": "pcmjrvjuz"
+      },
+      {
+        "input": "unrisen",
+        "output": "vosjtfo"
+      },
+      {
+        "input": "conchitic",
+        "output": "dpodijujd"
+      },
+      {
+        "input": "devitrify",
+        "output": "efwjusjgz"
+      }
+    ],
+    "index": 46,
+    "split": "caesar",
+    "function": "def transform(s):\n    result = \"\"\n    shift = 1\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr((ord(ch) - ord(\"a\") + shift) % 26 + ord(\"a\"))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr((ord(ch) - ord(\"A\") + shift) % 26 + ord(\"A\"))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation is a Caesar cipher with a fixed shift of +1. Each letter in the input string is replaced by the character immediately following it in the alphabet (e.g., 'm' becomes 'n', 'a' becomes 'b'). The rule applies to both lowercase and uppercase letters, wrapping from 'z' to 'a' and 'Z' to 'A', while non-alphabetic characters remain unchanged. This consistent shift accounts for all changes observed across the provided examples."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "falbala",
+          "output": "uzoyzoz"
+        },
+        {
+          "input": "enmeshment",
+          "output": "vmnvhsnvmg"
+        },
+        {
+          "input": "trapezing",
+          "output": "gizkvarmt"
+        },
+        {
+          "input": "chlamyd",
+          "output": "xsoznbw"
+        },
+        {
+          "input": "Etamin",
+          "output": "Vgznrm"
+        },
+        {
+          "input": "synagogian",
+          "output": "hbmztltrzm"
+        },
+        {
+          "input": "hereditism",
+          "output": "svivwrgrhn"
+        },
+        {
+          "input": "unhedge",
+          "output": "fmsvwtv"
+        },
+        {
+          "input": "murrina",
+          "output": "nfiirmz"
+        },
+        {
+          "input": "watery",
+          "output": "dzgvib"
+        }
+      ],
+      "ood": [
+        {
+          "input": "ycUruaa",
+          "output": "bxFifzz"
+        },
+        {
+          "input": "epurlc",
+          "output": "vkfiox"
+        },
+        {
+          "input": "godwdnuoro",
+          "output": "tlwdwmflil"
+        },
+        {
+          "input": "gaynrmle",
+          "output": "tzbminov"
+        },
+        {
+          "input": "ostiooglv",
+          "output": "lhgrlltoe"
+        }
+      ],
+      "noise": [
+        {
+          "input": "machiner",
+          "output": "nzxsycvi"
+        },
+        {
+          "input": "Ciliophora",
+          "output": "irovqyqriz"
+        },
+        {
+          "input": "tangency",
+          "output": "ctmyvxxb"
+        },
+        {
+          "input": "unabsolute",
+          "output": "fmzvhlofgr"
+        },
+        {
+          "input": "oaritis",
+          "output": "ezjrgvh"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "redistend",
+        "output": "ivwrhgvmw"
+      },
+      {
+        "input": "oncost",
+        "output": "lmxlhg"
+      },
+      {
+        "input": "abraum",
+        "output": "zyizfn"
+      },
+      {
+        "input": "homostyled",
+        "output": "slnlhgbovw"
+      },
+      {
+        "input": "ossify",
+        "output": "lhhrub"
+      },
+      {
+        "input": "latrine",
+        "output": "ozgirmv"
+      },
+      {
+        "input": "merenchyma",
+        "output": "nvivmxsbnz"
+      },
+      {
+        "input": "pliability",
+        "output": "korzyrorgb"
+      },
+      {
+        "input": "Araliaceae",
+        "output": "Zizorzxvzv"
+      },
+      {
+        "input": "Siuslaw",
+        "output": "Hrfhozd"
+      }
+    ],
+    "index": 83,
+    "split": "atbash",
+    "function": "def transform(s):\n    result = \"\"\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr(ord(\"z\") - (ord(ch) - ord(\"a\")))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr(ord(\"Z\") - (ord(ch) - ord(\"A\")))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation follows the Atbash cipher, a specific character mapping where the alphabet is reversed. Each letter is replaced by its symmetric counterpart: 'a' becomes 'z', 'b' becomes 'y', and so on. This rule applies independently to both lowercase and uppercase letters, while non-alphabetic characters remain unchanged. For example, in 'falbala', 'f' (6th letter) maps to 'u' (6th from the end), and in 'Etamin', the uppercase 'E' maps to 'V'."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "indoors",
+          "output": "rmwllih"
+        },
+        {
+          "input": "Simonian",
+          "output": "Hrnlmrzm"
+        },
+        {
+          "input": "rebenefit",
+          "output": "ivyvmvurg"
+        },
+        {
+          "input": "unfiber",
+          "output": "fmuryvi"
+        },
+        {
+          "input": "supertower",
+          "output": "hfkvigldvi"
+        },
+        {
+          "input": "mooing",
+          "output": "nllrmt"
+        },
+        {
+          "input": "astraeid",
+          "output": "zhgizvrw"
+        },
+        {
+          "input": "sapa",
+          "output": "hzkz"
+        },
+        {
+          "input": "refinance",
+          "output": "ivurmzmxv"
+        },
+        {
+          "input": "Claretian",
+          "output": "Xozivgrzm"
+        }
+      ],
+      "ood": [
+        {
+          "input": "obona",
+          "output": "lylmz"
+        },
+        {
+          "input": "amntdmreu",
+          "output": "znmgwnivf"
+        },
+        {
+          "input": "dydig",
+          "output": "wbwrt"
+        },
+        {
+          "input": "iiiscatnm",
+          "output": "rrrhxzgmn"
+        },
+        {
+          "input": "aatp",
+          "output": "zzgk"
+        }
+      ],
+      "noise": [
+        {
+          "input": "hormonic",
+          "output": "kjinlmrx"
+        },
+        {
+          "input": "depickle",
+          "output": "wqfnqyog"
+        },
+        {
+          "input": "minion",
+          "output": "crprlm"
+        },
+        {
+          "input": "bonito",
+          "output": "ylyrgl"
+        },
+        {
+          "input": "kronur",
+          "output": "piiffw"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "vraicking",
+        "output": "eizrxprmt"
+      },
+      {
+        "input": "Nalita",
+        "output": "Mzorgz"
+      },
+      {
+        "input": "Nyroca",
+        "output": "Mbilxz"
+      },
+      {
+        "input": "outmove",
+        "output": "lfgnlev"
+      },
+      {
+        "input": "Hebraicize",
+        "output": "Svyizrxrav"
+      },
+      {
+        "input": "extense",
+        "output": "vcgvmhv"
+      },
+      {
+        "input": "rushy",
+        "output": "ifhsb"
+      },
+      {
+        "input": "incohesive",
+        "output": "rmxlsvhrev"
+      },
+      {
+        "input": "macled",
+        "output": "nzxovw"
+      },
+      {
+        "input": "Lars",
+        "output": "Ozih"
+      }
+    ],
+    "index": 84,
+    "split": "atbash",
+    "function": "def transform(s):\n    result = \"\"\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr(ord(\"z\") - (ord(ch) - ord(\"a\")))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr(ord(\"Z\") - (ord(ch) - ord(\"A\")))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation follows the Atbash cipher, where each letter is replaced by its mirror opposite in the alphabet (e.g., 'a' becomes 'z', 'b' becomes 'y', and 'C' becomes 'X'). This rule is applied consistently across all examples, preserving the case of the original character. Non-alphabetic characters, if present, would remain unchanged. The pattern accounts for all outputs, such as 'indoors' becoming 'rmwllih' and 'Simonian' becoming 'Hrnlmrzm'."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "tribadism",
+          "output": "usjcbejtn"
+        },
+        {
+          "input": "bigener",
+          "output": "cjhfofs"
+        },
+        {
+          "input": "bonxie",
+          "output": "cpoyjf"
+        },
+        {
+          "input": "unfumbling",
+          "output": "vogvncmjoh"
+        },
+        {
+          "input": "parse",
+          "output": "qbstf"
+        },
+        {
+          "input": "Holstein",
+          "output": "Ipmtufjo"
+        },
+        {
+          "input": "winkle",
+          "output": "xjolmf"
+        },
+        {
+          "input": "eelpout",
+          "output": "ffmqpvu"
+        },
+        {
+          "input": "anabathmos",
+          "output": "bobcbuinpt"
+        },
+        {
+          "input": "khagiarite",
+          "output": "libhjbsjuf"
+        }
+      ],
+      "ood": [
+        {
+          "input": "patrna",
+          "output": "qbusob"
+        },
+        {
+          "input": "reitlcraa",
+          "output": "sfjumdsbb"
+        },
+        {
+          "input": "ebsekton",
+          "output": "fctflupo"
+        },
+        {
+          "input": "oJenan",
+          "output": "pKfobo"
+        },
+        {
+          "input": "unorepstto",
+          "output": "vopsfqtuup"
+        }
+      ],
+      "noise": [
+        {
+          "input": "Muysca",
+          "output": "Pxbvri"
+        },
+        {
+          "input": "unblamed",
+          "output": "xqlodaxg"
+        },
+        {
+          "input": "coaudience",
+          "output": "grfhmltqlf"
+        },
+        {
+          "input": "canroyer",
+          "output": "ybqmeehu"
+        },
+        {
+          "input": "editorial",
+          "output": "htlwruzio"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "precited",
+        "output": "qsfdjufe"
+      },
+      {
+        "input": "even",
+        "output": "fwfo"
+      },
+      {
+        "input": "Padraig",
+        "output": "Qbesbjh"
+      },
+      {
+        "input": "bullace",
+        "output": "cvmmbdf"
+      },
+      {
+        "input": "Cervus",
+        "output": "Dfswvt"
+      },
+      {
+        "input": "forbade",
+        "output": "gpscbef"
+      },
+      {
+        "input": "mover",
+        "output": "npwfs"
+      },
+      {
+        "input": "slantly",
+        "output": "tmboumz"
+      },
+      {
+        "input": "almost",
+        "output": "bmnptu"
+      },
+      {
+        "input": "acrostical",
+        "output": "bdsptujdbm"
+      }
+    ],
+    "index": 52,
+    "split": "caesar",
+    "function": "def transform(s):\n    result = \"\"\n    shift = 1\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr((ord(ch) - ord(\"a\") + shift) % 26 + ord(\"a\"))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr((ord(ch) - ord(\"A\") + shift) % 26 + ord(\"A\"))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation is a Caesar cipher with a fixed shift of +1. Each letter in the input string is replaced by the next letter in the alphabet (e.g., 'a' becomes 'b', 'z' becomes 'a'). The rule preserves the case of the characters, as seen in 'Holstein' becoming 'Ipmtufjo', and non-alphabetic characters remain unchanged."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "neepour",
+          "output": "mvvklfi"
+        },
+        {
+          "input": "kiddish",
+          "output": "prwwrhs"
+        },
+        {
+          "input": "fossa",
+          "output": "ulhhz"
+        },
+        {
+          "input": "slopmaker",
+          "output": "holknzpvi"
+        },
+        {
+          "input": "wine",
+          "output": "drmv"
+        },
+        {
+          "input": "debellate",
+          "output": "wvyvoozgv"
+        },
+        {
+          "input": "judicator",
+          "output": "qfwrxzgli"
+        },
+        {
+          "input": "exhilarate",
+          "output": "vcsrozizgv"
+        },
+        {
+          "input": "essayical",
+          "output": "vhhzbrxzo"
+        },
+        {
+          "input": "combiner",
+          "output": "xlnyrmvi"
+        }
+      ],
+      "ood": [
+        {
+          "input": "retowwkkic",
+          "output": "ivglddpprx"
+        },
+        {
+          "input": "aten",
+          "output": "zgvm"
+        },
+        {
+          "input": "etxitesge",
+          "output": "vgcrgvhtv"
+        },
+        {
+          "input": "oaunoifscr",
+          "output": "lzfmlruhxi"
+        },
+        {
+          "input": "opogciunn",
+          "output": "lkltxrfmm"
+        }
+      ],
+      "noise": [
+        {
+          "input": "inferior",
+          "output": "rmuvibci"
+        },
+        {
+          "input": "underboy",
+          "output": "uowviyob"
+        },
+        {
+          "input": "mandom",
+          "output": "nzmklb"
+        },
+        {
+          "input": "metalworks",
+          "output": "nvqzogmrpl"
+        },
+        {
+          "input": "subnitrate",
+          "output": "hiyajgszkx"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "terzo",
+        "output": "gvial"
+      },
+      {
+        "input": "Swatchel",
+        "output": "Hdzgxsvo"
+      },
+      {
+        "input": "dildo",
+        "output": "wrowl"
+      },
+      {
+        "input": "hoodoo",
+        "output": "sllwll"
+      },
+      {
+        "input": "spoiled",
+        "output": "hklrovw"
+      },
+      {
+        "input": "Arthrodira",
+        "output": "Zigsilwriz"
+      },
+      {
+        "input": "signist",
+        "output": "hrtmrhg"
+      },
+      {
+        "input": "mastoncus",
+        "output": "nzhglmxfh"
+      },
+      {
+        "input": "impeacher",
+        "output": "rnkvzxsvi"
+      },
+      {
+        "input": "lupe",
+        "output": "ofkv"
+      }
+    ],
+    "index": 28,
+    "split": "atbash",
+    "function": "def transform(s):\n    result = \"\"\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr(ord(\"z\") - (ord(ch) - ord(\"a\")))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr(ord(\"Z\") - (ord(ch) - ord(\"A\")))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation follows the Atbash cipher, where each letter is replaced by its opposite in the alphabet (e.g., 'a' becomes 'z', 'b' becomes 'y'). In Example 1, 'n' (14th letter) maps to 'm' (13th from the end), and 'e' (5th letter) maps to 'v' (5th from the end). This mapping is applied consistently across all examples, preserving the case of the characters while leaving non-alphabetic characters unchanged. The rule generalizes by calculating the distance of a character from one end of the alphabet and applying that same distance from the opposite end."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "quietsome",
+          "output": "jfrvghlnv"
+        },
+        {
+          "input": "morningly",
+          "output": "nlimrmtob"
+        },
+        {
+          "input": "Sundaresan",
+          "output": "Hfmwzivhzm"
+        },
+        {
+          "input": "imputable",
+          "output": "rnkfgzyov"
+        },
+        {
+          "input": "ventose",
+          "output": "evmglhv"
+        },
+        {
+          "input": "ferly",
+          "output": "uviob"
+        },
+        {
+          "input": "maternal",
+          "output": "nzgvimzo"
+        },
+        {
+          "input": "ludlamite",
+          "output": "ofwoznrgv"
+        },
+        {
+          "input": "needs",
+          "output": "mvvwh"
+        },
+        {
+          "input": "Kentishman",
+          "output": "Pvmgrhsnzm"
+        }
+      ],
+      "ood": [
+        {
+          "input": "comeelrci",
+          "output": "xlnvvoixr"
+        },
+        {
+          "input": "logifoy",
+          "output": "oltrulb"
+        },
+        {
+          "input": "ntoaeniie",
+          "output": "mglzvmrrv"
+        },
+        {
+          "input": "iealrdgsnn",
+          "output": "rvzoiwthmm"
+        },
+        {
+          "input": "taasmlilyb",
+          "output": "gzzhnoroby"
+        }
+      ],
+      "noise": [
+        {
+          "input": "Anamite",
+          "output": "Zmfurth"
+        },
+        {
+          "input": "boyardism",
+          "output": "tibziwrfb"
+        },
+        {
+          "input": "crematory",
+          "output": "vsvndwlcb"
+        },
+        {
+          "input": "Shavianism",
+          "output": "Hszerzmrhn"
+        },
+        {
+          "input": "grumly",
+          "output": "lifnmb"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "shrubbed",
+        "output": "hsifyyvw"
+      },
+      {
+        "input": "sypher",
+        "output": "hbksvi"
+      },
+      {
+        "input": "society",
+        "output": "hlxrvgb"
+      },
+      {
+        "input": "purreic",
+        "output": "kfiivrx"
+      },
+      {
+        "input": "bruting",
+        "output": "yifgrmt"
+      },
+      {
+        "input": "diipenates",
+        "output": "wrrkvmzgvh"
+      },
+      {
+        "input": "studhorse",
+        "output": "hgfwslihv"
+      },
+      {
+        "input": "sanidine",
+        "output": "hzmrwrmv"
+      },
+      {
+        "input": "sheather",
+        "output": "hsvzgsvi"
+      },
+      {
+        "input": "bolden",
+        "output": "ylowvm"
+      }
+    ],
+    "index": 21,
+    "split": "atbash",
+    "function": "def transform(s):\n    result = \"\"\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr(ord(\"z\") - (ord(ch) - ord(\"a\")))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr(ord(\"Z\") - (ord(ch) - ord(\"A\")))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation follows the Atbash cipher, where each letter is replaced by its opposite in the alphabet (e.g., 'a' becomes 'z', 'b' becomes 'y'). This mapping is applied independently to both lowercase and uppercase letters, as seen in Example 3 ('S' to 'H') and Example 10 ('K' to 'P'). Non-alphabetic characters remain unchanged. The rule consistently accounts for all examples by mirroring the position of each character relative to the start and end of its respective case range."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "budgetary",
+          "output": "yfwtvgzib"
+        },
+        {
+          "input": "patholysis",
+          "output": "kzgslobhrh"
+        },
+        {
+          "input": "Ateba",
+          "output": "Zgvyz"
+        },
+        {
+          "input": "unnearness",
+          "output": "fmmvzimvhh"
+        },
+        {
+          "input": "albuminous",
+          "output": "zoyfnrmlfh"
+        },
+        {
+          "input": "Cucujus",
+          "output": "Xfxfqfh"
+        },
+        {
+          "input": "proemial",
+          "output": "kilvnrzo"
+        },
+        {
+          "input": "bandcutter",
+          "output": "yzmwxfggvi"
+        },
+        {
+          "input": "agoniatite",
+          "output": "ztlmrzgrgv"
+        },
+        {
+          "input": "biphenol",
+          "output": "yrksvmlo"
+        }
+      ],
+      "ood": [
+        {
+          "input": "imansceaht",
+          "output": "rnzmhxvzsg"
+        },
+        {
+          "input": "ictptunioe",
+          "output": "rxgkgfmrlv"
+        },
+        {
+          "input": "ockeyro",
+          "output": "lxpvbil"
+        },
+        {
+          "input": "estodimm",
+          "output": "vhglwrnn"
+        },
+        {
+          "input": "cryopmeol",
+          "output": "xiblknvlo"
+        }
+      ],
+      "noise": [
+        {
+          "input": "oedemerid",
+          "output": "lvvjnvyrw"
+        },
+        {
+          "input": "dynamitist",
+          "output": "wbmznrerhg"
+        },
+        {
+          "input": "unoffender",
+          "output": "ftluyvmwvr"
+        },
+        {
+          "input": "tollpenny",
+          "output": "giookvmmb"
+        },
+        {
+          "input": "yestereve",
+          "output": "ivkgvavki"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "hyponym",
+        "output": "sbklmbn"
+      },
+      {
+        "input": "codamine",
+        "output": "xlwznrmv"
+      },
+      {
+        "input": "unplant",
+        "output": "fmkozmg"
+      },
+      {
+        "input": "Ptolemaian",
+        "output": "Kglovnzrzm"
+      },
+      {
+        "input": "Karabagh",
+        "output": "Pzizyzts"
+      },
+      {
+        "input": "dishorse",
+        "output": "wrhslihv"
+      },
+      {
+        "input": "alarmed",
+        "output": "zozinvw"
+      },
+      {
+        "input": "withholder",
+        "output": "drgsslowvi"
+      },
+      {
+        "input": "Gujarati",
+        "output": "Tfqzizgr"
+      },
+      {
+        "input": "overshave",
+        "output": "levihszev"
+      }
+    ],
+    "index": 41,
+    "split": "atbash",
+    "function": "def transform(s):\n    result = \"\"\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr(ord(\"z\") - (ord(ch) - ord(\"a\")))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr(ord(\"Z\") - (ord(ch) - ord(\"A\")))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation follows the Atbash cipher, where each letter is replaced by its opposite in the alphabet (e.g., 'a' becomes 'z', 'b' becomes 'y', 'A' becomes 'Z'). This is evident in Example 1, where 'b' maps to 'y' and 'u' maps to 'f', and in Example 3, where 'A' maps to 'Z'. The rule applies independently to lowercase and uppercase letters while preserving non-alphabetic characters. This mapping accounts for all character substitutions across the provided examples and generalizes to any string input."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "strongbark",
+          "output": "tuspohcbsl"
+        },
+        {
+          "input": "Entada",
+          "output": "Foubeb"
+        },
+        {
+          "input": "Lucian",
+          "output": "Mvdjbo"
+        },
+        {
+          "input": "protone",
+          "output": "qspupof"
+        },
+        {
+          "input": "Syrianic",
+          "output": "Tzsjbojd"
+        },
+        {
+          "input": "raptorial",
+          "output": "sbqupsjbm"
+        },
+        {
+          "input": "tenontitis",
+          "output": "ufopoujujt"
+        },
+        {
+          "input": "send",
+          "output": "tfoe"
+        },
+        {
+          "input": "whikerby",
+          "output": "xijlfscz"
+        },
+        {
+          "input": "buckie",
+          "output": "cvdljf"
+        }
+      ],
+      "ood": [
+        {
+          "input": "ntaepsrt",
+          "output": "oubfqtsu"
+        },
+        {
+          "input": "ureoutrnt",
+          "output": "vsfpvusou"
+        },
+        {
+          "input": "nufedelg",
+          "output": "ovgfefmh"
+        },
+        {
+          "input": "omeJiarn",
+          "output": "pnfKjbso"
+        },
+        {
+          "input": "dcih",
+          "output": "edji"
+        }
+      ],
+      "noise": [
+        {
+          "input": "unroasted",
+          "output": "xqurdvfrg"
+        },
+        {
+          "input": "Polygamia",
+          "output": "Sdtwjwpwc"
+        },
+        {
+          "input": "outstation",
+          "output": "rxuvfdwinq"
+        },
+        {
+          "input": "apheretic",
+          "output": "dtshzvwlf"
+        },
+        {
+          "input": "buhl",
+          "output": "kxko"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "blackly",
+        "output": "cmbdlmz"
+      },
+      {
+        "input": "sweetmaker",
+        "output": "txffunblfs"
+      },
+      {
+        "input": "head",
+        "output": "ifbe"
+      },
+      {
+        "input": "optologist",
+        "output": "pqupmphjtu"
+      },
+      {
+        "input": "fireball",
+        "output": "gjsfcbmm"
+      },
+      {
+        "input": "Oleacina",
+        "output": "Pmfbdjob"
+      },
+      {
+        "input": "psychic",
+        "output": "qtzdijd"
+      },
+      {
+        "input": "wireweed",
+        "output": "xjsfxffe"
+      },
+      {
+        "input": "corrupting",
+        "output": "dpssvqujoh"
+      },
+      {
+        "input": "chargeship",
+        "output": "dibshftijq"
+      }
+    ],
+    "index": 79,
+    "split": "caesar",
+    "function": "def transform(s):\n    result = \"\"\n    shift = 1\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr((ord(ch) - ord(\"a\") + shift) % 26 + ord(\"a\"))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr((ord(ch) - ord(\"A\") + shift) % 26 + ord(\"A\"))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation is a Caesar cipher with a fixed shift of +1. Each letter in the input string is replaced by the character immediately following it in the alphabet (e.g., 's' becomes 't', 'e' becomes 'f'). This rule applies consistently across all examples, maintaining the case of the original character while leaving non-alphabetic characters unchanged. The shift wraps around from 'z' to 'a' and 'Z' to 'A' to ensure the output remains within the same case-specific alphabet."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "assarion",
+          "output": "zhhzirlm"
+        },
+        {
+          "input": "yawny",
+          "output": "bzdmb"
+        },
+        {
+          "input": "suggillate",
+          "output": "hfttroozgv"
+        },
+        {
+          "input": "googly",
+          "output": "tlltob"
+        },
+        {
+          "input": "dulcimer",
+          "output": "wfoxrnvi"
+        },
+        {
+          "input": "sonorous",
+          "output": "hlmlilfh"
+        },
+        {
+          "input": "urban",
+          "output": "fiyzm"
+        },
+        {
+          "input": "trisilane",
+          "output": "girhrozmv"
+        },
+        {
+          "input": "Digynia",
+          "output": "Wrtbmrz"
+        },
+        {
+          "input": "parnas",
+          "output": "kzimzh"
+        }
+      ],
+      "ood": [
+        {
+          "input": "aiglcun",
+          "output": "zrtoxfm"
+        },
+        {
+          "input": "hemrcda",
+          "output": "svnixwz"
+        },
+        {
+          "input": "ilda",
+          "output": "rowz"
+        },
+        {
+          "input": "urpien",
+          "output": "fikrvm"
+        },
+        {
+          "input": "nvriagi",
+          "output": "meirztr"
+        }
+      ],
+      "noise": [
+        {
+          "input": "tridiurnal",
+          "output": "hggzrfizxn"
+        },
+        {
+          "input": "abjuration",
+          "output": "zzhnrtgkam"
+        },
+        {
+          "input": "thingum",
+          "output": "bsbmtfq"
+        },
+        {
+          "input": "proaward",
+          "output": "eilzdzcr"
+        },
+        {
+          "input": "Dioscuri",
+          "output": "Wrlhxpir"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "horograph",
+        "output": "sliltizks"
+      },
+      {
+        "input": "eggcup",
+        "output": "vttxfk"
+      },
+      {
+        "input": "unvendible",
+        "output": "fmevmwryov"
+      },
+      {
+        "input": "rebellious",
+        "output": "ivyvoorlfh"
+      },
+      {
+        "input": "salivator",
+        "output": "hzorezgli"
+      },
+      {
+        "input": "unenvied",
+        "output": "fmvmervw"
+      },
+      {
+        "input": "planular",
+        "output": "kozmfozi"
+      },
+      {
+        "input": "outpassion",
+        "output": "lfgkzhhrlm"
+      },
+      {
+        "input": "pricks",
+        "output": "kirxph"
+      },
+      {
+        "input": "unknotty",
+        "output": "fmpmlggb"
+      }
+    ],
+    "index": 79,
+    "split": "atbash",
+    "function": "def transform(s):\n    result = \"\"\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr(ord(\"z\") - (ord(ch) - ord(\"a\")))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr(ord(\"Z\") - (ord(ch) - ord(\"A\")))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation follows the Atbash cipher, a specific type of monoalphabetic substitution where the alphabet is reversed. Each letter is mapped to its opposite position: 'a' becomes 'z', 'b' becomes 'y', and so on. This rule applies independently to both lowercase and uppercase letters, while non-alphabetic characters remain unchanged. For example, in 'assarion', 'a' maps to 'z', 's' to 'h', and 'n' to 'm', resulting in 'zhhzirlm'."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "diagonal",
+          "output": "fkciqpcn"
+        },
+        {
+          "input": "overlive",
+          "output": "qxgtnkxg"
+        },
+        {
+          "input": "carving",
+          "output": "ectxkpi"
+        },
+        {
+          "input": "albumean",
+          "output": "cndwogcp"
+        },
+        {
+          "input": "glabellar",
+          "output": "incdgnnct"
+        },
+        {
+          "input": "equipluve",
+          "output": "gswkrnwxg"
+        },
+        {
+          "input": "instroke",
+          "output": "kpuvtqmg"
+        },
+        {
+          "input": "reblock",
+          "output": "tgdnqem"
+        },
+        {
+          "input": "recubant",
+          "output": "tgewdcpv"
+        },
+        {
+          "input": "phymatid",
+          "output": "rjaocvkf"
+        }
+      ],
+      "ood": [
+        {
+          "input": "aficrgn",
+          "output": "chketip"
+        },
+        {
+          "input": "ltiateerow",
+          "output": "nvkcvggtqy"
+        },
+        {
+          "input": "Anreomeg",
+          "output": "Cptgqogi"
+        },
+        {
+          "input": "armu",
+          "output": "ctow"
+        },
+        {
+          "input": "otsep",
+          "output": "qvugr"
+        }
+      ],
+      "noise": [
+        {
+          "input": "nogheaded",
+          "output": "vrbypdgsg"
+        },
+        {
+          "input": "tenderize",
+          "output": "gziohzdco"
+        },
+        {
+          "input": "lame",
+          "output": "wdis"
+        },
+        {
+          "input": "Oecanthus",
+          "output": "dhwjqloxz"
+        },
+        {
+          "input": "orgiastic",
+          "output": "hblglvwlf"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "yellowwort",
+        "output": "agnnqyyqtv"
+      },
+      {
+        "input": "plantation",
+        "output": "rncpvcvkqp"
+      },
+      {
+        "input": "Bavius",
+        "output": "Dcxkwu"
+      },
+      {
+        "input": "salute",
+        "output": "ucnwvg"
+      },
+      {
+        "input": "lateritic",
+        "output": "ncvgtkvke"
+      },
+      {
+        "input": "paganishly",
+        "output": "rcicpkujna"
+      },
+      {
+        "input": "wayhouse",
+        "output": "ycajqwug"
+      },
+      {
+        "input": "Tapleyism",
+        "output": "Vcrngakuo"
+      },
+      {
+        "input": "crackers",
+        "output": "etcemgtu"
+      },
+      {
+        "input": "calamitoid",
+        "output": "ecncokvqkf"
+      }
+    ],
+    "index": 66,
+    "split": "caesar",
+    "function": "def transform(s):\n    result = \"\"\n    shift = 2\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr((ord(ch) - ord(\"a\") + shift) % 26 + ord(\"a\"))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr((ord(ch) - ord(\"A\") + shift) % 26 + ord(\"A\"))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation is a Caesar cipher with a fixed shift of +2. For every character in the input string, if it is a lowercase or uppercase letter, it is shifted forward by two positions in the alphabet (e.g., 'a' becomes 'c', 'o' becomes 'q', 'z' becomes 'b'). Non-alphabetic characters remain unchanged. This rule consistently explains all examples, such as 'diagonal' becoming 'fkciqpcn' and 'carving' becoming 'ectxkpi'."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "restretch",
+          "output": "ivhgivgxs"
+        },
+        {
+          "input": "bhaiachari",
+          "output": "yszrzxszir"
+        },
+        {
+          "input": "backlands",
+          "output": "yzxpozmwh"
+        },
+        {
+          "input": "beeheaded",
+          "output": "yvvsvzwvw"
+        },
+        {
+          "input": "overstream",
+          "output": "levihgivzn"
+        },
+        {
+          "input": "platch",
+          "output": "kozgxs"
+        },
+        {
+          "input": "Alpheratz",
+          "output": "Zoksvizga"
+        },
+        {
+          "input": "fortress",
+          "output": "uligivhh"
+        },
+        {
+          "input": "stoveful",
+          "output": "hglevufo"
+        },
+        {
+          "input": "gratten",
+          "output": "tizggvm"
+        }
+      ],
+      "ood": [
+        {
+          "input": "otogtred",
+          "output": "lgltgivw"
+        },
+        {
+          "input": "tBnipo",
+          "output": "gYmrkl"
+        },
+        {
+          "input": "hdiscpgyom",
+          "output": "swrhxktbln"
+        },
+        {
+          "input": "lBtaat",
+          "output": "oYgzzg"
+        },
+        {
+          "input": "eunctajb",
+          "output": "vfmxgzqy"
+        }
+      ],
+      "noise": [
+        {
+          "input": "tycoonate",
+          "output": "pbxllrhbv"
+        },
+        {
+          "input": "silicle",
+          "output": "hroyyox"
+        },
+        {
+          "input": "fallectomy",
+          "output": "vkoonxqlnb"
+        },
+        {
+          "input": "tinglingly",
+          "output": "grvcrpvtob"
+        },
+        {
+          "input": "ephectic",
+          "output": "vksvrgrx"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "aperient",
+        "output": "zkvirvmg"
+      },
+      {
+        "input": "admired",
+        "output": "zwnrivw"
+      },
+      {
+        "input": "avives",
+        "output": "zerevh"
+      },
+      {
+        "input": "melomaniac",
+        "output": "nvolnzmrzx"
+      },
+      {
+        "input": "zygosis",
+        "output": "abtlhrh"
+      },
+      {
+        "input": "secret",
+        "output": "hvxivg"
+      },
+      {
+        "input": "raspingly",
+        "output": "izhkrmtob"
+      },
+      {
+        "input": "Tambuki",
+        "output": "Gznyfpr"
+      },
+      {
+        "input": "brangling",
+        "output": "yizmtormt"
+      },
+      {
+        "input": "aloemodin",
+        "output": "zolvnlwrm"
+      }
+    ],
+    "index": 94,
+    "split": "atbash",
+    "function": "def transform(s):\n    result = \"\"\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr(ord(\"z\") - (ord(ch) - ord(\"a\")))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr(ord(\"Z\") - (ord(ch) - ord(\"A\")))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation follows the Atbash cipher, where each letter is replaced by its symmetric counterpart in the alphabet (A maps to Z, B to Y, etc.). This rule is applied consistently across all examples, preserving the case of the original characters. For instance, in 'restretch', 'r' (18th letter) becomes 'i' (9th letter from the end), and in 'Alpheratz', the uppercase 'A' becomes 'Z'. Non-alphabetic characters, if present, would remain unchanged."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "stamen",
+          "output": "hgznvm"
+        },
+        {
+          "input": "urostege",
+          "output": "filhgvtv"
+        },
+        {
+          "input": "impalsy",
+          "output": "rnkzohb"
+        },
+        {
+          "input": "stoss",
+          "output": "hglhh"
+        },
+        {
+          "input": "exophasic",
+          "output": "vclkszhrx"
+        },
+        {
+          "input": "Insessores",
+          "output": "Rmhvhhlivh"
+        },
+        {
+          "input": "viruscidal",
+          "output": "erifhxrwzo"
+        },
+        {
+          "input": "itinerant",
+          "output": "rgrmvizmg"
+        },
+        {
+          "input": "tidingless",
+          "output": "grwrmtovhh"
+        },
+        {
+          "input": "shiver",
+          "output": "hsrevi"
+        }
+      ],
+      "ood": [
+        {
+          "input": "iotinaozni",
+          "output": "rlgrmzlamr"
+        },
+        {
+          "input": "celxyoednv",
+          "output": "xvocblvwme"
+        },
+        {
+          "input": "rilaCroogi",
+          "output": "irozXilltr"
+        },
+        {
+          "input": "lsappeaob",
+          "output": "ohzkkvzly"
+        },
+        {
+          "input": "onourusncc",
+          "output": "lmlfifhmxx"
+        }
+      ],
+      "noise": [
+        {
+          "input": "pluripara",
+          "output": "zofifkziz"
+        },
+        {
+          "input": "goodwife",
+          "output": "unlwdeuk"
+        },
+        {
+          "input": "Guisian",
+          "output": "Tfbhvvi"
+        },
+        {
+          "input": "fixage",
+          "output": "ubxzqv"
+        },
+        {
+          "input": "clubfellow",
+          "output": "xofyuyoxld"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "gules",
+        "output": "tfovh"
+      },
+      {
+        "input": "festine",
+        "output": "uvhgrmv"
+      },
+      {
+        "input": "preobtain",
+        "output": "kivlygzrm"
+      },
+      {
+        "input": "Tortrix",
+        "output": "Gligirc"
+      },
+      {
+        "input": "secernent",
+        "output": "hvxvimvmg"
+      },
+      {
+        "input": "outmiracle",
+        "output": "lfgnrizxov"
+      },
+      {
+        "input": "augment",
+        "output": "zftnvmg"
+      },
+      {
+        "input": "cerebella",
+        "output": "xvivyvooz"
+      },
+      {
+        "input": "insobriety",
+        "output": "rmhlyirvgb"
+      },
+      {
+        "input": "nedder",
+        "output": "mvwwvi"
+      }
+    ],
+    "index": 3,
+    "split": "atbash",
+    "function": "def transform(s):\n    result = \"\"\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr(ord(\"z\") - (ord(ch) - ord(\"a\")))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr(ord(\"Z\") - (ord(ch) - ord(\"A\")))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation follows the Atbash cipher, where each letter is replaced by its opposite in the alphabet (e.g., 'a' becomes 'z', 'b' becomes 'y'). This mapping is applied consistently across all examples, such as 's' (19th letter) becoming 'h' (8th letter from the end) and 't' (20th letter) becoming 'g' (7th letter from the end). The rule preserves the case of the characters, as seen in 'Insessores' becoming 'Rmhvhhlivh', while non-alphabetic characters remain unchanged."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "ambition",
+          "output": "frgnynts"
+        },
+        {
+          "input": "metranate",
+          "output": "rjywfsfyj"
+        },
+        {
+          "input": "fence",
+          "output": "kjshj"
+        },
+        {
+          "input": "Rhaetian",
+          "output": "Wmfjynfs"
+        },
+        {
+          "input": "furilic",
+          "output": "kzwnqnh"
+        },
+        {
+          "input": "beaverteen",
+          "output": "gjfajwyjjs"
+        },
+        {
+          "input": "caprylyl",
+          "output": "hfuwdqdq"
+        },
+        {
+          "input": "quinch",
+          "output": "vznshm"
+        },
+        {
+          "input": "broadways",
+          "output": "gwtfibfdx"
+        },
+        {
+          "input": "peetweet",
+          "output": "ujjybjjy"
+        }
+      ],
+      "ood": [
+        {
+          "input": "aeenroshxt",
+          "output": "fjjswtxmcy"
+        },
+        {
+          "input": "eSdre",
+          "output": "jXiwj"
+        },
+        {
+          "input": "paulrnm",
+          "output": "ufzqwsr"
+        },
+        {
+          "input": "nnapee",
+          "output": "ssfujj"
+        },
+        {
+          "input": "kmas",
+          "output": "prfx"
+        }
+      ],
+      "noise": [
+        {
+          "input": "depredate",
+          "output": "srsugecwn"
+        },
+        {
+          "input": "chartless",
+          "output": "dbpukozaz"
+        },
+        {
+          "input": "wrox",
+          "output": "zrqa"
+        },
+        {
+          "input": "Goshen",
+          "output": "Jrvahl"
+        },
+        {
+          "input": "cletch",
+          "output": "kofwfk"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "Kuroshio",
+        "output": "Pzwtxmnt"
+      },
+      {
+        "input": "crossweb",
+        "output": "hwtxxbjg"
+      },
+      {
+        "input": "perseite",
+        "output": "ujwxjnyj"
+      },
+      {
+        "input": "Ismaili",
+        "output": "Nxrfnqn"
+      },
+      {
+        "input": "zebroid",
+        "output": "ejgwtni"
+      },
+      {
+        "input": "rainspout",
+        "output": "wfnsxutzy"
+      },
+      {
+        "input": "Vitruvian",
+        "output": "Anywzanfs"
+      },
+      {
+        "input": "volunteer",
+        "output": "atqzsyjjw"
+      },
+      {
+        "input": "skaddle",
+        "output": "xpfiiqj"
+      },
+      {
+        "input": "tirwit",
+        "output": "ynwbny"
+      }
+    ],
+    "index": 87,
+    "split": "caesar",
+    "function": "def transform(s):\n    result = \"\"\n    shift = 5\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr((ord(ch) - ord(\"a\") + shift) % 26 + ord(\"a\"))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr((ord(ch) - ord(\"A\") + shift) % 26 + ord(\"A\"))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation is a Caesar cipher with a fixed shift of 5 positions forward in the alphabet. For each character in the input string, the rule maps lowercase letters to their counterparts 5 places ahead (e.g., 'a' becomes 'f', 'm' becomes 'r') and uppercase letters similarly (e.g., 'R' becomes 'W'). Non-alphabetic characters remain unchanged. This rule consistently explains all examples, such as 'fence' becoming 'kjshj' and 'ambition' becoming 'frgnynts'."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "pupil",
+          "output": "qvqjm"
+        },
+        {
+          "input": "atropine",
+          "output": "buspqjof"
+        },
+        {
+          "input": "copperskin",
+          "output": "dpqqfstljo"
+        },
+        {
+          "input": "vivianite",
+          "output": "wjwjbojuf"
+        },
+        {
+          "input": "nevo",
+          "output": "ofwp"
+        },
+        {
+          "input": "bussock",
+          "output": "cvttpdl"
+        },
+        {
+          "input": "courtesan",
+          "output": "dpvsuftbo"
+        },
+        {
+          "input": "crew",
+          "output": "dsfx"
+        },
+        {
+          "input": "Katrine",
+          "output": "Lbusjof"
+        },
+        {
+          "input": "abreact",
+          "output": "bcsfbdu"
+        }
+      ],
+      "ood": [
+        {
+          "input": "ecsatsiut",
+          "output": "fdtbutjvu"
+        },
+        {
+          "input": "uinunoeqn",
+          "output": "vjovopfro"
+        },
+        {
+          "input": "exoeftf",
+          "output": "fypfgug"
+        },
+        {
+          "input": "ifcsaa",
+          "output": "jgdtbb"
+        },
+        {
+          "input": "vden",
+          "output": "wefo"
+        }
+      ],
+      "noise": [
+        {
+          "input": "tabacum",
+          "output": "wdedfve"
+        },
+        {
+          "input": "Willie",
+          "output": "lvtoxh"
+        },
+        {
+          "input": "teewhaap",
+          "output": "whhgawdo"
+        },
+        {
+          "input": "scatoscopy",
+          "output": "vffwrpfrsw"
+        },
+        {
+          "input": "decap",
+          "output": "gaddy"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "subtotal",
+        "output": "tvcupubm"
+      },
+      {
+        "input": "abaxile",
+        "output": "bcbyjmf"
+      },
+      {
+        "input": "skipjack",
+        "output": "tljqkbdl"
+      },
+      {
+        "input": "nonjuror",
+        "output": "opokvsps"
+      },
+      {
+        "input": "Crustacea",
+        "output": "Dsvtubdfb"
+      },
+      {
+        "input": "Wilhelm",
+        "output": "Xjmifmn"
+      },
+      {
+        "input": "templed",
+        "output": "ufnqmfe"
+      },
+      {
+        "input": "sinuitis",
+        "output": "tjovjujt"
+      },
+      {
+        "input": "impact",
+        "output": "jnqbdu"
+      },
+      {
+        "input": "sparry",
+        "output": "tqbssz"
+      }
+    ],
+    "index": 12,
+    "split": "caesar",
+    "function": "def transform(s):\n    result = \"\"\n    shift = 1\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr((ord(ch) - ord(\"a\") + shift) % 26 + ord(\"a\"))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr((ord(ch) - ord(\"A\") + shift) % 26 + ord(\"A\"))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation is a Caesar cipher with a fixed shift of +1. Each letter in the input string is replaced by the character immediately following it in the alphabet (e.g., 'a' becomes 'b', 'p' becomes 'q'). The rule preserves the case of the letters, while non-alphabetic characters remain unchanged. This accounts for all examples, such as 'pupil' becoming 'qvqjm' and 'Katrine' becoming 'Lbusjof'."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "artha",
+          "output": "zigsz"
+        },
+        {
+          "input": "hexafoil",
+          "output": "svczulro"
+        },
+        {
+          "input": "prescriber",
+          "output": "kivhxiryvi"
+        },
+        {
+          "input": "thickish",
+          "output": "gsrxprhs"
+        },
+        {
+          "input": "behemoth",
+          "output": "yvsvnlgs"
+        },
+        {
+          "input": "April",
+          "output": "Zkiro"
+        },
+        {
+          "input": "gardyloo",
+          "output": "tziwboll"
+        },
+        {
+          "input": "squirr",
+          "output": "hjfrii"
+        },
+        {
+          "input": "upburst",
+          "output": "fkyfihg"
+        },
+        {
+          "input": "spouseless",
+          "output": "hklfhvovhh"
+        }
+      ],
+      "ood": [
+        {
+          "input": "nuqgirrate",
+          "output": "mfjtriizgv"
+        },
+        {
+          "input": "isknnu",
+          "output": "rhpmmf"
+        },
+        {
+          "input": "eolprd",
+          "output": "vlokiw"
+        },
+        {
+          "input": "uardiopshy",
+          "output": "fziwrlkhsb"
+        },
+        {
+          "input": "drbookao",
+          "output": "wiyllpzl"
+        }
+      ],
+      "noise": [
+        {
+          "input": "anglicize",
+          "output": "zyaurxriv"
+        },
+        {
+          "input": "preconcern",
+          "output": "kivxlmjvie"
+        },
+        {
+          "input": "bamboozler",
+          "output": "yzwylluoei"
+        },
+        {
+          "input": "chincha",
+          "output": "oszmmsz"
+        },
+        {
+          "input": "myxomyoma",
+          "output": "neognkvfz"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "undercolor",
+        "output": "fmwvixloli"
+      },
+      {
+        "input": "Chordeiles",
+        "output": "Xsliwvrovh"
+      },
+      {
+        "input": "unfallibly",
+        "output": "fmuzooryob"
+      },
+      {
+        "input": "griphite",
+        "output": "tirksrgv"
+      },
+      {
+        "input": "Maratha",
+        "output": "Nzizgsz"
+      },
+      {
+        "input": "knappishly",
+        "output": "pmzkkrhsob"
+      },
+      {
+        "input": "Haloa",
+        "output": "Szolz"
+      },
+      {
+        "input": "puttock",
+        "output": "kfgglxp"
+      },
+      {
+        "input": "ungrateful",
+        "output": "fmtizgvufo"
+      },
+      {
+        "input": "gaspergou",
+        "output": "tzhkvitlf"
+      }
+    ],
+    "index": 8,
+    "split": "atbash",
+    "function": "def transform(s):\n    result = \"\"\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr(ord(\"z\") - (ord(ch) - ord(\"a\")))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr(ord(\"Z\") - (ord(ch) - ord(\"A\")))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation follows the Atbash cipher, a monoalphabetic substitution where the alphabet is reversed. Each letter is replaced by its symmetric counterpart: 'a' becomes 'z', 'b' becomes 'y', and so on. This rule applies independently to both lowercase and uppercase letters, while non-alphabetic characters remain unchanged. For example, in 'artha', 'a' maps to 'z', 'r' to 'i', 't' to 'g', and 'h' to 's', resulting in 'zigsz'."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "overspend",
+          "output": "levihkvmw"
+        },
+        {
+          "input": "lipper",
+          "output": "orkkvi"
+        },
+        {
+          "input": "unsensible",
+          "output": "fmhvmhryov"
+        },
+        {
+          "input": "branle",
+          "output": "yizmov"
+        },
+        {
+          "input": "bonyfish",
+          "output": "ylmburhs"
+        },
+        {
+          "input": "Eriobotrya",
+          "output": "Virlylgibz"
+        },
+        {
+          "input": "menilite",
+          "output": "nvmrorgv"
+        },
+        {
+          "input": "baryphonia",
+          "output": "yzibkslmrz"
+        },
+        {
+          "input": "vowess",
+          "output": "eldvhh"
+        },
+        {
+          "input": "neuter",
+          "output": "mvfgvi"
+        }
+      ],
+      "ood": [
+        {
+          "input": "plyimer",
+          "output": "kobrnvi"
+        },
+        {
+          "input": "rialoncse",
+          "output": "irzolmxhv"
+        },
+        {
+          "input": "ooprisdlie",
+          "output": "llkirhworv"
+        },
+        {
+          "input": "eicradna",
+          "output": "vrxizwmz"
+        },
+        {
+          "input": "ymtnuzrag",
+          "output": "bngmfaizt"
+        }
+      ],
+      "noise": [
+        {
+          "input": "azthionium",
+          "output": "zagdrhuwfn"
+        },
+        {
+          "input": "unrind",
+          "output": "foorhm"
+        },
+        {
+          "input": "protension",
+          "output": "mdvovihhek"
+        },
+        {
+          "input": "myophysics",
+          "output": "ebmksahggh"
+        },
+        {
+          "input": "fellowlike",
+          "output": "kujwcdooqs"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "pinnel",
+        "output": "krmmvo"
+      },
+      {
+        "input": "acapsular",
+        "output": "zxzkhfozi"
+      },
+      {
+        "input": "desilicate",
+        "output": "wvhrorxzgv"
+      },
+      {
+        "input": "kerana",
+        "output": "pvizmz"
+      },
+      {
+        "input": "wabe",
+        "output": "dzyv"
+      },
+      {
+        "input": "slapdash",
+        "output": "hozkwzhs"
+      },
+      {
+        "input": "scourway",
+        "output": "hxlfidzb"
+      },
+      {
+        "input": "Kioway",
+        "output": "Prldzb"
+      },
+      {
+        "input": "leucocism",
+        "output": "ovfxlxrhn"
+      },
+      {
+        "input": "plushed",
+        "output": "kofhsvw"
+      }
+    ],
+    "index": 45,
+    "split": "atbash",
+    "function": "def transform(s):\n    result = \"\"\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr(ord(\"z\") - (ord(ch) - ord(\"a\")))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr(ord(\"Z\") - (ord(ch) - ord(\"A\")))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation follows the Atbash cipher, a specific character mapping where the alphabet is reversed. Each letter is replaced by its mirror opposite in the alphabet: 'a' becomes 'z', 'b' becomes 'y', and so on. This rule applies independently to both lowercase and uppercase letters, while non-alphabetic characters remain unchanged. For example, in 'overspend', 'o' maps to 'l' and 'v' maps to 'e', resulting in 'levihkvmw', which perfectly matches the provided training examples."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "ghostless",
+          "output": "klswxpiww"
+        },
+        {
+          "input": "imam",
+          "output": "mqeq"
+        },
+        {
+          "input": "understory",
+          "output": "yrhivwxsvc"
+        },
+        {
+          "input": "Canavali",
+          "output": "Gerezepm"
+        },
+        {
+          "input": "assistless",
+          "output": "ewwmwxpiww"
+        },
+        {
+          "input": "riffraff",
+          "output": "vmjjvejj"
+        },
+        {
+          "input": "nonpaying",
+          "output": "rsrtecmrk"
+        },
+        {
+          "input": "Rhinophis",
+          "output": "Vlmrstlmw"
+        },
+        {
+          "input": "alloerotic",
+          "output": "eppsivsxmg"
+        },
+        {
+          "input": "language",
+          "output": "perkyeki"
+        }
+      ],
+      "ood": [
+        {
+          "input": "reejrpoof",
+          "output": "viinvtssj"
+        },
+        {
+          "input": "Acau",
+          "output": "Egey"
+        },
+        {
+          "input": "necosit",
+          "output": "rigswmx"
+        },
+        {
+          "input": "deierb",
+          "output": "himivf"
+        },
+        {
+          "input": "sabnoeyglt",
+          "output": "wefrsickpx"
+        }
+      ],
+      "noise": [
+        {
+          "input": "tasted",
+          "output": "xdvwhg"
+        },
+        {
+          "input": "unrooting",
+          "output": "xqurfflqj"
+        },
+        {
+          "input": "smudgily",
+          "output": "vpugjlzb"
+        },
+        {
+          "input": "retted",
+          "output": "nkwwhg"
+        },
+        {
+          "input": "Socratean",
+          "output": "Vrfudwqdq"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "suspension",
+        "output": "wywtirwmsr"
+      },
+      {
+        "input": "muscade",
+        "output": "qywgehi"
+      },
+      {
+        "input": "duggler",
+        "output": "hykkpiv"
+      },
+      {
+        "input": "Lamna",
+        "output": "Peqre"
+      },
+      {
+        "input": "Antimerina",
+        "output": "Erxmqivmre"
+      },
+      {
+        "input": "cumacean",
+        "output": "gyqegier"
+      },
+      {
+        "input": "showdom",
+        "output": "wlsahsq"
+      },
+      {
+        "input": "registrary",
+        "output": "vikmwxvevc"
+      },
+      {
+        "input": "forthink",
+        "output": "jsvxlmro"
+      },
+      {
+        "input": "shelled",
+        "output": "wlippih"
+      }
+    ],
+    "index": 45,
+    "split": "caesar",
+    "function": "def transform(s):\n    result = \"\"\n    shift = 4\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr((ord(ch) - ord(\"a\") + shift) % 26 + ord(\"a\"))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr((ord(ch) - ord(\"A\") + shift) % 26 + ord(\"A\"))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation is a Caesar cipher with a fixed shift of 4 positions forward in the alphabet. By examining the examples, we see that 'g' (7th letter) becomes 'k' (11th letter), and 'i' (9th letter) becomes 'm' (13th letter), confirming the +4 shift. This rule applies consistently to both lowercase and uppercase letters while preserving the case of the original character. Non-alphabetic characters, if present, would remain unchanged according to the standard Caesar shift logic."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "allegretto",
+          "output": "eppikvixxs"
+        },
+        {
+          "input": "illusive",
+          "output": "mppywmzi"
+        },
+        {
+          "input": "keeperess",
+          "output": "oiitiviww"
+        },
+        {
+          "input": "tailor",
+          "output": "xempsv"
+        },
+        {
+          "input": "Whiggism",
+          "output": "Almkkmwq"
+        },
+        {
+          "input": "fundal",
+          "output": "jyrhep"
+        },
+        {
+          "input": "pervert",
+          "output": "tivzivx"
+        },
+        {
+          "input": "farinose",
+          "output": "jevmrswi"
+        },
+        {
+          "input": "suttin",
+          "output": "wyxxmr"
+        },
+        {
+          "input": "wheezy",
+          "output": "aliidc"
+        }
+      ],
+      "ood": [
+        {
+          "input": "ntueurrde",
+          "output": "rxyiyvvhi"
+        },
+        {
+          "input": "aaxtxw",
+          "output": "eebxba"
+        },
+        {
+          "input": "sawedr",
+          "output": "weaihv"
+        },
+        {
+          "input": "tpesaao",
+          "output": "xtiwees"
+        },
+        {
+          "input": "ayrmycngo",
+          "output": "ecvqcgrks"
+        }
+      ],
+      "noise": [
+        {
+          "input": "trehala",
+          "output": "wlhkddd"
+        },
+        {
+          "input": "seafare",
+          "output": "vwzidah"
+        },
+        {
+          "input": "oroanal",
+          "output": "rbrsezo"
+        },
+        {
+          "input": "umber",
+          "output": "dpehu"
+        },
+        {
+          "input": "monozoic",
+          "output": "rrqsnrlf"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "artotype",
+        "output": "evxsxcti"
+      },
+      {
+        "input": "disattune",
+        "output": "hmwexxyri"
+      },
+      {
+        "input": "Momordica",
+        "output": "Qsqsvhmge"
+      },
+      {
+        "input": "dallack",
+        "output": "heppego"
+      },
+      {
+        "input": "emerize",
+        "output": "iqivmdi"
+      },
+      {
+        "input": "ramosely",
+        "output": "veqswipc"
+      },
+      {
+        "input": "outsmile",
+        "output": "syxwqmpi"
+      },
+      {
+        "input": "lowly",
+        "output": "psapc"
+      },
+      {
+        "input": "serio",
+        "output": "wivms"
+      },
+      {
+        "input": "bellbottle",
+        "output": "fippfsxxpi"
+      }
+    ],
+    "index": 13,
+    "split": "caesar",
+    "function": "def transform(s):\n    result = \"\"\n    shift = 4\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr((ord(ch) - ord(\"a\") + shift) % 26 + ord(\"a\"))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr((ord(ch) - ord(\"A\") + shift) % 26 + ord(\"A\"))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation is a Caesar cipher with a fixed shift of 4 positions forward in the alphabet. For each character in the input string, lowercase letters are shifted within the 'a'-'z' range and uppercase letters within the 'A'-'Z' range, while non-alphabetic characters remain unchanged. For example, in 'allegretto', 'a' becomes 'e' (1+4=5th letter) and 'l' becomes 'p' (12+4=16th letter), confirming the +4 shift across all examples."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "shipsmith",
+          "output": "vklsvplwk"
+        },
+        {
+          "input": "dropwort",
+          "output": "gurszruw"
+        },
+        {
+          "input": "philatelic",
+          "output": "sklodwholf"
+        },
+        {
+          "input": "Deborah",
+          "output": "Gherudk"
+        },
+        {
+          "input": "unfertile",
+          "output": "xqihuwloh"
+        },
+        {
+          "input": "amusette",
+          "output": "dpxvhwwh"
+        },
+        {
+          "input": "cheerly",
+          "output": "fkhhuob"
+        },
+        {
+          "input": "mayday",
+          "output": "pdbgdb"
+        },
+        {
+          "input": "Stephana",
+          "output": "Vwhskdqd"
+        },
+        {
+          "input": "Pluto",
+          "output": "Soxwr"
+        }
+      ],
+      "ood": [
+        {
+          "input": "uaibgay",
+          "output": "xdlejdb"
+        },
+        {
+          "input": "tgkinosr",
+          "output": "wjnlqrvu"
+        },
+        {
+          "input": "erylvo",
+          "output": "huboyr"
+        },
+        {
+          "input": "leseseds",
+          "output": "ohvhvhgv"
+        },
+        {
+          "input": "caacl",
+          "output": "fddfo"
+        }
+      ],
+      "noise": [
+        {
+          "input": "Discordia",
+          "output": "cpbbregld"
+        },
+        {
+          "input": "eulogical",
+          "output": "hxorjlkio"
+        },
+        {
+          "input": "tubbal",
+          "output": "wjeewo"
+        },
+        {
+          "input": "nugget",
+          "output": "lxjhgw"
+        },
+        {
+          "input": "strandless",
+          "output": "vquwqgohve"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "fibrillar",
+        "output": "ileuloodu"
+      },
+      {
+        "input": "credit",
+        "output": "fuhglw"
+      },
+      {
+        "input": "presspack",
+        "output": "suhvvsdfn"
+      },
+      {
+        "input": "zoolatria",
+        "output": "crrodwuld"
+      },
+      {
+        "input": "outworker",
+        "output": "rxwzrunhu"
+      },
+      {
+        "input": "Anguilla",
+        "output": "Dqjxlood"
+      },
+      {
+        "input": "arcticward",
+        "output": "dufwlfzdug"
+      },
+      {
+        "input": "Maytenus",
+        "output": "Pdbwhqxv"
+      },
+      {
+        "input": "bloodworm",
+        "output": "eorrgzrup"
+      },
+      {
+        "input": "singled",
+        "output": "vlqjohg"
+      }
+    ],
+    "index": 27,
+    "split": "caesar",
+    "function": "def transform(s):\n    result = \"\"\n    shift = 3\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr((ord(ch) - ord(\"a\") + shift) % 26 + ord(\"a\"))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr((ord(ch) - ord(\"A\") + shift) % 26 + ord(\"A\"))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation is a Caesar cipher with a fixed shift of 3 positions forward in the alphabet. For each character in the input string, lowercase letters are shifted within the 'a'-'z' range and uppercase letters are shifted within the 'A'-'Z' range. Non-alphabetic characters remain unchanged. This rule consistently explains the examples, such as 's' becoming 'v' and 'D' becoming 'G', while maintaining the case of the original character."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "snig",
+          "output": "hmrt"
+        },
+        {
+          "input": "beta",
+          "output": "yvgz"
+        },
+        {
+          "input": "telotype",
+          "output": "gvolgbkv"
+        },
+        {
+          "input": "darshana",
+          "output": "wzihszmz"
+        },
+        {
+          "input": "detur",
+          "output": "wvgfi"
+        },
+        {
+          "input": "gonococcus",
+          "output": "tlmlxlxxfh"
+        },
+        {
+          "input": "toparch",
+          "output": "glkzixs"
+        },
+        {
+          "input": "Greekess",
+          "output": "Tivvpvhh"
+        },
+        {
+          "input": "Molinism",
+          "output": "Nlormrhn"
+        },
+        {
+          "input": "jauntiness",
+          "output": "qzfmgrmvhh"
+        }
+      ],
+      "ood": [
+        {
+          "input": "ytonahired",
+          "output": "bglmzsrivw"
+        },
+        {
+          "input": "ctradfe",
+          "output": "xgizwuv"
+        },
+        {
+          "input": "thsghplii",
+          "output": "gshtskorr"
+        },
+        {
+          "input": "oerlrvet",
+          "output": "lvioievg"
+        },
+        {
+          "input": "mnPregaee",
+          "output": "nmKivtzvv"
+        }
+      ],
+      "noise": [
+        {
+          "input": "underhum",
+          "output": "fmrvisfn"
+        },
+        {
+          "input": "swot",
+          "output": "udsg"
+        },
+        {
+          "input": "conatus",
+          "output": "xlhzgfh"
+        },
+        {
+          "input": "kilneye",
+          "output": "xrcjrbv"
+        },
+        {
+          "input": "bossing",
+          "output": "pfhhrmt"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "unbonneted",
+        "output": "fmylmmvgvw"
+      },
+      {
+        "input": "myself",
+        "output": "nbhvou"
+      },
+      {
+        "input": "araucarian",
+        "output": "zizfxzirzm"
+      },
+      {
+        "input": "dodecant",
+        "output": "wlwvxzmg"
+      },
+      {
+        "input": "Allhallow",
+        "output": "Zooszoold"
+      },
+      {
+        "input": "abuseful",
+        "output": "zyfhvufo"
+      },
+      {
+        "input": "sialagogue",
+        "output": "hrzoztltfv"
+      },
+      {
+        "input": "condole",
+        "output": "xlmwlov"
+      },
+      {
+        "input": "saltus",
+        "output": "hzogfh"
+      },
+      {
+        "input": "errand",
+        "output": "viizmw"
+      }
+    ],
+    "index": 99,
+    "split": "atbash",
+    "function": "def transform(s):\n    result = \"\"\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr(ord(\"z\") - (ord(ch) - ord(\"a\")))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr(ord(\"Z\") - (ord(ch) - ord(\"A\")))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation follows the Atbash cipher, where each letter is replaced by its symmetric counterpart in the alphabet (A maps to Z, B to Y, etc.). This rule is applied consistently across all examples, preserving the case of the characters while leaving non-alphabetic characters unchanged. For instance, in 'beta', 'b' (2nd letter) becomes 'y' (25th letter), and in 'Greekess', the uppercase 'G' becomes 'T'. The transformation is a direct character-level mapping that reverses the position of each letter within the 26-character English alphabet."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "nemoricole",
+          "output": "sjrtwnhtqj"
+        },
+        {
+          "input": "Louie",
+          "output": "Qtznj"
+        },
+        {
+          "input": "untailed",
+          "output": "zsyfnqji"
+        },
+        {
+          "input": "vapory",
+          "output": "afutwd"
+        },
+        {
+          "input": "girlhood",
+          "output": "lnwqmtti"
+        },
+        {
+          "input": "plumosely",
+          "output": "uqzrtxjqd"
+        },
+        {
+          "input": "lairless",
+          "output": "qfnwqjxx"
+        },
+        {
+          "input": "Sphenisci",
+          "output": "Xumjsnxhn"
+        },
+        {
+          "input": "luminate",
+          "output": "qzrnsfyj"
+        },
+        {
+          "input": "pansophic",
+          "output": "ufsxtumnh"
+        }
+      ],
+      "ood": [
+        {
+          "input": "buts",
+          "output": "gzyx"
+        },
+        {
+          "input": "venedilu",
+          "output": "ajsjinqz"
+        },
+        {
+          "input": "ioleaoc",
+          "output": "ntqjfth"
+        },
+        {
+          "input": "hwomwaanct",
+          "output": "mbtrbffshy"
+        },
+        {
+          "input": "ucfnafsree",
+          "output": "zhksfkxwjj"
+        }
+      ],
+      "noise": [
+        {
+          "input": "carpentry",
+          "output": "fquphblub"
+        },
+        {
+          "input": "alastrim",
+          "output": "jtdmwulp"
+        },
+        {
+          "input": "noneatable",
+          "output": "qrqhfsdeoh"
+        },
+        {
+          "input": "clouty",
+          "output": "qiixwk"
+        },
+        {
+          "input": "aurigal",
+          "output": "dyjljdo"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "Platonism",
+        "output": "Uqfytsnxr"
+      },
+      {
+        "input": "podsolize",
+        "output": "utixtqnej"
+      },
+      {
+        "input": "alarmedly",
+        "output": "fqfwrjiqd"
+      },
+      {
+        "input": "Basilics",
+        "output": "Gfxnqnhx"
+      },
+      {
+        "input": "paleolithy",
+        "output": "ufqjtqnymd"
+      },
+      {
+        "input": "upclimb",
+        "output": "zuhqnrg"
+      },
+      {
+        "input": "Odynerus",
+        "output": "Tidsjwzx"
+      },
+      {
+        "input": "sustain",
+        "output": "xzxyfns"
+      },
+      {
+        "input": "moraine",
+        "output": "rtwfnsj"
+      },
+      {
+        "input": "vitalizing",
+        "output": "anyfqnensl"
+      }
+    ],
+    "index": 97,
+    "split": "caesar",
+    "function": "def transform(s):\n    result = \"\"\n    shift = 5\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr((ord(ch) - ord(\"a\") + shift) % 26 + ord(\"a\"))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr((ord(ch) - ord(\"A\") + shift) % 26 + ord(\"A\"))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation is a Caesar cipher with a fixed shift of 5 positions forward in the alphabet. For each character in the input string, lowercase letters are shifted within the 'a'-'z' range and uppercase letters within the 'A'-'Z' range, while non-alphabetic characters remain unchanged. For example, in 'nemoricole', 'n' (14th letter) becomes 's' (19th letter), and in 'Louie', 'L' becomes 'Q', confirming the shift is consistent across both cases."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "atokous",
+          "output": "zglplfh"
+        },
+        {
+          "input": "trichitic",
+          "output": "girxsrgrx"
+        },
+        {
+          "input": "thirstle",
+          "output": "gsrihgov"
+        },
+        {
+          "input": "tweil",
+          "output": "gdvro"
+        },
+        {
+          "input": "protovum",
+          "output": "kilglefn"
+        },
+        {
+          "input": "afterend",
+          "output": "zugvivmw"
+        },
+        {
+          "input": "cachalot",
+          "output": "xzxszolg"
+        },
+        {
+          "input": "message",
+          "output": "nvhhztv"
+        },
+        {
+          "input": "greenage",
+          "output": "tivvmztv"
+        },
+        {
+          "input": "pleaseman",
+          "output": "kovzhvnzm"
+        }
+      ],
+      "ood": [
+        {
+          "input": "atrtyuip",
+          "output": "zgigbfrk"
+        },
+        {
+          "input": "symccini",
+          "output": "hbnxxrmr"
+        },
+        {
+          "input": "esat",
+          "output": "vhzg"
+        },
+        {
+          "input": "emolg",
+          "output": "vnlot"
+        },
+        {
+          "input": "laacihanr",
+          "output": "ozzxrszmi"
+        }
+      ],
+      "noise": [
+        {
+          "input": "fervor",
+          "output": "gvvtki"
+        },
+        {
+          "input": "overking",
+          "output": "uavyermt"
+        },
+        {
+          "input": "acridan",
+          "output": "znirpis"
+        },
+        {
+          "input": "monopitch",
+          "output": "nlmlkeixs"
+        },
+        {
+          "input": "babbitter",
+          "output": "ydyyrxgvi"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "entente",
+        "output": "vmgvmgv"
+      },
+      {
+        "input": "slowish",
+        "output": "holdrhs"
+      },
+      {
+        "input": "benzole",
+        "output": "yvmalov"
+      },
+      {
+        "input": "Kanawari",
+        "output": "Pzmzdzir"
+      },
+      {
+        "input": "speuchan",
+        "output": "hkvfxszm"
+      },
+      {
+        "input": "carter",
+        "output": "xzigvi"
+      },
+      {
+        "input": "pickthatch",
+        "output": "krxpgszgxs"
+      },
+      {
+        "input": "meticulous",
+        "output": "nvgrxfolfh"
+      },
+      {
+        "input": "gonnardite",
+        "output": "tlmmziwrgv"
+      },
+      {
+        "input": "stover",
+        "output": "hglevi"
+      }
+    ],
+    "index": 42,
+    "split": "atbash",
+    "function": "def transform(s):\n    result = \"\"\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr(ord(\"z\") - (ord(ch) - ord(\"a\")))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr(ord(\"Z\") - (ord(ch) - ord(\"A\")))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation follows the Atbash cipher, where each letter is replaced by its opposite in the alphabet (e.g., 'a' becomes 'z', 'b' becomes 'y'). This is evident in Example 8, where 'message' becomes 'nvhhztv' ('m' maps to 'n', 'e' to 'v', 's' to 'h', etc.). The rule applies independently to lowercase and uppercase letters while preserving non-alphabetic characters. This mapping consistently accounts for all provided examples, such as 'atokous' becoming 'zglplfh' and 'afterend' becoming 'zugvivmw'."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "parry",
+          "output": "kziib"
+        },
+        {
+          "input": "vitrioline",
+          "output": "ergirlormv"
+        },
+        {
+          "input": "jumpsome",
+          "output": "qfnkhlnv"
+        },
+        {
+          "input": "isotype",
+          "output": "rhlgbkv"
+        },
+        {
+          "input": "realty",
+          "output": "ivzogb"
+        },
+        {
+          "input": "tailoress",
+          "output": "gzrolivhh"
+        },
+        {
+          "input": "Ethiop",
+          "output": "Vgsrlk"
+        },
+        {
+          "input": "sciniph",
+          "output": "hxrmrks"
+        },
+        {
+          "input": "preslavery",
+          "output": "kivhozevib"
+        },
+        {
+          "input": "watery",
+          "output": "dzgvib"
+        }
+      ],
+      "ood": [
+        {
+          "input": "aspalim",
+          "output": "zhkzorn"
+        },
+        {
+          "input": "icorgn",
+          "output": "rxlitm"
+        },
+        {
+          "input": "etidtf",
+          "output": "vgrwgu"
+        },
+        {
+          "input": "ooytmerlc",
+          "output": "llbgnviox"
+        },
+        {
+          "input": "omobrist",
+          "output": "lnlyirhg"
+        }
+      ],
+      "noise": [
+        {
+          "input": "benignly",
+          "output": "avcctmrh"
+        },
+        {
+          "input": "Mangar",
+          "output": "Nzmvzi"
+        },
+        {
+          "input": "Araneoidea",
+          "output": "nebmlldzvz"
+        },
+        {
+          "input": "greenyard",
+          "output": "tivvmbzgw"
+        },
+        {
+          "input": "periwinkle",
+          "output": "fvhrhvqpux"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "navarchy",
+        "output": "mzezixsb"
+      },
+      {
+        "input": "fumigatory",
+        "output": "ufnrtzglib"
+      },
+      {
+        "input": "mura",
+        "output": "nfiz"
+      },
+      {
+        "input": "dystocial",
+        "output": "wbhglxrzo"
+      },
+      {
+        "input": "Tussilago",
+        "output": "Gfhhroztl"
+      },
+      {
+        "input": "punctuist",
+        "output": "kfmxgfrhg"
+      },
+      {
+        "input": "unsticking",
+        "output": "fmhgrxprmt"
+      },
+      {
+        "input": "Anasazi",
+        "output": "Zmzhzar"
+      },
+      {
+        "input": "cynipidous",
+        "output": "xbmrkrwlfh"
+      },
+      {
+        "input": "chew",
+        "output": "xsvd"
+      }
+    ],
+    "index": 39,
+    "split": "atbash",
+    "function": "def transform(s):\n    result = \"\"\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr(ord(\"z\") - (ord(ch) - ord(\"a\")))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr(ord(\"Z\") - (ord(ch) - ord(\"A\")))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation is a classic Atbash cipher, where each letter is mapped to its opposite in the alphabet (A to Z, B to Y, etc.). This is achieved by subtracting the character's position in the alphabet from the end of the alphabet range. The rule preserves case, mapping lowercase letters to lowercase and uppercase letters to uppercase, while leaving non-alphabetic characters unchanged. For example, 'p' (16th letter) becomes 'k' (11th letter from the end), and 'E' becomes 'V'."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "pointmaker",
+          "output": "qpjounblfs"
+        },
+        {
+          "input": "epitela",
+          "output": "fqjufmb"
+        },
+        {
+          "input": "Goodenia",
+          "output": "Hppefojb"
+        },
+        {
+          "input": "antemedial",
+          "output": "boufnfejbm"
+        },
+        {
+          "input": "agateware",
+          "output": "bhbufxbsf"
+        },
+        {
+          "input": "tigress",
+          "output": "ujhsftt"
+        },
+        {
+          "input": "dessil",
+          "output": "efttjm"
+        },
+        {
+          "input": "bespout",
+          "output": "cftqpvu"
+        },
+        {
+          "input": "submentum",
+          "output": "tvcnfouvn"
+        },
+        {
+          "input": "crackskull",
+          "output": "dsbdltlvmm"
+        }
+      ],
+      "ood": [
+        {
+          "input": "ltbiogmu",
+          "output": "mucjphnv"
+        },
+        {
+          "input": "cluflafe",
+          "output": "dmvgmbgf"
+        },
+        {
+          "input": "uluzG",
+          "output": "vmvaH"
+        },
+        {
+          "input": "wraAa",
+          "output": "xsbBb"
+        },
+        {
+          "input": "hknoyboda",
+          "output": "ilopzcpeb"
+        }
+      ],
+      "noise": [
+        {
+          "input": "sneaker",
+          "output": "vqhhscb"
+        },
+        {
+          "input": "deminudity",
+          "output": "ghlovxgvwa"
+        },
+        {
+          "input": "hiddenite",
+          "output": "zlglhqlwh"
+        },
+        {
+          "input": "enarch",
+          "output": "kqgufk"
+        },
+        {
+          "input": "befurred",
+          "output": "eqtxucmx"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "prounion",
+        "output": "qspvojpo"
+      },
+      {
+        "input": "uprights",
+        "output": "vqsjhiut"
+      },
+      {
+        "input": "whangee",
+        "output": "xibohff"
+      },
+      {
+        "input": "ashipboard",
+        "output": "btijqcpbse"
+      },
+      {
+        "input": "vetch",
+        "output": "wfudi"
+      },
+      {
+        "input": "argenol",
+        "output": "bshfopm"
+      },
+      {
+        "input": "samarra",
+        "output": "tbnbssb"
+      },
+      {
+        "input": "nounize",
+        "output": "opvojaf"
+      },
+      {
+        "input": "Ziphiinae",
+        "output": "Ajqijjobf"
+      },
+      {
+        "input": "limuloid",
+        "output": "mjnvmpje"
+      }
+    ],
+    "index": 29,
+    "split": "caesar",
+    "function": "def transform(s):\n    result = \"\"\n    shift = 1\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr((ord(ch) - ord(\"a\") + shift) % 26 + ord(\"a\"))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr((ord(ch) - ord(\"A\") + shift) % 26 + ord(\"A\"))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation is a Caesar cipher with a fixed shift of +1. Each letter in the input string is replaced by the next letter in the alphabet (e.g., 'a' becomes 'b', 'p' becomes 'q', 'G' becomes 'H'). The rule preserves the case of the characters and leaves non-alphabetic characters unchanged. This pattern is consistent across all examples, such as 'pointmaker' becoming 'qpjounblfs' and 'Goodenia' becoming 'Hppefojb'."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "orgiac",
+          "output": "pshjbd"
+        },
+        {
+          "input": "transpose",
+          "output": "usbotqptf"
+        },
+        {
+          "input": "tayra",
+          "output": "ubzsb"
+        },
+        {
+          "input": "flossing",
+          "output": "gmpttjoh"
+        },
+        {
+          "input": "hypoderm",
+          "output": "izqpefsn"
+        },
+        {
+          "input": "draft",
+          "output": "esbgu"
+        },
+        {
+          "input": "concavity",
+          "output": "dpodbwjuz"
+        },
+        {
+          "input": "thicklips",
+          "output": "uijdlmjqt"
+        },
+        {
+          "input": "seascout",
+          "output": "tfbtdpvu"
+        },
+        {
+          "input": "yeggman",
+          "output": "zfhhnbo"
+        }
+      ],
+      "ood": [
+        {
+          "input": "edjurg",
+          "output": "fekvsh"
+        },
+        {
+          "input": "eonutlely",
+          "output": "fpovumfmz"
+        },
+        {
+          "input": "emasuer",
+          "output": "fnbtvfs"
+        },
+        {
+          "input": "lieitratel",
+          "output": "mjfjusbufm"
+        },
+        {
+          "input": "Lpeoasiils",
+          "output": "Mqfpbtjjmt"
+        }
+      ],
+      "noise": [
+        {
+          "input": "Lelia",
+          "output": "qhojb"
+        },
+        {
+          "input": "orpheonist",
+          "output": "rusmhrqlvw"
+        },
+        {
+          "input": "employless",
+          "output": "ajlodbkhvk"
+        },
+        {
+          "input": "epipodial",
+          "output": "hslzmekvo"
+        },
+        {
+          "input": "imbannered",
+          "output": "lxxwoqlbhb"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "ranch",
+        "output": "sbodi"
+      },
+      {
+        "input": "billycock",
+        "output": "cjmmzdpdl"
+      },
+      {
+        "input": "dairymaid",
+        "output": "ebjsznbje"
+      },
+      {
+        "input": "knopped",
+        "output": "lopqqfe"
+      },
+      {
+        "input": "Shan",
+        "output": "Tibo"
+      },
+      {
+        "input": "ringbolt",
+        "output": "sjohcpmu"
+      },
+      {
+        "input": "alumnus",
+        "output": "bmvnovt"
+      },
+      {
+        "input": "undoneness",
+        "output": "voepofoftt"
+      },
+      {
+        "input": "rockfall",
+        "output": "spdlgbmm"
+      },
+      {
+        "input": "unwrathful",
+        "output": "voxsbuigvm"
+      }
+    ],
+    "index": 14,
+    "split": "caesar",
+    "function": "def transform(s):\n    result = \"\"\n    shift = 1\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr((ord(ch) - ord(\"a\") + shift) % 26 + ord(\"a\"))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr((ord(ch) - ord(\"A\") + shift) % 26 + ord(\"A\"))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation is a Caesar cipher with a fixed shift of +1. Each letter in the input string is replaced by the character immediately following it in the alphabet (e.g., 'a' becomes 'b', 'z' becomes 'a'). This rule consistently explains all examples, such as 'draft' becoming 'esbgu' and 'yeggman' becoming 'zfhhnbo'. The implementation preserves the case of letters and leaves non-alphabetic characters unchanged."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "falsidical",
+          "output": "hcnukfkecn"
+        },
+        {
+          "input": "disconform",
+          "output": "fkueqphqto"
+        },
+        {
+          "input": "wastrife",
+          "output": "ycuvtkhg"
+        },
+        {
+          "input": "Canossa",
+          "output": "Ecpquuc"
+        },
+        {
+          "input": "Philomela",
+          "output": "Rjknqognc"
+        },
+        {
+          "input": "unciliated",
+          "output": "wpeknkcvgf"
+        },
+        {
+          "input": "nontreated",
+          "output": "pqpvtgcvgf"
+        },
+        {
+          "input": "Rinde",
+          "output": "Tkpfg"
+        },
+        {
+          "input": "pernasal",
+          "output": "rgtpcucn"
+        },
+        {
+          "input": "courtman",
+          "output": "eqwtvocp"
+        }
+      ],
+      "ood": [
+        {
+          "input": "ndaiorct",
+          "output": "pfckqtev"
+        },
+        {
+          "input": "ssyesllin",
+          "output": "uuagunnkp"
+        },
+        {
+          "input": "irgsnociss",
+          "output": "ktiupqekuu"
+        },
+        {
+          "input": "snplruuoft",
+          "output": "uprntwwqhv"
+        },
+        {
+          "input": "geeisn",
+          "output": "iggkup"
+        }
+      ],
+      "noise": [
+        {
+          "input": "onement",
+          "output": "rghplqw"
+        },
+        {
+          "input": "Mesua",
+          "output": "shylu"
+        },
+        {
+          "input": "libelant",
+          "output": "lreoocqw"
+        },
+        {
+          "input": "Solidago",
+          "output": "Vrofypma"
+        },
+        {
+          "input": "browntail",
+          "output": "ehtegwdlo"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "pistoleer",
+        "output": "rkuvqnggt"
+      },
+      {
+        "input": "skiffling",
+        "output": "umkhhnkpi"
+      },
+      {
+        "input": "solitarian",
+        "output": "uqnkvctkcp"
+      },
+      {
+        "input": "Hiroyuki",
+        "output": "Jktqawmk"
+      },
+      {
+        "input": "vellala",
+        "output": "xgnncnc"
+      },
+      {
+        "input": "askew",
+        "output": "cumgy"
+      },
+      {
+        "input": "endomixis",
+        "output": "gpfqokzku"
+      },
+      {
+        "input": "arbiter",
+        "output": "ctdkvgt"
+      },
+      {
+        "input": "creodont",
+        "output": "etgqfqpv"
+      },
+      {
+        "input": "aboon",
+        "output": "cdqqp"
+      }
+    ],
+    "index": 40,
+    "split": "caesar",
+    "function": "def transform(s):\n    result = \"\"\n    shift = 2\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr((ord(ch) - ord(\"a\") + shift) % 26 + ord(\"a\"))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr((ord(ch) - ord(\"A\") + shift) % 26 + ord(\"A\"))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation is a Caesar cipher with a fixed shift of +2. Each lowercase letter is replaced by the letter two positions ahead in the alphabet (e.g., 'f' becomes 'h', 'a' becomes 'c'), and each uppercase letter follows the same rule (e.g., 'C' becomes 'E'). Non-alphabetic characters remain unchanged, and the shift wraps around the end of the alphabet (e.g., 'y' would become 'a'). This rule consistently explains all provided examples, such as 'falsidical' mapping to 'hcnukfkecn'."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "schemist",
+          "output": "hxsvnrhg"
+        },
+        {
+          "input": "redskin",
+          "output": "ivwhprm"
+        },
+        {
+          "input": "unfatted",
+          "output": "fmuzggvw"
+        },
+        {
+          "input": "eventful",
+          "output": "vevmgufo"
+        },
+        {
+          "input": "revivatory",
+          "output": "iverezglib"
+        },
+        {
+          "input": "numud",
+          "output": "mfnfw"
+        },
+        {
+          "input": "merocyte",
+          "output": "nvilxbgv"
+        },
+        {
+          "input": "bensel",
+          "output": "yvmhvo"
+        },
+        {
+          "input": "dietic",
+          "output": "wrvgrx"
+        },
+        {
+          "input": "mioplasmia",
+          "output": "nrlkozhnrz"
+        }
+      ],
+      "ood": [
+        {
+          "input": "niAano",
+          "output": "mrZzml"
+        },
+        {
+          "input": "ynzogi",
+          "output": "bmaltr"
+        },
+        {
+          "input": "rstuhe",
+          "output": "ihgfsv"
+        },
+        {
+          "input": "lyfchyi",
+          "output": "obuxsbr"
+        },
+        {
+          "input": "oldicyxryh",
+          "output": "lowrxbcibs"
+        }
+      ],
+      "noise": [
+        {
+          "input": "decreet",
+          "output": "vtxivvg"
+        },
+        {
+          "input": "lemology",
+          "output": "odvfgjtb"
+        },
+        {
+          "input": "outlung",
+          "output": "lfhvfmt"
+        },
+        {
+          "input": "gerundive",
+          "output": "tvimmyrev"
+        },
+        {
+          "input": "blackishly",
+          "output": "jpuxnrhaoh"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "cuppy",
+        "output": "xfkkb"
+      },
+      {
+        "input": "blowup",
+        "output": "yoldfk"
+      },
+      {
+        "input": "sanidine",
+        "output": "hzmrwrmv"
+      },
+      {
+        "input": "understain",
+        "output": "fmwvihgzrm"
+      },
+      {
+        "input": "obstetrix",
+        "output": "lyhgvgirc"
+      },
+      {
+        "input": "podurid",
+        "output": "klwfirw"
+      },
+      {
+        "input": "upmaking",
+        "output": "fknzprmt"
+      },
+      {
+        "input": "resignee",
+        "output": "ivhrtmvv"
+      },
+      {
+        "input": "mawk",
+        "output": "nzdp"
+      },
+      {
+        "input": "rejumble",
+        "output": "ivqfnyov"
+      }
+    ],
+    "index": 69,
+    "split": "atbash",
+    "function": "def transform(s):\n    result = \"\"\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr(ord(\"z\") - (ord(ch) - ord(\"a\")))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr(ord(\"Z\") - (ord(ch) - ord(\"A\")))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation follows the Atbash cipher, where each letter is replaced by its opposite in the alphabet (e.g., 'a' becomes 'z', 'b' becomes 'y'). This mapping is applied consistently across all examples, such as 's' becoming 'h' and 'c' becoming 'x' in 'schemist'. The rule preserves the case of the characters and leaves non-alphabetic characters unchanged. This character-level mapping accounts for all outputs and generalizes to any string input."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "netheist",
+          "output": "ofuifjtu"
+        },
+        {
+          "input": "aspidinol",
+          "output": "btqjejopm"
+        },
+        {
+          "input": "minge",
+          "output": "njohf"
+        },
+        {
+          "input": "updraw",
+          "output": "vqesbx"
+        },
+        {
+          "input": "deworm",
+          "output": "efxpsn"
+        },
+        {
+          "input": "bellpull",
+          "output": "cfmmqvmm"
+        },
+        {
+          "input": "Pholadidae",
+          "output": "Qipmbejebf"
+        },
+        {
+          "input": "altar",
+          "output": "bmubs"
+        },
+        {
+          "input": "forsaker",
+          "output": "gpstblfs"
+        },
+        {
+          "input": "chola",
+          "output": "dipmb"
+        }
+      ],
+      "ood": [
+        {
+          "input": "llit",
+          "output": "mmju"
+        },
+        {
+          "input": "ifsilWcfty",
+          "output": "jgtjmXdguz"
+        },
+        {
+          "input": "eglriaznu",
+          "output": "fhmsjbaov"
+        },
+        {
+          "input": "ooyoidlgmc",
+          "output": "ppzpjemhnd"
+        },
+        {
+          "input": "sssi",
+          "output": "tttj"
+        }
+      ],
+      "noise": [
+        {
+          "input": "unmade",
+          "output": "xdzddh"
+        },
+        {
+          "input": "foremost",
+          "output": "sruhercw"
+        },
+        {
+          "input": "prepatent",
+          "output": "suhwdwhqg"
+        },
+        {
+          "input": "allochezia",
+          "output": "ptaqfkhclv"
+        },
+        {
+          "input": "dull",
+          "output": "gbwo"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "trigonally",
+        "output": "usjhpobmmz"
+      },
+      {
+        "input": "canoodler",
+        "output": "dboppemfs"
+      },
+      {
+        "input": "embolize",
+        "output": "fncpmjaf"
+      },
+      {
+        "input": "byous",
+        "output": "czpvt"
+      },
+      {
+        "input": "gigful",
+        "output": "hjhgvm"
+      },
+      {
+        "input": "finitely",
+        "output": "gjojufmz"
+      },
+      {
+        "input": "pasterned",
+        "output": "qbtufsofe"
+      },
+      {
+        "input": "epideictic",
+        "output": "fqjefjdujd"
+      },
+      {
+        "input": "decreement",
+        "output": "efdsffnfou"
+      },
+      {
+        "input": "petalous",
+        "output": "qfubmpvt"
+      }
+    ],
+    "index": 23,
+    "split": "caesar",
+    "function": "def transform(s):\n    result = \"\"\n    shift = 1\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr((ord(ch) - ord(\"a\") + shift) % 26 + ord(\"a\"))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr((ord(ch) - ord(\"A\") + shift) % 26 + ord(\"A\"))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation is a Caesar cipher with a fixed shift of +1. Each letter in the input string is replaced by the character immediately following it in the alphabet (e.g., 'a' becomes 'b', 'n' becomes 'o', 'z' becomes 'a'). This rule applies consistently across all examples, maintaining the case of the original character while leaving non-alphabetic characters unchanged."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "storeroom",
+          "output": "hglivilln"
+        },
+        {
+          "input": "Scanian",
+          "output": "Hxzmrzm"
+        },
+        {
+          "input": "netter",
+          "output": "mvggvi"
+        },
+        {
+          "input": "involucral",
+          "output": "rmelofxizo"
+        },
+        {
+          "input": "yautia",
+          "output": "bzfgrz"
+        },
+        {
+          "input": "tenology",
+          "output": "gvmloltb"
+        },
+        {
+          "input": "lierne",
+          "output": "orvimv"
+        },
+        {
+          "input": "outcase",
+          "output": "lfgxzhv"
+        },
+        {
+          "input": "infatuator",
+          "output": "rmuzgfzgli"
+        },
+        {
+          "input": "cutter",
+          "output": "xfggvi"
+        }
+      ],
+      "ood": [
+        {
+          "input": "pgtiilosy",
+          "output": "ktgrrolhb"
+        },
+        {
+          "input": "hsigsesl",
+          "output": "shrthvho"
+        },
+        {
+          "input": "uemliaB",
+          "output": "fvnorzY"
+        },
+        {
+          "input": "eahyMel",
+          "output": "vzsbNvo"
+        },
+        {
+          "input": "sfeledu",
+          "output": "huvovwf"
+        }
+      ],
+      "noise": [
+        {
+          "input": "photoscope",
+          "output": "khsgndklkv"
+        },
+        {
+          "input": "Elatine",
+          "output": "jozmrmv"
+        },
+        {
+          "input": "Oxyaena",
+          "output": "bipinmz"
+        },
+        {
+          "input": "saboteur",
+          "output": "hazlzpfi"
+        },
+        {
+          "input": "overwoven",
+          "output": "qevudlsvm"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "Ribes",
+        "output": "Iryvh"
+      },
+      {
+        "input": "overhardy",
+        "output": "levisziwb"
+      },
+      {
+        "input": "prairiedom",
+        "output": "kizrirvwln"
+      },
+      {
+        "input": "Epigoni",
+        "output": "Vkrtlmr"
+      },
+      {
+        "input": "temp",
+        "output": "gvnk"
+      },
+      {
+        "input": "cabaho",
+        "output": "xzyzsl"
+      },
+      {
+        "input": "roading",
+        "output": "ilzwrmt"
+      },
+      {
+        "input": "beringite",
+        "output": "yvirmtrgv"
+      },
+      {
+        "input": "underpay",
+        "output": "fmwvikzb"
+      },
+      {
+        "input": "quiverleaf",
+        "output": "jfreviovzu"
+      }
+    ],
+    "index": 56,
+    "split": "atbash",
+    "function": "def transform(s):\n    result = \"\"\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr(ord(\"z\") - (ord(ch) - ord(\"a\")))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr(ord(\"Z\") - (ord(ch) - ord(\"A\")))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation follows the Atbash cipher, where each letter is replaced by its opposite in the alphabet (e.g., 'a' becomes 'z', 'b' becomes 'y'). This mapping is applied independently to both lowercase and uppercase letters, while non-alphabetic characters remain unchanged. For instance, in 'storeroom', 's' maps to 'h' and 't' maps to 'g', while in 'Scanian', the uppercase 'S' maps to 'H'. The rule consistently accounts for all character shifts across the provided examples and generalizes to any string input."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "vulpinism",
+          "output": "efokrmrhn"
+        },
+        {
+          "input": "unrambling",
+          "output": "fmiznyormt"
+        },
+        {
+          "input": "rooter",
+          "output": "illgvi"
+        },
+        {
+          "input": "ineducable",
+          "output": "rmvwfxzyov"
+        },
+        {
+          "input": "maeandrine",
+          "output": "nzvzmwirmv"
+        },
+        {
+          "input": "depthing",
+          "output": "wvkgsrmt"
+        },
+        {
+          "input": "Limosi",
+          "output": "Ornlhr"
+        },
+        {
+          "input": "parental",
+          "output": "kzivmgzo"
+        },
+        {
+          "input": "yirr",
+          "output": "brii"
+        },
+        {
+          "input": "starworm",
+          "output": "hgzidlin"
+        }
+      ],
+      "ood": [
+        {
+          "input": "rwlofoom",
+          "output": "idolulln"
+        },
+        {
+          "input": "tmresat",
+          "output": "gnivhzg"
+        },
+        {
+          "input": "mluc",
+          "output": "nofx"
+        },
+        {
+          "input": "emrci",
+          "output": "vnixr"
+        },
+        {
+          "input": "ypoocrsop",
+          "output": "bkllxihlk"
+        }
+      ],
+      "noise": [
+        {
+          "input": "stitchwork",
+          "output": "hgttxxdfip"
+        },
+        {
+          "input": "gymnogen",
+          "output": "vwjqnvvm"
+        },
+        {
+          "input": "phoronid",
+          "output": "hnlibvrw"
+        },
+        {
+          "input": "spiffy",
+          "output": "hnfbue"
+        },
+        {
+          "input": "inspire",
+          "output": "rmokriv"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "sense",
+        "output": "hvmhv"
+      },
+      {
+        "input": "nutation",
+        "output": "mfgzgrlm"
+      },
+      {
+        "input": "swartly",
+        "output": "hdzigob"
+      },
+      {
+        "input": "zant",
+        "output": "azmg"
+      },
+      {
+        "input": "shearhog",
+        "output": "hsvzislt"
+      },
+      {
+        "input": "crossrail",
+        "output": "xilhhizro"
+      },
+      {
+        "input": "Placoidei",
+        "output": "Kozxlrwvr"
+      },
+      {
+        "input": "pemphigus",
+        "output": "kvnksrtfh"
+      },
+      {
+        "input": "Lobularia",
+        "output": "Olyfozirz"
+      },
+      {
+        "input": "untaste",
+        "output": "fmgzhgv"
+      }
+    ],
+    "index": 96,
+    "split": "atbash",
+    "function": "def transform(s):\n    result = \"\"\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr(ord(\"z\") - (ord(ch) - ord(\"a\")))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr(ord(\"Z\") - (ord(ch) - ord(\"A\")))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation follows the Atbash cipher, a monoalphabetic substitution where the alphabet is reversed. Each letter is mapped to its symmetric counterpart: 'a' becomes 'z', 'b' becomes 'y', and so on. This rule applies independently to both lowercase and uppercase letters, while non-alphabetic characters remain unchanged. For example, in 'rooter', 'r' (18th letter) maps to 'i' (9th letter from the end), and in 'Limosi', the capital 'L' maps to 'O'."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "loca",
+          "output": "qthf"
+        },
+        {
+          "input": "estufa",
+          "output": "jxyzkf"
+        },
+        {
+          "input": "unwrought",
+          "output": "zsbwtzlmy"
+        },
+        {
+          "input": "setfast",
+          "output": "xjykfxy"
+        },
+        {
+          "input": "adrop",
+          "output": "fiwtu"
+        },
+        {
+          "input": "archliar",
+          "output": "fwhmqnfw"
+        },
+        {
+          "input": "shady",
+          "output": "xmfid"
+        },
+        {
+          "input": "resanction",
+          "output": "wjxfshynts"
+        },
+        {
+          "input": "caimakam",
+          "output": "hfnrfpfr"
+        },
+        {
+          "input": "marmorated",
+          "output": "rfwrtwfyji"
+        }
+      ],
+      "ood": [
+        {
+          "input": "imacfie",
+          "output": "nrfhknj"
+        },
+        {
+          "input": "vextreice",
+          "output": "ajcywjnhj"
+        },
+        {
+          "input": "kaipgen",
+          "output": "pfnuljs"
+        },
+        {
+          "input": "eiefdorblt",
+          "output": "jnjkitwgqy"
+        },
+        {
+          "input": "hirOutnear",
+          "output": "mnwTzysjfw"
+        }
+      ],
+      "noise": [
+        {
+          "input": "scrutinate",
+          "output": "vfuxwjqdwh"
+        },
+        {
+          "input": "hexahydric",
+          "output": "ksadkbgubf"
+        },
+        {
+          "input": "roily",
+          "output": "dblnb"
+        },
+        {
+          "input": "unbroad",
+          "output": "xqeuxhg"
+        },
+        {
+          "input": "casaun",
+          "output": "nvplxq"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "alevin",
+        "output": "fqjans"
+      },
+      {
+        "input": "tired",
+        "output": "ynwji"
+      },
+      {
+        "input": "tyromatous",
+        "output": "ydwtrfytzx"
+      },
+      {
+        "input": "elytral",
+        "output": "jqdywfq"
+      },
+      {
+        "input": "werefox",
+        "output": "bjwjktc"
+      },
+      {
+        "input": "headphone",
+        "output": "mjfiumtsj"
+      },
+      {
+        "input": "colure",
+        "output": "htqzwj"
+      },
+      {
+        "input": "crusader",
+        "output": "hwzxfijw"
+      },
+      {
+        "input": "Quillagua",
+        "output": "Vznqqflzf"
+      },
+      {
+        "input": "Cactus",
+        "output": "Hfhyzx"
+      }
+    ],
+    "index": 31,
+    "split": "caesar",
+    "function": "def transform(s):\n    result = \"\"\n    shift = 5\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr((ord(ch) - ord(\"a\") + shift) % 26 + ord(\"a\"))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr((ord(ch) - ord(\"A\") + shift) % 26 + ord(\"A\"))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation is a Caesar cipher with a fixed shift of +5. For each character in the input string, if it is a lowercase or uppercase letter, it is shifted forward by 5 positions in the alphabet, wrapping around from 'z' to 'a' or 'Z' to 'A'. For example, in 'loca', 'l' becomes 'q' (12+5=17), 'o' becomes 't' (15+5=20), 'c' becomes 'h' (3+5=8), and 'a' becomes 'f' (1+5=6). Non-alphabetic characters remain unchanged."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "unbowel",
+          "output": "yrfsaip"
+        },
+        {
+          "input": "tolerator",
+          "output": "xspivexsv"
+        },
+        {
+          "input": "warison",
+          "output": "aevmwsr"
+        },
+        {
+          "input": "souchy",
+          "output": "wsyglc"
+        },
+        {
+          "input": "fossilated",
+          "output": "jswwmpexih"
+        },
+        {
+          "input": "Trochila",
+          "output": "Xvsglmpe"
+        },
+        {
+          "input": "steal",
+          "output": "wxiep"
+        },
+        {
+          "input": "Aucaner",
+          "output": "Eygeriv"
+        },
+        {
+          "input": "nesslerize",
+          "output": "riwwpivmdi"
+        },
+        {
+          "input": "idiocratic",
+          "output": "mhmsgvexmg"
+        }
+      ],
+      "ood": [
+        {
+          "input": "dysnpoou",
+          "output": "hcwrtssy"
+        },
+        {
+          "input": "ssirchata",
+          "output": "wwmvglexe"
+        },
+        {
+          "input": "hppiaoly",
+          "output": "lttmespc"
+        },
+        {
+          "input": "inraleEizv",
+          "output": "mrvepiImdz"
+        },
+        {
+          "input": "trgi",
+          "output": "xvkm"
+        }
+      ],
+      "noise": [
+        {
+          "input": "Elkoshite",
+          "output": "Horrvclwh"
+        },
+        {
+          "input": "stokesite",
+          "output": "ekdzdrlwh"
+        },
+        {
+          "input": "orthopraxy",
+          "output": "ruwkrsudbb"
+        },
+        {
+          "input": "untuneably",
+          "output": "xqlfnideob"
+        },
+        {
+          "input": "harpooner",
+          "output": "zdygrrjtv"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "phases",
+        "output": "tlewiw"
+      },
+      {
+        "input": "Vulturidae",
+        "output": "Zypxyvmhei"
+      },
+      {
+        "input": "cirque",
+        "output": "gmvuyi"
+      },
+      {
+        "input": "engaud",
+        "output": "irkeyh"
+      },
+      {
+        "input": "siruped",
+        "output": "wmvytih"
+      },
+      {
+        "input": "agilawood",
+        "output": "ekmpeassh"
+      },
+      {
+        "input": "colectomy",
+        "output": "gspigxsqc"
+      },
+      {
+        "input": "pleuralgia",
+        "output": "tpiyvepkme"
+      },
+      {
+        "input": "lecaniid",
+        "output": "pigermmh"
+      },
+      {
+        "input": "moudieman",
+        "output": "qsyhmiqer"
+      }
+    ],
+    "index": 56,
+    "split": "caesar",
+    "function": "def transform(s):\n    result = \"\"\n    shift = 4\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr((ord(ch) - ord(\"a\") + shift) % 26 + ord(\"a\"))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr((ord(ch) - ord(\"A\") + shift) % 26 + ord(\"A\"))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation is a Caesar cipher with a fixed shift of 4 positions forward in the alphabet. For each character in the input string, lowercase letters are shifted within the 'a'-'z' range and uppercase letters within the 'A'-'Z' range, while non-alphabetic characters remain unchanged. For example, 'u' becomes 'y' (u+4), 'n' becomes 'r' (n+4), and 'T' becomes 'X' (T+4), consistently across all provided examples."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "presubsist",
+          "output": "rtguwdukuv"
+        },
+        {
+          "input": "volvulus",
+          "output": "xqnxwnwu"
+        },
+        {
+          "input": "baleen",
+          "output": "dcnggp"
+        },
+        {
+          "input": "penta",
+          "output": "rgpvc"
+        },
+        {
+          "input": "bisexually",
+          "output": "dkugzwcnna"
+        },
+        {
+          "input": "jument",
+          "output": "lwogpv"
+        },
+        {
+          "input": "hypotonic",
+          "output": "jarqvqpke"
+        },
+        {
+          "input": "Eudora",
+          "output": "Gwfqtc"
+        },
+        {
+          "input": "dictyogen",
+          "output": "fkevaqigp"
+        },
+        {
+          "input": "sloe",
+          "output": "unqg"
+        }
+      ],
+      "ood": [
+        {
+          "input": "itinyllia",
+          "output": "kvkpannkc"
+        },
+        {
+          "input": "luriheeskg",
+          "output": "nwtkjggumi"
+        },
+        {
+          "input": "elri",
+          "output": "gntk"
+        },
+        {
+          "input": "itlopry",
+          "output": "kvnqrta"
+        },
+        {
+          "input": "icdlnure",
+          "output": "kefnpwtg"
+        }
+      ],
+      "noise": [
+        {
+          "input": "glyoxylic",
+          "output": "jabrhbohf"
+        },
+        {
+          "input": "cadger",
+          "output": "bpgjhu"
+        },
+        {
+          "input": "makuk",
+          "output": "bshnn"
+        },
+        {
+          "input": "endotys",
+          "output": "bqgrrbf"
+        },
+        {
+          "input": "twankingly",
+          "output": "wrdwyvqpob"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "garum",
+        "output": "ictwo"
+      },
+      {
+        "input": "phenethyl",
+        "output": "rjgpgvjan"
+      },
+      {
+        "input": "Afghan",
+        "output": "Chijcp"
+      },
+      {
+        "input": "tricorn",
+        "output": "vtkeqtp"
+      },
+      {
+        "input": "crunchweed",
+        "output": "etwpejyggf"
+      },
+      {
+        "input": "oxidate",
+        "output": "qzkfcvg"
+      },
+      {
+        "input": "uncracked",
+        "output": "wpetcemgf"
+      },
+      {
+        "input": "aldazine",
+        "output": "cnfcbkpg"
+      },
+      {
+        "input": "cohosh",
+        "output": "eqjquj"
+      },
+      {
+        "input": "narcolepsy",
+        "output": "pcteqngrua"
+      }
+    ],
+    "index": 88,
+    "split": "caesar",
+    "function": "def transform(s):\n    result = \"\"\n    shift = 2\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr((ord(ch) - ord(\"a\") + shift) % 26 + ord(\"a\"))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr((ord(ch) - ord(\"A\") + shift) % 26 + ord(\"A\"))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation is a Caesar cipher with a fixed shift of +2. Each letter in the input string is replaced by the letter two positions ahead in the alphabet (e.g., 'p' becomes 'r', 'a' becomes 'c', and 'y' becomes 'a'). The rule preserves the case of the characters, while non-alphabetic characters remain unchanged. This pattern is consistent across all examples, such as 'sloe' becoming 'unqg' and 'Eudora' becoming 'Gwfqtc'."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "ghostfish",
+          "output": "hiptugjti"
+        },
+        {
+          "input": "swacken",
+          "output": "txbdlfo"
+        },
+        {
+          "input": "misprision",
+          "output": "njtqsjtjpo"
+        },
+        {
+          "input": "atactiform",
+          "output": "bubdujgpsn"
+        },
+        {
+          "input": "zoanthid",
+          "output": "apbouije"
+        },
+        {
+          "input": "craniotome",
+          "output": "dsbojpupnf"
+        },
+        {
+          "input": "Hentenian",
+          "output": "Ifoufojbo"
+        },
+        {
+          "input": "problem",
+          "output": "qspcmfn"
+        },
+        {
+          "input": "Entoprocta",
+          "output": "Foupqspdub"
+        },
+        {
+          "input": "dishouse",
+          "output": "ejtipvtf"
+        }
+      ],
+      "ood": [
+        {
+          "input": "aUtiop",
+          "output": "bVujpq"
+        },
+        {
+          "input": "baoitve",
+          "output": "cbpjuwf"
+        },
+        {
+          "input": "aBozryo",
+          "output": "bCpaszp"
+        },
+        {
+          "input": "etaVoni",
+          "output": "fubWpoj"
+        },
+        {
+          "input": "gTiwa",
+          "output": "hUjxb"
+        }
+      ],
+      "noise": [
+        {
+          "input": "uncropped",
+          "output": "bqfurssbg"
+        },
+        {
+          "input": "euchrone",
+          "output": "hxokujqm"
+        },
+        {
+          "input": "Annette",
+          "output": "Dwqpqwg"
+        },
+        {
+          "input": "Glagolitsa",
+          "output": "jocjrolfvd"
+        },
+        {
+          "input": "astatic",
+          "output": "dvwoulf"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "chronicler",
+        "output": "dispojdmfs"
+      },
+      {
+        "input": "thixle",
+        "output": "uijymf"
+      },
+      {
+        "input": "fructuous",
+        "output": "gsvduvpvt"
+      },
+      {
+        "input": "Ophiobolus",
+        "output": "Pqijpcpmvt"
+      },
+      {
+        "input": "ballasting",
+        "output": "cbmmbtujoh"
+      },
+      {
+        "input": "subregion",
+        "output": "tvcsfhjpo"
+      },
+      {
+        "input": "Omagua",
+        "output": "Pnbhvb"
+      },
+      {
+        "input": "unmatured",
+        "output": "vonbuvsfe"
+      },
+      {
+        "input": "Mahometry",
+        "output": "Nbipnfusz"
+      },
+      {
+        "input": "pelvimetry",
+        "output": "qfmwjnfusz"
+      }
+    ],
+    "index": 39,
+    "split": "caesar",
+    "function": "def transform(s):\n    result = \"\"\n    shift = 1\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr((ord(ch) - ord(\"a\") + shift) % 26 + ord(\"a\"))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr((ord(ch) - ord(\"A\") + shift) % 26 + ord(\"A\"))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation is a Caesar cipher with a fixed shift of +1. Each letter in the input string is replaced by the next letter in the alphabet, with 'z' wrapping around to 'a' and 'Z' wrapping around to 'A'. Non-alphabetic characters remain unchanged. This rule consistently explains all examples, such as 'ghostfish' becoming 'hiptugjti' and 'zoanthid' becoming 'apbouije'."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "glaiket",
+          "output": "hmbjlfu"
+        },
+        {
+          "input": "leguminous",
+          "output": "mfhvnjopvt"
+        },
+        {
+          "input": "Icelandic",
+          "output": "Jdfmboejd"
+        },
+        {
+          "input": "Andaman",
+          "output": "Boebnbo"
+        },
+        {
+          "input": "feigningly",
+          "output": "gfjhojohmz"
+        },
+        {
+          "input": "antigraft",
+          "output": "boujhsbgu"
+        },
+        {
+          "input": "octovalent",
+          "output": "pdupwbmfou"
+        },
+        {
+          "input": "Spartacan",
+          "output": "Tqbsubdbo"
+        },
+        {
+          "input": "contestee",
+          "output": "dpouftuff"
+        },
+        {
+          "input": "phraseman",
+          "output": "qisbtfnbo"
+        }
+      ],
+      "ood": [
+        {
+          "input": "juoel",
+          "output": "kvpfm"
+        },
+        {
+          "input": "sbmsrideya",
+          "output": "tcntsjefzb"
+        },
+        {
+          "input": "achrairr",
+          "output": "bdisbjss"
+        },
+        {
+          "input": "nentoop",
+          "output": "ofouppq"
+        },
+        {
+          "input": "gnonameis",
+          "output": "hopobnfjt"
+        }
+      ],
+      "noise": [
+        {
+          "input": "stitchwork",
+          "output": "xwevgfxruj"
+        },
+        {
+          "input": "rascalry",
+          "output": "udaflcub"
+        },
+        {
+          "input": "defend",
+          "output": "ghiuqx"
+        },
+        {
+          "input": "concrement",
+          "output": "jbefuaehvw"
+        },
+        {
+          "input": "multiflash",
+          "output": "pxowgibdvh"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "Changuinan",
+        "output": "Dibohvjobo"
+      },
+      {
+        "input": "Euryalae",
+        "output": "Fvszbmbf"
+      },
+      {
+        "input": "Collegiant",
+        "output": "Dpmmfhjbou"
+      },
+      {
+        "input": "kirsch",
+        "output": "ljstdi"
+      },
+      {
+        "input": "autocopist",
+        "output": "bvupdpqjtu"
+      },
+      {
+        "input": "Nordicize",
+        "output": "Opsejdjaf"
+      },
+      {
+        "input": "Spirogyra",
+        "output": "Tqjsphzsb"
+      },
+      {
+        "input": "clinometer",
+        "output": "dmjopnfufs"
+      },
+      {
+        "input": "peachwort",
+        "output": "qfbdixpsu"
+      },
+      {
+        "input": "peritrich",
+        "output": "qfsjusjdi"
+      }
+    ],
+    "index": 98,
+    "split": "caesar",
+    "function": "def transform(s):\n    result = \"\"\n    shift = 1\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr((ord(ch) - ord(\"a\") + shift) % 26 + ord(\"a\"))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr((ord(ch) - ord(\"A\") + shift) % 26 + ord(\"A\"))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation is a Caesar cipher with a fixed shift of +1. Each letter in the input string is replaced by the next letter in the alphabet (e.g., 'a' becomes 'b', 'g' becomes 'h', and 'Z' becomes 'A'). Non-alphabetic characters remain unchanged, and the case of each letter is preserved. This rule consistently explains all examples, such as 'glaiket' becoming 'hmbjlfu' and 'Icelandic' becoming 'Jdfmboejd'."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "skunktop",
+          "output": "xpzspytu"
+        },
+        {
+          "input": "exoclinal",
+          "output": "jcthqnsfq"
+        },
+        {
+          "input": "citrean",
+          "output": "hnywjfs"
+        },
+        {
+          "input": "bakelize",
+          "output": "gfpjqnej"
+        },
+        {
+          "input": "steeper",
+          "output": "xyjjujw"
+        },
+        {
+          "input": "ravish",
+          "output": "wfanxm"
+        },
+        {
+          "input": "asperous",
+          "output": "fxujwtzx"
+        },
+        {
+          "input": "beltwise",
+          "output": "gjqybnxj"
+        },
+        {
+          "input": "praedial",
+          "output": "uwfjinfq"
+        },
+        {
+          "input": "statism",
+          "output": "xyfynxr"
+        }
+      ],
+      "ood": [
+        {
+          "input": "Bnuogairin",
+          "output": "Gsztlfnwns"
+        },
+        {
+          "input": "nerencog",
+          "output": "sjwjshtl"
+        },
+        {
+          "input": "liearangMl",
+          "output": "qnjfwfslRq"
+        },
+        {
+          "input": "rtekhisfno",
+          "output": "wyjpmnxkst"
+        },
+        {
+          "input": "vleoterynp",
+          "output": "aqjtyjwdsu"
+        }
+      ],
+      "noise": [
+        {
+          "input": "subolive",
+          "output": "vxorqlyh"
+        },
+        {
+          "input": "repentance",
+          "output": "xhhhqmdqnx"
+        },
+        {
+          "input": "unclub",
+          "output": "xqfvxp"
+        },
+        {
+          "input": "coequation",
+          "output": "frhtbawkvz"
+        },
+        {
+          "input": "sclerose",
+          "output": "vdoyunpn"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "snobbing",
+        "output": "xstggnsl"
+      },
+      {
+        "input": "mammilloid",
+        "output": "rfrrnqqtni"
+      },
+      {
+        "input": "formule",
+        "output": "ktwrzqj"
+      },
+      {
+        "input": "Mazdean",
+        "output": "Rfeijfs"
+      },
+      {
+        "input": "checkrower",
+        "output": "hmjhpwtbjw"
+      },
+      {
+        "input": "overskim",
+        "output": "tajwxpnr"
+      },
+      {
+        "input": "Lendu",
+        "output": "Qjsiz"
+      },
+      {
+        "input": "forbar",
+        "output": "ktwgfw"
+      },
+      {
+        "input": "Diplotaxis",
+        "output": "Inuqtyfcnx"
+      },
+      {
+        "input": "acquaint",
+        "output": "fhvzfnsy"
+      }
+    ],
+    "index": 20,
+    "split": "caesar",
+    "function": "def transform(s):\n    result = \"\"\n    shift = 5\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr((ord(ch) - ord(\"a\") + shift) % 26 + ord(\"a\"))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr((ord(ch) - ord(\"A\") + shift) % 26 + ord(\"A\"))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation is a Caesar cipher with a fixed shift of 5 positions forward in the alphabet. For each character in the input string, lowercase letters are shifted within the 'a'-'z' range and uppercase letters within the 'A'-'Z' range, while non-alphabetic characters remain unchanged. For example, in 'skunktop', 's' (19th letter) becomes 'x' (24th letter), and 'k' (11th letter) becomes 'p' (16th letter), confirming the +5 shift across all examples."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "biflorate",
+          "output": "yruolizgv"
+        },
+        {
+          "input": "violanin",
+          "output": "erlozmrm"
+        },
+        {
+          "input": "zarnich",
+          "output": "azimrxs"
+        },
+        {
+          "input": "Tracy",
+          "output": "Gizxb"
+        },
+        {
+          "input": "bulbotuber",
+          "output": "yfoylgfyvi"
+        },
+        {
+          "input": "ruffianly",
+          "output": "ifuurzmob"
+        },
+        {
+          "input": "venatorial",
+          "output": "evmzglirzo"
+        },
+        {
+          "input": "Stylochus",
+          "output": "Hgbolxsfh"
+        },
+        {
+          "input": "pelon",
+          "output": "kvolm"
+        },
+        {
+          "input": "carbuilder",
+          "output": "xziyfrowvi"
+        }
+      ],
+      "ood": [
+        {
+          "input": "lleueavss",
+          "output": "oovfvzehh"
+        },
+        {
+          "input": "beeldb",
+          "output": "yvvowy"
+        },
+        {
+          "input": "eogpeanncd",
+          "output": "vltkvzmmxw"
+        },
+        {
+          "input": "nrtoSoac",
+          "output": "miglHlzx"
+        },
+        {
+          "input": "adeeswey",
+          "output": "zwvvhdvb"
+        }
+      ],
+      "noise": [
+        {
+          "input": "oftly",
+          "output": "crgob"
+        },
+        {
+          "input": "Picene",
+          "output": "ywxfmv"
+        },
+        {
+          "input": "zealousy",
+          "output": "akzolzhd"
+        },
+        {
+          "input": "troke",
+          "output": "gilrv"
+        },
+        {
+          "input": "miniaceous",
+          "output": "nqmgzxvkmh"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "dyssystole",
+        "output": "wbhhbhglov"
+      },
+      {
+        "input": "Agrotis",
+        "output": "Ztilgrh"
+      },
+      {
+        "input": "Cecropia",
+        "output": "Xvxilkrz"
+      },
+      {
+        "input": "adverse",
+        "output": "zwevihv"
+      },
+      {
+        "input": "tompiper",
+        "output": "glnkrkvi"
+      },
+      {
+        "input": "abjection",
+        "output": "zyqvxgrlm"
+      },
+      {
+        "input": "asaron",
+        "output": "zhzilm"
+      },
+      {
+        "input": "tonnishly",
+        "output": "glmmrhsob"
+      },
+      {
+        "input": "photosalt",
+        "output": "kslglhzog"
+      },
+      {
+        "input": "mosswort",
+        "output": "nlhhdlig"
+      }
+    ],
+    "index": 89,
+    "split": "atbash",
+    "function": "def transform(s):\n    result = \"\"\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr(ord(\"z\") - (ord(ch) - ord(\"a\")))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr(ord(\"Z\") - (ord(ch) - ord(\"A\")))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation follows the Atbash cipher, a specific character mapping where each letter is replaced by its mirror image in the alphabet. For lowercase letters, 'a' maps to 'z', 'b' to 'y', and so on; for uppercase letters, 'A' maps to 'Z', 'B' to 'Y', etc. Non-alphabetic characters remain unchanged. This rule consistently explains all examples, such as 'biflorate' becoming 'yruolizgv' and 'Tracy' becoming 'Gizxb'."
+  },
+  {
+    "train": {
+      "normal": [
+        {
+          "input": "overtoe",
+          "output": "leviglv"
+        },
+        {
+          "input": "muddlement",
+          "output": "nfwwovnvmg"
+        },
+        {
+          "input": "yellowweed",
+          "output": "bvoolddvvw"
+        },
+        {
+          "input": "zooxanthin",
+          "output": "allczmgsrm"
+        },
+        {
+          "input": "apace",
+          "output": "zkzxv"
+        },
+        {
+          "input": "montanin",
+          "output": "nlmgzmrm"
+        },
+        {
+          "input": "juggle",
+          "output": "qfttov"
+        },
+        {
+          "input": "airwoman",
+          "output": "zridlnzm"
+        },
+        {
+          "input": "Austrogaea",
+          "output": "Zfhgiltzvz"
+        },
+        {
+          "input": "redelegate",
+          "output": "ivwvovtzgv"
+        }
+      ],
+      "ood": [
+        {
+          "input": "iwsagimnll",
+          "output": "rdhztrnmoo"
+        },
+        {
+          "input": "opdyynuegs",
+          "output": "lkwbbmfvth"
+        },
+        {
+          "input": "ijnks",
+          "output": "rqmph"
+        },
+        {
+          "input": "dishpher",
+          "output": "wrhsksvi"
+        },
+        {
+          "input": "ssupslepen",
+          "output": "hhfkhovkvm"
+        }
+      ],
+      "noise": [
+        {
+          "input": "tisane",
+          "output": "gbzamw"
+        },
+        {
+          "input": "sima",
+          "output": "hrcg"
+        },
+        {
+          "input": "wander",
+          "output": "deowzf"
+        },
+        {
+          "input": "columbo",
+          "output": "xlotjyl"
+        },
+        {
+          "input": "optic",
+          "output": "msgrx"
+        }
+      ]
+    },
+    "test": [
+      {
+        "input": "Turanism",
+        "output": "Gfizmrhn"
+      },
+      {
+        "input": "Mocoa",
+        "output": "Nlxlz"
+      },
+      {
+        "input": "Erysimum",
+        "output": "Vibhrnfn"
+      },
+      {
+        "input": "rheumily",
+        "output": "isvfnrob"
+      },
+      {
+        "input": "diastem",
+        "output": "wrzhgvn"
+      },
+      {
+        "input": "bogieman",
+        "output": "yltrvnzm"
+      },
+      {
+        "input": "extratubal",
+        "output": "vcgizgfyzo"
+      },
+      {
+        "input": "striking",
+        "output": "hgirprmt"
+      },
+      {
+        "input": "endoclinal",
+        "output": "vmwlxormzo"
+      },
+      {
+        "input": "farness",
+        "output": "uzimvhh"
+      }
+    ],
+    "index": 49,
+    "split": "atbash",
+    "function": "def transform(s):\n    result = \"\"\n    for ch in s:\n        if \"a\" <= ch <= \"z\":\n            result += chr(ord(\"z\") - (ord(ch) - ord(\"a\")))\n        elif \"A\" <= ch <= \"Z\":\n            result += chr(ord(\"Z\") - (ord(ch) - ord(\"A\")))\n        else:\n            result += ch\n    return result",
+    "rationale": "The transformation follows the Atbash cipher, where each letter is replaced by its opposite in the alphabet (e.g., 'a' becomes 'z', 'b' becomes 'y'). This mapping is applied independently to both lowercase and uppercase letters, while non-alphabetic characters remain unchanged. For instance, in 'apace', 'a' maps to 'z', 'p' to 'k', and 'e' to 'v', resulting in 'zkzxv'. The rule consistently accounts for all examples, including the capitalization in 'Austrogaea' becoming 'Zfhgiltzvz'."
+  }
+]

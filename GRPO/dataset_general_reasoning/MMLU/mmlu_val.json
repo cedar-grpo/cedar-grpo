@@ -1,0 +1,1042 @@
+[
+  {
+    "question": " Select the best translation into predicate logic. All children go to some school. (Cx: x is a child; Sx: x is a school; Gxy: x goes to y)",
+    "choices": [
+      "(∀x)(∃y)[(Cx • Sy) • Gxy)",
+      "(∀x)[Sx ⊃ (∃y)(Cy • Gxy)]",
+      "(∀x)[Cx ⊃ (∃y)(Sy • Gxy)]",
+      "(∀x)[Sx • (∃y)(Cy • Gxy)]"
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "formal_logic",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Which of the following are characteristics of a stationary process?\n\ni) It crosses its mean value frequently\n\n\nii) It has constant mean and variance\n\n\niii) It contains no trend component\n\n\niv) It will be stationary in first difference form",
+    "choices": [
+      "(ii) and (iv) only",
+      "(i) and (iii) only",
+      "(i), (ii), and (iii) only",
+      "(i), (ii), (iii), and (iv)"
+    ],
+    "answer": 3,
+    "answer_letter": "D",
+    "subject": "econometrics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Data is collected in an experiment preformed on an ideal gas. In the experiment, temperature (in K) is the independent variable and volume (in m^3) is the dependent variable. If a plot is produced where the dependent variable is on the vertical axis, which of the following is true about the slope and y-intercept of the graph?",
+    "choices": [
+      "The slope will be linearly proportional to the pressure of the gas and the intercept will be 0 m^3.",
+      "The slope will be inversely proportional to the pressure of the gas and the intercept will be 0 m^3.",
+      "The slope will be linearly proportional to the pressure of the gas and the intercept will not be 0 m^3.",
+      "The slope will be inversely proportional to the pressure of the gas and the intercept will not be 0 m^3."
+    ],
+    "answer": 1,
+    "answer_letter": "B",
+    "subject": "high_school_physics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Statement 1 | Every quotient ring of every commutative ring is again a commutative ring. Statement 2 | An ideal N in a ring R with unity 1 is all of R if and only if 1 in N.",
+    "choices": [
+      "True, True",
+      "False, False",
+      "True, False",
+      "False, True"
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "abstract_algebra",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Compute the product in the given ring. (2,3)(3,5) in Z_5 x Z_9",
+    "choices": [
+      "(1,1)",
+      "(3,1)",
+      "(1,6)",
+      "(3,6)"
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "abstract_algebra",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Appeal to compassion is",
+    "choices": [
+      "an appeal to emotion that argues against a position based only on negative personal feelings toward the position",
+      "an appeal to emotion that argues a conclusion should be made based only on feeling sorry for someone",
+      "an appeal to emotion that argues an action should be taken based only on the need to be loyal to someone",
+      "arguing that an idea should be accepted based only on who originated the idea"
+    ],
+    "answer": 1,
+    "answer_letter": "B",
+    "subject": "logical_fallacies",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Which of the following statements about horizontal versus vertical microarchitecture is (are) true?\nI. Programs for horizontal architectures require more time steps than those for vertical architectures.\nII. Horizontal microinstructions are unencoded.\nIII. Horizontal microinstructions usually have a single opcode and multiple operand specifiers.",
+    "choices": [
+      "I only",
+      "II only",
+      "III only",
+      "II and III only"
+    ],
+    "answer": 1,
+    "answer_letter": "B",
+    "subject": "college_computer_science",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Consider the following AR(2) process:\n\nyt = 1.5 yt-1 - 0.5 yt-2 + ut\n\nThis is a",
+    "choices": [
+      "Stationary process",
+      "Unit root process",
+      "Explosive process",
+      "Stationary and unit root process"
+    ],
+    "answer": 1,
+    "answer_letter": "B",
+    "subject": "econometrics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Another name for the fallacy of false dilemma is",
+    "choices": [
+      "Guilt by association",
+      "Circular reasoning",
+      "Laudatory personality",
+      "False dichotomy"
+    ],
+    "answer": 3,
+    "answer_letter": "D",
+    "subject": "logical_fallacies",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Local caching of files is common in distributed file systems, but it has the disadvantage that",
+    "choices": [
+      "Temporary inconsistencies among views of a file by different machines can result",
+      "The file system is likely to be corrupted when a computer crashes",
+      "A much higher amount of network traffic results",
+      "Caching makes file migration impossible"
+    ],
+    "answer": 0,
+    "answer_letter": "A",
+    "subject": "college_computer_science",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Two traveling waves of equal frequency, one of amplitude 4 cm and the other of amplitude 6 cm, superimpose in a single medium. Which of the following best describes the displacement, D, of the resultant wave?",
+    "choices": [
+      "2 cm ≤ D ≤ 10 cm",
+      "D = 5 cm",
+      "D = 10 cm",
+      "10 cm ≤ D ≤ 12 cm"
+    ],
+    "answer": 0,
+    "answer_letter": "A",
+    "subject": "high_school_physics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Changing from a 90% confidence interval estimate for a population proportion to a 99% confidence interval estimate, with all other things being equal,",
+    "choices": [
+      "increases the interval size by 9%.",
+      "decreases the interval size by 9%.",
+      "increases the interval size by 57%.",
+      "decreases the interval size by 57%."
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "high_school_statistics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Which one of the following statements best describes the algebraic representation of the fitted regression line?",
+    "choices": [
+      "\\hat{y}_t = \\hat{\\alpha} + \\hat{\\beta}x_t + \\hat{u}_t",
+      "\\hat{y}_t = \\hat{\\alpha} + \\hat{\\beta}x_t",
+      "\\hat{y}_t = \\hat{\\alpha} + \\hat{\\beta}x_t + u_t",
+      "y_t = \\hat{\\alpha} + \\hat{\\beta}x_t + \\hat{u}_t"
+    ],
+    "answer": 1,
+    "answer_letter": "B",
+    "subject": "econometrics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "A company has a choice of three investment schemes. Option I gives a sure $25,000 return on investment. Option II gives a 50% chance of returning $50,000 and a 50% chance of returning $10,000. Option III gives a 5% chance of returning $100,000 and a 95% chance of returning nothing. Which option should the company choose?",
+    "choices": [
+      "Option II if it wants to maximize expected return",
+      "Option I if it needs at least $20,000 to pay off an overdue loan",
+      "Option III if it needs at least $80,000 to pay off an overdue loan",
+      "All of the above answers are correct."
+    ],
+    "answer": 3,
+    "answer_letter": "D",
+    "subject": "high_school_statistics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Whether someone is hypocritical regarding her claims is...",
+    "choices": [
+      "Irrelevant to her character",
+      "Evidence that the claims are false",
+      "Irrelevant to the truth of the claims",
+      "Relevant only in court"
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "logical_fallacies",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "This question refers to the following information.\n\"To slacken the tempo would mean falling behind. And those who fall behind get beaten. But we do not want to be beaten. No, we refuse to be beaten! One feature of the history of old Russia was the continual beatings she suffered because of her backwardness. She was beaten by the Mongol khans. She was beaten by the Turkish beys. She was beaten by the Swedish feudal lords. She was beaten by the Polish and Lithuanian gentry. She was beaten by the British and French capitalists. She was beaten by the Japanese barons. All beat her––because of her backwardness, because of her military backwardness, cultural backwardness, political backwardness, industrial backwardness, agricultural backwardness. They beat her because it was profitable and could be done with impunity. You remember the words of the pre-revolutionary poet: \"You are poor and abundant, mighty and impotent, Mother Russia.\" Those gentlemen were quite familiar with the verses of the old poet. They beat her, saying: \"You are abundant,\" so one can enrich oneself at your expense. They beat her, saying: \"You are poor and impotent,\" so you can be beaten and plundered with impunity. Such is the law of the exploiters––to beat the backward and the weak. It is the jungle law of capitalism. You are backward, you are weak––therefore you are wrong; hence you can be beaten and enslaved. You are mighty––therefore you are right; hence we must be wary of you.\nThat is why we must no longer lag behind.\"\nJoseph Stalin, speech delivered at the first All-Union Conference of Leading Personnel of Socialist Industry, February 4, 1931\nThe speech as a whole is best understood in the context of which of the following historical developments?",
+    "choices": [
+      "Stalin's drive to motivate Soviet industry for the Winter War with Finland",
+      "Stalin's push to make the Soviet Union a nuclear nation",
+      "Stalin's implementation of five-year plans for the Soviet economy",
+      "Stalin's purges of dissidents and other political prisoners"
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "high_school_world_history",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Which of the following statements are true concerning a comparison between ARCH(q) and GARCH(1,1) models?\n\ni) The ARCH(q) model is likely to be the more parsimonious\n\n\nii) The ARCH(q) model is the more likely to violate non-negativity constraints\n\n\niii) The ARCH(q) model can allow for an infinite number of previous lags of squared\n\nreturns to affect the current conditional variance\n\n\niv) The GARCH(1,1) model will usually be sufficient to capture all of the dependence\n\nin the conditional variance",
+    "choices": [
+      "(ii) and (iv) only",
+      "(i) and (iii) only",
+      "(i), (ii), and (iii) only",
+      "(i), (ii), (iii), and (iv)"
+    ],
+    "answer": 0,
+    "answer_letter": "A",
+    "subject": "econometrics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Statement 1 | Every permutation is a one-to-one function. Statement 2 | Every function is a permutation if and only if it is one to one.",
+    "choices": [
+      "True, True",
+      "False, False",
+      "True, False",
+      "False, True"
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "abstract_algebra",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "At time 0, five jobs are available for execution on a single processor, with service times of 25, 15, 5, 3, and 2 time units. Which of the following is the minimum value of the average completion time of these jobs?",
+    "choices": [
+      "50",
+      "208/5",
+      "92/5",
+      "10"
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "college_computer_science",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": " Which of the following propositions is an immediate (one-step) consequence in PL of the given premises?\n~E ⊃ ~F\nG ⊃ F\nH ∨ ~E\nH ⊃ I\n~I",
+    "choices": [
+      "E ⊃ F",
+      "F ⊃ G",
+      "H ⊃ ~E",
+      "~H"
+    ],
+    "answer": 3,
+    "answer_letter": "D",
+    "subject": "formal_logic",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "This question refers to the following information.\nIs it not unity alone that can weld us into an effective force, capable of creating our own progress and making our valuable contribution to world peace? Which independent African state will claim that its financial structure and banking institutions are fully harnessed to its national development? Which will claim that its material resources and human energies are available for its own national aspirations? We are fast learning that political independence is not enough to rid us of the consequences of colonial rule. We have been too busy nursing our separate states to understand fully the basic need for union, rooted in common purpose, common planning and common endeavour.\nGhana's president, Kwame Nkrumah, addressing the Organization of African Unity, 1963\nThe speaker in the passage above is espousing which of the following causes?",
+    "choices": [
+      "Nationalism",
+      "Socialism",
+      "Pan-Africanism",
+      "Neocolonialism"
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "high_school_world_history",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": " Which of the following propositions is an immediate (one-step) consequence in PL of the given premises?\nU ⊃ W\nW ⊃ (X ≡ ~Y)\n(X ≡ ~Y) ⊃ Z\n~Z",
+    "choices": [
+      "U ⊃ Z",
+      "U ∨ W",
+      "~W",
+      "~(X ≡ ~Y)"
+    ],
+    "answer": 3,
+    "answer_letter": "D",
+    "subject": "formal_logic",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Let P be a procedure that for some inputs calls itself (i.e., is recursive). If P is guaranteed to terminate, which of the following statements must be true?\nI. P has a local variable.\nII. P has an execution path where it does not call itself.\nIII. P either refers to a global variable or has at least one parameter.",
+    "choices": [
+      "I only",
+      "II only",
+      "I and II only",
+      "II and III only"
+    ],
+    "answer": 3,
+    "answer_letter": "D",
+    "subject": "college_computer_science",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "A moving 1.5-kg cart collides with and sticks to a 0.5-kg cart which was initially at rest. Immediately after the collision, the carts each have the same ______ as each other.",
+    "choices": [
+      "Velocity",
+      "Kinetic energy",
+      "Mass",
+      "Linear momentum"
+    ],
+    "answer": 0,
+    "answer_letter": "A",
+    "subject": "high_school_physics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": " Construct a complete truth table for the following argument. Then, using the truth table, determine whether the argument is valid or invalid. If the argument is invalid, choose an option which presents a counterexample. (There may be other counterexamples as well.)\n~S ∨ T\n~S · U\n~T ∨ U / T · U",
+    "choices": [
+      "Valid",
+      "Invalid. Counterexample when S, T, and U are true",
+      "Invalid. Counterexample when S and U are true and T is false",
+      "Invalid. Counterexample when U is true and S and T are false"
+    ],
+    "answer": 3,
+    "answer_letter": "D",
+    "subject": "formal_logic",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "This question refers to the following information.\nWhether the question be to continue or to discontinue the practice of sati, the decision is equally surrounded by an awful responsibility. To consent to the consignment year after year of hundreds of innocent victims to a cruel and untimely end, when the power exists of preventing it, is a predicament which no conscience can contemplate without horror. But, on the other hand, to put to hazard by a contrary course the very safety of the British Empire in India is an alternative which itself may be considered a still greater evil. When we had powerful neighbours and greater reason to doubt our own security, expediency might recommend a more cautious proceeding, but now that we are supreme my opinion is decidedly in favour of an open and general prohibition.\nWilliam Bentinck, Govenor-General of India, \"On the Suppression of Sati,\" 1829\nI have made it my study to examine the nature and character of the Indians [who trade with us], and however repugnant it may be to our feelings, I am convinced they must be ruled with a rod of iron, to bring and keep them in a proper state of subordination, and the most certain way to effect this is by letting them feel their dependence on [the foodstuffs and manufactured goods we sell them].\nGeorge Simpson, Head of Northern Department, Hudson's Bay Company, 1826\nThe passages above are best understood in the context of which of the following practices?",
+    "choices": [
+      "Legalization of slavery in overseas colonies",
+      "Exercise of colonial administrative power over native peoples",
+      "Western missionary efforts in colonized territories",
+      "Mobilization of military resources from colonial possessions"
+    ],
+    "answer": 1,
+    "answer_letter": "B",
+    "subject": "high_school_world_history",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "A subset H of a group (G,*) is a group if",
+    "choices": [
+      "a,b in H=> a * b in H",
+      "a in H => a^-1 in H",
+      "a,b in H=> a * b^-1 in H",
+      "H contains the identity element"
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "abstract_algebra",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "A proton enters a solenoid. Upon entry, the proton is moving in a straight line along the axis of the solenoid. Which of the following is a correct description of the proton’s motion within the solenoid?",
+    "choices": [
+      "The proton will be bent in a parabolic path.",
+      "The proton will be bent in a circular path.",
+      "The proton will continue in its straight path at constant velocity.",
+      "The proton will continue in its straight path and slow down."
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "high_school_physics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Which of the following describes the fallacy of appeal to spite?",
+    "choices": [
+      "responding to an argument with an expression of derision instead of a counter argument",
+      "arguing against a position based only on negative personal feelings toward the position",
+      "arguing someone should do something only because that person dislikes someone else",
+      "saying someone shouldn't do something because if he or she does it people won't like him or her"
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "logical_fallacies",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "If a Johansen \"trace\" test for a null hypothesis of 2 cointegrating vectors is applied to a system containing 4 variables is conducted, which eigenvalues would be used in the test?",
+    "choices": [
+      "All of them",
+      "The largest 2",
+      "The smallest 2",
+      "The second largest"
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "econometrics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "In multiprogrammed systems it is advantageous if some programs such as editors and compilers can be shared by several users. Which of the following must be true of multiprogrammed systems in order that a single copy of a program can be shared by several users?\nI. The program is a macro.\nII. The program is recursive.\nIII. The program is reentrant.",
+    "choices": [
+      "I only",
+      "II only",
+      "III only",
+      "II and III only"
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "college_computer_science",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Let G = (V, E) be a finite directed acyclic graph with |E| > 0. Which of the following must be true?\nI. G has a vertex with no incoming edge.\nII. G has a vertex with no outgoing edge.\nIII. G has an isolated vertex, that is, one with neither an incoming edge nor an outgoing edge.",
+    "choices": [
+      "I only",
+      "II only",
+      "III only",
+      "I and II only"
+    ],
+    "answer": 3,
+    "answer_letter": "D",
+    "subject": "college_computer_science",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "If (G, .) is a group such that (ab)^-1 = a^-1b^-1, for all a, b in G, then G is a/an",
+    "choices": [
+      "commutative semi group",
+      "abelian group",
+      "non-abelian group",
+      "None of these"
+    ],
+    "answer": 1,
+    "answer_letter": "B",
+    "subject": "abstract_algebra",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "When someone uses highly emotionally charged terms during an argument, without giving any reasons why those terms fit the subject, that person may have committed which of the following fallacies?",
+    "choices": [
+      "Special pleading",
+      "Amphiboly",
+      "Equivocation",
+      "Loaded language"
+    ],
+    "answer": 3,
+    "answer_letter": "D",
+    "subject": "logical_fallacies",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "This question refers to the following information.\nThe following poem refers to an incident in Sharpeville, South Africa, in 1960. To protest the requirement that they carry papers documenting their identity and residence, black South Africans gathered in front of police stations without their papers. Though other protests ended peacefully, in Sharpeville, police fired into the crowd.\nWhat is important\nabout Sharpeville\nis not that seventy died:\nnor even that they were shot in the back\nretreating, unarmed, defenceless\nand certainty not\nthe heavy caliber slug\nthat tore through a mother's back\nand ripped through the child in her arms\nkilling it\nRemember Sharpeville\nbullet-in-the-back day\nBecause it epitomized oppression\nand the nature of society\nMore clearly than anything else;\nit was the classic event\nNowhere is racial dominance\nmore clearly defined\nnowhere the will to oppress\nmore clearly demonstrated\nWhat the world whispers\napartheid declares with snarling guns\nthe blood the rich lust after\nSouth Africa spills dust\nRemember Sharpeville\nRemember bullet-in-the-back day\nAnd remember the unquenchable will for freedom\nRemember the dead\nand be glad\n—Dennis Brutus, 1973\nThe discriminatory system referred to in the poem was known as",
+    "choices": [
+      "Jim Crow.",
+      "spheres of influence.",
+      "Boer division.",
+      "apartheid."
+    ],
+    "answer": 3,
+    "answer_letter": "D",
+    "subject": "high_school_world_history",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": " Construct a complete truth table for the following argument. Then, using the truth table, determine whether the argument is valid or invalid. If the argument is invalid, choose an option which presents a counterexample. (There may be other counterexamples as well.)\nM ∨ N\n~M · O / N",
+    "choices": [
+      "Valid",
+      "Invalid. Counterexample when M and O are true and N is false",
+      "Invalid. Counterexample when M is true and O and N are false",
+      "Invalid. Counterexample when O is true and M and N are false"
+    ],
+    "answer": 0,
+    "answer_letter": "A",
+    "subject": "formal_logic",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "This question refers to the following information.\nThe passage below is taken from testimony before Parliament.\nJoshua Drake, called in; and Examined.\nYou say you would prefer moderate labour and lower wages; are you pretty comfortable upon your present wages?\n—I have no wages, but two days a week at present; but when I am working at some jobs we can make a little, and at others we do very poorly.\nWhen a child gets 3s. a week, does that go much towards its subsistence?\n—No, it will not keep it as it should do.\nWhy do you allow your children to go to work at those places where they are ill-treated or over-worked?\n—Necessity compels a man that has children to let them work.\nThen you would not allow your children to go to those factories under the present system, if it was not from necessity?\n—No.\n—Testimony given before the Sadler Committee, 1831–32\nAccording to the passage, why does the witness allow his children to work in a place where they will be ill-treated?",
+    "choices": [
+      "A factory owner is forcing him to do so.",
+      "He doesn’t earn enough on his own.",
+      "The children need discipline.",
+      "Their labor is only moderately difficult."
+    ],
+    "answer": 1,
+    "answer_letter": "B",
+    "subject": "high_school_world_history",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Use indirect truth tables to determine whether the following argument is valid. If the argument is invalid, choose an option which presents a counterexample. (There may be other counterexamples as well.)\nH ≡ (~I ∨ J)\nH ∨ ~J / ~I",
+    "choices": [
+      "Valid",
+      "Invalid. Counterexample when H, I, and J are false",
+      "Invalid. Counterexample when H and I are true and J is false",
+      "Invalid. Counterexample when I is true and H and J are false"
+    ],
+    "answer": 3,
+    "answer_letter": "D",
+    "subject": "formal_logic",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "A Hausman test would be used for",
+    "choices": [
+      "Determining whether an equation that is part of a simultaneous system is identified",
+      "Determining whether a simultaneous framework is needed for a particular variable",
+      "Determining whether 2SLS or ILS is optimal",
+      "Determining whether the structural form equations can be obtained via substitution from the reduced forms"
+    ],
+    "answer": 1,
+    "answer_letter": "B",
+    "subject": "econometrics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Heat is added to a cylindrical aluminum rod of radius Q and length ℓ. The temperature difference between the two ends of the rod varies from 10°C to 20°C. What geometric factors will influence the rate heat is transferred along the rod?",
+    "choices": [
+      "Only the length",
+      "Only the area of the rod",
+      "Both the length and area",
+      "Neither the length nor area"
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "high_school_physics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Statement 1 | Every maximal ideal is a prime ideal. Statement 2 | If I is a maximal ideal of a commutative ring R, then R/I is field.",
+    "choices": [
+      "True, True",
+      "False, False",
+      "True, False",
+      "False, True"
+    ],
+    "answer": 1,
+    "answer_letter": "B",
+    "subject": "abstract_algebra",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "The financial aid office at a state university conducts a study to determine the total student costs per semester. All students are charged $4500 for tuition. The mean cost for books is $350 with a standard deviation of $65. The mean outlay for room and board is $2800 with a standard deviation of $380. The mean personal expenditure is $675 with a standard deviation of $125. Assuming independence among categories, what is the standard deviation of the total student costs?",
+    "choices": [
+      "$24",
+      "$91",
+      "$190",
+      "$405"
+    ],
+    "answer": 3,
+    "answer_letter": "D",
+    "subject": "high_school_statistics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Which of the following sorting algorithms has average-case and worst-case running times of O(n log n)?",
+    "choices": [
+      "Bubble sort",
+      "Insertion sort",
+      "Merge sort",
+      "Quicksort"
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "college_computer_science",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "This question refers to the following information.\nHe contains all works and desires and all perfumes and all tastes. He enfolds the whole universe and in silence is loving to all. This is the Spirit that is in my heart, this is Brahman. To him I shall come when I go beyond this life, and to him will come he who has faith and doubts not.\n—The Upanishads, India, c. 1000 BCE\nBased on the quotation, which statement is true of the speaker's religion?",
+    "choices": [
+      "Salvation is based on the correct completion of rituals.",
+      "There is an expectation of an afterlife.",
+      "Right actions and right speech earn favor with the gods.",
+      "It is a polytheistic religion."
+    ],
+    "answer": 1,
+    "answer_letter": "B",
+    "subject": "high_school_world_history",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Referring to an act committed by an opponent in negative terms while referring to the same act committed by the arguer or supporters in favorable terms describes which of the following fallacies?",
+    "choices": [
+      "Ambiguity",
+      "Special pleading",
+      "Reification",
+      "Hypostatization"
+    ],
+    "answer": 1,
+    "answer_letter": "B",
+    "subject": "logical_fallacies",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Arguing that what is true of an entire object is also true of each part of that object is the fallacy of",
+    "choices": [
+      "false criteria",
+      "hasty generalization",
+      "ad crumenam",
+      "division"
+    ],
+    "answer": 3,
+    "answer_letter": "D",
+    "subject": "logical_fallacies",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Which of the following is (are) true about virtual memory systems that use pages?\nI. The virtual address space can be larger than the amount of physical memory.\nII. Programs must be resident in main memory throughout their execution.\nIII. Pages correspond to semantic characteristics of the program.",
+    "choices": [
+      "I only",
+      "II only",
+      "I and II",
+      "I and III"
+    ],
+    "answer": 0,
+    "answer_letter": "A",
+    "subject": "college_computer_science",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Which of the following is a false statement about simple random samples?",
+    "choices": [
+      "A sample must be reasonably large to be properly considered a simple random sample.",
+      "Inspection of a sample will give no indication of whether or not it is a simple random sample.",
+      "Attributes of a simple random sample may be very different from attributes of the population.",
+      "Every element of the population has an equal chance of being picked."
+    ],
+    "answer": 0,
+    "answer_letter": "A",
+    "subject": "high_school_statistics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Traveling at an initial speed of 1.5 × 10^6 m/s, a proton enters a region of constant magnetic field of magnitude 1.5 T. If the proton's initial velocity vector makes an angle of 30° with the magnetic field, compute the proton's speed 4 s after entering the magnetic field.",
+    "choices": [
+      "5.0 × 10^6 m/s",
+      "7.5 × 10^6 m/s",
+      "1.5 × 10^6 m/s",
+      "3.0 × 10^6 m/s"
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "high_school_physics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "This question refers to the following information.\nBut the decline of Rome was the natural and inevitable effect of immoderate greatness. Prosperity ripened the principle of decay; the causes of destruction multiplied with the extent of conquest; and, as soon as time or accident had removed the artificial supports, the stupendous fabric yielded to the pressure of its own weight. . . . The victorious legions, who, in distant wars, acquired the vices of strangers and mercenaries, first oppressed the freedom of the republic, and afterwards violated the majesty of the purple. The emperors, anxious for their personal safety and the public peace, were reduced to the base expedient of corrupting the discipline which rendered them alike formidable to their sovereign and to the enemy; the vigour of the military . . . was relaxed . . . ; and the Roman world was overwhelmed by a deluge of Barbarians.\n—Adapted from Decline and Fall of the Roman Empire, by Edward Gibbon\nThe reasons given in the above passage for the fall of the Roman Empire could also be applied to which other classical empires?",
+    "choices": [
+      "Tang and Ottoman",
+      "Ming and Aztec",
+      "Han and Gupta",
+      "Qin and Etruscan"
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "high_school_world_history",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "This question refers to the following information.\n\"The quicksilver mines of Huancavelica are where the poor Indians are so harshly punished, where they are tortured and so many Indians die; it is there that the noble caciques [headmen] of this kingdom are finished off and tortured. The same is true in all the other mines: the silver mines of Potosi [and others]….The owners and stewards of the mines, whether Spaniards, mestizos, or Indians, are such tyrants, with no fear of God or Justice, because they are not audited and are not inspected twice a year….\nAnd they are not paid for the labor of traveling to and from the mines or for the time they spend at the mines. The Indians, under the pretext of mining chores, are made to spend their workdays herding cattle and conveying goods; they are sent off to the plains, and the Indians die. These Indians are not paid for their labor, and their work is kept hidden.\nAnd [the mine owners] keep Indian cooking women in their residences; they use cooking as a pretext for taking concubines….And they oblige the Indians to accept corn or meat or chicha [corn beer]…at their own expense, and they deduct the price from their labor and their workdays. In this way, the Indians end up very poor and deep in debt, and they have no way to pay their tribute.\nThere is no remedy for all this, because any [colonial official] who enters comes to an agreement with the mine owners, and all the owners join forces in bribing him….Even the protector of the Indians is useless;…he [does not] warn Your Majesty or your royal Audiencia [court] about the harms done to the poor Indians.\"\nExcerpt from The First New Chronicle and Good Government [abridged], by Felipe Guaman Poma de Alaya. Selected, translated, and annotated by David Frye. Copyright 2006 Hackett Publishing Company. Reprinted with permission from the publisher.\nFelipe Guaman Poma de Ayala, The First New Chronicle and Good Government, ca. 1610\nThe views expressed in the passage are best seen as evidence for which of the following in the society of Spanish South America?",
+    "choices": [
+      "The formal adoption of debt slavery as a means to clear debts",
+      "The absence of corruption among elites",
+      "The king's lack of interest in the welfare of Native American subjects",
+      "The imposition of social stratification based on origin of birth"
+    ],
+    "answer": 3,
+    "answer_letter": "D",
+    "subject": "high_school_world_history",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Arguing that a claim must be true merely because a substantial number of people believe it is called the fallacy of...",
+    "choices": [
+      "Tu quoque",
+      "Composition",
+      "Appeal to the masses",
+      "Appeal to reason"
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "logical_fallacies",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Estrella wants to become a paramedic and takes a screening exam. Scores on the exam have been approximately normally distributed over the years it has been given. The exam is normed with a mean of 80 and a standard deviation of 9. Only those who score in the top 15% on the test are invited back for further evaluation. Estrella received a 90 on the test. What was her percentile rank on the test, and did she qualify for further evaluation?",
+    "choices": [
+      "13.35; she didn't qualify.",
+      "54.38; she didn't qualify.",
+      "86.65; she qualified.",
+      "84.38; she didn't qualify."
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "high_school_statistics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Which of the following is NOT a property of bitmap graphics?",
+    "choices": [
+      "Fast hardware exists to move blocks of pixels efficiently.",
+      "Realistic lighting and shading can be done.",
+      "All line segments can be displayed as straight.",
+      "Polygons can be filled with solid colors and textures."
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "college_computer_science",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "In a valid disjunctive syllogism the minor premise must",
+    "choices": [
+      "accept one choice",
+      "reject all but one choice",
+      "either A or B",
+      "none of the above"
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "logical_fallacies",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "This question refers to the following information.\nThis great purity of the French Revolution is precisely what causes both our strength and our weakness. Our strength, because it gives to us rights of the public interest over private interests; our weakness, because it rallies all vicious men against us. We must smother the internal and external enemies of the Republic or perish with it; now in this situation, the first maxim of your policy ought to be to lead the people by reason and the people's enemies by terror. Terror is nothing other than justice, prompt, severe, inflexible; it is therefore an emanation of virtue; it is not so much a special principle as it is a consequence of the general principle of democracy applied to our country's most urgent needs.\nFrench revolutionary leader Maximilien Robespierre, 1794\nWith which of the following threats does the speaker in the passage above seem most concerned?",
+    "choices": [
+      "Counterrevolutionary opponents",
+      "Foreign invaders",
+      "Communist agitators",
+      "Transnational corporations"
+    ],
+    "answer": 0,
+    "answer_letter": "A",
+    "subject": "high_school_world_history",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "An electric dipole consists of a pair of equal but opposite point charges of magnitude 4.0 nC separated by a distance of 2.0 cm. What is the electric field strength at the point midway between the charges?",
+    "choices": [
+      "0",
+      "9.0 × 10^4 N/C",
+      "1.8 × 10^5 N/C",
+      "7.2 × 10^5 N/C"
+    ],
+    "answer": 3,
+    "answer_letter": "D",
+    "subject": "high_school_physics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Suppose that a certain software product has a mean time between failures of 10,000 hours and has a mean time to repair of 20 hours. If the product is used by 100 customers, what is its availability?",
+    "choices": [
+      "80%",
+      "90%",
+      "98%",
+      "99.80%"
+    ],
+    "answer": 3,
+    "answer_letter": "D",
+    "subject": "college_computer_science",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "This question refers to the following information.\nSource 1:\n\"Moreover, Sir, in our Kingdoms there is another great inconvenience which is of little service to God, and this is that many of our people, keenly desirous as they are of the wares and things of your Kingdoms, which are brought here by your people, and in order to satisfy their voracious appetite, seize many of our people, freed and exempt men, and very often it happens that they kidnap even noblemen and our relatives, and take them to be sold to the white men who are in our kingdoms.\"\nLetter from King Afonso I of Kongo to King John III of Portugal, 1526\nSource 2:\n\"This expedition has cost us much: it would be unreasonable to send it home with empty hands. Although our [principal] wish is to serve God and the pleasure of the king of Kongo, none the less you will make him understand—as though speaking in our name—what he should do to fill the ships, whether with slaves, or copper, or ivory.\"\nInstructions from King Manuel of Portugal to his envoy in Kongo, 1512\nThe two letters best support which of the following conclusions?",
+    "choices": [
+      "Diplomatic relations between Portugal and Kongo were often cordial.",
+      "Kongolese noblemen were frequently taken as slaves by the Portuguese.",
+      "Trade between Portugal and Kongo was highly regulated.",
+      "Trade between Portugal and Kongo was brisk with both parties."
+    ],
+    "answer": 3,
+    "answer_letter": "D",
+    "subject": "high_school_world_history",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Statement 1| Every group of order p^2 where p is prime is Abelian. Statement 2 | For a fixed prime p a Sylow p-subgroup of a group G is a normal subgroup of G if and only if it is the only Sylow p-subgroup of G.",
+    "choices": [
+      "True, True",
+      "False, False",
+      "True, False",
+      "False, True"
+    ],
+    "answer": 0,
+    "answer_letter": "A",
+    "subject": "abstract_algebra",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "In a group of 10 scores, the largest score is increased by 40 points. What will happen to the mean?",
+    "choices": [
+      "It will remain the same.",
+      "It will increase by 4 points.",
+      "It will increase by 10 points.",
+      "It will increase by 40 points."
+    ],
+    "answer": 1,
+    "answer_letter": "B",
+    "subject": "high_school_statistics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "An elevator is rising. In order to determine the tension in the cables pulling it, which values (for the elevator) would you need to know?",
+    "choices": [
+      "Mass, velocity, height, and acceleration",
+      "Mass, velocity, and acceleration",
+      "Mass and velocity",
+      "Mass and acceleration"
+    ],
+    "answer": 3,
+    "answer_letter": "D",
+    "subject": "high_school_physics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "John Stuart Mill: Each person's happiness is a good to that person, and the general happiness, therefore, a good to the aggregate of all persons.",
+    "choices": [
+      "Fallacy of Composition",
+      "Fallacy of Division",
+      "Gambler's Fallacy",
+      "Equivocation"
+    ],
+    "answer": 0,
+    "answer_letter": "A",
+    "subject": "logical_fallacies",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Construct a complete truth table for the following argument. Then, using the truth table, determine whether the argument is valid or invalid. If the argument is invalid, choose an option which presents a counterexample. (There may be other counterexamples as well.)\n~C ⊃ D\nD ⊃ C / C",
+    "choices": [
+      "Valid",
+      "Invalid. Counterexample when C and D are true",
+      "Invalid. Counterexample when C is true and D is false",
+      "Invalid. Counterexample when D is true and C is false"
+    ],
+    "answer": 0,
+    "answer_letter": "A",
+    "subject": "formal_logic",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Let G denoted the set of all n x n non-singular matrices with rational numbers as entries. Then under multiplication G is a/an",
+    "choices": [
+      "subgroup",
+      "finite abelian group",
+      "infinite, non abelian group",
+      "ininite, abelian"
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "abstract_algebra",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "A man stands in an elevator as it begins to ascend. Does the normal force from the floor do work on the man?",
+    "choices": [
+      "Yes, and the work done will be positive.",
+      "Yes, and the work done will be negative.",
+      "Yes, but the sign can’t be determined.",
+      "No."
+    ],
+    "answer": 0,
+    "answer_letter": "A",
+    "subject": "high_school_physics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Which one of the following is a disadvantage of the general to specific or \"LSE\" (\"Hendry\") approach to building econometric models, relative to the specific to general approach?",
+    "choices": [
+      "Some variables may be excluded at the first stage leading to coefficient biases",
+      "The final model may lack theoretical interpretation",
+      "The final model may be statistically inadequate",
+      "If the initial model is mis-specified, all subsequent steps will be invalid."
+    ],
+    "answer": 1,
+    "answer_letter": "B",
+    "subject": "econometrics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "A beam of electrons has speed 10^7 m/s. It is desired to use the magnetic field of the Earth, 5 × 10−5 T, to bend the electron beam into a circle. What will be the radius of this circle?",
+    "choices": [
+      "1 nm",
+      "1 μm",
+      "1 mm",
+      "1 m"
+    ],
+    "answer": 3,
+    "answer_letter": "D",
+    "subject": "high_school_physics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": " Select the best translation into predicate logic: All first-year students take a swim test.",
+    "choices": [
+      "(∀x)(Sx ⊃ Fx)",
+      "(∀x)(Fx ⊃ Sx)",
+      "(∀x)(Fx ∨ Sx)",
+      "(∀x)(Fx ≡ Sx)"
+    ],
+    "answer": 1,
+    "answer_letter": "B",
+    "subject": "formal_logic",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "In one study on the effect that eating meat products has on weight level, an SRS of 500 subjects who admitted to eating meat at least once a day had their weights compared with those of an independent SRS of 500 people who claimed to be vegetarians. In a second study, an SRS of 500 subjects were served at least one meat meal per day for 6 months, while an independent SRS of 500 others were chosen to receive a strictly vegetarian diet for 6 months, with weights compared after 6 months.",
+    "choices": [
+      "The first study is a controlled experiment, while the second is an observational study.",
+      "The first study is an observational study, while the second is a controlled experiment.",
+      "Both studies are controlled experiments.",
+      "Both studies are observational studies."
+    ],
+    "answer": 1,
+    "answer_letter": "B",
+    "subject": "high_school_statistics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "What is the most important disadvantage of the diagonal VECH approach to building multivariate GARCH models that is overcome by the BEKK formulation?",
+    "choices": [
+      "The diagonal VECH model is hard to interpret intuitively",
+      "The diagonal VECH model contains too many parameters",
+      "The diagonal VECH model does not ensure a positive-definite variance-covariance matrix",
+      "The BEKK model reduces the dimensionality problem that arises when a number of series are modelled together."
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "econometrics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Select the best translation into predicate logic. David teaches Chris. (c: Chris; d: David; Txy: x teaches y)",
+    "choices": [
+      "Tdc",
+      "Tcd",
+      "Tcc",
+      "dTc"
+    ],
+    "answer": 0,
+    "answer_letter": "A",
+    "subject": "formal_logic",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Statement 1 | The homomorphic image of a cyclic group is cyclic. Statement 2 | The homomorphic image of an Abelian group is Abelian.",
+    "choices": [
+      "True, True",
+      "False, False",
+      "True, False",
+      "False, True"
+    ],
+    "answer": 0,
+    "answer_letter": "A",
+    "subject": "abstract_algebra",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "A researcher tests for structural stability in the following regression model:\n\n$y_t = \\beta_1 + \\beta_2 x_{2t} + \\beta_3 x_{3t} + u_t$\n\nThe total sample of 200 observations is split exactly in half for the sub-sample regressions. Which would be the unrestricted residual sum of squares?",
+    "choices": [
+      "The RSS for the whole sample",
+      "The RSS for the first sub-sample",
+      "The RSS for the second sub-sample",
+      "The sum of the RSS for the first and second sub-samples"
+    ],
+    "answer": 3,
+    "answer_letter": "D",
+    "subject": "econometrics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Use indirect truth tables to determine whether the following argument is valid. If the argument is invalid, choose an option which presents a counterexample. (There may be other counterexamples as well.)\n(A ∨ B) ⊃ C\nC ⊃ ~D / D ⊃ A",
+    "choices": [
+      "Valid",
+      "Invalid. Counterexample when B, C, and D are true and A is false",
+      "Invalid. Counterexample when B and D are true and A and C are false",
+      "Invalid. Counterexample when A, B, and C are false and D is true"
+    ],
+    "answer": 3,
+    "answer_letter": "D",
+    "subject": "formal_logic",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "A random sample of 25 men and a separate random sample of 25 women are selected to answer questions about attitudes toward abortion. The answers were categorized as \"pro-life\" or \"pro-choice.\" Which of the following is the proper null hypothesis for this situation?",
+    "choices": [
+      "The variables \"gender\" and \"attitude toward abortion\" are related.",
+      "The proportion of \"pro-life\" men is the same as the proportion of \"pro-life\" women.",
+      "The proportion of \"pro-life\" men is related to the proportion of \"pro-life\" women.",
+      "The proportion of \"pro-choice\" men is the same as the proportion of \"pro-life\" women."
+    ],
+    "answer": 1,
+    "answer_letter": "B",
+    "subject": "high_school_statistics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "To study the effect of alcohol on reaction time, subjects were randomly selected and given three beers to consume. Their reaction time to a simple stimulus was measured before and after drinking the alcohol. Which of the following is a correct statement?",
+    "choices": [
+      "This study was an observational study.",
+      "Lack of blocking makes this a poorly designed study.",
+      "The placebo effect is irrelevant in this type of study.",
+      "This study was an experiment in which the subjects were used as their own controls."
+    ],
+    "answer": 3,
+    "answer_letter": "D",
+    "subject": "high_school_statistics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Which one of the following statements is true concerning VARs?",
+    "choices": [
+      "The coefficient estimates have intuitive theoretical interpretations",
+      "The coefficient estimates usually have the same sign for all of the lags of a given variable in a given equation",
+      "VARs often produce better forecasts than simultaneous equation structural models",
+      "All of the components of a VAR must be stationary before it can be used for forecasting"
+    ],
+    "answer": 2,
+    "answer_letter": "C",
+    "subject": "econometrics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "A small kiosk at the Atlanta airport carries souvenirs in the price range of $3.99 to $29.99, with a mean price of $14.75. The airport authorities decide to increase the rent charged for a kiosk by 5 percent. To make up for the increased rent, the kiosk owner decides to increase the prices of all items by 50 cents. As a result, which of the following will happen?",
+    "choices": [
+      "The mean price and the range of prices will increase by 50 cents.",
+      "The mean price will remain the same, but the range of prices will increase by 50 cents.",
+      "The mean price and the standard deviation of prices will increase by 50 cents.",
+      "The mean price will increase by 50 cents, but the standard deviation of prices will remain the same."
+    ],
+    "answer": 3,
+    "answer_letter": "D",
+    "subject": "high_school_statistics",
+    "dataset_name": "MMLU"
+  },
+  {
+    "question": "Statement 1 | For every positive integer n there is a cyclic group of order n. Statement 2 | Every finite cyclic group contains an element of every order that divides the order of the group.",
+    "choices": [
+      "True, True",
+      "False, False",
+      "True, False",
+      "False, True"
+    ],
+    "answer": 0,
+    "answer_letter": "A",
+    "subject": "abstract_algebra",
+    "dataset_name": "MMLU"
+  }
+]

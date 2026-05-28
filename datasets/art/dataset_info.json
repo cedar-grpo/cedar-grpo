@@ -1,0 +1,17 @@
+{
+  "name": "ART",
+  "source": "https://huggingface.co/datasets/allenai/art",
+  "description": "Abductive NLI (αNLI): choose the more plausible hypothesis given two observations.",
+  "files": {
+    "data.jsonl": {
+      "num_examples": 459,
+      "fields": [
+        "observation_1",
+        "observation_2",
+        "hypothesis_1",
+        "hypothesis_2",
+        "label"
+      ]
+    }
+  }
+}

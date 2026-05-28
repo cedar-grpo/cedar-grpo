@@ -1,0 +1,19 @@
+{
+  "name": "Balanced COPA",
+  "source": "https://huggingface.co/datasets/pkavumba/balanced-copa",
+  "description": "Balanced COPA: causal commonsense reasoning (cause/effect) as binary choice.",
+  "files": {
+    "data.jsonl": {
+      "num_examples": 150,
+      "fields": [
+        "id",
+        "premise",
+        "question",
+        "choice1",
+        "choice2",
+        "label",
+        "mirrored"
+      ]
+    }
+  }
+}

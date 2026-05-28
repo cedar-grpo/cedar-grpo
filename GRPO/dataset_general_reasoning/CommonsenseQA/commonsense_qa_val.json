@@ -1,0 +1,1842 @@
+[
+  {
+    "id": "d060ab71d0efff3cab5960089a6bb3a2",
+    "question": "The coach decided to make a lineup change, the team's effort was suffering from what?",
+    "question_concept": "change",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "stagnant",
+        "stagnation",
+        "tradition",
+        "hunger",
+        "paper money"
+      ]
+    },
+    "answerKey": "B",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "aa984e2b487d08889bc0c73bab5ac945",
+    "question": "If someone laughs after surprising them they have a good sense of what?",
+    "question_concept": "surprising",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "joy",
+        "fight",
+        "frightened",
+        "humor",
+        "laughter"
+      ]
+    },
+    "answerKey": "D",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "24ceaf5c10863e73919b5f1b0f2db38e",
+    "question": "I'm having some food at my party, what will I need to serve it?",
+    "question_concept": "food",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "zoo",
+        "pan",
+        "bowl",
+        "kitchen",
+        "spoon"
+      ]
+    },
+    "answerKey": "E",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "a651ffa44ac5febf0aede6748899b981",
+    "question": "Committing perjury is a serious what?",
+    "question_concept": "committing perjury",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "indictment",
+        "crime",
+        "violence",
+        "lie",
+        "go to jail"
+      ]
+    },
+    "answerKey": "B",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "e216381e9f0ddd1d248ee25fccca2b1f",
+    "question": "What do you call the caretakers of a child?",
+    "question_concept": "child",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "principal",
+        "birth",
+        "loving couple",
+        "act of sex",
+        "parents"
+      ]
+    },
+    "answerKey": "E",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "b148f18fb8b5a504b67078ef6ac29717",
+    "question": "Why would a person put flowers in a room with dirty gym socks?",
+    "question_concept": "flowers",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "continue to grow",
+        "plant themselves",
+        "many colors",
+        "smell good",
+        "make pretty"
+      ]
+    },
+    "answerKey": "D",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "93b52e7ea1acf10db891e9355e234123",
+    "question": "While knitting you can do what using a radio?",
+    "question_concept": "knitting",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "listen to music",
+        "watch television",
+        "making blankets",
+        "eat",
+        "watching tv"
+      ]
+    },
+    "answerKey": "A",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "3b8e1d236f5169b6c833a994d6d9c39a",
+    "question": "What are you waiting alongside with when you're in a reception area?",
+    "question_concept": "reception area",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "motel",
+        "chair",
+        "hospital",
+        "people",
+        "hotels"
+      ]
+    },
+    "answerKey": "D",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "e71da9e95b321763c86e879a47bbd327",
+    "question": "The criminal insisted he must do the crime to the bank teller, but she tried to convince him there were other ways in life and this was what?",
+    "question_concept": "must",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "willing",
+        "optional",
+        "should not",
+        "have to",
+        "unnecessary"
+      ]
+    },
+    "answerKey": "E",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "ae038e9af9d5a511ada7456b5e73b15e",
+    "question": "What could be playing a balailaika?",
+    "question_concept": "balalaika",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "movie dr",
+        "orchestra",
+        "music store",
+        "cat",
+        "symphony"
+      ]
+    },
+    "answerKey": "B",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "cce1b59f7c4f540a84a1a7d6d88548c4",
+    "question": "What is the least likely immediate side effect of eating hamburger?",
+    "question_concept": "eating hamburger",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "nausea",
+        "death",
+        "illness",
+        "health problems",
+        "gain weight"
+      ]
+    },
+    "answerKey": "B",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "c492b8b9754a181c924c1df19998cbc7",
+    "question": "When you fail to finish something, you failed at doing what to it",
+    "question_concept": "fail",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "winning",
+        "passing",
+        "completing",
+        "do well",
+        "succeeding"
+      ]
+    },
+    "answerKey": "C",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "1ab746bcd100ccf513055fe93c61010b",
+    "question": "The tourist entered Mammoth cave, what state were they in?",
+    "question_concept": "cave",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "west virginia",
+        "kentucky",
+        "rocky hills",
+        "scotland",
+        "canyon"
+      ]
+    },
+    "answerKey": "B",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "7ec14907622c6d5a6087cd59a22d8c9d",
+    "question": "Where would you need to use a lantern?",
+    "question_concept": "lantern",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "grocery store",
+        "antique shop",
+        "house",
+        "dark place",
+        "street"
+      ]
+    },
+    "answerKey": "D",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "8605fd2affc796d79073d0f3ef0761c9",
+    "question": "The audience cheered when a goal was scored, what were they spectating?",
+    "question_concept": "audience",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "school",
+        "sporting event",
+        "concert hall",
+        "show",
+        "television"
+      ]
+    },
+    "answerKey": "B",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "5502dc807d4921679ae1abd0dc9570d6",
+    "question": "Why does someone flirt with many people at once?",
+    "question_concept": "flirt",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "have sex",
+        "get laid",
+        "were lonely",
+        "attract attention",
+        "dance"
+      ]
+    },
+    "answerKey": "D",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "9889e5389917d812c09d6e5d382d333d",
+    "question": "After he got hired he hoped for success at his what?",
+    "question_concept": "success",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "vocation",
+        "new job",
+        "michigan",
+        "working hard",
+        "manual"
+      ]
+    },
+    "answerKey": "B",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "ae56eff01d05422ddbcb26be7181356a",
+    "question": "What could suddenly stop someone when he or she is running?",
+    "question_concept": "running",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "mushroom",
+        "falling down",
+        "sweating",
+        "exhaustion",
+        "getting tired"
+      ]
+    },
+    "answerKey": "B",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "ab2eb930b29bb6d5e94a6cd3b04ba01e",
+    "question": "The dogs were protecting their own when they decided to what the bad man?",
+    "question_concept": "dogs",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "bad breath",
+        "defend",
+        "run fast",
+        "ocean",
+        "attack"
+      ]
+    },
+    "answerKey": "E",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "8d275acea05fd16295c659c504576a9b",
+    "question": "Where can you buy jeans at one of may indoor merchants?",
+    "question_concept": "jeans",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "gap",
+        "shopping mall",
+        "bedroom",
+        "laundromat",
+        "bathroom"
+      ]
+    },
+    "answerKey": "B",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "91e0f4ab62c9d2fd440d73a3f5308d96",
+    "question": "The lock kept the steering wheel from moving, but the thief still took his chances and began to work on the what?",
+    "question_concept": "lock",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "keep cloesd",
+        "train",
+        "ignition switch",
+        "drawer",
+        "firearm"
+      ]
+    },
+    "answerKey": "C",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "f4bb8ecacb9ce89e040f5f76bc79afb3",
+    "question": "How can people fulfill their own calorie requirements?",
+    "question_concept": "people",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "compete with each other",
+        "feed themselves",
+        "feel lonely",
+        "talk to each other",
+        "ask a doctor"
+      ]
+    },
+    "answerKey": "B",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "23d97480fe45bace231503f8fc367a5b",
+    "question": "What do professors primarily do?",
+    "question_concept": "professors",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "master physics",
+        "state facts",
+        "wear wrinkled tweed jackets",
+        "school students",
+        "teach courses"
+      ]
+    },
+    "answerKey": "E",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "3fe45ab3bd4a844ea290050fc0ece8c1_1",
+    "question": "At a shop what can you buy to put your spare unused things?",
+    "question_concept": "shop",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "basement",
+        "cardboard box",
+        "ocean floor",
+        "high school",
+        "container"
+      ]
+    },
+    "answerKey": "E",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "6b1f5ebd9d0dbc7e34a598456a6091a8",
+    "question": "It's dangerous to let pet birds free so it's better to keep them what?",
+    "question_concept": "free",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "slavery",
+        "caught",
+        "caged in",
+        "topfree",
+        "prisoner"
+      ]
+    },
+    "answerKey": "C",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "d6900a01a9dd6627b4bb22b0f6d191a5",
+    "question": "What is a prisoner sentenced to do?",
+    "question_concept": "prisoner",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "scape jail",
+        "dream of freedom",
+        "become a hairdresser",
+        "attempt to escape",
+        "do time"
+      ]
+    },
+    "answerKey": "E",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "d35a8a3bd560fdd651ecf314878ed30f",
+    "question": "What would you put meat on top of to cook it?",
+    "question_concept": "meat",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "oil",
+        "freezer",
+        "ham sandwich",
+        "oven",
+        "frying pan"
+      ]
+    },
+    "answerKey": "E",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "d107d67d525a686fbd8282314d2ea33c",
+    "question": "A gentleman is carrying equipment for golf, what is he likely to have?",
+    "question_concept": "gentleman",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "club",
+        "assembly hall",
+        "meditation center",
+        "meeting",
+        "church"
+      ]
+    },
+    "answerKey": "A",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "f898eb5b789d2dc6804edba269f051f0",
+    "question": "When you get up in the morning before you begin work you should do what?",
+    "question_concept": "begin work",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "apply for job",
+        "sleep",
+        "concentrate",
+        "shower",
+        "just do"
+      ]
+    },
+    "answerKey": "D",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "faa0aa438b94c19be8ff52ee80d9e298",
+    "question": "The car was going from Alabama to New York, what was its goal?",
+    "question_concept": "car",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "head north",
+        "speed up",
+        "heading north",
+        "go fast",
+        "headed south"
+      ]
+    },
+    "answerKey": "A",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "1729c737ff92cf558efecde2c6cafc5e",
+    "question": "What do you need to wear when hiking?",
+    "question_concept": "hiking",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "cast iron stomach",
+        "physical exertion",
+        "shin splints",
+        "adventure",
+        "fatigue"
+      ]
+    },
+    "answerKey": "C",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "0b52cc905fff0ca69a45e6353d10e401",
+    "question": "Where would you put a dollar if you want to go to a store and buy something with it?",
+    "question_concept": "dollar",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "cash drawer",
+        "teh bank",
+        "safety deposit box",
+        "pocket",
+        "piggy bank"
+      ]
+    },
+    "answerKey": "D",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "7fe53bf68ec57a52a508611acf5b279e",
+    "question": "Joan was a baby, so there were many things she couldn't do, which caused problems for her parents.  Name one thing that makes raising a baby difficult.",
+    "question_concept": "baby",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "arrive early",
+        "learn to walk",
+        "boy or girl",
+        "bring joy",
+        "talk nonsense"
+      ]
+    },
+    "answerKey": "E",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "3f6157968fcf50d257ec3d8c729b7443",
+    "question": "what does someone have that causes them committing murder?",
+    "question_concept": "committing murder",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "problems",
+        "distress",
+        "fear",
+        "go to jail",
+        "killer"
+      ]
+    },
+    "answerKey": "A",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "91629c6f9e4af3e6acf385eb23fd8068",
+    "question": "What do you write letter in in America?",
+    "question_concept": "letter",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "syllable",
+        "post office",
+        "envelope",
+        "english alphabet",
+        "word"
+      ]
+    },
+    "answerKey": "D",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "3526550b02d9594abd4fc43553010fc6",
+    "question": "The dad wanted to protect his house, where did he put his gun?",
+    "question_concept": "gun",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "police station",
+        "crime scene",
+        "restroom",
+        "drawer",
+        "holster"
+      ]
+    },
+    "answerKey": "D",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "81cc0d320488c7bacafb285cf7db5fbd",
+    "question": "Where does lettuce arrive by large trucks?",
+    "question_concept": "lettuce",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "kitchen",
+        "supermarket",
+        "farmer's market",
+        "salad",
+        "refrigerator"
+      ]
+    },
+    "answerKey": "B",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "e40fd2c17fe2cde4bd4af540d35fd518",
+    "question": "If you have a condo in a Wisconsin city known for beer, where are you?",
+    "question_concept": "condo",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "city",
+        "electrical circuit",
+        "residential area",
+        "suburbia",
+        "milwaukee"
+      ]
+    },
+    "answerKey": "E",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "2f97a77d155cb99092e8a7c055737b03_1",
+    "question": "In what country are the most fast food restaurants?",
+    "question_concept": "fast food restaurant",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "new york",
+        "blocks of flats",
+        "center of town",
+        "america",
+        "big cities"
+      ]
+    },
+    "answerKey": "D",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "d3b145911a76fd6fbe9a23ab027be024",
+    "question": "Where is a bird likely to make it's home?",
+    "question_concept": "bird",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "forest",
+        "nest",
+        "roof",
+        "leaves",
+        "sky"
+      ]
+    },
+    "answerKey": "A",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "ff0303db294a823d4138fb81a6ee6438",
+    "question": "What type of residence has a ground floor with a stoop?",
+    "question_concept": "ground floor",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "brownstone",
+        "hotel",
+        "condominium",
+        "entering building",
+        "office building"
+      ]
+    },
+    "answerKey": "A",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "c2c2a387fd9a6a26cff636008de21f71",
+    "question": "What is a place that is far away from your house and where you could consume beer?",
+    "question_concept": "beer",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "refrigerator",
+        "friend's house",
+        "keg",
+        "neighbor's house",
+        "kitchen"
+      ]
+    },
+    "answerKey": "B",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "67beae081a9b5ef56988f205f80cf129",
+    "question": "If you're a child answering questions and an adult is asking them that adult is doing what?",
+    "question_concept": "answering questions",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "discussion",
+        "explaning",
+        "teaching",
+        "confusion",
+        "correct"
+      ]
+    },
+    "answerKey": "C",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "be2cb9c96069ac355a7ccef262743d14",
+    "question": "Where can you buy a replacement ax handle?",
+    "question_concept": "handle",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "bathroom",
+        "hardware store",
+        "water fountain",
+        "grocery store",
+        "fridge"
+      ]
+    },
+    "answerKey": "B",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "a15d564d0be6996251b5d523ac62db2a",
+    "question": "Why is it hard for a young child to read a long book?",
+    "question_concept": "book",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "knowledge",
+        "cover",
+        "no pictures",
+        "past",
+        "many words"
+      ]
+    },
+    "answerKey": "E",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "32e2adee67aace0a98c830fb39463015",
+    "question": "Nature creates more beautiful structures than those that are what?",
+    "question_concept": "nature",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "artificial",
+        "indoors",
+        "city",
+        "man made",
+        "eat cake"
+      ]
+    },
+    "answerKey": "D",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "7ce1f99e8185489a7113e6d18c71abb0",
+    "question": "Where are sheep likely to live?",
+    "question_concept": "sheep",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "school",
+        "meadow",
+        "lamb",
+        "farm",
+        "fairgrounds"
+      ]
+    },
+    "answerKey": "D",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "48abc2c113623fd72f758502529f93a5",
+    "question": "By learning about the world, many poor college students gain what?",
+    "question_concept": "learning about world",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "pleasure",
+        "greater mobility",
+        "desire to travel",
+        "global warming",
+        "increased security"
+      ]
+    },
+    "answerKey": "C",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "1afa02df02c908a558b4036e80242fac",
+    "question": "A revolving door is convenient for two direction travel, but it also serves as a security measure at a what?",
+    "question_concept": "revolving door",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "bank",
+        "library",
+        "department store",
+        "mall",
+        "new york"
+      ]
+    },
+    "answerKey": "A",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "08ad17d3ca1838b8724d21cf5921ec52",
+    "question": "How can you let someone know about your anger without hurting him or her?",
+    "question_concept": "anger",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "release energy",
+        "destroy enemy",
+        "punch",
+        "write letter",
+        "lose your temper"
+      ]
+    },
+    "answerKey": "D",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "30138608d4934a75cf0911a06b021374",
+    "question": "I couldn't find anybody who recalled the event, what were they adroit at doing?",
+    "question_concept": "anybody",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "question authority",
+        "act fool",
+        "wash dishes",
+        "act innocent",
+        "forget"
+      ]
+    },
+    "answerKey": "E",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "ca9a3ccfb140aa66816f96ac983b6d9f_1",
+    "question": "If student got a list of supplies from class like paper and pencils, their parent would have to go where?",
+    "question_concept": "pencils",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "classroom",
+        "parking garage",
+        "store",
+        "backpack",
+        "cabinet"
+      ]
+    },
+    "answerKey": "C",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "63861ac5e633db9090704ae315ef6f93",
+    "question": "The landscaper was carefully arching stones together, he was creating an elaborate what over the creek?",
+    "question_concept": "stones",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "park",
+        "made from rocks",
+        "balloon",
+        "field",
+        "bridge"
+      ]
+    },
+    "answerKey": "E",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "5a7f6fd97b2c9ad05f773bc8b2ecf441",
+    "question": "How can a human cross a river and not mess up their hair?",
+    "question_concept": "river",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "wisconsin",
+        "waterfall",
+        "hatred",
+        "bridge",
+        "valley"
+      ]
+    },
+    "answerKey": "D",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "a328285c6212c899e335c45db3c49ffd",
+    "question": "Danny found an old film in a sealed what?",
+    "question_concept": "film",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "clingfilm",
+        "disneyland",
+        "cave",
+        "cabinet",
+        "movie"
+      ]
+    },
+    "answerKey": "D",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "ddd606743cf71679438a85280f64593a",
+    "question": "Where would you use a folding chair but not store one?",
+    "question_concept": "folding chair",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "beach",
+        "city hall",
+        "closet",
+        "garage",
+        "school"
+      ]
+    },
+    "answerKey": "A",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "e58eb0ec4197c29e961a7bdd4d67de4e",
+    "question": "Competing can lead to great highs, and also great lows when suffering what?",
+    "question_concept": "competing",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "winning or losing",
+        "aggression",
+        "gain",
+        "defeat",
+        "sweat"
+      ]
+    },
+    "answerKey": "D",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "44120a9443c619d98ce5bfe4bb219c43",
+    "question": "Where are traveling clothes often kept?",
+    "question_concept": "clothes",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "suitcase",
+        "bedroom",
+        "closet",
+        "draws",
+        "dresser"
+      ]
+    },
+    "answerKey": "A",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "cf8e30dd6956d03e3f0f0397112a8696",
+    "question": "Where is a monkey likely to enjoy being?",
+    "question_concept": "monkey",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "banana tree",
+        "sailor suit",
+        "theatre",
+        "mulberry bush",
+        "research laboratory"
+      ]
+    },
+    "answerKey": "A",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "c410a4626dfce4b4cfd3e5937602cd77",
+    "question": "After recovering from the disease, what did the doctor call the patient?",
+    "question_concept": "disease",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "healthy",
+        "passing around",
+        "cure",
+        "wellness",
+        "healthy"
+      ]
+    },
+    "answerKey": "A",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "aabe8eb218468fc63b6c9aa6d428c951",
+    "question": "After the weight cut he was worried about his energy levels, but this was part of participating in a what?",
+    "question_concept": "energy",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "work",
+        "wrestle",
+        "play sports",
+        "matter",
+        "sleep"
+      ]
+    },
+    "answerKey": "B",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "8d4b0312f02be445e09a9462873d02bb",
+    "question": "What kind of service is my body a part of when I'm no longer here?",
+    "question_concept": "body",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "bodycam",
+        "home",
+        "coffin",
+        "funeral",
+        "graveyard"
+      ]
+    },
+    "answerKey": "D",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "cfa980561efe82e7ae7080d4f081b463",
+    "question": "What is someone operating a vehicle likely to be accused of after becoming inebriated?",
+    "question_concept": "becoming inebriated",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "punish",
+        "arrest",
+        "automobile accidents",
+        "drunk driving",
+        "talking nonsense"
+      ]
+    },
+    "answerKey": "D",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "300bd7704ae8c5fcef618902f18fd01d",
+    "question": "What does someone do to relax at night?",
+    "question_concept": "relax",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "find time",
+        "check mail",
+        "listen to music",
+        "go to bed",
+        "stop worrying"
+      ]
+    },
+    "answerKey": "D",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "ea02772e27f5bd40eced3b65e8c6427f",
+    "question": "What might result in an unsuccessful suicide attempt?",
+    "question_concept": "committing suicide",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "die",
+        "interruption",
+        "bleed",
+        "hatred",
+        "dying"
+      ]
+    },
+    "answerKey": "B",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "418913999c665ae9527fd14a6132da39",
+    "question": "What will likely happen after stabbing to death a person?",
+    "question_concept": "stabbing to death",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "gruesome",
+        "being arrested",
+        "pool of blood",
+        "mess",
+        "grisly"
+      ]
+    },
+    "answerKey": "B",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "ce246bc94a54431b9c0530e71d2456b5",
+    "question": "His house was a mess, he began doing housework to get what?",
+    "question_concept": "doing housework",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "boredom",
+        "nice home",
+        "michigan",
+        "feeling satisfied",
+        "house clean"
+      ]
+    },
+    "answerKey": "E",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "9bac07574c966cae34c85e9f25538cba",
+    "question": "John didn't mind getting in line.  It was what game after that he hated.  The time, the sore feet. He did not like doing what?",
+    "question_concept": "getting in line",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "have to wait for",
+        "standing in line",
+        "eat cake",
+        "less confusion",
+        "being ordered"
+      ]
+    },
+    "answerKey": "B",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "ec79ef747bb89281923edb89ba26786d",
+    "question": "What is a place that has a bench nestled in trees?",
+    "question_concept": "bench",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "state park",
+        "bus stop",
+        "bus depot",
+        "statue",
+        "train station"
+      ]
+    },
+    "answerKey": "A",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "5074bcaf0f700c9f3c8c563067af156a",
+    "question": "The man closed his eyes as the music played, what effect did the music have?",
+    "question_concept": "music",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "coma",
+        "enjoyable",
+        "soothing",
+        "universal",
+        "good or bad"
+      ]
+    },
+    "answerKey": "C",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "c0e4d0118c9cdfe2edc49ef954572b31",
+    "question": "John loved his snake.  It was the only ting he loved. He hated everyone else and was abrasive to most people, but he loved his snake.   How might you describe the snake?",
+    "question_concept": "snake",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "sun itself",
+        "tropical forest",
+        "pet",
+        "rude",
+        "sharp"
+      ]
+    },
+    "answerKey": "C",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "6efaeb796307036719635242fa5ad0f3",
+    "question": "When someone is physically competing what does their body do?",
+    "question_concept": "competing",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "tension",
+        "perform better",
+        "releases heat",
+        "winning or losing",
+        "sweat"
+      ]
+    },
+    "answerKey": "E",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "0197ade3bb26d163ab2e284c960c626f",
+    "question": "From where does a snowflake form?",
+    "question_concept": "snowflake",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "cloud",
+        "snow storm",
+        "billow",
+        "air",
+        "snowstorm"
+      ]
+    },
+    "answerKey": "A",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "4f7be1c68654e2924c161c8eca652928",
+    "question": "The baby was cranky, it needed to eat breakfast but refused to what?",
+    "question_concept": "eat breakfast",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "buy food",
+        "open mouth",
+        "get out of bed",
+        "cry",
+        "wake up"
+      ]
+    },
+    "answerKey": "B",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "f537f6bb8527724e0b1e1c1051326cd5",
+    "question": "Where might a mouse be found to make it country?",
+    "question_concept": "mouse",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "kitchen",
+        "cook",
+        "computer lab",
+        "old barn",
+        "research laboratory"
+      ]
+    },
+    "answerKey": "D",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "34ec6393db5a01f689c11fac153e31c1",
+    "question": "If I wanted to eat something that is made from plants and needs to be washed, what would it be?",
+    "question_concept": "plants",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "roots",
+        "millions of cells",
+        "see work",
+        "leaves to gather light",
+        "flowers on"
+      ]
+    },
+    "answerKey": "A",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "c7327a1a7d12b6cc0740fc9446270e02",
+    "question": "A weasel has a thin body and short legs to easier burrow after prey in a what?",
+    "question_concept": "weasel",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "tree",
+        "mulberry bush",
+        "chicken coop",
+        "viking ship",
+        "rabbit warren"
+      ]
+    },
+    "answerKey": "E",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "43a91955fd0717997a16897c3324e095",
+    "question": "If you're watching a comedy film what would you expect to hear from the audience?",
+    "question_concept": "watching film",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "park",
+        "insight",
+        "being entertained",
+        "laughter",
+        "fear"
+      ]
+    },
+    "answerKey": "D",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "fde48d43e27cefed6ed9c52514e0bb6d",
+    "question": "What is the main purpose of having a bath?",
+    "question_concept": "having bath",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "cleanness",
+        "wetness",
+        "exfoliation",
+        "use water",
+        "hygiene"
+      ]
+    },
+    "answerKey": "A",
+    "datasetName": "commonsense_qa"
+  },
+  {
+    "id": "3bf06235a537adc9d85431846595b800",
+    "question": "Animals come in all types, some fly thanks to their lightweight hollow what?",
+    "question_concept": "animals",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "tails",
+        "bones",
+        "eyes",
+        "heads",
+        "bodies"
+      ]
+    },
+    "answerKey": "B",
+    "datasetName": "commonsense_qa"
+  }
+]

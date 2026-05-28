@@ -1,0 +1,36 @@
+{
+  "name": "NeuLR",
+  "source": "Neural Logic Reasoning dataset",
+  "description": "Abductive, deductive, and inductive reasoning over synthetic logical facts and rules.",
+  "files": {
+    "abductive.jsonl": {
+      "num_examples": 1000,
+      "fields": [
+        "id",
+        "context",
+        "label",
+        "explain"
+      ]
+    },
+    "deductive.jsonl": {
+      "num_examples": 1000,
+      "fields": [
+        "id",
+        "context",
+        "question",
+        "label",
+        "explain"
+      ]
+    },
+    "inductive.jsonl": {
+      "num_examples": 1000,
+      "fields": [
+        "id",
+        "context",
+        "question",
+        "label",
+        "explain"
+      ]
+    }
+  }
+}

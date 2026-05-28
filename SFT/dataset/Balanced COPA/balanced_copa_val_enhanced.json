@@ -1,0 +1,802 @@
+[
+  {
+    "label": 1,
+    "id": 1460,
+    "premise": "The man won the competition.",
+    "question": "cause",
+    "choice1": "The competition was sabotaged.",
+    "choice2": "He intimidated his competitors.",
+    "mirrored": true,
+    "rationale": "The premise states that the man won the competition, which implies he gained a competitive advantage over his rivals. While sabotage could theoretically lead to a win, it is a less direct and more complex explanation than intimidation. Choice 2 provides a more plausible psychological cause, as intimidating competitors can directly cause them to underperform, thereby clearing the man's path to victory."
+  },
+  {
+    "label": 0,
+    "id": 1279,
+    "premise": "The man never made an error in his calculations.",
+    "question": "cause",
+    "choice1": "He checked his work.",
+    "choice2": "His work was hasty.",
+    "mirrored": true,
+    "rationale": "The premise states that the man achieved perfect accuracy in his calculations. Checking one's work is a deliberate action intended to identify and correct mistakes, making it a highly plausible cause for a flawless outcome. In contrast, hasty work typically leads to oversight and increased errors, which contradicts the premise."
+  },
+  {
+    "label": 0,
+    "id": 1045,
+    "premise": "The bird flew south.",
+    "question": "cause",
+    "choice1": "It migrated for the winter.",
+    "choice2": "It injured its wing.",
+    "mirrored": true,
+    "rationale": "The premise describes a bird flying south, which is a characteristic behavior of seasonal migration. Choice 1 provides a direct and common biological explanation for this movement, as many bird species fly south to reach warmer climates during the winter. In contrast, Choice 2 is illogical because an injured wing would typically prevent a bird from flying long distances or flying at all, making it an unlikely cause for a directed flight path."
+  },
+  {
+    "label": 1,
+    "id": 1005,
+    "premise": "The guests of the party brought candles.",
+    "question": "cause",
+    "choice1": "It was a surprise party.",
+    "choice2": "It was a birthday party.",
+    "mirrored": true,
+    "rationale": "The premise describes guests bringing candles to a party. In the context of a birthday party, it is a standard tradition for guests or hosts to provide candles for the birthday cake to celebrate the individual's age. While a surprise party describes the nature of the event's arrival, it does not inherently necessitate candles unless it is also a birthday celebration. Therefore, a birthday party is the more direct and plausible cause for the presence of candles."
+  },
+  {
+    "label": 1,
+    "id": 1430,
+    "premise": "The woman's friend noticed her bad breath.",
+    "question": "cause",
+    "choice1": "She sneezed.",
+    "choice2": "She exhaled.",
+    "mirrored": true,
+    "rationale": "The premise describes a friend noticing a woman's bad breath, which requires the odor to travel from her mouth to the friend's nose. Exhaling is the standard physiological process that releases air from the mouth or nose, making it the direct mechanism for sharing breath odor. While sneezing also involves an expulsion of air, it is a sudden, involuntary reaction that is less common and less direct for a casual observation of breath than a simple exhale. Therefore, Choice 2 is the more plausible cause for the friend noticing the scent."
+  },
+  {
+    "label": 1,
+    "id": 155,
+    "premise": "The woman received a diploma.",
+    "question": "cause",
+    "choice1": "She enrolled in college.",
+    "choice2": "She graduated from college.",
+    "mirrored": false,
+    "rationale": "The premise describes the receipt of a diploma, which is the formal document certifying the completion of an academic program. While enrolling in college is a necessary first step, it does not inherently result in receiving a diploma without the successful completion of all requirements. Graduation is the specific event that directly triggers the issuance of a diploma, making Choice 2 the most plausible immediate cause."
+  },
+  {
+    "label": 0,
+    "id": 125,
+    "premise": "The turtle hid in its shell.",
+    "question": "cause",
+    "choice1": "It detected a predator.",
+    "choice2": "It ate a fish.",
+    "mirrored": false,
+    "rationale": "The premise describes a turtle's defensive behavior, which is a common reaction to perceived threats in its environment. Detecting a predator provides a direct and plausible motivation for a turtle to retract into its shell for protection. In contrast, eating a fish is a predatory or feeding action that would not typically trigger a defensive hiding response."
+  },
+  {
+    "label": 1,
+    "id": 1333,
+    "premise": "The woman emptied her mailbox.",
+    "question": "cause",
+    "choice1": "She left it unsupervised.",
+    "choice2": "It contained a lot of junk.",
+    "mirrored": true,
+    "rationale": "The premise describes the action of emptying a mailbox, which is a common response to it being full or cluttered. Choice 2 provides a direct motivation for this action, as removing junk mail is the standard way to clear space and manage mail. Choice 1, leaving the mailbox unsupervised, describes a state of neglect rather than a reason to perform the specific task of emptying it."
+  },
+  {
+    "label": 0,
+    "id": 1257,
+    "premise": "The boy lost sniffed the bar of soap.",
+    "question": "cause",
+    "choice1": "The bar emitted a fragrance.",
+    "choice2": "The bar was slippery.",
+    "mirrored": true,
+    "rationale": "The boy sniffing the soap implies he was reacting to an olfactory stimulus. Choice 1 is the most plausible cause because soaps are typically scented, and a fragrance would naturally prompt someone to sniff it to experience the smell. While Choice 2 describes a physical property of soap, slipperiness relates to touch rather than smell and would not provide a reason for the boy to sniff the bar."
+  },
+  {
+    "label": 0,
+    "id": 202,
+    "premise": "I jumped instinctively in fright.",
+    "question": "cause",
+    "choice1": "I sensed someone approaching me from behind.",
+    "choice2": "I heard people chuckling in the adjacent room.",
+    "mirrored": false,
+    "rationale": "The premise describes an instinctive jump caused by fright, which typically results from a sudden, unexpected, or threatening stimulus. Sensing someone approaching from behind is a common trigger for a startle response because it implies a potential threat or a sudden breach of personal space. In contrast, hearing people chuckling in an adjacent room is a common, non-threatening background noise that would not typically provoke an instinctive physical jump of fright."
+  },
+  {
+    "label": 0,
+    "id": 1195,
+    "premise": "The rocket looked pretty.",
+    "question": "cause",
+    "choice1": "The girl designed it.",
+    "choice2": "The girl launched it.",
+    "mirrored": true,
+    "rationale": "The premise describes the aesthetic appearance of the rocket. Choice 1 is a plausible cause because the design process directly determines the visual features, colors, and overall look of an object. Choice 2 is less plausible because launching a rocket is a functional action that relates to its flight rather than its visual appeal."
+  },
+  {
+    "label": 1,
+    "id": 455,
+    "premise": "The child learned how to read.",
+    "question": "cause",
+    "choice1": "He skipped a grade in school.",
+    "choice2": "He began attending school.",
+    "mirrored": false,
+    "rationale": "The premise describes a child acquiring the skill of reading, which typically occurs through formal instruction. Choice 2 is the most plausible cause because attending school provides the structured environment and curriculum necessary for a child to learn literacy. While Choice 1 suggests academic success, skipping a grade is usually a consequence of already having advanced skills rather than the cause of learning to read."
+  },
+  {
+    "label": 1,
+    "id": 1298,
+    "premise": "The manufacturer wouldn't fix the screen on the laptop after it went black.",
+    "question": "cause",
+    "choice1": "The laptop's battery died.",
+    "choice2": "The laptop's warranty expired.",
+    "mirrored": true,
+    "rationale": "The premise describes a manufacturer refusing to repair a laptop screen failure. While a dead battery (Choice 1) would cause a screen to go black, it is a simple maintenance issue that the user would handle, not a reason for a manufacturer to refuse a repair service. In contrast, an expired warranty (Choice 2) is a standard legal and commercial reason for a manufacturer to deny free repair services for hardware failures. Therefore, the expiration of the warranty is the more plausible cause for the manufacturer's refusal."
+  },
+  {
+    "label": 0,
+    "id": 1085,
+    "premise": "The service at the restaurant was quick.",
+    "question": "cause",
+    "choice1": "There were many empty tables.",
+    "choice2": "The restaurant was crowded.",
+    "mirrored": true,
+    "rationale": "The premise describes a situation where restaurant service was fast, which typically occurs when staff are not overwhelmed by a high volume of customers. Choice 1 is the most plausible cause because fewer patrons allow the kitchen and waitstaff to focus their attention and resources on a small number of orders, leading to quicker turnaround times. In contrast, Choice 2 suggests a high demand that usually results in longer wait times for food and service due to a strained capacity."
+  },
+  {
+    "label": 0,
+    "id": 466,
+    "premise": "The man perceived that the woman looked different.",
+    "question": "cause",
+    "choice1": "The woman got her hair cut.",
+    "choice2": "The woman wore a bracelet.",
+    "mirrored": false,
+    "rationale": "The premise states that the man noticed a change in the woman's overall appearance. A haircut is a significant change to a person's facial framing and silhouette, making it a highly plausible reason for someone to look noticeably different. In contrast, wearing a bracelet is a minor accessory change that is unlikely to alter a person's general appearance enough to prompt such a perception."
+  },
+  {
+    "label": 1,
+    "id": 1143,
+    "premise": "The security guard questioned the man.",
+    "question": "cause",
+    "choice1": "The man displayed a weapon.",
+    "choice2": "The man reached into his pocket.",
+    "mirrored": true,
+    "rationale": "The premise describes a security guard initiating a questioning process, which typically follows suspicious but not necessarily violent behavior. Reaching into a pocket in a sensitive area can be perceived as suspicious or a potential attempt to shoplift, prompting a guard to investigate and ask questions. In contrast, if a man displayed a weapon, the situation would likely escalate immediately to a high-threat emergency response, such as drawing a firearm or calling the police, rather than a standard questioning. Therefore, reaching into a pocket is a more plausible cause for a routine inquiry."
+  },
+  {
+    "label": 0,
+    "id": 1177,
+    "premise": "The man exhaled his breath.",
+    "question": "cause",
+    "choice1": "He treaded water.",
+    "choice2": "He went underwater.",
+    "mirrored": true,
+    "rationale": "The premise describes a man exhaling, which is a necessary physiological action for maintaining buoyancy and managing respiration while swimming. Treading water requires controlled breathing and periodic exhalation to stay afloat and regulate oxygen levels during physical exertion. While going underwater involves holding one's breath or a single exhalation, the act of treading water is a more sustained activity where active exhalation is a constant, direct requirement of the process."
+  },
+  {
+    "label": 1,
+    "id": 212,
+    "premise": "The police eliminated the woman from the list of suspects.",
+    "question": "cause",
+    "choice1": "The police interrogated her.",
+    "choice2": "Her alibi checked out.",
+    "mirrored": false,
+    "rationale": "The premise describes a woman being cleared of suspicion in a police investigation. While an interrogation is a standard part of an investigation, it does not inherently lead to a suspect's elimination and could actually increase suspicion. In contrast, a verified alibi provides concrete evidence that the person could not have committed the crime, directly resulting in their removal from the suspect list. Therefore, Choice 2 is the more plausible cause for the police's decision."
+  },
+  {
+    "label": 1,
+    "id": 68,
+    "premise": "The man went away for the weekend.",
+    "question": "cause",
+    "choice1": "He felt content.",
+    "choice2": "He wanted to relax.",
+    "mirrored": false,
+    "rationale": "The premise describes a man taking a trip, which is a common action taken to achieve a specific goal. Wanting to relax serves as a direct motivation for going away, as travel is a standard method for seeking leisure and a change of pace. While feeling content is a positive state, it is more likely to be a result of a trip rather than the primary cause for initiating one."
+  },
+  {
+    "label": 0,
+    "id": 1306,
+    "premise": "I understood the story.",
+    "question": "cause",
+    "choice1": "I read several chapters of the book.",
+    "choice2": "I climbed several flights of stairs.",
+    "mirrored": true,
+    "rationale": "The premise describes a state of comprehension regarding a narrative, which requires engaging with a medium of storytelling. Reading several chapters of a book provides the necessary information and context to understand a story's plot and themes. In contrast, climbing flights of stairs is a physical activity that has no logical or causal connection to cognitive understanding or literary consumption."
+  },
+  {
+    "label": 1,
+    "id": 51,
+    "premise": "I drank from the water fountain.",
+    "question": "cause",
+    "choice1": "I felt nauseous.",
+    "choice2": "I was thirsty.",
+    "mirrored": false,
+    "rationale": "The premise describes the action of drinking from a water fountain, which is a common response to a physiological need. Choice 2, being thirsty, is the most direct and plausible motivation for seeking out and consuming water. While Choice 1 (feeling nauseous) can sometimes lead to drinking water, it is more often associated with avoiding intake or drinking specific liquids to settle the stomach, making it a much less likely cause for using a public fountain than simple thirst."
+  },
+  {
+    "label": 1,
+    "id": 200,
+    "premise": "The woman felt an electric shock.",
+    "question": "cause",
+    "choice1": "She pounded on the door.",
+    "choice2": "She grabbed the doorknob.",
+    "mirrored": false,
+    "rationale": "The premise describes a woman experiencing an electric shock, which typically occurs when a person makes physical contact with a conductive object that has a stray current or static buildup. Grabbing a metal doorknob is a common way to complete a circuit or trigger a static discharge, directly leading to the sensation of a shock. In contrast, pounding on a door is a forceful action that is less likely to involve the sustained or specific contact required for an electrical discharge, making it a less plausible cause."
+  },
+  {
+    "label": 0,
+    "id": 445,
+    "premise": "The journalist wrote a biography about the humanitarian's life.",
+    "question": "cause",
+    "choice1": "The journalist was intrigued by the humanitarian's work.",
+    "choice2": "The humanitarian was difficult for the journalist to interview.",
+    "mirrored": false,
+    "rationale": "The premise describes a journalist writing a biography, which is a significant undertaking requiring deep research and interest. Choice 1 provides a plausible motivation, as being intrigued by a subject's work naturally leads a writer to document their life. Choice 2 describes a barrier to the writing process that would make completing a biography more difficult rather than serving as a cause for starting one."
+  },
+  {
+    "label": 1,
+    "id": 385,
+    "premise": "The librarian located the book in the stacks.",
+    "question": "cause",
+    "choice1": "The book was checked out.",
+    "choice2": "I requested the librarian's help.",
+    "mirrored": false,
+    "rationale": "The premise describes a librarian successfully finding a book within the library's shelving area. For a librarian to actively search for and locate a specific book, they typically need a prompt or a request from a patron. Choice 2 provides this direct catalyst, as requesting help initiates the librarian's search. In contrast, Choice 1 is illogical because if a book were checked out, it would not be located in the stacks; it would be outside the library."
+  },
+  {
+    "label": 1,
+    "id": 31,
+    "premise": "The woman hummed to herself.",
+    "question": "cause",
+    "choice1": "She was nervous.",
+    "choice2": "She was in a good mood.",
+    "mirrored": false,
+    "rationale": "The premise describes a woman humming to herself, which is a common behavioral indicator of contentment or relaxation. Being in a good mood (Choice 2) directly explains this behavior as people often hum when they are feeling happy or at ease. While some people hum when nervous (Choice 1), it is a much less common reaction to anxiety than other behaviors like fidgeting or silence, making Choice 2 the more plausible and typical cause."
+  },
+  {
+    "label": 1,
+    "id": 1334,
+    "premise": "The woman got a body rash.",
+    "question": "cause",
+    "choice1": "She got into a car accident.",
+    "choice2": "She had an allergic reaction.",
+    "mirrored": true,
+    "rationale": "A body rash is a physiological symptom typically caused by biological or environmental triggers. An allergic reaction directly causes skin inflammation and rashes as an immune response to an allergen. In contrast, a car accident is a traumatic physical event that would more likely result in blunt force injuries, such as bruises or broken bones, rather than a rash."
+  },
+  {
+    "label": 0,
+    "id": 1108,
+    "premise": "I replaced the floor with brand new tile.",
+    "question": "cause",
+    "choice1": "The floor was permanently stained.",
+    "choice2": "I spilled juice on the floor.",
+    "mirrored": true,
+    "rationale": "Replacing an entire floor with brand new tile is a significant and permanent renovation typically reserved for major damage or aesthetic failure. A permanent stain on the floor provides a logical justification for such a replacement, as the damage cannot be cleaned or repaired. In contrast, spilling juice is a minor, temporary occurrence that can be easily resolved with basic cleaning and would not warrant the cost and effort of installing a new floor."
+  },
+  {
+    "label": 1,
+    "id": 1361,
+    "premise": "The patient could not afford the medical procedure.",
+    "question": "cause",
+    "choice1": "Specialists recommended the procedure.",
+    "choice2": "The procedure was costly.",
+    "mirrored": true,
+    "rationale": "The premise describes a patient's inability to pay for a medical procedure, which is a financial constraint. Choice 2 provides a direct causal explanation by stating the procedure was expensive, creating a barrier for someone with limited funds. Choice 1 describes a medical recommendation, which explains why the procedure was considered but does not explain the lack of affordability. Therefore, the high cost of the procedure is the most plausible reason for the patient's inability to afford it."
+  },
+  {
+    "label": 0,
+    "id": 26,
+    "premise": "The skydiver glided safely to the ground.",
+    "question": "cause",
+    "choice1": "She opened her parachute.",
+    "choice2": "She jumped out of the plane.",
+    "mirrored": false,
+    "rationale": "The premise describes a skydiver landing safely, which requires a mechanism to slow their terminal velocity during descent. Opening a parachute is the direct and necessary action that allows a skydiver to glide and land without injury. While jumping out of the plane is a prerequisite for the activity, it leads to a freefall rather than a safe glide to the ground."
+  },
+  {
+    "label": 0,
+    "id": 1118,
+    "premise": "The student learned most mistakes.",
+    "question": "cause",
+    "choice1": "The teacher graded his homework.",
+    "choice2": "He talked back to the teacher.",
+    "mirrored": true,
+    "rationale": "The student learning about their mistakes implies they received specific feedback on their performance. Choice 1 provides a direct mechanism for this, as grading homework involves identifying errors and providing corrections to the student. Choice 2 describes a behavioral conflict which, while negative, does not inherently involve the academic feedback necessary for a student to learn from their mistakes."
+  },
+  {
+    "label": 0,
+    "id": 1198,
+    "premise": "The room became bright.",
+    "question": "cause",
+    "choice1": "I lit a candle.",
+    "choice2": "I burnt my dinner.",
+    "mirrored": true,
+    "rationale": "The premise describes a significant increase in light within a room. Lighting a candle is a deliberate action specifically intended to provide illumination, making it a direct and plausible cause for a room becoming bright. While burning dinner might involve a small flame, it is primarily associated with smoke and heat rather than a substantial or intentional increase in light."
+  },
+  {
+    "label": 1,
+    "id": 368,
+    "premise": "The spy discovered the enemy's location.",
+    "question": "cause",
+    "choice1": "The spy was hired by the government.",
+    "choice2": "The spy bugged the enemy's phone.",
+    "mirrored": false,
+    "rationale": "The premise describes a spy successfully obtaining specific information regarding an enemy's location. While being hired by the government establishes the spy's role, it does not provide a mechanism for how the discovery was made. Bugging the enemy's phone is a direct surveillance method that would plausibly reveal geographic coordinates or meeting places, making it the more likely cause of the discovery."
+  },
+  {
+    "label": 1,
+    "id": 371,
+    "premise": "The city re-elected the mayor.",
+    "question": "cause",
+    "choice1": "The city cut its budget.",
+    "choice2": "The mayor fulfilled his promises.",
+    "mirrored": false,
+    "rationale": "The city's decision to re-elect the mayor suggests a high level of voter satisfaction with his performance. If the mayor fulfilled his campaign promises, it directly builds the trust and approval necessary for a successful re-election. In contrast, cutting the city budget is a specific fiscal action that could be unpopular depending on which services were reduced, making it a less reliable or direct cause for a broad electoral victory."
+  },
+  {
+    "label": 0,
+    "id": 482,
+    "premise": "The horse bucked.",
+    "question": "cause",
+    "choice1": "A fly bit the horse.",
+    "choice2": "The rider stroked the horse.",
+    "mirrored": false,
+    "rationale": "The horse bucking is a sudden, defensive physical reaction typically triggered by pain, irritation, or a perceived threat. A fly bite provides a direct and plausible stimulus for this behavior, as horses often buck to dislodge biting insects. In contrast, a rider stroking a horse is a gentle, calming action that would generally soothe the animal rather than cause a violent reaction."
+  },
+  {
+    "label": 0,
+    "id": 267,
+    "premise": "My mailbox was overflowing with letters.",
+    "question": "cause",
+    "choice1": "I went on vacation for two weeks.",
+    "choice2": "The lid on the mailbox broke.",
+    "mirrored": false,
+    "rationale": "The premise describes an accumulation of mail, which typically happens when letters are delivered daily but not collected. Going on vacation for two weeks directly explains this buildup, as the postal service continues delivery while the resident is away. In contrast, a broken mailbox lid might affect the security or condition of the mail, but it would not cause the volume of letters to increase or overflow."
+  },
+  {
+    "label": 0,
+    "id": 294,
+    "premise": "The egg splattered.",
+    "question": "cause",
+    "choice1": "I dropped it.",
+    "choice2": "I boiled it.",
+    "mirrored": false,
+    "rationale": "The premise describes an egg splattering, which implies the shell broke and the liquid contents were released forcefully. Dropping an egg is a direct cause of such an impact, as the force of hitting the floor typically shatters the fragile shell. In contrast, boiling an egg hardens the interior, making it impossible for the egg to splatter even if the shell were to break. Therefore, dropping the egg is the only plausible cause for it splattering."
+  },
+  {
+    "label": 0,
+    "id": 1008,
+    "premise": "The man looked friendly.",
+    "question": "cause",
+    "choice1": "He greeted the cashier.",
+    "choice2": "He used a coupon.",
+    "mirrored": true,
+    "rationale": "The premise describes a person's outward demeanor as friendly, which is typically demonstrated through social interactions. Greeting a cashier is a direct expression of politeness and warmth, providing a clear behavioral basis for being perceived as friendly. In contrast, using a coupon is a neutral financial transaction that relates to shopping habits rather than personality or social behavior. Therefore, Choice 1 is the more plausible cause for the man appearing friendly."
+  },
+  {
+    "label": 0,
+    "id": 232,
+    "premise": "The woman visited her family.",
+    "question": "cause",
+    "choice1": "She missed them.",
+    "choice2": "She distrusted them.",
+    "mirrored": false,
+    "rationale": "The premise describes a social visit to family members, which is typically motivated by positive emotional bonds. Missing one's family is a common and direct motivation for traveling to see them in order to reconnect. In contrast, distrusting one's family would more likely lead to avoidance or distance rather than a voluntary visit."
+  },
+  {
+    "label": 1,
+    "id": 1028,
+    "premise": "The child was not vaccinated but did not get the disease.",
+    "question": "cause",
+    "choice1": "He received the vaccine for the disease.",
+    "choice2": "He avoided exposure to the disease.",
+    "mirrored": true,
+    "rationale": "The premise states that the child remained healthy despite not being vaccinated. Choice 1 directly contradicts the premise by claiming the child was vaccinated, making it an impossible cause. Choice 2 provides a plausible explanation: if the child was never exposed to the pathogen, they would not contract the disease regardless of their vaccination status. Therefore, avoiding exposure is the only logical reason for the child remaining disease-free in this scenario."
+  },
+  {
+    "label": 1,
+    "id": 412,
+    "premise": "The community learned of the man's death.",
+    "question": "cause",
+    "choice1": "His family buried him in the cemetery.",
+    "choice2": "His obituary appeared in the newspaper.",
+    "mirrored": false,
+    "rationale": "The premise describes the community becoming aware of a man's passing, which requires a public dissemination of information. An obituary in a newspaper is a standard method for informing the general public about a death, making Choice 2 a direct cause of the community's knowledge. While a burial in a cemetery is a consequence of death, it is typically a private event and does not serve as the primary mechanism for notifying the broader community."
+  },
+  {
+    "label": 1,
+    "id": 1002,
+    "premise": "The woman did not tolerate her friend's difficult behavior anymore.",
+    "question": "cause",
+    "choice1": "The woman knew her friend was going through a hard time.",
+    "choice2": "The woman felt that her friend took advantage of her kindness.",
+    "mirrored": true,
+    "rationale": "The premise describes a woman reaching a breaking point regarding her friend's behavior. Choice 2 provides a plausible motive for this loss of tolerance, as feeling exploited or taken advantage of typically leads to resentment and the setting of firm boundaries. In contrast, Choice 1 suggests a reason for the woman to be more patient or empathetic, which contradicts the decision to stop tolerating the behavior."
+  },
+  {
+    "label": 1,
+    "id": 1325,
+    "premise": "The boy started crying loudly.",
+    "question": "cause",
+    "choice1": "His brother tickled him.",
+    "choice2": "His brother kicked him.",
+    "mirrored": true,
+    "rationale": "The premise describes a boy crying loudly, which typically indicates a reaction to physical pain or distress. While tickling can sometimes cause loud laughter or minor discomfort, a kick is a direct physical assault that causes sharp pain and is a much more common trigger for loud crying. Therefore, Choice 2 is the more plausible cause because it aligns with the expected emotional and physical response to being hurt."
+  },
+  {
+    "label": 1,
+    "id": 147,
+    "premise": "I ironed my shirt.",
+    "question": "cause",
+    "choice1": "It was clean.",
+    "choice2": "It was wrinkled.",
+    "mirrored": false,
+    "rationale": "The premise describes the action of ironing a shirt, which is a task specifically performed to remove creases from fabric. Choice 2 is the most plausible cause because a wrinkled shirt creates the immediate necessity for ironing to restore a smooth appearance. While Choice 1 mentions the shirt was clean, cleanliness is a prerequisite for ironing rather than the direct cause of the action itself. Therefore, the presence of wrinkles directly triggers the decision to iron, making Choice 2 the superior causal explanation."
+  },
+  {
+    "label": 0,
+    "id": 1433,
+    "premise": "Only the person next to me could hear me speak.",
+    "question": "cause",
+    "choice1": "I lowered my voice.",
+    "choice2": "I inhaled smoke.",
+    "mirrored": true,
+    "rationale": "The premise states that the speaker's voice was only audible to the person immediately next to them, implying a very limited range of sound. Lowering one's voice is a deliberate action intended to restrict who can hear a conversation, directly resulting in the described situation. While inhaling smoke might cause coughing or a raspy voice, it does not inherently limit the physical range of sound to a single adjacent person as effectively or predictably as whispering or speaking softly. Therefore, lowering the voice is the most plausible cause for the restricted audibility."
+  },
+  {
+    "label": 1,
+    "id": 100,
+    "premise": "The driver got pulled over by the police.",
+    "question": "cause",
+    "choice1": "He was parking.",
+    "choice2": "He was speeding.",
+    "mirrored": false,
+    "rationale": "The premise describes a driver being pulled over, which typically occurs due to a traffic violation or safety concern. Speeding is a common legal infraction that prompts immediate police intervention to ensure road safety. In contrast, parking is a standard driving maneuver that does not warrant a police stop unless it involves a specific illegal placement, making speeding the more direct and plausible cause."
+  },
+  {
+    "label": 1,
+    "id": 1364,
+    "premise": "I did not worry about my computer crashing.",
+    "question": "cause",
+    "choice1": "I downloaded a virus.",
+    "choice2": "I backed up my files.",
+    "mirrored": true,
+    "rationale": "The premise describes a lack of concern regarding a potential computer crash. Backing up files (Choice 2) provides a safety net that ensures data is preserved even if the hardware fails, directly leading to a feeling of security. In contrast, downloading a virus (Choice 1) would significantly increase the risk of a crash and cause more worry, making it an illogical cause for the premise."
+  },
+  {
+    "label": 0,
+    "id": 443,
+    "premise": "The pair of students came under scrutiny by the teacher.",
+    "question": "cause",
+    "choice1": "Their responses on the assignment were identical.",
+    "choice2": "The students both received excellent grades.",
+    "mirrored": false,
+    "rationale": "The premise describes a teacher's suspicion or close examination of two students. Identical responses on an assignment provide a direct and plausible reason for such scrutiny, as it suggests potential academic dishonesty or unauthorized collaboration. While excellent grades are a positive outcome, they do not typically trigger scrutiny unless accompanied by evidence of cheating, making Choice 1 the more logical cause."
+  },
+  {
+    "label": 1,
+    "id": 1372,
+    "premise": "The woman did not tell the story to anyone.",
+    "question": "cause",
+    "choice1": "She wanted attention.",
+    "choice2": "She felt shy.",
+    "mirrored": true,
+    "rationale": "The premise describes a woman withholding information or keeping a story to herself. If she felt shy, as suggested in Choice 2, it is highly plausible that she would avoid sharing the story to prevent being the center of attention or due to social anxiety. Conversely, if she wanted attention, as suggested in Choice 1, she would be more likely to tell the story to others to gain their interest. Therefore, Choice 2 provides a logical motivation for her silence."
+  },
+  {
+    "label": 0,
+    "id": 438,
+    "premise": "The man felt obligated to attend the event.",
+    "question": "cause",
+    "choice1": "He promised his friend that he would go.",
+    "choice2": "He turned down his friend's invitation to go.",
+    "mirrored": false,
+    "rationale": "The premise describes a sense of social or moral obligation, which typically arises from a prior commitment or agreement. Choice 1 provides a direct cause for this feeling, as making a promise creates a social contract that necessitates attendance. In contrast, Choice 2 describes the act of declining an invitation, which would negate the need to attend and resolve any obligation rather than creating one."
+  },
+  {
+    "label": 0,
+    "id": 1436,
+    "premise": "The police tortured the suspect.",
+    "question": "cause",
+    "choice1": "They were trying to elicit a confession.",
+    "choice2": "They were looking for illegal drugs.",
+    "mirrored": true,
+    "rationale": "The premise describes a situation where police are using physical or psychological force on a suspect. In a criminal justice context, torture is most plausibly used as an extreme, albeit illegal, method to force a suspect to admit to a crime. While police might search for illegal drugs, this is typically done through physical searches of property or persons rather than the direct torture of an individual. Therefore, eliciting a confession is the more direct and common causal motivation for such an act."
+  },
+  {
+    "label": 0,
+    "id": 8,
+    "premise": "The man got a discount on his groceries.",
+    "question": "cause",
+    "choice1": "He used a coupon.",
+    "choice2": "He greeted the cashier.",
+    "mirrored": false,
+    "rationale": "The premise describes a financial reduction in the cost of groceries, which typically requires a formal transaction adjustment. Using a coupon is a standard commercial practice specifically designed to trigger a discount at the point of sale. While greeting a cashier is a common social interaction, it does not typically result in a price reduction, making the first choice the more plausible cause."
+  },
+  {
+    "label": 0,
+    "id": 36,
+    "premise": "The man urgently leaped out of bed.",
+    "question": "cause",
+    "choice1": "He wanted to shut off the alarm clock.",
+    "choice2": "He wanted to iron his pants before work.",
+    "mirrored": false,
+    "rationale": "The premise describes an urgent physical reaction, which suggests an immediate and loud stimulus. Choice 1 is the most plausible cause because an alarm clock creates a persistent, jarring noise that requires a quick response to silence. In contrast, Choice 2 describes a routine chore that, while necessary, lacks the inherent urgency to trigger a sudden leap from bed."
+  },
+  {
+    "label": 1,
+    "id": 1454,
+    "premise": "The boy had someone to play with.",
+    "question": "cause",
+    "choice1": "His brother took his toys from him.",
+    "choice2": "He shared his toys with his brother.",
+    "mirrored": true,
+    "rationale": "The premise describes a social interaction where the boy is no longer playing alone. Choice 2 provides a direct mechanism for this interaction, as sharing toys with his brother facilitates cooperative play between the two. In contrast, Choice 1 describes a conflict where the brother takes toys away, which typically leads to isolation or distress rather than a shared play experience."
+  },
+  {
+    "label": 0,
+    "id": 1062,
+    "premise": "My stomach was heavy.",
+    "question": "cause",
+    "choice1": "I was full from breakfast.",
+    "choice2": "I forgot to eat breakfast.",
+    "mirrored": true,
+    "rationale": "A heavy feeling in the stomach is a common physical sensation associated with satiety or overeating. Choice 1 provides a direct cause, as consuming a large meal fills the stomach and creates a sense of weight. In contrast, Choice 2 would likely result in a feeling of emptiness or hunger pangs rather than heaviness."
+  },
+  {
+    "label": 1,
+    "id": 271,
+    "premise": "My feet were blistered.",
+    "question": "cause",
+    "choice1": "I went swimming.",
+    "choice2": "I went hiking.",
+    "mirrored": false,
+    "rationale": "The premise describes a physical injury, specifically blisters on the feet, which typically results from prolonged friction between the skin and footwear. Hiking involves walking long distances, often on uneven terrain, which creates the repetitive friction necessary to cause blisters. In contrast, swimming is a low-impact activity performed barefoot in water, making it an unlikely cause of foot blisters. Therefore, hiking is the more plausible cause."
+  },
+  {
+    "label": 0,
+    "id": 1230,
+    "premise": "The woman was correctly convicted for the crime.",
+    "question": "cause",
+    "choice1": "The jury was fair.",
+    "choice2": "She was framed.",
+    "mirrored": true,
+    "rationale": "The premise states that the woman was correctly convicted, implying that the legal outcome aligned with the truth of the situation. A fair jury (Choice 1) is a direct causal mechanism for achieving a correct conviction, as it ensures the evidence is weighed impartially. In contrast, being framed (Choice 2) would typically lead to an incorrect or wrongful conviction, making it logically inconsistent with the premise. Therefore, Choice 1 is the more plausible cause for a just legal result."
+  },
+  {
+    "label": 1,
+    "id": 382,
+    "premise": "The driver honked her horn.",
+    "question": "cause",
+    "choice1": "She made a right turn at the light.",
+    "choice2": "Another car swerved into her lane.",
+    "mirrored": false,
+    "rationale": "The driver honking her horn is a reactive signal typically used to warn others of danger or express frustration at a traffic violation. Another car swerving into her lane creates an immediate hazard that necessitates a warning honk to prevent a collision. In contrast, making a standard right turn at a light is a routine driving maneuver that does not usually require the use of a horn."
+  },
+  {
+    "label": 0,
+    "id": 1482,
+    "premise": "The horse calmed down.",
+    "question": "cause",
+    "choice1": "The rider stroked the horse.",
+    "choice2": "A fly bit the horse.",
+    "mirrored": true,
+    "rationale": "The premise describes a horse transitioning into a state of calmness, which typically requires a soothing or positive stimulus. Choice 1 is a plausible cause because physical affection from a rider, such as stroking, is a common method used to reassure and relax an animal. In contrast, Choice 2 is an unlikely cause because a fly bite is a painful or irritating stimulus that would more likely cause a horse to become agitated or startled rather than calm."
+  },
+  {
+    "label": 0,
+    "id": 108,
+    "premise": "I dabbed the floor with a paper towel.",
+    "question": "cause",
+    "choice1": "I spilled juice on the floor.",
+    "choice2": "The floor was permanently stained.",
+    "mirrored": false,
+    "rationale": "Dabbing a floor with a paper towel is a common action taken to absorb a liquid mess. Choice 1 provides a direct cause for this action, as spilling juice creates a wet mess that requires immediate cleanup with an absorbent material. Choice 2 is less plausible because a permanent stain cannot be removed by dabbing with a paper towel, making the action ineffective for that situation."
+  },
+  {
+    "label": 0,
+    "id": 1099,
+    "premise": "There was nowhere to sit in the bar.",
+    "question": "cause",
+    "choice1": "It was crowded.",
+    "choice2": "It was 3 AM.",
+    "mirrored": true,
+    "rationale": "The premise describes a lack of available seating, which is a direct and common consequence of a venue being crowded. While Choice 1 provides a logical physical explanation for why all seats would be occupied, Choice 2 describes a time when bars are typically closing or empty, making it an unlikely cause for a lack of space. Therefore, the high volume of people in Choice 1 is the most plausible reason for the situation."
+  },
+  {
+    "label": 0,
+    "id": 1350,
+    "premise": "New countries were discovered.",
+    "question": "cause",
+    "choice1": "Boats sailed through the ocean.",
+    "choice2": "Oil spilled into the ocean.",
+    "mirrored": true,
+    "rationale": "The discovery of new countries historically required long-distance travel across bodies of water to reach previously unknown landmasses. Boats sailing through the ocean provide the necessary means of exploration and navigation to encounter new territories. In contrast, an oil spill is an environmental disaster that occurs within known waters and does not facilitate the discovery of new land. Therefore, maritime exploration is the only plausible cause for finding new countries."
+  },
+  {
+    "label": 0,
+    "id": 151,
+    "premise": "The child caught a life-threatening illness.",
+    "question": "cause",
+    "choice1": "She didn't get vaccinated.",
+    "choice2": "She was adopted.",
+    "mirrored": false,
+    "rationale": "The premise describes a child contracting a life-threatening illness, which is a medical outcome. Choice 1 provides a direct medical explanation, as vaccines are specifically designed to prevent severe and life-threatening diseases. In contrast, Choice 2 describes a legal and social status that has no inherent causal link to the contraction of a specific illness. Therefore, Choice 1 is the more plausible cause."
+  },
+  {
+    "label": 0,
+    "id": 46,
+    "premise": "The girl made a wish.",
+    "question": "cause",
+    "choice1": "She saw a shooting star.",
+    "choice2": "She saw a black cat.",
+    "mirrored": false,
+    "rationale": "Making a wish is a common cultural response to seeing a shooting star, as it is traditionally viewed as a rare and lucky event. While seeing a black cat is associated with superstition, it is typically linked to bad luck or omens rather than the act of making a wish. Therefore, seeing a shooting star provides a direct and culturally recognized motivation for the girl's action."
+  },
+  {
+    "label": 1,
+    "id": 372,
+    "premise": "The woman exaggerated the details of the story.",
+    "question": "cause",
+    "choice1": "She felt shy.",
+    "choice2": "She wanted attention.",
+    "mirrored": false,
+    "rationale": "Exaggerating details is a common behavior used to make a narrative more exciting or impressive to an audience. Wanting attention provides a direct motivation for this behavior, as embellishment increases the likelihood of engaging others. In contrast, feeling shy typically leads to withdrawing or minimizing one's speech rather than inflating a story with extra details."
+  },
+  {
+    "label": 1,
+    "id": 1076,
+    "premise": "The man opened the umbrella.",
+    "question": "cause",
+    "choice1": "He approached the building.",
+    "choice2": "He got out of the car.",
+    "mirrored": true,
+    "rationale": "The premise describes a man opening an umbrella, an action typically taken to protect oneself from rain when entering an unsheltered area. Choice 2 is the more plausible cause because exiting a car immediately exposes a person to the elements, necessitating the use of an umbrella if it is raining. In contrast, approaching a building as described in Choice 1 suggests the person is already outside and likely would have opened the umbrella much earlier in their journey."
+  },
+  {
+    "label": 0,
+    "id": 1282,
+    "premise": "The host of the trivia show called on the contestant to pick a category.",
+    "question": "cause",
+    "choice1": "The contestant was in the lead.",
+    "choice2": "The contestant rang the buzzer.",
+    "mirrored": true,
+    "rationale": "The premise describes a host asking a contestant to choose a category, which typically occurs when a contestant has earned the right to control the board. In many trivia formats, such as Jeopardy!, the contestant who is currently in the lead or has just answered correctly is given the privilege of selecting the next category. While ringing a buzzer allows a contestant to answer a question, it does not inherently grant the right to pick a category unless the answer is correct and they are leading the game. Therefore, the contestant being in the lead is the more direct and plausible reason for the host to call on them to make a selection."
+  },
+  {
+    "label": 0,
+    "id": 434,
+    "premise": "The clock chimed.",
+    "question": "cause",
+    "choice1": "It was the top of the hour.",
+    "choice2": "The hour seemed to drag on.",
+    "mirrored": false,
+    "rationale": "The premise describes a clock chiming, which is a standard mechanical function used to signal specific intervals of time. Choice 1 provides a direct and common cause, as most striking clocks are designed to chime automatically at the top of the hour. Choice 2 describes a subjective perception of time passing slowly, which does not possess a physical or causal mechanism to trigger a clock's chime. Therefore, Choice 1 is the most plausible explanation based on how clocks function."
+  },
+  {
+    "label": 0,
+    "id": 1456,
+    "premise": "The boy rushed home for dinner.",
+    "question": "cause",
+    "choice1": "His mother cooked his favorite meal.",
+    "choice2": "He ate a big lunch.",
+    "mirrored": true,
+    "rationale": "The boy's urgency to get home for dinner suggests a strong motivation or incentive to eat. Choice 1 provides a clear positive reinforcement, as knowing his favorite meal is waiting would naturally cause him to rush. In contrast, Choice 2 would likely decrease his appetite and make him less inclined to hurry home for another meal. Therefore, Choice 1 is the more plausible cause for his behavior."
+  },
+  {
+    "label": 0,
+    "id": 11,
+    "premise": "The woman repaired her faucet.",
+    "question": "cause",
+    "choice1": "The faucet was leaky.",
+    "choice2": "The faucet was turned off.",
+    "mirrored": false,
+    "rationale": "The premise describes a repair, which implies a malfunction or defect in the faucet. A leaky faucet is a common mechanical failure that necessitates a repair to stop the unwanted flow of water. In contrast, a faucet being turned off is a normal state of operation and does not indicate any damage requiring a fix."
+  },
+  {
+    "label": 1,
+    "id": 250,
+    "premise": "The chandelier shattered on the floor.",
+    "question": "cause",
+    "choice1": "The chandelier's lights flickered on and off.",
+    "choice2": "The chandelier dropped from the ceiling.",
+    "mirrored": false,
+    "rationale": "The premise describes a physical destruction event where a chandelier breaks into pieces upon hitting the floor. Choice 2 provides a direct physical mechanism for this outcome, as a fall from the ceiling involves a high-impact collision with the ground. In contrast, Choice 1 describes a minor electrical malfunction that does not involve the physical movement or structural failure necessary to cause the object to shatter."
+  },
+  {
+    "label": 0,
+    "id": 1353,
+    "premise": "The man asked the waiter to reheat his meal.",
+    "question": "cause",
+    "choice1": "His meal was cold.",
+    "choice2": "His meal was spicy.",
+    "mirrored": true,
+    "rationale": "The premise describes a man requesting that his meal be reheated, which is a specific action taken to increase the temperature of food. Choice 1 is the most plausible cause because food that is served cold typically requires reheating to be palatable. Choice 2 is unlikely because reheating a meal does not reduce its spiciness; in fact, heat can sometimes intensify the perception of spice."
+  },
+  {
+    "label": 0,
+    "id": 1426,
+    "premise": "The driver got a ticket.",
+    "question": "cause",
+    "choice1": "He went over the speed limit.",
+    "choice2": "He ran over a nail.",
+    "mirrored": true,
+    "rationale": "The premise describes a driver receiving a ticket, which is a legal penalty typically issued for traffic violations. Choice 1, exceeding the speed limit, is a direct and common cause for law enforcement to issue a citation. In contrast, Choice 2, running over a nail, results in vehicle damage like a flat tire rather than a legal infraction. Therefore, Choice 1 is the most plausible cause for the driver's ticket."
+  },
+  {
+    "label": 1,
+    "id": 139,
+    "premise": "I wrote a thank-you note to my grandmother.",
+    "question": "cause",
+    "choice1": "She became forgetful.",
+    "choice2": "She sent me a gift.",
+    "mirrored": false,
+    "rationale": "The premise describes the act of writing a thank-you note, which is a social convention typically triggered by receiving something of value. Choice 2 provides a direct and logical catalyst, as sending a gift necessitates a formal expression of gratitude. In contrast, Choice 1 describes a cognitive decline that would not typically prompt a thank-you note and might instead lead to different types of communication or care."
+  },
+  {
+    "label": 1,
+    "id": 117,
+    "premise": "I avoided giving a straight answer to the question.",
+    "question": "cause",
+    "choice1": "I wanted to be honest.",
+    "choice2": "The question made me uncomfortable.",
+    "mirrored": false,
+    "rationale": "Avoiding a straight answer is a common defensive behavior used to deflect or bypass a topic that causes distress or awkwardness. If the question made the speaker uncomfortable, being evasive serves as a logical coping mechanism to protect their privacy or feelings. Conversely, wanting to be honest would typically lead to a direct and transparent answer rather than an avoidant one."
+  },
+  {
+    "label": 0,
+    "id": 1256,
+    "premise": "Cars moved to the intersection of the road.",
+    "question": "cause",
+    "choice1": "The traffic light turned green.",
+    "choice2": "A screaming ambulance approached.",
+    "mirrored": true,
+    "rationale": "The premise describes cars moving forward into an intersection, which is the standard response to a traffic signal change. Choice 1 provides a direct and common regulatory trigger for this behavior, as a green light signals drivers to proceed. Choice 2 is less plausible because the approach of an emergency vehicle typically causes drivers to pull over or stop to clear the way, rather than moving into the intersection."
+  },
+  {
+    "label": 1,
+    "id": 259,
+    "premise": "The celebrity wore sunglasses.",
+    "question": "cause",
+    "choice1": "She wanted to thank her fans.",
+    "choice2": "She wanted to avoid recognition.",
+    "mirrored": false,
+    "rationale": "The premise describes a celebrity wearing sunglasses, a common behavior used to obscure one's facial features in public. Choice 2 is the most plausible cause because sunglasses act as a physical barrier that helps a high-profile individual maintain anonymity and avoid being recognized by the public or paparazzi. In contrast, Choice 1 is illogical, as wearing sunglasses does not facilitate a gesture of gratitude and might actually hinder personal interaction with fans."
+  },
+  {
+    "label": 1,
+    "id": 1187,
+    "premise": "The boy cut his hand in the sand.",
+    "question": "cause",
+    "choice1": "He was building a sand castle.",
+    "choice2": "He was collecting seashells in the sand.",
+    "mirrored": true,
+    "rationale": "The premise describes a boy sustaining a cut while interacting with sand. While building a sandcastle typically involves soft sand, collecting seashells involves handling objects that are often sharp, broken, or jagged. Therefore, Choice 2 provides a more direct and plausible mechanism for the injury than Choice 1."
+  },
+  {
+    "label": 0,
+    "id": 1416,
+    "premise": "The defendant listened anxiously.",
+    "question": "cause",
+    "choice1": "The jury announced its verdict.",
+    "choice2": "The courtroom broke into uproar.",
+    "mirrored": true,
+    "rationale": "The premise describes a defendant listening with anxiety, which typically occurs during a moment of high stakes and anticipation. Choice 1 is the most plausible cause because the announcement of a verdict directly determines the defendant's future, naturally inducing a state of anxious listening. Choice 2 is less likely to be the cause of anxious listening; a courtroom uproar usually happens after a significant event has already occurred, and would more likely cause confusion or distress rather than focused, anxious listening."
+  },
+  {
+    "label": 1,
+    "id": 489,
+    "premise": "The woman contacted the real estate agent.",
+    "question": "cause",
+    "choice1": "The woman needed to clean her house.",
+    "choice2": "The woman planned to buy a condo.",
+    "mirrored": false,
+    "rationale": "The premise describes a woman initiating contact with a real estate agent, an action typically associated with property transactions. Planning to buy a condo directly necessitates the professional services of an agent to facilitate the search and purchase process. In contrast, needing to clean a house is a maintenance task that would involve hiring a cleaning service rather than a real estate professional."
+  },
+  {
+    "label": 1,
+    "id": 156,
+    "premise": "I chugged the pitcher of water.",
+    "question": "cause",
+    "choice1": "I walked upstairs.",
+    "choice2": "I ran five miles.",
+    "mirrored": false,
+    "rationale": "The premise describes a state of extreme thirst or a need for rapid rehydration. Running five miles is a high-intensity aerobic activity that causes significant fluid loss through sweat, directly leading to the urge to chug a large amount of water. In contrast, walking upstairs is a minor physical exertion that would not typically result in enough dehydration to require drinking an entire pitcher of water. Therefore, Choice 2 is the more plausible cause."
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "name": "MuSR",
+  "source": "MuSR: Multi-Step Soft Reasoning dataset",
+  "description": "Long-form narrative reasoning tasks requiring multi-hop deductive inference.",
+  "files": {
+    "murder_mystery.jsonl": {
+      "num_examples": 250,
+      "fields": [
+        "context",
+        "questions"
+      ]
+    },
+    "object_placements.jsonl": {
+      "num_examples": 64,
+      "fields": [
+        "context",
+        "questions"
+      ]
+    },
+    "team_allocation.jsonl": {
+      "num_examples": 250,
+      "fields": [
+        "context",
+        "questions"
+      ]
+    }
+  }
+}

@@ -1,0 +1,187 @@
+sleep_time: 0.1
+
+# API Configuration
+api:
+  base_url: "https://api.openai.com/v1/"
+  # base_url: "https://<your-provider>/v1/chat/completions"
+
+  api_key: "your_api_key_here"
+  timeout: 30
+  retries: 3
+  max_workers: 4
+                          
+models:
+  GPT-OSS-120B:
+    thinking: false
+    temperature: 0.0
+    max_tokens_by_prompt_type:
+      "Only Final Answer": 256
+      "Chain of Thought": 2048
+      "Chain of Thought and Think Abductively": 2048
+      "Chain of Thought and Only Think Abductively": 2048
+  DeepSeek-V3.1:
+    thinking: false
+    temperature: 0.0
+    max_tokens_by_prompt_type:
+      "Only Final Answer": 256
+      "Chain of Thought": 2048
+      "Chain of Thought and Think Abductively": 2048
+      "Chain of Thought and Only Think Abductively": 2048
+  Qwen3-32B:
+    thinking: true
+    temperature: 0.0
+    max_tokens_by_prompt_type:
+      "Only Final Answer": 1024
+      "Chain of Thought": 2048
+      "Chain of Thought and Think Abductively": 2048
+      "Chain of Thought and Only Think Abductively": 2048
+  Qwen2.5-72B:
+    thinking: false
+    temperature: 0.0
+    max_tokens_by_prompt_type:
+      "Only Final Answer": 256
+      "Chain of Thought": 2048
+      "Chain of Thought and Think Abductively": 2048
+      "Chain of Thought and Only Think Abductively": 2048
+  gemma-3-27b-it:
+    thinking: false
+    temperature: 0.0
+    max_tokens_by_prompt_type:
+      "Only Final Answer": 256
+      "Chain of Thought": 2048
+      "Chain of Thought and Think Abductively": 2048
+      "Chain of Thought and Only Think Abductively": 2048
+  Llama4-Scout-17B-16E:
+    thinking: false
+    temperature: 0.0
+    max_tokens_by_prompt_type:
+      "Only Final Answer": 256
+      "Chain of Thought": 2048
+      "Chain of Thought and Think Abductively": 2048
+      "Chain of Thought and Only Think Abductively": 2048
+
+# Template definitions to reduce duplication
+prompt_templates:
+  multiple_choice_only_final_answer: |
+    Only and only answer with the following format:
+    Your answer of choice should be wrapped around <a> and </a> tags.
+    Valid outputs:
+    - <a>A</a>
+    - <a>B</a>
+    - <a>C</a>
+    - <a>D</a>
+    Output no explanation, no other text, no other format. Output just two tags and the answer within them.
+    
+  multiple_choice_chain_of_thought: |
+    Think step by step and thoroughly.
+    Output your reasoning and then the final answer of choice.
+    The final answer should be in the following format:
+    Your answer of choice should be wrapped around <a> and </a> tags.
+    Valid final answers:
+    - <a>A</a>
+    - <a>B</a>
+    - <a>C</a>
+    - <a>D</a>
+    
+  multiple_choice_abductive: |
+    Think step by step and thoroughly. Use abductive reasoning process to reason about the question and the answer choices.
+    Output your reasoning and then the final answer of choice.
+    The final answer should be in the following format:
+    Your answer of choice should be wrapped around <a> and </a> tags.
+    Valid final answers:
+    - <a>A</a>
+    - <a>B</a>
+    - <a>C</a>
+    - <a>D</a>
+    
+  multiple_choice_only_abductive: |
+    Think step by step and thoroughly. Use ONLY abductive reasoning to reason about the question and the answer choices. You're not allowed to use any other reasoning types (like deduction, induction, and etc).
+    Output your reasoning and then the final answer of choice.
+    The final answer should be in the following format:
+    Your answer of choice should be wrapped around <a> and </a> tags.
+    Valid final answers:
+    - <a>A</a>
+    - <a>B</a>
+    - <a>C</a>
+    - <a>D</a>
+    
+  uniadilr_only_final_answer: |
+    Read the sentences and hypothesis above and output the set of sentences that you think can be account (proof) for the hypothesis.
+    Your output should be only the final answer with the following format: 
+    <a>sent{first sentence number}&sent{second sentence number}&...</a>
+    No explanation, no other text, no other format
+    Remember that the size of the ground truth set can vary from 1 to any arbitrary number and order of the sentences does not matter. 
+    In addition, there is only one correct answer; thus, any other set with smaller or bigger number of sentences is incorrect.
+    Some examples of valid outputs:
+    <a>sent1&sent2&sent3</a> / <a>sent10</a> / <a>sent12&sent3</a>
+    
+  uniadilr_chain_of_thought: |
+    Read the sentences and hypothesis above and output your reasoning and then the set of sentences that you think can be account (proof) for the hypothesis.
+    Think step by step and thoroughly.
+    Your output should be your reasoning and then the final answer with the following format:
+    <a>sent{first sentence number}&sent{second sentence number}&...</a>
+    Remember that the size of the ground truth set can vary from 1 to any arbitrary number and order of the sentences does not matter. 
+    In addition, there is only one correct answer; thus, any other set with smaller or bigger number of sentences is incorrect.
+    Some examples of valid format for the final answer:
+    <a>sent1&sent2&sent3</a> / <a>sent10</a> / <a>sent12&sent3</a>
+    
+  uniadilr_abductive: |
+    Read the sentences and hypothesis above and output your reasoning and then the set of sentences that you think can be account (proof) for the hypothesis.
+    Think step by step and thoroughly. Use abductive reasoning process to reason about the task.
+    Your output should be your reasoning and then the final answer with the following format:
+    <a>sent{first sentence number}&sent{second sentence number}&...</a>
+    Remember that the size of the ground truth set can vary from 1 to any arbitrary number and order of the sentences does not matter. 
+    In addition, there is only one correct answer; thus, any other set with smaller or bigger number of sentences is incorrect.
+    Some examples of valid format for the final answer:
+    <a>sent1&sent2&sent3</a> / <a>sent10</a> / <a>sent12&sent3</a>
+    
+  uniadilr_only_abductive: |
+    Read the sentences and hypothesis above and output your reasoning and then the set of sentences that you think can be account (proof) for the hypothesis.
+    Think step by step and thoroughly. Use ONLY abductive reasoning to reason about the task. You're not allowed to use any other reasoning types (like deduction, induction, and etc).
+    Your output should be your reasoning and then the final answer with the following format:
+    <a>sent{first sentence number}&sent{second sentence number}&...</a>
+    Remember that the size of the ground truth set can vary from 1 to any arbitrary number and order of the sentences does not matter. 
+    In addition, there is only one correct answer; thus, any other set with smaller or bigger number of sentences is incorrect.
+    Some examples of valid format for the final answer:
+    <a>sent1&sent2&sent3</a> / <a>sent10</a> / <a>sent12&sent3</a>
+
+datasets:
+  medqa:
+    source: "https://github.com/jind11/MedQA"
+    file_path: "datasets/medqa/test_with_phrases.jsonl"
+    prompts:
+      - type: "Only Final Answer"
+        template: "multiple_choice_only_final_answer"
+      - type: "Chain of Thought"
+        template: "multiple_choice_chain_of_thought"
+      - type: "Chain of Thought and Think Abductively"
+        template: "multiple_choice_abductive"
+      - type: "Chain of Thought and Only Think Abductively"
+        template: "multiple_choice_only_abductive"
+        
+  medmcqa:
+    source: "https://huggingface.co/datasets/openlifescienceai/medmcqa"
+    hf_path: "openlifescienceai/medmcqa"
+    split: "validation"
+    prompts:
+      - type: "Only Final Answer"
+        template: "multiple_choice_only_final_answer"
+      - type: "Chain of Thought"
+        template: "multiple_choice_chain_of_thought"
+      - type: "Chain of Thought and Think Abductively"
+        template: "multiple_choice_abductive"
+      - type: "Chain of Thought and Only Think Abductively"
+        template: "multiple_choice_only_abductive"
+        
+  uniadilr:
+    source: "https://github.com/YuSheng-00/UniADILR/tree/main/data/UniADILR-HGc"
+    file_path: "datasets/uniadilr/abduction.jsonl"
+    prompts:
+      - type: "Only Final Answer"
+        template: "uniadilr_only_final_answer"
+      - type: "Chain of Thought"
+        template: "uniadilr_chain_of_thought"
+      - type: "Chain of Thought and Think Abductively"
+        template: "uniadilr_abductive"
+      - type: "Chain of Thought and Only Think Abductively"
+        template: "uniadilr_only_abductive"

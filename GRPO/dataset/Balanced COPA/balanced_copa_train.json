@@ -1,0 +1,2882 @@
+[
+  {
+    "label": 1,
+    "id": 331,
+    "premise": "I lingered in bed upon awakening.",
+    "question": "cause",
+    "choice1": "I was hungry.",
+    "choice2": "It was Saturday.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1415,
+    "premise": "The player could not see the ball.",
+    "question": "cause",
+    "choice1": "Her opponent tried to intercept it.",
+    "choice2": "Her teammate threw it to her.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1463,
+    "premise": "I was less worried about losing the key.",
+    "question": "cause",
+    "choice1": "I turned the key in the lock.",
+    "choice2": "I made a duplicate of the key.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 69,
+    "premise": "The shop was closed.",
+    "question": "cause",
+    "choice1": "The shop was undergoing renovation.",
+    "choice2": "The owner was helping customers.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1375,
+    "premise": "The man yelled at her.",
+    "question": "cause",
+    "choice1": "His mother passed away.",
+    "choice2": "His wife criticized him.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 353,
+    "premise": "The man drank water with his meal.",
+    "question": "cause",
+    "choice1": "His meal was cold.",
+    "choice2": "His meal was spicy.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 333,
+    "premise": "The woman's purse was missing.",
+    "question": "cause",
+    "choice1": "She left it unsupervised.",
+    "choice2": "It contained a lot of junk.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 451,
+    "premise": "My skin broke out into a rash.",
+    "question": "cause",
+    "choice1": "I eradicated the poison ivy from my yard.",
+    "choice2": "I brushed against poison ivy in my yard.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 168,
+    "premise": "My car was towed.",
+    "question": "cause",
+    "choice1": "I parked illegally.",
+    "choice2": "I jumped the battery.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1109,
+    "premise": "The bartender accompanied the patron.",
+    "question": "cause",
+    "choice1": "The patron was alone.",
+    "choice2": "The patron was drunk.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 198,
+    "premise": "The smoke alarm went off.",
+    "question": "cause",
+    "choice1": "I burnt my dinner.",
+    "choice2": "I lit a candle.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1271,
+    "premise": "My skin was dry.",
+    "question": "cause",
+    "choice1": "I went hiking.",
+    "choice2": "I went swimming.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1273,
+    "premise": "The man never noticed the woman.",
+    "question": "cause",
+    "choice1": "He caught a whiff of her perfume.",
+    "choice2": "He had his back turned to her.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 64,
+    "premise": "The man removed his coat.",
+    "question": "cause",
+    "choice1": "He entered the house.",
+    "choice2": "He loosened his tie.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 16,
+    "premise": "The girl gasped.",
+    "question": "cause",
+    "choice1": "Her friend gave her a pat on the back.",
+    "choice2": "Her friend stuck an ice cube down her back.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1280,
+    "premise": "The woman left her eyeglasses on.",
+    "question": "cause",
+    "choice1": "She reclined by the pool.",
+    "choice2": "She entered the sauna.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 327,
+    "premise": "I went to bed.",
+    "question": "cause",
+    "choice1": "It was late.",
+    "choice2": "It was a clear night.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1070,
+    "premise": "The boy listened to the radio.",
+    "question": "cause",
+    "choice1": "The station was playing rock music.",
+    "choice2": "The station was coming in with static.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1082,
+    "premise": "The woman was rich.",
+    "question": "cause",
+    "choice1": "She came from a wealthy family.",
+    "choice2": "She migrated from another country.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1,
+    "premise": "My body cast a shadow over the grass.",
+    "question": "cause",
+    "choice1": "The grass was cut.",
+    "choice2": "The sun was rising.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 204,
+    "premise": "A water pipe in the house burst.",
+    "question": "cause",
+    "choice1": "The pipe froze.",
+    "choice2": "The water was unsanitary.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1003,
+    "premise": "The women were surprised.",
+    "question": "cause",
+    "choice1": "They wanted to catch up with each other.",
+    "choice2": "The cafe reopened in a new location.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1288,
+    "premise": "I enjoyed my chewing gum.",
+    "question": "cause",
+    "choice1": "I blew a bubble with the gum.",
+    "choice2": "The gum lost its flavor.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1104,
+    "premise": "The teenager always stayed home.",
+    "question": "cause",
+    "choice1": "He relied on his parents.",
+    "choice2": "His parents abused him.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 375,
+    "premise": "The man grieved.",
+    "question": "cause",
+    "choice1": "His wife criticized him.",
+    "choice2": "His mother passed away.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 388,
+    "premise": "The boy mimicked his older brother.",
+    "question": "cause",
+    "choice1": "The boy wrestled with his older brother.",
+    "choice2": "The boy looked up to his older brother.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 19,
+    "premise": "I hung up the phone.",
+    "question": "cause",
+    "choice1": "The caller identified himself to me.",
+    "choice2": "The caller said goodbye to me.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 5,
+    "premise": "The guests of the party hid behind the couch.",
+    "question": "cause",
+    "choice1": "It was a surprise party.",
+    "choice2": "It was a birthday party.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 386,
+    "premise": "The mother became eye level with her son.",
+    "question": "cause",
+    "choice1": "She squatted down.",
+    "choice2": "She held his hand.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 87,
+    "premise": "My stomach hurt.",
+    "question": "cause",
+    "choice1": "I ate birthday cake.",
+    "choice2": "I jogged on the treadmill.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 158,
+    "premise": "The woman covered her ears.",
+    "question": "cause",
+    "choice1": "The fire alarm blared.",
+    "choice2": "The woman smelled smoke.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 106,
+    "premise": "The pharmaceutical company recalled the drug.",
+    "question": "cause",
+    "choice1": "Users got refills on their prescriptions.",
+    "choice2": "Users reported dangerous side effects.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1302,
+    "premise": "The woman quit her job recently.",
+    "question": "cause",
+    "choice1": "She endured a lot of stress in her current occupation.",
+    "choice2": "She made a lot of money in her current occupation.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1007,
+    "premise": "The shirt did not have a hole anymore.",
+    "question": "cause",
+    "choice1": "I bleached the shirt.",
+    "choice2": "I patched the shirt.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1024,
+    "premise": "The woman got vaccinated.",
+    "question": "cause",
+    "choice1": "She was certain she had the flu.",
+    "choice2": "She worried she would catch the flu.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1174,
+    "premise": "The boy avoided the tree.",
+    "question": "cause",
+    "choice1": "A bird built a nest in the tree.",
+    "choice2": "A cat got stuck in the tree.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 300,
+    "premise": "The man felt thankful to be alive.",
+    "question": "cause",
+    "choice1": "His wife was diagnosed with cancer.",
+    "choice2": "He was cured of cancer.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1150,
+    "premise": "The patient felt happy.",
+    "question": "cause",
+    "choice1": "The patient's symptoms cleared up.",
+    "choice2": "The patient's family visited him.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1105,
+    "premise": "I passed the job interview.",
+    "question": "cause",
+    "choice1": "I anticipated the interviewer's questions.",
+    "choice2": "The interviewer asked difficult questions.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 367,
+    "premise": "The father put his daughter in her stroller.",
+    "question": "cause",
+    "choice1": "He was tired of carrying her.",
+    "choice2": "She learned to walk.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 419,
+    "premise": "The cook's eyes watered.",
+    "question": "cause",
+    "choice1": "He cut an onion.",
+    "choice2": "He ran out of onions.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1465,
+    "premise": "The animal species became populous.",
+    "question": "cause",
+    "choice1": "Their predators went extinct.",
+    "choice2": "Their habitat was destroyed.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1200,
+    "premise": "The woman felt extremely fatigued.",
+    "question": "cause",
+    "choice1": "She grabbed the doorknob.",
+    "choice2": "She pounded on the door.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 316,
+    "premise": "The girl stared at herself in the mirror.",
+    "question": "cause",
+    "choice1": "The mirror was smudged.",
+    "choice2": "She felt self-conscious.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1457,
+    "premise": "The woman yelled at her friend.",
+    "question": "cause",
+    "choice1": "She was irritated with her friend's whining.",
+    "choice2": "She wanted to ask her friend for a favor.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 120,
+    "premise": "The fans in the stadium cheered.",
+    "question": "cause",
+    "choice1": "The game ended in a tie.",
+    "choice2": "The player scored.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1369,
+    "premise": "The tablecloth needed to be washed.",
+    "question": "cause",
+    "choice1": "The child yanked the tablecloth.",
+    "choice2": "The child drew on the table.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1297,
+    "premise": "The man felt clean.",
+    "question": "cause",
+    "choice1": "He was sweaty from working out.",
+    "choice2": "He opened a new bar of soap.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 417,
+    "premise": "The woman banished the children from her property.",
+    "question": "cause",
+    "choice1": "The children trampled through her garden.",
+    "choice2": "The children hit a ball into her yard.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1072,
+    "premise": "The police was hit by the suspect.",
+    "question": "cause",
+    "choice1": "The police called for backup.",
+    "choice2": "The suspect resisted arrest.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1368,
+    "premise": "The spy had many fake passports.",
+    "question": "cause",
+    "choice1": "The spy bugged the enemy's phone.",
+    "choice2": "The spy was hired by the government.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 481,
+    "premise": "Everyone in the class turned to stare at the student.",
+    "question": "cause",
+    "choice1": "The student took notes.",
+    "choice2": "The student's phone rang.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1067,
+    "premise": "The board game ended in a disaster.",
+    "question": "cause",
+    "choice1": "My friend explained the rules to me.",
+    "choice2": "My friend got the rules wrong.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1087,
+    "premise": "My feet hurt.",
+    "question": "cause",
+    "choice1": "I jogged on the treadmill.",
+    "choice2": "I ate birthday cake.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 50,
+    "premise": "The children knocked over a lamp.",
+    "question": "cause",
+    "choice1": "They jumped on the bed.",
+    "choice2": "They had a pillow fight.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 393,
+    "premise": "Air pollution in the city worsened.",
+    "question": "cause",
+    "choice1": "Factories increased their production.",
+    "choice2": "Factories shut down.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1116,
+    "premise": "I was moved.",
+    "question": "cause",
+    "choice1": "My son was born.",
+    "choice2": "I found a better-paying job.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 150,
+    "premise": "The hospital sent the patient home.",
+    "question": "cause",
+    "choice1": "The patient's family visited him.",
+    "choice2": "The patient's symptoms cleared up.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1387,
+    "premise": "I called several realtors.",
+    "question": "cause",
+    "choice1": "I was moving out of my apartment.",
+    "choice2": "I was hunting for a new apartment.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 340,
+    "premise": "The fussy baby calmed down.",
+    "question": "cause",
+    "choice1": "The parents shook a rattle in front of the baby.",
+    "choice2": "The parents picked out a name for the baby.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1407,
+    "premise": "I decided not to stay home.",
+    "question": "cause",
+    "choice1": "My friends urged me to go out.",
+    "choice2": "The forecast called for storms.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 83,
+    "premise": "The boy's mouth stung.",
+    "question": "cause",
+    "choice1": "He blew out the candle.",
+    "choice2": "He ate a pepper.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 97,
+    "premise": "The woman awakened.",
+    "question": "cause",
+    "choice1": "Her husband was snoring.",
+    "choice2": "She took sleeping pills.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1283,
+    "premise": "The boy was struggling to fall asleep.",
+    "question": "cause",
+    "choice1": "He watched a horror movie.",
+    "choice2": "He turned on his nightlight.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1385,
+    "premise": "The librarian told me that I couldn't borrow the book.",
+    "question": "cause",
+    "choice1": "I requested the librarian's help.",
+    "choice2": "The book was checked out.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 365,
+    "premise": "The girl's mouth ached.",
+    "question": "cause",
+    "choice1": "She lost a tooth.",
+    "choice2": "She swallowed her gum.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 180,
+    "premise": "The mother suspected that her son was lying.",
+    "question": "cause",
+    "choice1": "He refused to talk to her.",
+    "choice2": "He avoided making eye contact with her.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 244,
+    "premise": "Air leaked out of the beach ball.",
+    "question": "cause",
+    "choice1": "There was a hole in it.",
+    "choice2": "It was inflated.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 7,
+    "premise": "The stain came out of the shirt.",
+    "question": "cause",
+    "choice1": "I bleached the shirt.",
+    "choice2": "I patched the shirt.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1151,
+    "premise": "The child did not know her parents.",
+    "question": "cause",
+    "choice1": "She was adopted.",
+    "choice2": "She didn't get vaccinated.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1340,
+    "premise": "The parents received a birth certificate.",
+    "question": "cause",
+    "choice1": "The parents picked out a name for the baby.",
+    "choice2": "The parents shook a rattle in front of the baby.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 109,
+    "premise": "The bartender refused to serve the patron.",
+    "question": "cause",
+    "choice1": "The patron was alone.",
+    "choice2": "The patron was drunk.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1207,
+    "premise": "The tenants lease for the apartment was extended.",
+    "question": "cause",
+    "choice1": "They neglected to pay their rent.",
+    "choice2": "They got along with their landlord.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 45,
+    "premise": "The bird couldn't fly.",
+    "question": "cause",
+    "choice1": "It migrated for the winter.",
+    "choice2": "It injured its wing.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1400,
+    "premise": "The soldiers had a lot of ammunition.",
+    "question": "cause",
+    "choice1": "They were armed with rifles.",
+    "choice2": "They wore camouflage uniforms.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 493,
+    "premise": "The man received a parking ticket.",
+    "question": "cause",
+    "choice1": "He parallel parked on the street.",
+    "choice2": "The parking meter expired.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1176,
+    "premise": "The father laughed at the children's television.",
+    "question": "cause",
+    "choice1": "The children were watching cartoons.",
+    "choice2": "It was bedtime for the children.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1139,
+    "premise": "I wrote a reminder note to my grandmother.",
+    "question": "cause",
+    "choice1": "She sent me a gift.",
+    "choice2": "She became forgetful.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 301,
+    "premise": "The woman wrote a check to the gas company.",
+    "question": "cause",
+    "choice1": "She received her monthly bill.",
+    "choice2": "She preferred paying by cash.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1083,
+    "premise": "Smoke got in the boy's eyes.",
+    "question": "cause",
+    "choice1": "He blew out the candle.",
+    "choice2": "He ate a pepper.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 395,
+    "premise": "I excused myself from the group.",
+    "question": "cause",
+    "choice1": "My phone rang.",
+    "choice2": "I turned off my phone.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1241,
+    "premise": "I got hooked to my conversation with the woman.",
+    "question": "cause",
+    "choice1": "Everyone in the room was talking.",
+    "choice2": "The woman was telling a funny story.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 77,
+    "premise": "The man craved a cigarette.",
+    "question": "cause",
+    "choice1": "His family urged him to quit smoking.",
+    "choice2": "He was addicted to nicotine.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 356,
+    "premise": "The employee missed work.",
+    "question": "cause",
+    "choice1": "Her family got in touch with her.",
+    "choice2": "There was a death in her family.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 209,
+    "premise": "The team lost the game.",
+    "question": "cause",
+    "choice1": "Their coach pumped them up.",
+    "choice2": "Their best player was injured.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 10,
+    "premise": "The customer filed a complaint with the store manager.",
+    "question": "cause",
+    "choice1": "The sales associate undercharged the customer.",
+    "choice2": "The sales associate acted rude to the customer.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1158,
+    "premise": "The woman covered her nose.",
+    "question": "cause",
+    "choice1": "The woman smelled smoke.",
+    "choice2": "The fire alarm blared.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1237,
+    "premise": "The man hid his feet.",
+    "question": "cause",
+    "choice1": "He dropped a hammer on his foot.",
+    "choice2": "He got a hole in his sock.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 361,
+    "premise": "The patient underwent the risky medical procedure.",
+    "question": "cause",
+    "choice1": "Specialists recommended the procedure.",
+    "choice2": "The procedure was costly.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1117,
+    "premise": "I promised to give a straight answer to the question.",
+    "question": "cause",
+    "choice1": "The question made me uncomfortable.",
+    "choice2": "I wanted to be honest.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1243,
+    "premise": "The family had the barbeque.",
+    "question": "cause",
+    "choice1": "The forecast called for storms.",
+    "choice2": "It was a holiday weekend.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 408,
+    "premise": "My eyes became red and puffy.",
+    "question": "cause",
+    "choice1": "I was laughing.",
+    "choice2": "I was sobbing.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 298,
+    "premise": "The screen on the laptop went black.",
+    "question": "cause",
+    "choice1": "The laptop's battery died.",
+    "choice2": "The laptop's warranty expired.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 88,
+    "premise": "I put my plate in the sink.",
+    "question": "cause",
+    "choice1": "I finished eating.",
+    "choice2": "I skipped dinner.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 339,
+    "premise": "The milk stayed cold.",
+    "question": "cause",
+    "choice1": "It was pasteurized.",
+    "choice2": "I stored it in the refrigerator.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1396,
+    "premise": "The skier balanced only with her body.",
+    "question": "cause",
+    "choice1": "She dropped her ski poles.",
+    "choice2": "She hit a patch of ice.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1339,
+    "premise": "The honey lasted longer.",
+    "question": "cause",
+    "choice1": "It was pasteurized.",
+    "choice2": "I stored it in the refrigerator.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1455,
+    "premise": "The child was much smaller than his classmates.",
+    "question": "cause",
+    "choice1": "He began attending school.",
+    "choice2": "He skipped a grade in school.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 251,
+    "premise": "The cat purred.",
+    "question": "cause",
+    "choice1": "It scratched me.",
+    "choice2": "I petted it.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 182,
+    "premise": "A crater formed on the moon.",
+    "question": "cause",
+    "choice1": "A comet collided with the moon.",
+    "choice2": "A comet passed by the moon.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1184,
+    "premise": "The benefactor looked extremely excited.",
+    "question": "cause",
+    "choice1": "He wanted to maintain his privacy.",
+    "choice2": "He supported the cause behind his donation.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 468,
+    "premise": "The dog barked.",
+    "question": "cause",
+    "choice1": "A knock sounded at the door.",
+    "choice2": "The cat lounged on the couch.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 282,
+    "premise": "The host of the trivia show called on the contestant for an answer.",
+    "question": "cause",
+    "choice1": "The contestant was in the lead.",
+    "choice2": "The contestant rang the buzzer.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 454,
+    "premise": "The boy threw a temper tantrum.",
+    "question": "cause",
+    "choice1": "He shared his toys with his brother.",
+    "choice2": "His brother took his toys from him.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1323,
+    "premise": "The scientist continued with her ongoing research.",
+    "question": "cause",
+    "choice1": "She received tenure at the university.",
+    "choice2": "She discovered a new species.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 28,
+    "premise": "The child became immune to the disease.",
+    "question": "cause",
+    "choice1": "He received the vaccine for the disease.",
+    "choice2": "He avoided exposure to the disease.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1376,
+    "premise": "The girl got yet another dog.",
+    "question": "cause",
+    "choice1": "She was bitten by a dog.",
+    "choice2": "She rescued an abandoned dog.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1386,
+    "premise": "The son had to walk as fast as his mother.",
+    "question": "cause",
+    "choice1": "She squatted down.",
+    "choice2": "She held his hand.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1395,
+    "premise": "I did not get any calls.",
+    "question": "cause",
+    "choice1": "I turned off my phone.",
+    "choice2": "My phone rang.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1493,
+    "premise": "The man saw an empty parking spot.",
+    "question": "cause",
+    "choice1": "The parking meter expired.",
+    "choice2": "He parallel parked on the street.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 330,
+    "premise": "The security guard replayed the surveillance footage.",
+    "question": "cause",
+    "choice1": "The surveillance camera was out of focus.",
+    "choice2": "He noticed some suspicious activity.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1161,
+    "premise": "The coach gave his player a headshake.",
+    "question": "cause",
+    "choice1": "The player got a penalty.",
+    "choice2": "The player scored a point.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 67,
+    "premise": "I learned how to play the board game.",
+    "question": "cause",
+    "choice1": "My friend got the rules wrong.",
+    "choice2": "My friend explained the rules to me.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 347,
+    "premise": "The boy got a black eye.",
+    "question": "cause",
+    "choice1": "The bully punched the boy.",
+    "choice2": "The bully mocked the boy.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1017,
+    "premise": "The shirt became clean.",
+    "question": "cause",
+    "choice1": "I put it in the dryer.",
+    "choice2": "I poured bleach on it.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1384,
+    "premise": "The windows were left open.",
+    "question": "cause",
+    "choice1": "The paint on the walls was wet.",
+    "choice2": "The floor contained broken glass.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 123,
+    "premise": "The inside of the train went dark.",
+    "question": "cause",
+    "choice1": "The train travelled through a tunnel.",
+    "choice2": "The train ran off the tracks.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1356,
+    "premise": "The woman reconnected with distant relatives.",
+    "question": "cause",
+    "choice1": "Her family got in touch with her.",
+    "choice2": "There was a death in her family.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 143,
+    "premise": "The security guard tackled the man.",
+    "question": "cause",
+    "choice1": "The man displayed a weapon.",
+    "choice2": "The man reached into his pocket.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 243,
+    "premise": "The family postponed the barbeque.",
+    "question": "cause",
+    "choice1": "It was a holiday weekend.",
+    "choice2": "The forecast called for storms.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1046,
+    "premise": "The girl had bad luck.",
+    "question": "cause",
+    "choice1": "She saw a black cat.",
+    "choice2": "She saw a shooting star.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 464,
+    "premise": "I put rubber gloves on.",
+    "question": "cause",
+    "choice1": "I was preparing to wash my hands.",
+    "choice2": "I was preparing to clean the bathroom.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 309,
+    "premise": "The football coach lost his voice after the game.",
+    "question": "cause",
+    "choice1": "He whistled whenever a player scored a touchdown.",
+    "choice2": "He yelled whenever a player fumbled the ball.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 497,
+    "premise": "I tidied up my house.",
+    "question": "cause",
+    "choice1": "I was swamped with work.",
+    "choice2": "I was expecting company.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 235,
+    "premise": "The balloon expanded.",
+    "question": "cause",
+    "choice1": "I blew into it.",
+    "choice2": "I pricked it.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1175,
+    "premise": "The chair fell.",
+    "question": "cause",
+    "choice1": "The man scooted the chair closer to his desk.",
+    "choice2": "The man carried the chair to his office.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 462,
+    "premise": "The driver slammed on his brakes.",
+    "question": "cause",
+    "choice1": "A deer appeared on the road.",
+    "choice2": "The car radio shut off.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1445,
+    "premise": "The journalist did not write about the humanitarian.",
+    "question": "cause",
+    "choice1": "The journalist was intrigued by the humanitarian's work.",
+    "choice2": "The humanitarian was difficult for the journalist to interview.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1155,
+    "premise": "The woman aimed for a diploma.",
+    "question": "cause",
+    "choice1": "She graduated from college.",
+    "choice2": "She enrolled in college.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1265,
+    "premise": "The leader received opposition.",
+    "question": "cause",
+    "choice1": "He fought poverty.",
+    "choice2": "He raised taxes.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1026,
+    "premise": "The skydiver started to fall down.",
+    "question": "cause",
+    "choice1": "She opened her parachute.",
+    "choice2": "She jumped out of the plane.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 128,
+    "premise": "The parents left their children with a babysitter.",
+    "question": "cause",
+    "choice1": "Their youngest child started attending preschool.",
+    "choice2": "They made plans to celebrate their anniversary.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1123,
+    "premise": "The inside of the train became destroyed.",
+    "question": "cause",
+    "choice1": "The train ran off the tracks.",
+    "choice2": "The train travelled through a tunnel.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 30,
+    "premise": "The friends' debate dragged on interminably.",
+    "question": "cause",
+    "choice1": "The friends saw eye to eye.",
+    "choice2": "The friends were splitting hairs.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1262,
+    "premise": "The man withheld personal information from the therapist.",
+    "question": "cause",
+    "choice1": "He disagreed with the therapist.",
+    "choice2": "He trusted the therapist.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1010,
+    "premise": "The sales associate sent another invoice to the customer. ",
+    "question": "cause",
+    "choice1": "The sales associate undercharged the customer.",
+    "choice2": "The sales associate acted rude to the customer.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 317,
+    "premise": "The man was bitten by mosquitoes.",
+    "question": "cause",
+    "choice1": "He went camping in the woods.",
+    "choice2": "He fell asleep on his couch.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1197,
+    "premise": "My flight got rescheduled.",
+    "question": "cause",
+    "choice1": "I was held up at airport security.",
+    "choice2": "Tornadoes were sighted in the area.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1420,
+    "premise": "The woman got ready for a night out.",
+    "question": "cause",
+    "choice1": "She burned her finger on the toaster.",
+    "choice2": "She put a diamond ring on her finger.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1432,
+    "premise": "The woman's legs were smooth.",
+    "question": "cause",
+    "choice1": "She shaved her legs.",
+    "choice2": "She broke her leg.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1049,
+    "premise": "The man liked the bread.",
+    "question": "cause",
+    "choice1": "It was stale.",
+    "choice2": "It was fresh.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 105,
+    "premise": "I botched the job interview.",
+    "question": "cause",
+    "choice1": "The interviewer asked difficult questions.",
+    "choice2": "I anticipated the interviewer's questions.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1204,
+    "premise": "A water pipe in the house was leaking.",
+    "question": "cause",
+    "choice1": "The pipe froze.",
+    "choice2": "The water was unsanitary.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 226,
+    "premise": "My jaw dropped open.",
+    "question": "cause",
+    "choice1": "I was shocked.",
+    "choice2": "I was unhappy.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1106,
+    "premise": "The pharmaceutical company promoted the drug.",
+    "question": "cause",
+    "choice1": "Users reported dangerous side effects.",
+    "choice2": "Users got refills on their prescriptions.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 394,
+    "premise": "The mother scolded her daughter.",
+    "question": "cause",
+    "choice1": "Her daughter burped at the kitchen table.",
+    "choice2": "Her daughter set the kitchen table.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 257,
+    "premise": "The boy lost hold of the bar of soap.",
+    "question": "cause",
+    "choice1": "The bar was slippery.",
+    "choice2": "The bar emitted a fragrance.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1391,
+    "premise": "The retail shop stayed open for another year.",
+    "question": "cause",
+    "choice1": "It renewed its lease.",
+    "choice2": "Its sales were lagging.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1462,
+    "premise": "Everybody in the car stopped singing along.",
+    "question": "cause",
+    "choice1": "The car radio shut off.",
+    "choice2": "A deer appeared on the road.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1371,
+    "premise": "The city had spent too much money.",
+    "question": "cause",
+    "choice1": "The city cut its budget.",
+    "choice2": "The mayor fulfilled his promises.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1294,
+    "premise": "The egg hardened.",
+    "question": "cause",
+    "choice1": "I dropped it.",
+    "choice2": "I boiled it.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1291,
+    "premise": "The girl politely accepted the hamburger.",
+    "question": "cause",
+    "choice1": "She was a vegetarian.",
+    "choice2": "She liked fast food.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 428,
+    "premise": "The driver turned on the car's headlights.",
+    "question": "cause",
+    "choice1": "He heard thunder.",
+    "choice2": "The sun went down.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1179,
+    "premise": "The boat moved.",
+    "question": "cause",
+    "choice1": "The captain raised the sail.",
+    "choice2": "It was caught in a hurricane.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 424,
+    "premise": "The man dressed in his best suit.",
+    "question": "cause",
+    "choice1": "He scheduled a meeting with an important client.",
+    "choice2": "His wife bought him a new tie.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1065,
+    "premise": "The dog broke his teeth.",
+    "question": "cause",
+    "choice1": "The dog chewed on a bone.",
+    "choice2": "The dog injured his paw.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1309,
+    "premise": "The players called their coach \"The Flute\".",
+    "question": "cause",
+    "choice1": "He whistled whenever a player scored a touchdown.",
+    "choice2": "He yelled whenever a player fumbled the ball.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 240,
+    "premise": "The photo albums collected dust in the attic.",
+    "question": "cause",
+    "choice1": "They remained untouched for years.",
+    "choice2": "The family reminisced over the photos.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1301,
+    "premise": "The woman never used her credit card.",
+    "question": "cause",
+    "choice1": "She received her monthly bill.",
+    "choice2": "She preferred paying by cash.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1300,
+    "premise": "The man felt depressed.",
+    "question": "cause",
+    "choice1": "He was cured of cancer.",
+    "choice2": "His wife was diagnosed with cancer.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1382,
+    "premise": "The driver check her rear mirror for cyclists.",
+    "question": "cause",
+    "choice1": "She made a right turn at the light.",
+    "choice2": "Another car swerved into her lane.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 40,
+    "premise": "The woman hired a lawyer.",
+    "question": "cause",
+    "choice1": "She decided to run for office.",
+    "choice2": "She decided to sue her employer.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 305,
+    "premise": "The woman refused a second beer.",
+    "question": "cause",
+    "choice1": "She was familiar with the bartender.",
+    "choice2": "She was the designated driver for the night.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 280,
+    "premise": "The woman's eyeglasses fogged up.",
+    "question": "cause",
+    "choice1": "She reclined by the pool.",
+    "choice2": "She entered the sauna.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1336,
+    "premise": "The rider ran at full speed.",
+    "question": "cause",
+    "choice1": "The bull chased the rider.",
+    "choice2": "The bull bucked the rider.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 126,
+    "premise": "The girl handed down her clothes to her younger sister.",
+    "question": "cause",
+    "choice1": "The clothes were tattered.",
+    "choice2": "She outgrew the clothes.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1461,
+    "premise": "The mother called all neighbors.",
+    "question": "cause",
+    "choice1": "Her son fell out of his bed.",
+    "choice2": "Her son lost his cat.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 129,
+    "premise": "The trip took a long time.",
+    "question": "cause",
+    "choice1": "The driver made a wrong turn.",
+    "choice2": " The driver talked the whole way.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 175,
+    "premise": "The chair squeaked.",
+    "question": "cause",
+    "choice1": "The man scooted the chair closer to his desk.",
+    "choice2": "The man carried the chair to his office.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 90,
+    "premise": "The boy read the novel aloud to his grandfather.",
+    "question": "cause",
+    "choice1": "His grandfather was deaf.",
+    "choice2": "His grandfather was blind.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 416,
+    "premise": "The judge pounded the gavel.",
+    "question": "cause",
+    "choice1": "The jury announced its verdict.",
+    "choice2": "The courtroom broke into uproar.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1069,
+    "premise": "The shop was very popular.",
+    "question": "cause",
+    "choice1": "The shop was undergoing renovation.",
+    "choice2": "The owner was helping customers.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1315,
+    "premise": "The doctor put an ice pack on the leg.",
+    "question": "cause",
+    "choice1": "It was severely infected.",
+    "choice2": "It was badly bruised.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 145,
+    "premise": "The army surrendered the battle.",
+    "question": "cause",
+    "choice1": "They were outnumbered.",
+    "choice2": "They stormed the city.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1267,
+    "premise": "The letters were blown from my mailbox.",
+    "question": "cause",
+    "choice1": "The lid on the mailbox broke.",
+    "choice2": "I went on vacation for two weeks.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1352,
+    "premise": "The customer was embarassed at the cash register.",
+    "question": "cause",
+    "choice1": "She left her wallet at home.",
+    "choice2": "The window display caught her eye.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1485,
+    "premise": "The woman was an alcoholic.",
+    "question": "cause",
+    "choice1": "She checked into rehab.",
+    "choice2": "She committed assault.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1051,
+    "premise": "I went to the toilet.",
+    "question": "cause",
+    "choice1": "I was thirsty.",
+    "choice2": "I felt nauseous.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 82,
+    "premise": "The woman spoke with a foreign accent.",
+    "question": "cause",
+    "choice1": "She came from a wealthy family.",
+    "choice2": "She migrated from another country.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 207,
+    "premise": "The tenants were evicted from the apartment.",
+    "question": "cause",
+    "choice1": "They got along with their landlord.",
+    "choice2": "They neglected to pay their rent.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1496,
+    "premise": "My mind was full of paintings.",
+    "question": "cause",
+    "choice1": "I went to a museum.",
+    "choice2": "I went to a concert.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 197,
+    "premise": "My flight got delayed.",
+    "question": "cause",
+    "choice1": "Tornadoes were sighted in the area.",
+    "choice2": "I was held up at airport security.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1129,
+    "premise": "The trip was a fun time.",
+    "question": "cause",
+    "choice1": "The driver talked the whole way.",
+    "choice2": "The driver made a wrong turn.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1316,
+    "premise": "The girl could barely see her reflection.",
+    "question": "cause",
+    "choice1": "She felt self-conscious.",
+    "choice2": "The mirror was smudged.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1206,
+    "premise": "The company sold more products.",
+    "question": "cause",
+    "choice1": "Its products received positive consumer reviews.",
+    "choice2": "Some of its products were manufactured defectively.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 216,
+    "premise": "The woman's makeup smeared.",
+    "question": "cause",
+    "choice1": "She brushed her hair.",
+    "choice2": "She wiped her eyes.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1019,
+    "premise": "I recognized the caller.",
+    "question": "cause",
+    "choice1": "The caller identified himself to me.",
+    "choice2": "The caller said goodbye to me.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 334,
+    "premise": "The woman suffered amnesia.",
+    "question": "cause",
+    "choice1": "She had an allergic reaction.",
+    "choice2": "She got into a car accident.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1097,
+    "premise": "The woman did not wake up.",
+    "question": "cause",
+    "choice1": "Her husband was snoring.",
+    "choice2": "She took sleeping pills.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 471,
+    "premise": "The woman asked the man to leave.",
+    "question": "cause",
+    "choice1": "He thanked her.",
+    "choice2": "He insulted her.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 249,
+    "premise": "The vehicles travelled slowly.",
+    "question": "cause",
+    "choice1": "It was cloudy.",
+    "choice2": "It was foggy.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 263,
+    "premise": "The man fell unconscious.",
+    "question": "cause",
+    "choice1": "The assailant struck the man in the head.",
+    "choice2": "The assailant took the man's wallet.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 459,
+    "premise": "The man fainted.",
+    "question": "cause",
+    "choice1": "He ran a marathon.",
+    "choice2": "He took a nap.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 181,
+    "premise": "The young woman was denied entrance into the bar.",
+    "question": "cause",
+    "choice1": "Her friends stood her up.",
+    "choice2": "She forgot her ID.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1458,
+    "premise": "The pants had no defects.",
+    "question": "cause",
+    "choice1": "The pocket had a hole.",
+    "choice2": "The pants were new.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 376,
+    "premise": "The girl had a phobia of dogs.",
+    "question": "cause",
+    "choice1": "She rescued an abandoned dog.",
+    "choice2": "She was bitten by a dog.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 396,
+    "premise": "The skier slipped on the slope.",
+    "question": "cause",
+    "choice1": "She dropped her ski poles.",
+    "choice2": "She hit a patch of ice.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1305,
+    "premise": "The woman stayed late in the bar.",
+    "question": "cause",
+    "choice1": "She was familiar with the bartender.",
+    "choice2": "She was the designated driver for the night.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1011,
+    "premise": "The woman could not wash her hands.",
+    "question": "cause",
+    "choice1": "The faucet was leaky.",
+    "choice2": "The faucet was turned off.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1025,
+    "premise": "The woman ignored the man.",
+    "question": "cause",
+    "choice1": "She was attracted to him.",
+    "choice2": "She was repulsed by him.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1168,
+    "premise": "My car was rejuvenated.",
+    "question": "cause",
+    "choice1": "I parked illegally.",
+    "choice2": "I jumped the battery.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1244,
+    "premise": "The beach ball bounced.",
+    "question": "cause",
+    "choice1": "It was inflated.",
+    "choice2": "There was a hole in it.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1270,
+    "premise": "The clay took shape.",
+    "question": "cause",
+    "choice1": "The potter rolled the clay into a ball.",
+    "choice2": "The potter put the clay in the oven.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 387,
+    "premise": "I packed up my belongings.",
+    "question": "cause",
+    "choice1": "I was moving out of my apartment.",
+    "choice2": "I was hunting for a new apartment.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1380,
+    "premise": "The woman was not arrested by police.",
+    "question": "cause",
+    "choice1": "The woman escaped.",
+    "choice2": "The woman waved.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 270,
+    "premise": "The clay hardened.",
+    "question": "cause",
+    "choice1": "The potter rolled the clay into a ball.",
+    "choice2": "The potter put the clay in the oven.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1354,
+    "premise": "The woman was not allowed to drive her car.",
+    "question": "cause",
+    "choice1": "She was intoxicated.",
+    "choice2": "She was contagious.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 179,
+    "premise": "The boat capsized.",
+    "question": "cause",
+    "choice1": "The captain raised the sail.",
+    "choice2": "It was caught in a hurricane.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 273,
+    "premise": "The man took notice of the woman.",
+    "question": "cause",
+    "choice1": "He had his back turned to her.",
+    "choice2": "He caught a whiff of her perfume.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1251,
+    "premise": "I snapped at the cat.",
+    "question": "cause",
+    "choice1": "I petted it.",
+    "choice2": "It scratched me.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1414,
+    "premise": "The woman acquired an additional qualification for her job.",
+    "question": "cause",
+    "choice1": "She aspired to hold an executive position in the firm.",
+    "choice2": "She believed her superiors were acting unethically.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 420,
+    "premise": "The woman ran her finger under cold water.",
+    "question": "cause",
+    "choice1": "She put a diamond ring on her finger.",
+    "choice2": "She burned her finger on the toaster.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1182,
+    "premise": "A crater did not form on the moon.",
+    "question": "cause",
+    "choice1": "A comet collided with the moon.",
+    "choice2": "A comet passed by the moon.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 346,
+    "premise": "The photograph faded.",
+    "question": "cause",
+    "choice1": "It was fake.",
+    "choice2": "It was old.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 463,
+    "premise": "The lock opened.",
+    "question": "cause",
+    "choice1": "I made a duplicate of the key.",
+    "choice2": "I turned the key in the lock.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 436,
+    "premise": "The police searched the offender's car.",
+    "question": "cause",
+    "choice1": "They were trying to elicit a confession.",
+    "choice2": "They were looking for illegal drugs.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1249,
+    "premise": "The people carried the umbrellas.",
+    "question": "cause",
+    "choice1": "It was foggy.",
+    "choice2": "It was cloudy.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 496,
+    "premise": "My ears were ringing.",
+    "question": "cause",
+    "choice1": "I went to a concert.",
+    "choice2": "I went to a museum.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 116,
+    "premise": "I moved to a new city.",
+    "question": "cause",
+    "choice1": "I found a better-paying job.",
+    "choice2": "My son was born.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1438,
+    "premise": "The friend was anggry at the man.",
+    "question": "cause",
+    "choice1": "He promised his friend that he would go.",
+    "choice2": "He turned down his friend's invitation to go.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 485,
+    "premise": "The woman was arrested.",
+    "question": "cause",
+    "choice1": "She checked into rehab.",
+    "choice2": "She committed assault.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1232,
+    "premise": "The woman refused to visit her family.",
+    "question": "cause",
+    "choice1": "She missed them.",
+    "choice2": "She distrusted them.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1278,
+    "premise": "The woman invited her sister for coffee.",
+    "question": "cause",
+    "choice1": "The woman looked like her sister.",
+    "choice2": "The woman was close with her sister.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 302,
+    "premise": "The woman felt reluctant to switch careers.",
+    "question": "cause",
+    "choice1": "She made a lot of money in her current occupation.",
+    "choice2": "She endured a lot of stress in her current occupation.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1448,
+    "premise": "I cut my nails.",
+    "question": "cause",
+    "choice1": "My finger swelled.",
+    "choice2": "I chipped my fingernail.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 17,
+    "premise": "The shirt shrunk.",
+    "question": "cause",
+    "choice1": "I poured bleach on it.",
+    "choice2": "I put it in the dryer.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 323,
+    "premise": "The scientist gained recognition.",
+    "question": "cause",
+    "choice1": "She discovered a new species.",
+    "choice2": "She received tenure at the university.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1464,
+    "premise": "I took off the rubber gloves.",
+    "question": "cause",
+    "choice1": "I was preparing to clean the bathroom.",
+    "choice2": "I was preparing to wash my hands.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 325,
+    "premise": "The boy giggled uncontrollably.",
+    "question": "cause",
+    "choice1": "His brother tickled him.",
+    "choice2": "His brother kicked him.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1443,
+    "premise": "The teacher praised the pair of students.",
+    "question": "cause",
+    "choice1": "The students both received excellent grades.",
+    "choice2": "Their responses on the assignment were identical.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 448,
+    "premise": "The ring on my finger got stuck.",
+    "question": "cause",
+    "choice1": "My finger swelled.",
+    "choice2": "I chipped my fingernail.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 283,
+    "premise": "The boy was afraid to go to bed.",
+    "question": "cause",
+    "choice1": "He watched a horror movie.",
+    "choice2": "He turned on his nightlight.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1021,
+    "premise": "The girl was not lonely anymore.",
+    "question": "cause",
+    "choice1": "She won a spelling bee.",
+    "choice2": "She made a new friend.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1343,
+    "premise": "The police continued the investigation.",
+    "question": "cause",
+    "choice1": "The victim recovered.",
+    "choice2": "They apprehended the suspect.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1193,
+    "premise": "The student hid his test grade from his classmates.",
+    "question": "cause",
+    "choice1": "He feigned interest in the class.",
+    "choice2": "He received a perfect score.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 210,
+    "premise": "The parents forbade their children from watching the movie. ",
+    "question": "cause",
+    "choice1": "The movie was rated R.",
+    "choice2": "The movie was animated.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 201,
+    "premise": "The man had lipstick on his cheek.",
+    "question": "cause",
+    "choice1": "The woman kissed him.",
+    "choice2": "The woman made him blush.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1471,
+    "premise": "The woman made the man a compliment.",
+    "question": "cause",
+    "choice1": "He thanked her.",
+    "choice2": "He insulted her.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 85,
+    "premise": "The service at the restaurant was slow.",
+    "question": "cause",
+    "choice1": "The restaurant was crowded.",
+    "choice2": "There were many empty tables.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1119,
+    "premise": "The boy's friends were scared.",
+    "question": "cause",
+    "choice1": "He planned to ask the girl out.",
+    "choice2": "His palms were cold and sweaty.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 6,
+    "premise": "The politician lost the election.",
+    "question": "cause",
+    "choice1": "He ran negative campaign ads.",
+    "choice2": "No one voted for him.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1418,
+    "premise": "There was a nationwide manhunt for the kidnappers.",
+    "question": "cause",
+    "choice1": "They accepted ransom money.",
+    "choice2": "They escaped from jail.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 352,
+    "premise": "The customer came into the boutique.",
+    "question": "cause",
+    "choice1": "The window display caught her eye.",
+    "choice2": "She left her wallet at home.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1489,
+    "premise": "The woman contacted the maid service.",
+    "question": "cause",
+    "choice1": "The woman planned to buy a condo.",
+    "choice2": "The woman needed to clean her house.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1365,
+    "premise": "The girl worried about a clogged gut.",
+    "question": "cause",
+    "choice1": "She lost a tooth.",
+    "choice2": "She swallowed her gum.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1428,
+    "premise": "The driver pulled up the roof of his convertible.",
+    "question": "cause",
+    "choice1": "He heard thunder.",
+    "choice2": "The sun went down.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 480,
+    "premise": "The man's pocket jingled as he walked.",
+    "question": "cause",
+    "choice1": "He sewed the hole in his pocket.",
+    "choice2": "His pocket was filled with coins.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 457,
+    "premise": "The woman lavished her friend with flattery.",
+    "question": "cause",
+    "choice1": "She was irritated with her friend's whining.",
+    "choice2": "She wanted to ask her friend for a favor.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1169,
+    "premise": "The woman got charged with the crime.",
+    "question": "cause",
+    "choice1": "She destroyed the evidence.",
+    "choice2": "Her accomplice was apprehended.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 2,
+    "premise": "The woman tolerated her friend's difficult behavior.",
+    "question": "cause",
+    "choice1": "The woman knew her friend was going through a hard time.",
+    "choice2": "The woman felt that her friend took advantage of her kindness.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 415,
+    "premise": "The player caught the ball.",
+    "question": "cause",
+    "choice1": "Her teammate threw it to her.",
+    "choice2": "Her opponent tried to intercept it.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 104,
+    "premise": "The teenager ran away from home.",
+    "question": "cause",
+    "choice1": "His parents abused him.",
+    "choice2": "He relied on his parents.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 265,
+    "premise": "The leader received praise.",
+    "question": "cause",
+    "choice1": "He raised taxes.",
+    "choice2": "He fought poverty.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1120,
+    "premise": "The fans in the stadium were apathetic.",
+    "question": "cause",
+    "choice1": "The game ended in a tie.",
+    "choice2": "The player scored.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1497,
+    "premise": "I did not clean up my house.",
+    "question": "cause",
+    "choice1": "I was expecting company.",
+    "choice2": "I was swamped with work.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1459,
+    "premise": "The man felt refreshed.",
+    "question": "cause",
+    "choice1": "He took a nap.",
+    "choice2": "He ran a marathon.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 72,
+    "premise": "The police handcuffed the suspect.",
+    "question": "cause",
+    "choice1": "The suspect resisted arrest.",
+    "choice2": "The police called for backup.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1481,
+    "premise": "The teacher covered a lot of material.",
+    "question": "cause",
+    "choice1": "The student took notes.",
+    "choice2": "The student's phone rang.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1149,
+    "premise": "The driver crashed over to the side of the road.",
+    "question": "cause",
+    "choice1": "He noticed a stranded vehicle.",
+    "choice2": "He went through an intersection.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 288,
+    "premise": "I spit out my chewing gum.",
+    "question": "cause",
+    "choice1": "I blew a bubble with the gum.",
+    "choice2": "The gum lost its flavor.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 456,
+    "premise": "The boy skipped dinner.",
+    "question": "cause",
+    "choice1": "He ate a big lunch.",
+    "choice2": "His mother cooked his favorite meal.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 194,
+    "premise": "The boy felt homesick.",
+    "question": "cause",
+    "choice1": "He bickered with his sister.",
+    "choice2": "He went away to camp.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 264,
+    "premise": "I approached the man.",
+    "question": "cause",
+    "choice1": "He looked familiar.",
+    "choice2": "He looked busy.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 360,
+    "premise": "The teenager grew taller than his father.",
+    "question": "cause",
+    "choice1": "He joined the basketball team.",
+    "choice2": "He went through a growth spurt.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 465,
+    "premise": "The animal species became endangered.",
+    "question": "cause",
+    "choice1": "Their predators went extinct.",
+    "choice2": "Their habitat was destroyed.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 460,
+    "premise": "The man lost the competition.",
+    "question": "cause",
+    "choice1": "He intimidated his competitors.",
+    "choice2": "The competition was sabotaged.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 62,
+    "premise": "My stomach growled.",
+    "question": "cause",
+    "choice1": "I was full from breakfast.",
+    "choice2": "I forgot to eat breakfast.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1422,
+    "premise": "I noticed that I was very nervous.",
+    "question": "cause",
+    "choice1": "My heart pounded.",
+    "choice2": "I took deep breaths.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 433,
+    "premise": "I coughed.",
+    "question": "cause",
+    "choice1": "I inhaled smoke.",
+    "choice2": "I lowered my voice.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1068,
+    "premise": "The man did not need to buy more things.",
+    "question": "cause",
+    "choice1": "He wanted to relax.",
+    "choice2": "He felt content.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1201,
+    "premise": "The man had a grin on his face.",
+    "question": "cause",
+    "choice1": "The woman kissed him.",
+    "choice2": "The woman made him blush.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 409,
+    "premise": "The flame on the candle went out.",
+    "question": "cause",
+    "choice1": "I put a match to the wick.",
+    "choice2": "I blew on the wick.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1427,
+    "premise": "I could not enjoy the movie's beautiful soundtrack.",
+    "question": "cause",
+    "choice1": "The couple behind me was whispering.",
+    "choice2": "A tall person was sitting in front of me.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 291,
+    "premise": "The girl politely declined the hamburger.",
+    "question": "cause",
+    "choice1": "She liked fast food.",
+    "choice2": "She was a vegetarian.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 230,
+    "premise": "The woman was wrongly convicted for the crime.",
+    "question": "cause",
+    "choice1": "She was framed.",
+    "choice2": "The jury was fair.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 65,
+    "premise": "The family took their dog to the veterinarian.",
+    "question": "cause",
+    "choice1": "The dog injured his paw.",
+    "choice2": "The dog chewed on a bone.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 303,
+    "premise": "The woman filed a restraining order against the man.",
+    "question": "cause",
+    "choice1": "The man called her.",
+    "choice2": "The man stalked her.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 363,
+    "premise": "The investigators deemed the man's death a suicide.",
+    "question": "cause",
+    "choice1": "He left a note.",
+    "choice2": "He had children.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 430,
+    "premise": "The woman covered her mouth with her hand.",
+    "question": "cause",
+    "choice1": "She sneezed.",
+    "choice2": "She exhaled.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1327,
+    "premise": "I saw the stars.",
+    "question": "cause",
+    "choice1": "It was a clear night.",
+    "choice2": "It was late.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1100,
+    "premise": "The driver looked into the rear camera.",
+    "question": "cause",
+    "choice1": "He was speeding.",
+    "choice2": "He was parking.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 418,
+    "premise": "The kidnappers released the hostage.",
+    "question": "cause",
+    "choice1": "They escaped from jail.",
+    "choice2": "They accepted ransom money.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1342,
+    "premise": "The girl kept talking to her friend.",
+    "question": "cause",
+    "choice1": "Her friend sat next to her at lunch.",
+    "choice2": "Her friend forgot to bring his lunch.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 118,
+    "premise": "The student received detention.",
+    "question": "cause",
+    "choice1": "The teacher graded his homework.",
+    "choice2": "He talked back to the teacher.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1408,
+    "premise": "My cheeks became red and puffy.",
+    "question": "cause",
+    "choice1": "I was laughing.",
+    "choice2": "I was sobbing.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 206,
+    "premise": "The company lost money.",
+    "question": "cause",
+    "choice1": "Some of its products were manufactured defectively.",
+    "choice2": "Its products received positive consumer reviews.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1363,
+    "premise": "The investigators notified the family of the man's death.",
+    "question": "cause",
+    "choice1": "He left a note.",
+    "choice2": "He had children.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1367,
+    "premise": "The father took his daughter out of her stroller.",
+    "question": "cause",
+    "choice1": "She learned to walk.",
+    "choice2": "He was tired of carrying her.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 422,
+    "premise": "I regained composure from my fit of anger.",
+    "question": "cause",
+    "choice1": "I took deep breaths.",
+    "choice2": "My heart pounded.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 176,
+    "premise": "The father shut off the children's television.",
+    "question": "cause",
+    "choice1": "It was bedtime for the children.",
+    "choice2": "The children were watching cartoons.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 279,
+    "premise": "The man made an error in his calculations.",
+    "question": "cause",
+    "choice1": "He checked his work.",
+    "choice2": "His work was hasty.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1411,
+    "premise": "The bowling ball did not knock over any bowling pins.",
+    "question": "cause",
+    "choice1": "The man dropped the bowling ball on his foot.",
+    "choice2": "The man rolled the bowling ball down the alley.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1001,
+    "premise": "The garden looked well-groomed.",
+    "question": "cause",
+    "choice1": "The grass was cut.",
+    "choice2": "The sun was rising.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 237,
+    "premise": "The man broke his toe.",
+    "question": "cause",
+    "choice1": "He dropped a hammer on his foot.",
+    "choice2": "He got a hole in his sock.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1480,
+    "premise": "The man did not lose coins in his pocket anymore.",
+    "question": "cause",
+    "choice1": "He sewed the hole in his pocket.",
+    "choice2": "His pocket was filled with coins.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1031,
+    "premise": "The woman trembled.",
+    "question": "cause",
+    "choice1": "She was nervous.",
+    "choice2": "She was in a good mood.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 427,
+    "premise": "My view of the movie screen was blocked.",
+    "question": "cause",
+    "choice1": "The couple behind me was whispering.",
+    "choice2": "A tall person was sitting in front of me.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 391,
+    "premise": "The retail shop shut down.",
+    "question": "cause",
+    "choice1": "Its sales were lagging.",
+    "choice2": "It renewed its lease.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 407,
+    "premise": "I decided to stay home for the night.",
+    "question": "cause",
+    "choice1": "My friends urged me to go out.",
+    "choice2": "The forecast called for storms.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1074,
+    "premise": "The man's clothes were cheap.",
+    "question": "cause",
+    "choice1": "He lost weight.",
+    "choice2": "He bought them on sale.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1250,
+    "premise": "The chandelier was removed from the ceiling.",
+    "question": "cause",
+    "choice1": "The chandelier dropped from the ceiling.",
+    "choice2": "The chandelier's lights flickered on and off.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 43,
+    "premise": "The executive decided not to hire the applicant.",
+    "question": "cause",
+    "choice1": "The applicant had experience for the job.",
+    "choice2": "The applicant failed a background check.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 343,
+    "premise": "The police closed the investigation.",
+    "question": "cause",
+    "choice1": "They apprehended the suspect.",
+    "choice2": "The victim recovered.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1468,
+    "premise": "The visitor used the old door knocker instead of the door bell.",
+    "question": "cause",
+    "choice1": "A knock sounded at the door.",
+    "choice2": "The cat lounged on the couch.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1096,
+    "premise": "The woman looked for a job.",
+    "question": "cause",
+    "choice1": "She received a salary bonus.",
+    "choice2": "Her husband got laid off.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 256,
+    "premise": "Cars moved to the shoulder of the road.",
+    "question": "cause",
+    "choice1": "A screaming ambulance approached.",
+    "choice2": "The traffic light turned green.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 314,
+    "premise": "The woman fanned herself with her hand.",
+    "question": "cause",
+    "choice1": "The air conditioner in the room broke.",
+    "choice2": "She installed the air conditioner in the room.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1330,
+    "premise": "The security guard could not identify the thief.",
+    "question": "cause",
+    "choice1": "He noticed some suspicious activity.",
+    "choice2": "The surveillance camera was out of focus.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 149,
+    "premise": "The driver pulled over to the side of the road.",
+    "question": "cause",
+    "choice1": "He went through an intersection.",
+    "choice2": "He noticed a stranded vehicle.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 315,
+    "premise": "The doctors amputated the patient's leg.",
+    "question": "cause",
+    "choice1": "It was severely infected.",
+    "choice2": "It was badly bruised.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 411,
+    "premise": "The bowling ball knocked over the bowling pins.",
+    "question": "cause",
+    "choice1": "The man rolled the bowling ball down the alley.",
+    "choice2": "The man dropped the bowling ball on his foot.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1040,
+    "premise": "The woman hired a public relations consultant.",
+    "question": "cause",
+    "choice1": "She decided to run for office.",
+    "choice2": "She decided to sue her employer.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 1346,
+    "premise": "The photograph was worthless.",
+    "question": "cause",
+    "choice1": "It was old.",
+    "choice2": "It was fake.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1393,
+    "premise": "Air qualtity in the city improved.",
+    "question": "cause",
+    "choice1": "Factories shut down.",
+    "choice2": "Factories increased their production.",
+    "mirrored": true
+  },
+  {
+    "label": 1,
+    "id": 364,
+    "premise": "The computer crashed.",
+    "question": "cause",
+    "choice1": "I backed up my files.",
+    "choice2": "I downloaded a virus.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 24,
+    "premise": "The host cancelled the party.",
+    "question": "cause",
+    "choice1": "She was certain she had the flu.",
+    "choice2": "She worried she would catch the flu.",
+    "mirrored": false
+  },
+  {
+    "label": 0,
+    "id": 1320,
+    "premise": "The children had a toothache.",
+    "question": "cause",
+    "choice1": "They ate popsicles.",
+    "choice2": "They were hot.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 1090,
+    "premise": "The boy communicated with his grandfather by writing.",
+    "question": "cause",
+    "choice1": "His grandfather was deaf.",
+    "choice2": "His grandfather was blind.",
+    "mirrored": true
+  },
+  {
+    "label": 0,
+    "id": 25,
+    "premise": "The woman gave the man her phone number.",
+    "question": "cause",
+    "choice1": "She was attracted to him.",
+    "choice2": "She was repulsed by him.",
+    "mirrored": false
+  },
+  {
+    "label": 1,
+    "id": 1088,
+    "premise": "I didn't have to do the dishes.",
+    "question": "cause",
+    "choice1": "I finished eating.",
+    "choice2": "I skipped dinner.",
+    "mirrored": true
+  }
+]

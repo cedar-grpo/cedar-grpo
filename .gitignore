@@ -1,0 +1,70 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+
+# PyInstaller
+*.spec
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE / Editor folders
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Secrets
+*.env
+.env.*
+secrets.toml
+
+# Other
+.DS_Store
+
+
+.ipynb_checkpoints/
+
+evaluate_sml/results_old
+evaluate_sml/results_old/
+evaluate_sml/results_old/*
+
+evaluate_sml/results/*
+evaluate_sml/results
+evaluate_sml/results/
+results/
+results/*
+results
+proposal/dag_visualizations/
+proposal/debug_outputs/
+proposal/debug_outputs/*
+*.png
+!CEDAR-Icon.png
+
+# GRPO/dataset
+GRPO/unsloth_compiled_cache
+GRPO/training_log.log
+
+nimavenv
+unsloth_compiled_cache
+
+GRPO/prompt_structure_log.txt
+GRPO/trainning_abductive.ipynb
+GRPO/Evaluation/multi_evaluation_results
+GRPO/Evaluation/*results
+GRPO/Evaluation/res
+
+GRPO/Evaluation/metrics*
+GRPO/Evaluation/dt*

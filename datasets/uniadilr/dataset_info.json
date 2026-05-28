@@ -1,0 +1,17 @@
+{
+  "name": "UniADILR-HGc",
+  "source": "https://github.com/YuSheng-00/UniADILR/tree/main/data/UniADILR-HGc",
+  "description": "Unified Abductive, Deductive, Inductive Logical Reasoning dataset (HGc subset).",
+  "files": {
+    "abduction.jsonl": {
+      "num_examples": 500,
+      "fields": [
+        "context"
+      ]
+    },
+    "abduction_multi_choice.jsonl": {
+      "num_examples": 500,
+      "note": "Multi-choice version of abduction.jsonl"
+    }
+  }
+}

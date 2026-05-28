@@ -1,0 +1,453 @@
+\documentclass[11pt]{article}
+\usepackage[review]{acl}
+\PassOptionsToPackage{table}{xcolor}
+\usepackage{colortbl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{inconsolata}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{array}
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+\usepackage{listings}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{rotating}
+\usepackage{makecell}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{todonotes}
+
+\newtcolorbox{metricbox*}[1]{
+  enhanced,
+  breakable,
+  colback=gray!5!white,
+  colframe=gray!40!black,
+  fonttitle=\bfseries,
+  title=#1,
+  boxsep=2pt,
+  left=4pt, right=4pt, top=3pt, bottom=3pt,
+  arc=2mm,
+  toptitle=1mm, bottomtitle=1mm,
+}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    breakatwhitespace=false,
+    frame=single,
+    rulecolor=\color{gray!30},
+    backgroundcolor=\color{gray!5},
+    columns=fullflexible,
+    postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
+
+
+\input{math_commands.tex}
+
+\title{CEDAR-GRPO: Process-Aware Reinforcement Learning for General Abductive Reasoning in LLMs}
+
+\author{%
+  Jane Doe \\
+  Department of Computer Science\\
+  University of Example, City, Country \\
+  \texttt{jane.doe@university.edu}
+  \And
+  John Smith \\
+  AI Research Lab\\
+  Example Company, City, Country \\
+  \texttt{john.smith@company.com}
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Abductive reasoning, often characterized as inference to the best explanation, is central to explanation under uncertainty, from everyday sense-making and investigation to scientific discovery. Yet LLM research has mostly studied abduction through narrow, task-specific benchmarks, making it unclear whether observed gains transfer beyond the benchmark family used for training or evaluation. We ask whether RL post-training can improve abduction as a transferable reasoning capability. We introduce CEDAR-GRPO, a process-aware framework that combines final-answer correctness with abductive rewards for evidence coverage and evidence-to-explanation directionality. Four open-weight LLMs are post-trained on a controlled, domain-neutral mixture of abductive hypothesis-generation and hypothesis-selection tasks. We evaluate them on 11 unseen tasks spanning hypothesis selection, missing-fact generation, defeasible inference, long-context investigation, clinical reasoning, code debugging, and non-abductive controls. CEDAR-GRPO improves every model on every held-out task over both base models and correctness-only GRPO, with average gains of 7.4 and 2.7 points, respectively, and a maximum gain of 30.8 points. Ablations confirm that RL, abductive reward design, and task diversity each contribute to transfer. Process-level metrics further show stronger abductive behavior, including exploration of alternatives, elimination of rivals, backtracking, and uncertainty marking.
+\end{abstract}
+
+
+\section{Introduction}
+
+A clinician interpreting puzzling symptoms, an engineer diagnosing an intermittent failure, and a detective reconstructing a crime from scattered clues all face the same reasoning problem: they must infer a hidden explanation from incomplete evidence. This explanatory step is abductive reasoning, classically understood as moving from observations to a hypothesis that would make them less surprising, and often described as inference to the best explanation \citep{Peirce1931,lipton2004ibe}. For LLMs, abduction is a crucial capability because many real uses of language models---including diagnosis, scientific hypothesis formation, evidence interpretation, debugging, and long-context investigation---depend on identifying plausible latent causes, missing facts, or underlying mechanisms that best account for uncertain observations.
+
+Recent work has introduced valuable benchmarks for abductive reasoning, including ART for commonsense hypothesis selection \citep{bhagavatula2019abductive-commonsense-reasoning}, e-CARE for explainable causal reasoning \citep{du2022ecare}, DDXPlus for differential diagnosis \citep{Tchango2022ddxplus}, ProofWriter and AbductionRules for missing-fact generation \citep{tafjord2020proofwriter,young2022abductionrules}, and knowledge-graph methods for generating hypotheses that explain observed relational structure \citep{bai2023abductive-kg}. However, progress is often measured within a single benchmark family, task format, or structured domain. This makes it difficult to tell whether a method improves abduction as a reusable reasoning capability, or merely adapts a model to a narrow formulation. Following recent survey work, we distinguish hypothesis generation, where a model proposes explanations, from hypothesis selection, where it chooses among candidate explanations \citep{salimi2026wiringwhyunifiedtaxonomy}. A stronger account of abductive improvement should therefore ask not only whether models perform well on individual abductive tasks, but whether gains transfer across the two major abductive task types and beyond the formats on which they were trained.
+
+This paper asks whether reinforcement-learning post-training can improve abductive reasoning beyond single-benchmark fit. We introduce \textbf{CEDAR-GRPO} (Correctness, Evidence coverage, and Directionality Abductive Rewards), a process-aware GRPO framework for strengthening abductive reasoning in LLMs. Rather than imitating fixed reference traces, CEDAR-GRPO lets models explore candidate reasoning paths while learning from targeted outcome- and process-level feedback. Its reward combines deterministic final-answer correctness---including exact-match, label-based, and execution-based verification---with abductive signals for evidence coverage and evidence--explanation directionality. These signals encourage the model to use the available evidence and preserve the direction from observations to explanation, without rewarding easier-to-game proxies such as generic hedging, unnecessary branching, or simply longer rationales.
+
+We post-train four open-weight backbones: Qwen3-4B, Qwen3-8B, DeepSeek-R1-Distill-Qwen-7B, and Llama-3.1-8B-Instruct. The training mixture is intentionally domain-neutral and knowledge-light, spanning both hypothesis generation and hypothesis selection through formal hypothesis selection, commonsense causal choice, missing-fact generation, and rule-learning tasks. This design makes transfer easier to interpret: improvements on held-out clinical, debugging, long-context, or logical tasks are less plausibly explained by narrow domain adaptation, and more plausibly reflect improved reasoning about explanations themselves.
+
+We evaluate the resulting models on 11 unseen tasks covering hypothesis selection, missing-fact generation, defeasible inference, long-context investigation, clinical reasoning, code debugging, forward causal reasoning, and general multistep reasoning. The suite includes abductive targets, abduction-adjacent domain-transfer tasks, and non-abductive controls, allowing us to test whether abductive post-training transfers across task formats, domains, and context lengths rather than merely improving the tasks used for training.
+
+Because final-answer accuracy alone cannot show whether a model has learned to reason more abductively, we also analyze reasoning traces with seven process-level metrics: branchiness, backtracking, differential elimination, prior invocation, evidence coverage, evidence--explanation directionality, and uncertainty marking. These metrics test whether performance gains are accompanied by changes in how models reason: whether they explore alternatives, revise flawed reasoning, eliminate rival explanations, and ground their answers in the observations.
+
+Across all four backbones, CEDAR-GRPO improves performance on every held-out task over both base models and the correctness-only GRPO baseline, Cor-GRPO. Averaged across settings, it gains 7.4 points over base models and 2.7 points over Cor-GRPO, with a maximum gain of 30.8 points on MuSR-Murder for DeepSeek-R1-Distill-Qwen-7B. Ablations show that RL, composite reward, and the inclusion of both generation- and selection-oriented training data each contribute to transfer. Process-level analysis further shows stronger abductive behavior alongside these performance gains.
+
+Taken together, this paper makes five contributions. First, it introduces a domain-neutral abductive training mixture covering both hypothesis generation and hypothesis selection. Second, it proposes CEDAR-GRPO, a composite-reward GRPO method based on correctness, evidence coverage, and evidence--explanation directionality. Third, it evaluates four open-weight backbones across 11 held-out abductive, abduction-adjacent, domain-transfer, and control tasks. Fourth, it analyzes reasoning traces with seven abduction-focused process metrics. Fifth, it provides ablations comparing RL with SFT, isolating reward components, separating Stage~I and Stage~II training, and testing whether the gains are specific to abductive post-training rather than generic reasoning post-training.
+
+
+\section{Related Work}
+\label{sec:related_work}
+
+\subsection{Abductive Tasks and Benchmarks}
+
+Abductive reasoning in NLP is commonly studied through tasks that ask models to infer plausible explanations, missing facts, or latent causes from incomplete observations. Existing benchmarks instantiate this ability in several forms, including commonsense hypothesis selection in ART and UNcommonsense, explainable causal reasoning in e-CARE, clinical differential diagnosis in DDXPlus, abductive missing-fact generation in ProofWriter and AbductionRules, and structured hypothesis generation over knowledge graphs \citep{bhagavatula2019abductive-commonsense-reasoning,zhao2023uncommonsense,du2022ecare,Tchango2022ddxplus,tafjord2020proofwriter,young2022abductionrules,bai2023abductive-kg}. These resources have been essential for measuring abductive behavior, but they often make improvements hard to disentangle from particular domains, output formats, or verification regimes. Our work therefore treats abduction as a broader capability whose improvement should transfer across both hypothesis-generation and hypothesis-selection settings, as well as beyond the tasks used for training.
+
+\subsection{Training and Inference-Time Scaffolding}
+
+Prior methods for improving abductive reasoning have largely relied on supervised adaptation or inference-time scaffolding. Supervised, ranking-based, and preference-based objectives train models from labeled abductive data, either by imitating reference explanations or by learning to prefer stronger hypotheses \citep{zhu2020l2r2,he2025gear}. In contrast, recent LLM pipelines use prompting, retrieval, multi-agent decomposition, or symbolic checking to separate observation interpretation, hypothesis generation, and hypothesis evaluation \citep{liu2024incomplete-loop-instruction-inference,lin2025abductiveinferenceretrievalaugmentedlanguage,he2023lego,li2025hypothesis,hong2024argmed}. Recently, LogiDynamics \citep{zheng2025logidynamics} demonstrated that embedding abductive inference within a broader logical-reasoning pipeline alongside iterative refinement systematically enhances performance. While effective for task-specific adaptation or inference control, these approaches leave open whether post-training can internalize broadly generalizable abductive behaviors.
+
+
+% Prior methods for improving abductive reasoning have largely relied on supervised adaptation or inference-time scaffolding. Supervised, ranking-based, and preference-based objectives train models from labeled abductive data, either by imitating reference explanations or by learning to prefer stronger hypotheses \citep{zhu2020l2r2,he2025gear}. In contrast, recent LLM pipelines use prompting, retrieval, multi-agent decomposition, or symbolic checking to separate observation interpretation, hypothesis generation, and hypothesis evaluation \citep{liu2024incomplete-loop-instruction-inference,lin2025abductiveinferenceretrievalaugmentedlanguage,he2023lego,li2025hypothesis,hong2024argmed}. LogiDynamics similarly studies abductive inference within a broader logical-reasoning pipeline and shows that strategies such as hypothesis selection and iterative refinement can improve reasoning \citep{zheng2025logidynamics}. These methods improve task-specific adaptation or inference-time control, but they do not directly test whether post-training can internalize abductive behaviors that generalize across tasks.
+
+\subsection{RL Post-Training and Process-Aware Rewards}
+
+Reinforcement learning offers a natural way to optimize abductive reasoning against task-level criteria, but its use in abduction remains narrow. RLF-KG uses PPO-style feedback from knowledge graphs to generate logical hypotheses that explain observed facts, while CtrlHGen applies GRPO-based reinforcement tuning with rewards for semantic alignment and condition satisfaction \citep{bai2023abductive-kg,gao2025ctrlhgen}. More broadly, GRPO was introduced for mathematical reasoning as a memory-efficient alternative to PPO \citep{shao2024deepseekmath}, and recent RL post-training work shows that verifiable rewards can elicit behaviors such as verification, reflection, and strategy adaptation \citep{guo2025deepseekr1}. However, these successes are concentrated in math, code, or structured reasoning. CEDAR-GRPO instead studies broad abductive transfer: it combines verifiable correctness with process-aware rewards for evidence coverage and evidence--explanation directionality, drawing inspiration from process-supervision work while avoiding reliance on human-labeled reasoning traces \citep{lightman2024lets,uesato2022solving}.
+
+
+\section{Data Collection}
+\label{sec:data_collection}
+
+\subsection{Dataset selection}
+We construct both the training pool and evaluation suite to probe abductive reasoning in a controlled yet heterogeneous manner. Following the two-stage view of abduction adopted in recent survey work, we treat abductive reasoning as comprising \emph{Stage~I} hypothesis generation and \emph{Stage~II} hypothesis selection \citep{salimi2026wiringwhyunifiedtaxonomy}. This distinction is crucial in our setting: a model can improve by proposing better explanatory hypotheses, by evaluating candidate hypotheses more reliably, or by doing both. To avoid conflating these possibilities, we do not build the training pool around a single benchmark family.
+
+Our data collection strategy is intentionally asymmetric. The training pool is limited to broadly non-specialized resources and spans both stages of the abductive pipeline, so that gains are less likely to reflect narrow domain adaptation or isolated progress on either generation or selection. The evaluation suite is broader: alongside classic abductive benchmarks, it includes abstract logical data, neighboring tasks that admit an abductive interpretation, and explicit non-abductive controls. This design lets us ask a sharper question: does GRPO learn reusable abductive behavior, or merely adapt to the surface form of a few benchmarks? Throughout, we maintain a strict separation between learning and measurement: evaluation datasets are never used for model optimization or model selection. Additional dataset-specific notes are deferred to Appendix~\ref{app:data_collection}.
+
+\subsection{Training and validation data}
+
+Our training pool, detailed in Appendix~\ref{app:data_collection} (Table~\ref{tab:train_data}), is composed of datasets targeting both Stage~I and Stage~II of abduction. The Stage~II group requires the model to assess the plausibility of an explanation, cause, or evidential relation, or to select among competing hypotheses. UniADILR-HGc and Balanced COPA provide compact classic abductive selection signals. CauseLogics asks whether a candidate premise makes an inference sensible, capturing a core part of hypothesis assessment: checking whether a hypothesis can logically and soundly explain the observations. CLIMATE-FEVER similarly provides a Stage~II-adjacent signal, requiring the model to choose among supports, refutes, not enough info, and disputed for a claim--evidence relation. The Stage~I group instead requires constructing missing hypotheses rather than choosing from fixed alternatives. AbductionRules asks the model to generate a missing explanatory fact from a rule context, while List Function and Crypto require inferring a latent pattern from input-output examples and generating code that implements it; the code can therefore be interpreted as an explicit candidate hypothesis about the governing rule, making these tasks useful proxies for hypothesis generation.
+
+This composition is useful for GRPO in two ways. Selection-style tasks provide clean signals for plausibility judgments, while generation-style tasks require the model to construct missing hypotheses rather than only evaluate a closed set of candidates. Mixing both makes it less likely that post-training improves only a narrow answer-selection heuristic. Just as importantly, the training sources remain non-specialized, which makes the subsequent evaluation cleaner: if performance improves on downstream tasks from other settings, the gain is less plausibly explained by domain memorization.
+
+\subsection{Evaluation data}
+
+Our evaluation suite, detailed in Appendix~\ref{app:data_collection} (Table~\ref{tab:eval_data}), is deliberately broader than the training pool. It includes classic abductive benchmarks---ART ($\alpha$NLI) for Stage~II hypothesis selection and NeuLR's abductive split for Stage~I missing-fact generation---as well as Defeasible NLI, which tests the Stage~II-adjacent ability to judge whether new evidence strengthens or weakens a hypothesis.
+
+We also evaluate transfer to neighboring domains that admit abductive interpretations: GoEmotions as latent affect inference from utterances, MuSR: Murder as culprit inference, MedQA as clinical diagnosis, and ML-debugging as software diagnosis and repair. Finally, we include non-abductive controls: Balanced COPA in the effect direction for forward causal reasoning, MuSR: Object and MuSR: Team for long-context multistep reasoning, and StrategyQA as a broad general-reasoning control. Together, these groups help distinguish direct abductive transfer from broader changes in reasoning behavior, while preserving a strict separation between training sources and held-out evaluation.
+
+
+\section{Methodology}
+
+\subsection{Problem Formulation}
+
+We operationalize abductive reasoning as selecting or generating the explanation that best accounts for incomplete observations. Figure~\ref{fig:reasoning_training_pipeline} summarizes the proposed CEDAR-GRPO post-training framework. Our experiments use four open-weight backbones: Qwen3-4B, Qwen3-8B, DeepSeek-R1-Distill-Qwen-7B, and Llama-3.1-8B-Instruct. This model suite spans 4B--8B parameters and includes both general instruction-tuned and reasoning-oriented backbones, allowing us to test whether our method improves abductive reasoning across model sizes and families.
+
+% \begin{figure*}[t]
+    % \centering
+    % \includegraphics[width=\textwidth]{figures/diagram.png}
+    % \caption{
+    % Overview of the proposed reasoning-centric training framework.
+    % }
+    % \label{fig:reasoning_training_pipeline}
+% \end{figure*}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\columnwidth]{figures/diagram.png}
+    \caption{
+    Overview of the proposed reasoning-centric training framework.
+    }
+    \label{fig:reasoning_training_pipeline}
+\end{figure}
+
+\subsection{Structured CoT Prompting}
+
+Models are prompted to generate structured outputs of the form $[\langle\texttt{think}\rangle\,\beta,\ \langle\texttt{answer}\rangle\,\alpha]$, where the intermediate Chain-of-Thought (CoT) reasoning trace $\beta$ and the final answer $\alpha$ can be extracted separately. This format allows the final answer to be scored for task correctness, while the CoT trace is parsed independently to compute process-level rewards. Full training and evaluation prompt templates are provided in Appendix~\ref{app:prompts}.
+
+\subsection{Composite Reward Training}
+
+Rather than relying on a single sparse final-answer correctness signal, we train the models with a composite reward that combines final-answer correctness with two process-level signals:
+\[
+R = \lambda_{\mathrm{cor}}r_{\mathrm{cor}} + \lambda_{\mathrm{cov}}r_{\mathrm{cov}} + \lambda_{\mathrm{dir}}r_{\mathrm{dir}}.
+\]
+Here, $r_{\mathrm{cor}}$ provides a deterministic signal for final-answer correctness, $r_{\mathrm{cov}}$ measures how well the model incorporates observations from the input, and $r_{\mathrm{dir}}$ rewards explanations that move logically from observations toward hypotheses.
+
+We optimize this reward using Group Relative Policy Optimization (GRPO), which normalizes rewards across a locally sampled group of $G=4$ completions without an external value network. All models use the same PEFT setup with NF4 quantization and LoRA fine-tuning; implementation details are provided in Appendix~\ref{sec:appendix_implementation}. Formal reward definitions are provided in Appendix~\ref{sec:appendix_rewardfn}, and the reward-selection analysis is detailed in Appendix~\ref{app:reward_selection}.
+
+
+\section{Experiments}
+\label{sec:experiments}
+
+This section evaluates whether post-training with our composite reward improves general abductive reasoning, rather than simply increasing performance on the training tasks. We organize the evidence into three parts: (i) held-out task performance on the evaluation suite from Section~\ref{sec:data_collection}; (ii) process-level measurements of the reasoning traces; and (iii) ablations that isolate the role of RL, reward design, the two-stage construction of the training pool, and a matched generic-reasoning post-training control. We use accuracy for closed-form selection tasks, exact or verifier-based correctness for formal missing-fact and rule-learning tasks, and pass/fix success for ML-debugging. All reported scores are computed from the final answer field only; process metrics are computed separately from the reasoning trace. Figure~\ref{fig:training_curves} provides a compact view of training progress across epochs. It shows the average trend as well as dataset-specific curves for all four models over the seven training datasets.
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/tmp-fig.png}
+    \caption{Training accuracy over five epochs for all four models. Curves are shown for each training dataset and averaged across datasets, illustrating steady improvements across models and tasks during post-training.}
+    \label{fig:training_curves}
+\end{figure*}
+
+\subsection{Held-Out Task Performance}
+\label{sec:heldout_results}
+
+Table~\ref{tab:main_results} presents the main task-level comparison. We compare the original base model, the correctness-only GRPO checkpoint, and our main composite-reward checkpoint, CEDAR-GRPO.
+
+
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.08}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llccccccccccc}
+\toprule
+Model & Method & ART & B-COPA & DefNLI & GoEmo. & MuSR-M & MuSR-O & MuSR-T & NeuLR & StratQA & MedQA & ML-Debug \\
+\midrule
+\multirow{3}{*}{Qwen3-4B}
+& Base & $65.25\%$ & $84.40\%$ & $80.75\%$ & $27.75\%$ & $20.40\%$ & $19.53\%$ & $51.60\%$ & $35.00\%$ & $38.25\%$ & $35.50\%$ & $25.25\%$ \\
+& Cor-GRPO & $71.75\%$ & $86.80\%$ & $86.75\%$ & $32.25\%$ & $41.60\%$ & $32.42\%$ & $48.80\%$ & $38.75\%$ & $43.25\%$ & $37.50\%$ & $28.50\%$ \\
+& CEDAR-GRPO & $\mathbf{72.25\%}$ & $\mathbf{88.80\%}$ & $\mathbf{88.50\%}$ & $\mathbf{34.25\%}$ & $\mathbf{48.40\%}$ & $\mathbf{33.59\%}$ & $\mathbf{55.60\%}$ & $\mathbf{40.50\%}$ & $\mathbf{44.75\%}$ & $\mathbf{37.75\%}$ & $\mathbf{29.00\%}$ \\
+\midrule
+\multirow{3}{*}{Qwen3-8B}
+& Base & $72.25\%$ & $84.40\%$ & $82.50\%$ & $39.50\%$ & $23.20\%$ & $26.52\%$ & $55.20\%$ & $36.25\%$ & $40.00\%$ & $42.25\%$ & $28.75\%$ \\
+& Cor-GRPO & $74.00\%$ & $86.00\%$ & $87.75\%$ & $45.50\%$ & $43.60\%$ & $34.13\%$ & $58.80\%$ & $39.50\%$ & $44.50\%$ & $46.25\%$ & $29.75\%$ \\
+& CEDAR-GRPO & $\mathbf{75.50\%}$ & $\mathbf{89.00\%}$ & $\mathbf{90.50\%}$ & $\mathbf{47.00\%}$ & $\mathbf{46.80\%}$ & $\mathbf{37.19\%}$ & $\mathbf{60.80\%}$ & $\mathbf{43.75\%}$ & $\mathbf{50.50\%}$ & $\mathbf{49.25\%}$ & $\mathbf{31.75\%}$ \\
+\midrule
+\multirow{3}{2.7cm}{\raggedright DeepSeek-R1-Distill-Qwen-7B}
+& Base & $70.25\%$ & $85.20\%$ & $81.50\%$ & $30.00\%$ & $26.40\%$ & $38.67\%$ & $49.60\%$ & $31.50\%$ & $42.50\%$ & $35.75\%$ & $23.75\%$ \\
+& Cor-GRPO & $73.50\%$ & $88.25\%$ & $82.25\%$ & $31.50\%$ & $56.40\%$ & $40.47\%$ & $50.00\%$ & $33.00\%$ & $42.25\%$ & $36.25\%$ & $22.75\%$ \\
+& CEDAR-GRPO & $\mathbf{78.50\%}$ & $\mathbf{89.25\%}$ & $\mathbf{87.75\%}$ & $\mathbf{35.50\%}$ & $\mathbf{57.20\%}$ & $\mathbf{49.83\%}$ & $\mathbf{51.60\%}$ & $\mathbf{35.50\%}$ & $\mathbf{45.75\%}$ & $\mathbf{39.50\%}$ & $\mathbf{24.75\%}$ \\
+\midrule
+\multirow{3}{2.7cm}{\raggedright Llama-3.1-8B-Instruct}
+& Base & $73.50\%$ & $86.40\%$ & $86.00\%$ & $33.75\%$ & $24.80\%$ & $35.24\%$ & $48.80\%$ & $29.00\%$ & $42.50\%$ & $33.50\%$ & $19.00\%$ \\
+& Cor-GRPO & $78.75\%$ & $89.20\%$ & $87.75\%$ & $35.50\%$ & $52.00\%$ & $36.17\%$ & $49.20\%$ & $30.25\%$ & $42.25\%$ & $34.25\%$ & $19.75\%$ \\
+& CEDAR-GRPO & $\mathbf{80.00\%}$ & $\mathbf{90.40\%}$ & $\mathbf{91.50\%}$ & $\mathbf{39.25\%}$ & $\mathbf{53.20\%}$ & $\mathbf{36.91\%}$ & $\mathbf{50.80\%}$ & $\mathbf{32.25\%}$ & $\mathbf{45.50\%}$ & $\mathbf{35.75\%}$ & $\mathbf{21.25\%}$ \\
+\bottomrule
+\end{tabular}%
+}
+\caption{Held-out task performance across the evaluation suite. Scores represent task-native accuracy or exact-success metrics. CEDAR-GRPO is our composite-reward method; Cor-GRPO is the correctness-only baseline. The best score per backbone is bolded. Full dataset descriptions and abbreviations are provided in Appendix~\ref{app:data_collection}.}
+\label{tab:main_results}
+\end{table*}
+
+
+This held-out suite tests transfer beyond the training formats, spanning direct abductive tasks, abduction-adjacent settings such as clinical diagnosis and ML debugging, and non-abductive controls. Comparing against both the base model and Cor-GRPO separates gains from RL itself from gains due to the composite reward. The results show that CEDAR-GRPO consistently improves over Cor-GRPO, suggesting that the process-level signals are not merely cosmetic. Instead, the coverage and directionality rewards are aligned with the underlying reasoning objective and lead to better final-answer accuracy.
+
+\subsection{Reasoning Trace Analysis}
+\label{sec:trace_analysis}
+
+% Single-column table placed here so it anchors to the top right column of this section
+\begin{table}[t]
+  \centering
+  \small
+  \setlength{\tabcolsep}{4pt}
+  \begin{tabularx}{\linewidth}{@{}p{2.3cm} X@{}}
+    \toprule
+    \textbf{Metric} & \textbf{Description} \\
+    \midrule
+    \textbf{Branchiness} & \raggedright\arraybackslash Exploring multiple distinct candidate explanations for the same observation. \\
+    \addlinespace
+    \textbf{Backtracking} & \raggedright\arraybackslash Explicitly identifying an error or flaw in the reasoning and changing direction. \\
+    \addlinespace
+    \textbf{Differential \newline Elimination} & \raggedright\arraybackslash The active refutation of alternative hypotheses given the specific context. \\
+    \addlinespace
+    \textbf{Prior Invocation} & \raggedright\arraybackslash Incorporating typicality or prior probability alongside case-specific evidence. \\
+    \addlinespace
+    \textbf{Evidence \newline Coverage} & \raggedright\arraybackslash The fraction of specific observation details explicitly accounted for by the chosen hypothesis. \\
+    \addlinespace
+    \textbf{Evidence--Expl. \newline Directionality} & \raggedright\arraybackslash Demonstrating awareness that reasoning must move from given evidence toward an explanatory conclusion. \\
+    \addlinespace
+    \textbf{Uncertainty \newline Markers} & \raggedright\arraybackslash The density of probabilistic language and epistemic hedging within the trace. \\
+    \bottomrule
+  \end{tabularx}
+  \caption{Overview of the process-level metrics used to evaluate intermediate reasoning behaviors.}
+  \label{tab:metrics-taxonomy}
+\end{table}
+
+While our training improves accuracy on held-out benchmarks, correct final answers alone do not guarantee that the underlying reasoning process has improved. Because final-answer accuracy is a coarse outcome measure, we complement it with process-level evaluation to examine whether the model's reasoning chains show the abductive behaviors targeted by our training objective. To do this, we introduce a novel suite of process-level metrics, summarized in Table~\ref{tab:metrics-taxonomy} and discussed in more detail in Appendix~\ref{app:process_level_metrics}, that directly evaluate intermediate reasoning chains. These metrics assess whether the model generates plausible hypotheses, connects them to the available evidence, and uses them to support the final answer. This gives more concrete evidence that the accuracy gains are accompanied by meaningful improvements in the model's reasoning behavior.
+
+% double column table
+
+% \begin{table*}[tbp]
+%   \centering
+%   \small 
+%   \begin{tabular}{@{}p{0.21\linewidth}p{0.74\linewidth}@{}}
+%     \toprule
+%     \textbf{Metric} & \textbf{Description} \\
+%     \midrule
+%     \textbf{Branchiness} & Exploring multiple distinct candidate explanations for the same observation. \\
+%     \addlinespace
+%     \textbf{Backtracking} & Explicitly identifying an error or flaw in the reasoning and changing direction. \\
+%     \addlinespace
+%     \textbf{Differential Elimination} & The active refutation of alternative hypotheses given the specific context. \\
+%     \addlinespace
+%     \textbf{Prior Invocation} & Incorporating typicality or prior probability alongside case-specific evidence. \\
+%     \addlinespace
+%     \textbf{Evidence Coverage} & The fraction of specific observation details explicitly accounted for by the chosen hypothesis. \\
+%     \addlinespace
+%     \textbf{Evidence–Explanation Directionality} & Demonstrating awareness that reasoning must move from given evidence toward an explanatory conclusion. \\
+%     \addlinespace
+%     \textbf{Uncertainty Markers} & The density of probabilistic language and epistemic hedging within the trace. \\
+%     \bottomrule
+%   \end{tabular}
+%   \caption{Overview of the process-level metrics used to evaluate intermediate reasoning behaviors.}
+%   \label{tab:metrics-taxonomy}
+% \end{table*}
+
+\begin{table*}[tbp]
+  \centering
+  \small
+  \setlength{\tabcolsep}{3pt} % Compact layout padding
+  \renewcommand{\arraystretch}{1.2}
+  % !{\hskip 4pt} creates a clean whitespace gap between columns so the cell colors do not merge
+  \begin{tabular}{l !{\hskip 4pt} c !{\hskip 4pt} c !{\hskip 4pt} c !{\hskip 4pt} c !{\hskip 4pt} c !{\hskip 4pt} c !{\hskip 4pt} c}
+    \toprule
+    \textbf{Method} & \textbf{Backtracking} & \textbf{Branchiness} & \textbf{Coverage} & \textbf{Diff. Elim.} & \textbf{Direction.} & \textbf{Prior} & \textbf{Uncertainty} \\
+    \midrule
+    Baseline & 0.69 & 1.22 & 33.1\% & 0.79 & 0.21 & 0.59 & 0.87 \\
+    \addlinespace
+    Cor-GRPO & \cellcolor[HTML]{E8F5E9}0.93 & \cellcolor[HTML]{FFEBEE}1.16 & \cellcolor[HTML]{C8E6C9}39.1\% & \cellcolor[HTML]{C8E6C9}0.97 & \cellcolor[HTML]{FFEBEE}0.16 & \cellcolor[HTML]{FFCDD2}0.53 & \cellcolor[HTML]{E8F5E9}0.92 \\
+    \addlinespace
+    \textbf{CEDAR-GRPO} & \cellcolor[HTML]{A5D6A7}\textbf{1.09} & \cellcolor[HTML]{A5D6A7}\textbf{1.53} & \cellcolor[HTML]{66BB6A}\textbf{52.9\%} & \cellcolor[HTML]{A5D6A7}\textbf{1.29} & \cellcolor[HTML]{66BB6A}\textbf{0.60} & \cellcolor[HTML]{A5D6A7}\textbf{0.72} & \cellcolor[HTML]{66BB6A}\textbf{1.37} \\
+    \bottomrule
+  \end{tabular}
+  \caption{Mean process-level metric scores averaged over all ten held-out datasets
+     (DeepSeek-R1-Distill-Qwen-7B). Each cell shows the raw mean value. The diverging
+     color scale is anchored at the Baseline row: \textcolor[HTML]{27ae60}{\textbf{green}}
+     indicates a higher mean than the Baseline, \textcolor[HTML]{c0392b}{\textbf{red}}
+     indicates a lower mean, and white indicates no change. Color intensity is
+     normalized per metric column so comparisons are made within each metric. 
+     Full per-dataset breakdowns are provided in Appendix~\ref{app:process_level_metrics}, Table~\ref{tab:model_results}.}
+  \label{tab:mean_heatmap_table}
+\end{table*}
+
+% TODO retained from source draft: paragraph revision pending full metric results.
+
+% \begin{figure*}[!htbp]
+%     \centering
+%     \includegraphics[width=\textwidth]{figures/heatmap_mean_process_metrics.png}
+%     \caption{Mean process-level metric scores averaged over all ten held-out datasets
+%     (DeepSeek-R1-Distill-Qwen-7B). Each cell shows the raw mean value. The diverging
+%     color scale is anchored at the Baseline row: \textcolor[HTML]{27ae60}{\textbf{green}}
+%     indicates a higher mean than the Baseline, \textcolor[HTML]{c0392b}{\textbf{red}}
+%     indicates a lower mean, and white indicates no change. Color intensity is
+%     normalized per metric column so comparisons are made within each metric. 
+%     Full per-dataset breakdowns are provided in Appendix \ref{app:process_level_metrics}, Table \ref{tab:model_results}.}
+%     \label{fig:mean_heatmap}
+% \end{figure*}
+
+As shown in Table~\ref{tab:mean_heatmap_table}, optimizing with the composite reward (CEDAR-GRPO) leads to substantial improvements in the two metrics it directly targets: Evidence Coverage and Evidence--Explanation Directionality. Evidence Coverage increases substantially from the baseline of 33.1\% to 52.9\%, and Directionality rises from 0.21 to 0.60. Interestingly, correctness-only optimization (Cor-GRPO) struggles to maintain this structural rigor, with Directionality dropping slightly to 0.16. This demonstrates that without explicit grounding, the model may arrive at correct answers without a logically sound evidence-to-conclusion flow.
+
+More importantly, we observe significant gains in exploratory behaviors that were not explicitly rewarded. Backtracking and Differential Elimination show consistent increases relative to the baseline under both training objectives, indicating that some degree of error correction and active refutation naturally emerges from RL training. The composite reward, however, amplifies these traits considerably, pushing Differential Elimination from 0.79 to 1.29 and Backtracking from 0.69 to 1.09.
+
+A key divergence between the two training regimes appears in how the model generates and explores candidate explanations. Under correctness-only optimization, the reasoning traces become narrower: Branchiness decreases from 1.22 to 1.16, and Prior Invocation drops from 0.59 to 0.53. In contrast, the composite reward encourages the model to actively hypothesize and explore multiple distinct paths, raising Branchiness to 1.53 and Prior Invocation to 0.72. This suggests that CEDAR-GRPO induces a broader shift toward exploratory, transferable reasoning rather than narrow optimization for final answers.
+
+Finally, while the baseline model already exhibits some use of uncertainty markers (0.87), composite training leads to a considerable increase, reaching 1.37. This trend suggests that rather than simply generating verbose filler, the model learns to qualify its steps and explicitly acknowledge epistemic uncertainty when evaluating alternative explanations.
+
+Together, these metrics show that the composite reward improves the model's abductive reasoning behavior, encouraging it to actively hypothesize and evaluate alternatives rather than passively converging on a correct final answer.
+
+
+\subsection{Ablation Studies}
+\label{sec:ablations}
+
+In this section we test whether the observed gains are caused by abductive RL itself, by exposure to the same data under a supervised objective, by the composition of the reward, by the two-stage structure of the training pool, or by generic reasoning post-training. To keep the ablation grid tractable, all ablations are run only on Qwen3-4B and DeepSeek-R1-Distill-Qwen-7B. Table~\ref{tab:unified_ablations} summarizes all ablation variants; the following subsections refer to the corresponding row groups.
+
+
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{1.08}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllcccccccccccc}
+\toprule
+Model & Ablation & Method & ART & B-COPA & DefNLI & GoEmo. & MuSR-M & MuSR-O & MuSR-T & NeuLR & StratQA & MedQA & ML-Debug & Avg. $\Delta$ vs Base \\
+\midrule
+\multirow{9}{*}{Qwen3-4B} 
+& Reference & Base
+& $65.25\%$ & $84.40\%$ & $80.75\%$ & $27.75\%$ & $20.40\%$ & $19.53\%$ & $51.60\%$ & $35.00\%$ & $38.25\%$ & $35.50\%$ & $25.25\%$ & $0.00$ \\
+& Reference & Cor-GRPO
+& $71.75\%$ & $86.80\%$ & $86.75\%$ & $32.25\%$ & $41.60\%$ & $32.42\%$ & $48.80\%$ & $38.75\%$ & $43.25\%$ & $37.50\%$ & $28.50\%$ & $+5.88$ \\
+& Main & \textbf{CEDAR-GRPO}
+& $\mathbf{72.25\%}$ & $\mathbf{88.80\%}$ & $\mathbf{88.50\%}$ & $34.25\%$ & $\mathbf{48.40\%}$ & $\mathbf{33.59\%}$ & $\mathbf{55.60\%}$ & $\mathbf{40.50\%}$ & $44.75\%$ & $\mathbf{37.75\%}$ & $\mathbf{29.00\%}$ & $+8.16$ \\
+\cmidrule(lr){2-15}
+& RL vs SFT & SFT
+& $66.75\%$ & $86.00\%$ & $80.75\%$ & $28.50\%$ & $22.80\%$ & $17.97\%$ & $48.40\%$ & $33.25\%$ & $37.25\%$ & $33.25\%$ & $24.25\%$ & $-0.41$ \\
+& Reward & Cor+Cov-GRPO
+& $69.50\%$ & $88.00\%$ & $87.00\%$ & $32.00\%$ & $43.20\%$ & $33.20\%$ & $52.00\%$ & $39.00\%$ & $43.50\%$ & $37.00\%$ & $\mathbf{29.00\%}$ & $+6.34$ \\
+& Reward & Cor+Dir-GRPO
+& $67.00\%$ & $88.40\%$ & $87.25\%$ & $33.00\%$ & $43.60\%$ & $30.08\%$ & $53.20\%$ & $40.00\%$ & $44.00\%$ & $37.25\%$ & $28.50\%$ & $+6.24$ \\
+& Stage & Stage-I CEDAR-GRPO
+& $67.50\%$ & $86.20\%$ & $84.25\%$ & $35.50\%$ & $45.20\%$ & $29.21\%$ & $\mathbf{55.60\%}$ & $\mathbf{40.50\%}$ & $44.75\%$ & $36.75\%$ & $\mathbf{29.00\%}$ & $+6.43$ \\
+& Stage & Stage-II CEDAR-GRPO
+& $68.25\%$ & $86.80\%$ & $85.75\%$ & $\mathbf{37.75\%}$ & $34.40\%$ & $26.87\%$ & $51.00\%$ & $35.00\%$ & $\mathbf{46.25\%}$ & $35.75\%$ & $24.75\%$ & $+4.44$ \\
+& Generic reasoning & General Cor-GRPO
+& $64.50\%$ & $86.40\%$ & $83.50\%$ & $26.50\%$ & $19.20\%$ & $17.94\%$ & $41.60\%$ & $37.75\%$ & $37.25\%$ & $33.75\%$ & $26.50\%$ & $-0.80$ \\
+\midrule
+\multirow{9}{2.7cm}{\raggedright DeepSeek-R1-Distill-Qwen-7B} 
+& Reference & Base
+& $70.25\%$ & $85.20\%$ & $81.50\%$ & $30.00\%$ & $26.40\%$ & $38.67\%$ & $49.60\%$ & $31.50\%$ & $42.50\%$ & $35.75\%$ & $23.75\%$ & $0.00$ \\
+& Reference & Cor-GRPO
+& $73.50\%$ & $88.25\%$ & $82.25\%$ & $31.50\%$ & $56.40\%$ & $40.47\%$ & $50.00\%$ & $33.00\%$ & $42.25\%$ & $36.25\%$ & $22.75\%$ & $+3.77$ \\
+& Main & \textbf{CEDAR-GRPO}
+& $\mathbf{78.50\%}$ & $\mathbf{89.25\%}$ & $\mathbf{87.75\%}$ & $35.50\%$ & $\mathbf{57.20\%}$ & $\mathbf{49.83\%}$ & $51.60\%$ & $35.50\%$ & $45.75\%$ & $\mathbf{39.50\%}$ & $24.75\%$ & $+7.27$ \\
+\cmidrule(lr){2-15}
+& RL vs SFT & SFT
+& $72.00\%$ & $86.50\%$ & $80.00\%$ & $34.50\%$ & $29.80\%$ & $36.38\%$ & $47.20\%$ & $33.25\%$ & $38.75\%$ & $32.75\%$ & $19.75\%$ & $-0.39$ \\
+& Reward & Cor+Cov-GRPO
+& $73.75\%$ & $88.00\%$ & $83.25\%$ & $31.75\%$ & $\mathbf{57.20\%}$ & $41.49\%$ & $50.40\%$ & $33.75\%$ & $43.25\%$ & $36.00\%$ & $23.50\%$ & $+4.29$ \\
+& Reward & Cor+Dir-GRPO
+& $72.75\%$ & $87.50\%$ & $82.75\%$ & $31.25\%$ & $56.80\%$ & $40.96\%$ & $49.60\%$ & $33.75\%$ & $43.50\%$ & $36.70\%$ & $22.50\%$ & $+3.90$ \\
+& Stage & Stage-I CEDAR-GRPO
+& $69.50\%$ & $87.00\%$ & $82.75\%$ & $33.25\%$ & $42.00\%$ & $27.65\%$ & $\mathbf{55.20\%}$ & $\mathbf{41.25\%}$ & $42.50\%$ & $35.25\%$ & $\mathbf{29.25\%}$ & $+2.77$ \\
+& Stage & Stage-II CEDAR-GRPO
+& $72.75\%$ & $88.80\%$ & $86.50\%$ & $\mathbf{40.25\%}$ & $38.40\%$ & $27.33\%$ & $51.60\%$ & $33.25\%$ & $\mathbf{48.00\%}$ & $35.00\%$ & $27.50\%$ & $+3.11$ \\
+& Generic reasoning & General Cor-GRPO
+& $69.25\%$ & $88.40\%$ & $82.75\%$ & $28.50\%$ & $22.00\%$ & $27.60\%$ & $43.60\%$ & $34.25\%$ & $40.50\%$ & $33.75\%$ & $25.25\%$ & $-1.75$ \\
+\bottomrule
+\end{tabular}%
+}
+\caption{Unified ablation results on the two evaluated backbones, isolating the effects of supervised fine-tuning, reward composition, training stages, and generic reasoning post-training. Performance is compared against our main CEDAR-GRPO method and the Cor-GRPO baseline. All columns report task-native metrics on the same held-out evaluation datasets as Table~\ref{tab:main_results}.}
+\label{tab:unified_ablations}
+\end{table*}
+
+
+\subsubsection{RL versus supervised fine-tuning on synthetic rationales}
+\label{sec:ablation_sft}
+
+This ablation asks whether the gains come from reinforcement learning or simply from additional exposure to the same abductive tasks and answer formats. We construct an SFT dataset from the same training pool used for RL. Because not all original examples include complete reasoning traces, we generate synthetic rationale chains in the same \texttt{<think>} and \texttt{<answer>} format used during RL training; details are given in Appendix~\ref{app:sft_dataset_creation}. We then fine-tune the same base model with the same PEFT configuration and evaluate it on the identical held-out suite.
+
+This creates a matched comparison: SFT sees the same task distribution and response format, but learns by imitating fixed rationales rather than by exploring responses under a reward signal. As shown in Table~\ref{tab:unified_ablations}, SFT is weaker than the closest RL counterpart, Cor-GRPO, which also omits the composite process reward. On Qwen3-4B, Cor-GRPO outperforms SFT on every held-out task; on DeepSeek-R1-Distill-Qwen-7B, it is higher on 9 of 11 tasks and better on average. This suggests that outcome-driven exploration provides benefits beyond simply imitating synthetic rationales.
+
+
+\subsubsection{Reward composition}
+\label{sec:ablation_rewards}
+
+CEDAR-GRPO uses a composite reward that combines deterministic final-answer correctness with evidence coverage and evidence--explanation directionality:
+\[
+    r = \lambda_{\mathrm{cor}} r_{\mathrm{cor}}
+      + \lambda_{\mathrm{cov}} r_{\mathrm{cov}}
+      + \lambda_{\mathrm{dir}} r_{\mathrm{dir}} .
+\]
+To isolate the role of the two process rewards, we keep correctness active and remove one process term at a time. In each two-term variant, the included rewards receive equal weight ($0.5$ each), while the omitted reward is set to zero. Thus, Cor+Cov-GRPO removes directionality, while Cor+Dir-GRPO removes evidence coverage. The ``Reward'' rows in Table~\ref{tab:unified_ablations} compare these variants with Cor-GRPO and the full CEDAR-GRPO objective.
+
+The results show that both process rewards contribute. Adding either one to correctness improves average performance over Cor-GRPO, but neither partial objective matches the full composite reward. On Qwen3-4B, CEDAR-GRPO reaches 52.1 average accuracy, compared with 50.3 for Cor+Cov-GRPO and 50.2 for Cor+Dir-GRPO; on DeepSeek-R1-Distill-Qwen-7B, the corresponding scores are 54.1, 51.1, and 50.7. This suggests that coverage and directionality are complementary: each helps beyond final-answer correctness, but the strongest transfer comes from optimizing them jointly.
+
+
+\subsubsection{Isolating Stage~I and Stage~II training}
+\label{sec:ablation_stages}
+
+Our data collection is built around the claim that abductive reasoning requires both hypothesis generation and hypothesis selection. To test this directly, we train two restricted variants. The Stage~I-only model uses only the hypothesis-generation sources: AbductionRules, Crypto, and List Function. The Stage~II-only model uses only the hypothesis-selection or hypothesis-evaluation sources: UniADILR-HGc, Balanced COPA cause, CauseLogics, and CLIMATE-FEVER. We keep the optimization budget and checkpoint-selection protocol matched as closely as possible to the full mixture.
+
+As shown in the ``Stage'' rows of Table~\ref{tab:unified_ablations}, the restricted variants retain some task-specific strengths, but neither matches the breadth of the full training mixture. On Qwen3-4B, CEDAR-GRPO reaches 52.1 average accuracy, compared with 50.4 for Stage~I-only and 48.4 for Stage~II-only training. The same pattern holds on DeepSeek-R1-Distill-Qwen-7B, where the full mixture reaches 54.1, compared with 49.6 and 49.9 for the two restricted variants. These results suggest that generation- and selection-oriented data provide complementary signals, and that broad transfer depends on training over both stages.
+
+
+\subsubsection{Training on generic reasoning data}
+\label{sec:ablation_generic_reasoning}
+
+Finally, we test whether the observed gains are specific to abductive data or can be obtained by applying GRPO to a generic reasoning mixture. We create a matched post-training condition using deductive and general reasoning datasets with the same backbone, similar number of examples, answer format, and RL budget. The matched general-reasoning mixture is detailed in Appendix~\ref{app:general_reasoning_data}. This controls for improvements from longer reasoning traces, answer-format practice, or generic reinforcement learning on verifiable problems.
+
+As shown in the ``Generic reasoning'' rows of Table~\ref{tab:unified_ablations}, the generic-reasoning control underperforms the matched abductive correctness-only baseline, Cor-GRPO. On Qwen3-4B, Cor-GRPO is higher on every held-out task and averages 49.9 compared with 43.2 for General Cor-GRPO. On DeepSeek-R1-Distill-Qwen-7B, it also performs better on average, 50.6 versus 45.1, with the largest gaps appearing on the MuSR tasks. This suggests that the gains do not come simply from correctness-only GRPO on verifiable reasoning data, but from training on abductive data in particular.
+
+
+\section{Conclusion}
+We introduced CEDAR-GRPO, a composite-reward post-training framework that treats abduction as a general reasoning capability rather than a benchmark-specific skill. Across four open-weight backbones and eleven held-out datasets, CEDAR-GRPO consistently improved performance over both base models and correctness-only GRPO, with gains of up to 30.8 points and transfer to abduction-adjacent settings such as clinical diagnosis, ML debugging, and long-context investigation. Ablations indicate that these gains reflect the abductive training mixture and the composite reward rather than supervised exposure or generic verifiable-reward post-training. Overall, CEDAR-GRPO is a practical step toward more general and reliable abductive reasoning in language models.
+
+\section{Limitations}
+Despite the consistent improvements reported above, several limitations remain. First, our evaluation is still constrained by benchmark-style settings and largely closed-form outcomes, and it remains unclear how far these gains extend to truly open-ended or interactive explanatory tasks where the answer space is not predefined. Second, all backbones evaluated are in the 4--8B parameter range, leaving open whether the observed patterns hold at larger scales where base reasoning capabilities and training dynamics may differ substantially. Third, although we complement final-answer accuracy with process-level metrics to validate that the observed improvements reflect genuine changes in reasoning behavior, these metrics are themselves computed by an LLM-as-judge, and since the evidence-coverage and directionality rewards used during training rely on the same kind of judgments, there is a potential circularity between optimization signal and evaluation. Conclusions about reasoning quality would therefore be strengthened by human evaluation, both as a check on the process-level scores on our existing evaluation suite and through dedicated human assessment of model outputs on open-ended generation tasks where automatic metrics are least reliable. Finally, our training pool is relatively small at 2{,}400 instances (Section~\ref{sec:ablation_sft}); while this scale is sufficient to demonstrate the effects studied here, it leaves open how the method behaves under substantially larger or more diverse abductive training data, and we examine the scale question only for the model and not for the data.

@@ -1,0 +1,15 @@
+{
+  "name": "MiniARC",
+  "source": "Local dataset (miniarc.jsonl)",
+  "description": "Mini version of ARC (Abstraction and Reasoning Corpus) visual grid puzzles.",
+  "files": {
+    "data.jsonl": {
+      "num_examples": 39,
+      "fields": [
+        "idx",
+        "train",
+        "test"
+      ]
+    }
+  }
+}

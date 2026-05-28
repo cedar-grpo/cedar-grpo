@@ -1,0 +1,14 @@
+{
+  "name": "GSM8K",
+  "source": "https://huggingface.co/datasets/gsm8k",
+  "description": "Grade School Math 8K: math word problems requiring multi-step arithmetic reasoning.",
+  "files": {
+    "data.jsonl": {
+      "num_examples": 395,
+      "fields": [
+        "question",
+        "answer"
+      ]
+    }
+  }
+}

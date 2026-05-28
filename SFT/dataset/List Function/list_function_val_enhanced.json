@@ -1,0 +1,3602 @@
+[
+  {
+    "idx": 160,
+    "id": "c189",
+    "function": "def c189(x):\n    # count from the smallest element to the largest element\n    return list(range(min(x), max(x)+1))\n\n",
+    "train": [
+      {
+        "input": "[31, 30, 27]",
+        "output": "[27, 28, 29, 30, 31]"
+      },
+      {
+        "input": "[10, 5, 9]",
+        "output": "[5, 6, 7, 8, 9, 10]"
+      },
+      {
+        "input": "[26, 19, 23]",
+        "output": "[19, 20, 21, 22, 23, 24, 25, 26]"
+      },
+      {
+        "input": "[52, 51, 53]",
+        "output": "[51, 52, 53]"
+      },
+      {
+        "input": "[47, 50, 48]",
+        "output": "[47, 48, 49, 50]"
+      },
+      {
+        "input": "[49, 47, 52, 54]",
+        "output": "[47, 48, 49, 50, 51, 52, 53, 54]"
+      },
+      {
+        "input": "[33, 27, 31]",
+        "output": "[27, 28, 29, 30, 31, 32, 33]"
+      },
+      {
+        "input": "[19, 19, 14]",
+        "output": "[14, 15, 16, 17, 18, 19]"
+      },
+      {
+        "input": "[88, 91, 92]",
+        "output": "[88, 89, 90, 91, 92]"
+      },
+      {
+        "input": "[78, 76, 73]",
+        "output": "[73, 74, 75, 76, 77, 78]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[55, 50, 54]",
+        "output": "[50, 51, 52, 53, 54, 55]"
+      },
+      {
+        "input": "[57, 62, 60]",
+        "output": "[57, 58, 59, 60, 61, 62]"
+      },
+      {
+        "input": "[8, 14, 14]",
+        "output": "[8, 9, 10, 11, 12, 13, 14]"
+      },
+      {
+        "input": "[9, 11, 5]",
+        "output": "[5, 6, 7, 8, 9, 10, 11]"
+      },
+      {
+        "input": "[31, 35, 32]",
+        "output": "[31, 32, 33, 34, 35]"
+      },
+      {
+        "input": "[32, 35, 33]",
+        "output": "[32, 33, 34, 35]"
+      },
+      {
+        "input": "[77, 73, 73]",
+        "output": "[73, 74, 75, 76, 77]"
+      },
+      {
+        "input": "[6, 3, 6]",
+        "output": "[3, 4, 5, 6]"
+      },
+      {
+        "input": "[39, 41, 43]",
+        "output": "[39, 40, 41, 42, 43]"
+      },
+      {
+        "input": "[53, 52, 47]",
+        "output": "[47, 48, 49, 50, 51, 52, 53]"
+      }
+    ],
+    "rationale": "The transformation identifies the minimum and maximum values within the input list and generates a continuous sequence of integers between them. For instance, in Example 1, the range between 27 and 31 is filled, and in Example 6, the range between 47 and 54 is filled. The rule ignores the order and frequency of the input elements, focusing solely on the boundary values to create a complete arithmetic progression with a step of 1."
+  },
+  {
+    "idx": 161,
+    "id": "c213",
+    "function": "def c213(x):\n    # three smallest elements in ascending order\n    return sorted(x)[:3]\n\n",
+    "train": [
+      {
+        "input": "[63, 57, 21, 39, 54]",
+        "output": "[21, 39, 54]"
+      },
+      {
+        "input": "[4, 13, 14, 39, 47]",
+        "output": "[4, 13, 14]"
+      },
+      {
+        "input": "[59, 42, 44, 74]",
+        "output": "[42, 44, 59]"
+      },
+      {
+        "input": "[22, 48, 28, 80, 93, 70]",
+        "output": "[22, 28, 48]"
+      },
+      {
+        "input": "[64, 89, 25, 66, 95, 52]",
+        "output": "[25, 52, 64]"
+      },
+      {
+        "input": "[99, 11, 86, 51, 85]",
+        "output": "[11, 51, 85]"
+      },
+      {
+        "input": "[8, 55, 39]",
+        "output": "[8, 39, 55]"
+      },
+      {
+        "input": "[43, 86, 38]",
+        "output": "[38, 43, 86]"
+      },
+      {
+        "input": "[22, 93, 92, 97, 55, 39]",
+        "output": "[22, 39, 55]"
+      },
+      {
+        "input": "[4, 15, 14, 65]",
+        "output": "[4, 14, 15]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[89, 92, 58, 64, 69, 3, 83]",
+        "output": "[3, 58, 64]"
+      },
+      {
+        "input": "[49, 11, 74]",
+        "output": "[11, 49, 74]"
+      },
+      {
+        "input": "[86, 10, 81, 9, 90, 7, 67]",
+        "output": "[7, 9, 10]"
+      },
+      {
+        "input": "[42, 13, 42]",
+        "output": "[13, 42, 42]"
+      },
+      {
+        "input": "[1, 78, 14, 34]",
+        "output": "[1, 14, 34]"
+      },
+      {
+        "input": "[91, 3, 77, 4, 56, 30]",
+        "output": "[3, 4, 30]"
+      },
+      {
+        "input": "[55, 21, 86, 95, 6]",
+        "output": "[6, 21, 55]"
+      },
+      {
+        "input": "[63, 26, 11]",
+        "output": "[11, 26, 63]"
+      },
+      {
+        "input": "[47, 9, 39, 27, 85]",
+        "output": "[9, 27, 39]"
+      },
+      {
+        "input": "[84, 37, 80, 61, 9, 23, 12]",
+        "output": "[9, 12, 23]"
+      }
+    ],
+    "rationale": "The transformation identifies the three smallest integers from the input list and returns them in ascending order. In examples with more than three elements, such as Example 4 and Example 9, only the three lowest values are kept and sorted. For lists with exactly three elements, like Example 7 and Example 8, the output is simply the sorted version of the input. This rule consistently accounts for all provided examples by filtering for the minimum values before sorting."
+  },
+  {
+    "idx": 162,
+    "id": "c057",
+    "function": "def c057(x):\n    # insert a 4 as element 2\n    return x[:2] + [4] + x[2:]\n\n",
+    "train": [
+      {
+        "input": "[99, 36, 12, 90, 29]",
+        "output": "[99, 36, 4, 12, 90, 29]"
+      },
+      {
+        "input": "[44, 25, 40, 42]",
+        "output": "[44, 25, 4, 40, 42]"
+      },
+      {
+        "input": "[10, 71, 98, 45, 1, 9, 1]",
+        "output": "[10, 71, 4, 98, 45, 1, 9, 1]"
+      },
+      {
+        "input": "[3, 60, 75, 87, 97, 75]",
+        "output": "[3, 60, 4, 75, 87, 97, 75]"
+      },
+      {
+        "input": "[24, 22, 33, 51]",
+        "output": "[24, 22, 4, 33, 51]"
+      },
+      {
+        "input": "[5, 64, 37, 22, 6, 49]",
+        "output": "[5, 64, 4, 37, 22, 6, 49]"
+      },
+      {
+        "input": "[79, 39, 74, 66]",
+        "output": "[79, 39, 4, 74, 66]"
+      },
+      {
+        "input": "[78, 22, 78, 4, 24]",
+        "output": "[78, 22, 4, 78, 4, 24]"
+      },
+      {
+        "input": "[26, 32, 18, 24, 18, 21]",
+        "output": "[26, 32, 4, 18, 24, 18, 21]"
+      },
+      {
+        "input": "[63, 19, 8, 37, 4]",
+        "output": "[63, 19, 4, 8, 37, 4]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[39, 69, 82, 27, 95, 55]",
+        "output": "[39, 69, 4, 82, 27, 95, 55]"
+      },
+      {
+        "input": "[51, 89, 12, 16, 29, 72, 98]",
+        "output": "[51, 89, 4, 12, 16, 29, 72, 98]"
+      },
+      {
+        "input": "[25, 53, 10, 43, 80]",
+        "output": "[25, 53, 4, 10, 43, 80]"
+      },
+      {
+        "input": "[83, 76, 54, 65, 40, 45]",
+        "output": "[83, 76, 4, 54, 65, 40, 45]"
+      },
+      {
+        "input": "[53, 45, 33, 40, 22, 53]",
+        "output": "[53, 45, 4, 33, 40, 22, 53]"
+      },
+      {
+        "input": "[28, 84, 44, 36, 63, 30, 63]",
+        "output": "[28, 84, 4, 44, 36, 63, 30, 63]"
+      },
+      {
+        "input": "[48, 36, 23, 41, 26, 85, 67]",
+        "output": "[48, 36, 4, 23, 41, 26, 85, 67]"
+      },
+      {
+        "input": "[51, 51, 60, 6]",
+        "output": "[51, 51, 4, 60, 6]"
+      },
+      {
+        "input": "[57, 51, 0, 81, 45]",
+        "output": "[57, 51, 4, 0, 81, 45]"
+      },
+      {
+        "input": "[15, 29, 30, 83]",
+        "output": "[15, 29, 4, 30, 83]"
+      }
+    ],
+    "rationale": "The transformation rule involves inserting the integer 4 into the input list at index 2. In every example, the first two elements of the input remain unchanged, followed by the insertion of 4, and then the remainder of the original list. This pattern is consistent across lists of varying lengths and contents, indicating a fixed-position insertion rather than a value-based condition."
+  },
+  {
+    "idx": 163,
+    "id": "c102",
+    "function": "def c102(x):\n    # the input\n    return x\n\n",
+    "train": [
+      {
+        "input": "[22, 61, 18, 89, 76]",
+        "output": "[22, 61, 18, 89, 76]"
+      },
+      {
+        "input": "[65, 75, 52, 49, 23, 61]",
+        "output": "[65, 75, 52, 49, 23, 61]"
+      },
+      {
+        "input": "[65, 38, 88, 20, 15, 90, 85]",
+        "output": "[65, 38, 88, 20, 15, 90, 85]"
+      },
+      {
+        "input": "[76, 90, 30, 49, 28, 39, 27, 42]",
+        "output": "[76, 90, 30, 49, 28, 39, 27, 42]"
+      },
+      {
+        "input": "[8, 60, 62, 53, 40, 9, 57, 12]",
+        "output": "[8, 60, 62, 53, 40, 9, 57, 12]"
+      },
+      {
+        "input": "[74, 71, 64, 97, 41, 34, 78, 94]",
+        "output": "[74, 71, 64, 97, 41, 34, 78, 94]"
+      },
+      {
+        "input": "[64, 47, 44, 37, 37, 91]",
+        "output": "[64, 47, 44, 37, 37, 91]"
+      },
+      {
+        "input": "[56, 72, 88, 70, 80, 19]",
+        "output": "[56, 72, 88, 70, 80, 19]"
+      },
+      {
+        "input": "[31, 17, 96, 96, 28, 75, 9, 70]",
+        "output": "[31, 17, 96, 96, 28, 75, 9, 70]"
+      },
+      {
+        "input": "[67, 68, 5, 31, 67, 41, 97]",
+        "output": "[67, 68, 5, 31, 67, 41, 97]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[37, 87, 69, 81, 91]",
+        "output": "[37, 87, 69, 81, 91]"
+      },
+      {
+        "input": "[18, 37, 41, 30, 98]",
+        "output": "[18, 37, 41, 30, 98]"
+      },
+      {
+        "input": "[41, 58, 9, 29, 19]",
+        "output": "[41, 58, 9, 29, 19]"
+      },
+      {
+        "input": "[25, 80, 42]",
+        "output": "[25, 80, 42]"
+      },
+      {
+        "input": "[54, 7, 61, 36]",
+        "output": "[54, 7, 61, 36]"
+      },
+      {
+        "input": "[62, 3, 2, 81, 97, 60, 77, 9]",
+        "output": "[62, 3, 2, 81, 97, 60, 77, 9]"
+      },
+      {
+        "input": "[66, 5, 82, 86]",
+        "output": "[66, 5, 82, 86]"
+      },
+      {
+        "input": "[10, 37, 42, 50, 18, 33, 5]",
+        "output": "[10, 37, 42, 50, 18, 33, 5]"
+      },
+      {
+        "input": "[94, 86, 24, 56, 5, 93]",
+        "output": "[94, 86, 24, 56, 5, 93]"
+      },
+      {
+        "input": "[51, 40, 83, 29, 53, 95]",
+        "output": "[51, 40, 83, 29, 53, 95]"
+      }
+    ],
+    "rationale": "The training examples show a series of lists of integers where the output is identical to the input in every case. Regardless of the list length, the values of the integers, or the presence of duplicates (as seen in Example 7 and Example 9), the transformation consistently returns the original list without any modifications. Therefore, the rule is an identity transformation that preserves the input list exactly as it is."
+  },
+  {
+    "idx": 164,
+    "id": "c061",
+    "function": "def c061(x):\n    # remove all but the last element\n    return [x[-1]]\n    \n",
+    "train": [
+      {
+        "input": "[7, 14, 38, 9, 89, 80]",
+        "output": "[80]"
+      },
+      {
+        "input": "[87, 69, 68, 75, 79, 71, 4]",
+        "output": "[4]"
+      },
+      {
+        "input": "[75, 75, 49]",
+        "output": "[49]"
+      },
+      {
+        "input": "[20, 93, 26]",
+        "output": "[26]"
+      },
+      {
+        "input": "[10, 40, 81, 90, 80, 66]",
+        "output": "[66]"
+      },
+      {
+        "input": "[72, 33, 81, 95, 83, 53]",
+        "output": "[53]"
+      },
+      {
+        "input": "[91, 5, 3]",
+        "output": "[3]"
+      },
+      {
+        "input": "[58, 60, 44, 15, 14, 53]",
+        "output": "[53]"
+      },
+      {
+        "input": "[60, 14, 63]",
+        "output": "[63]"
+      },
+      {
+        "input": "[1, 15, 42, 92, 95, 7, 50, 31]",
+        "output": "[31]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[99, 89, 69, 70]",
+        "output": "[70]"
+      },
+      {
+        "input": "[93, 43, 44, 20, 75, 75, 14, 81]",
+        "output": "[81]"
+      },
+      {
+        "input": "[37, 13, 61, 43, 70]",
+        "output": "[70]"
+      },
+      {
+        "input": "[55, 2, 58, 16, 73]",
+        "output": "[73]"
+      },
+      {
+        "input": "[50, 32, 50, 90, 52, 27, 17, 41]",
+        "output": "[41]"
+      },
+      {
+        "input": "[47, 14, 72, 27, 36, 0]",
+        "output": "[0]"
+      },
+      {
+        "input": "[98, 40, 72, 82]",
+        "output": "[82]"
+      },
+      {
+        "input": "[50, 89, 84, 29]",
+        "output": "[29]"
+      },
+      {
+        "input": "[6, 47, 21, 49, 86, 94]",
+        "output": "[94]"
+      },
+      {
+        "input": "[29, 65, 23]",
+        "output": "[23]"
+      }
+    ],
+    "rationale": "The training examples consistently show that regardless of the length or content of the input list, the output is always a single-element list containing the very last item of the input. For instance, in Example 1, the last element 80 is returned, and in Example 10, the last element 31 is returned. The rule is to isolate the final element of the sequence and discard all preceding elements."
+  },
+  {
+    "idx": 165,
+    "id": "c101",
+    "function": "def c101(x):\n    return [11, 19, 24, 33, 42, 5, 82, 0, 64, 9]\n\n",
+    "train": [
+      {
+        "input": "[75, 73, 69]",
+        "output": "[11, 19, 24, 33, 42, 5, 82, 0, 64, 9]"
+      },
+      {
+        "input": "[0, 35, 7]",
+        "output": "[11, 19, 24, 33, 42, 5, 82, 0, 64, 9]"
+      },
+      {
+        "input": "[66, 46, 75, 72, 39, 90]",
+        "output": "[11, 19, 24, 33, 42, 5, 82, 0, 64, 9]"
+      },
+      {
+        "input": "[64, 74, 9, 23, 50]",
+        "output": "[11, 19, 24, 33, 42, 5, 82, 0, 64, 9]"
+      },
+      {
+        "input": "[81, 76, 30, 37, 47, 45, 29]",
+        "output": "[11, 19, 24, 33, 42, 5, 82, 0, 64, 9]"
+      },
+      {
+        "input": "[53, 90, 18, 93, 6]",
+        "output": "[11, 19, 24, 33, 42, 5, 82, 0, 64, 9]"
+      },
+      {
+        "input": "[11, 37, 44, 5, 43]",
+        "output": "[11, 19, 24, 33, 42, 5, 82, 0, 64, 9]"
+      },
+      {
+        "input": "[86, 91, 85, 68, 93, 52, 79]",
+        "output": "[11, 19, 24, 33, 42, 5, 82, 0, 64, 9]"
+      },
+      {
+        "input": "[99, 59, 51, 10, 16]",
+        "output": "[11, 19, 24, 33, 42, 5, 82, 0, 64, 9]"
+      },
+      {
+        "input": "[85, 13, 75, 86, 25, 46, 87]",
+        "output": "[11, 19, 24, 33, 42, 5, 82, 0, 64, 9]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[33, 72, 96, 7, 2, 52]",
+        "output": "[11, 19, 24, 33, 42, 5, 82, 0, 64, 9]"
+      },
+      {
+        "input": "[77, 55, 35, 78, 13, 52]",
+        "output": "[11, 19, 24, 33, 42, 5, 82, 0, 64, 9]"
+      },
+      {
+        "input": "[64, 86, 47, 55]",
+        "output": "[11, 19, 24, 33, 42, 5, 82, 0, 64, 9]"
+      },
+      {
+        "input": "[87, 29, 25, 11, 84, 70]",
+        "output": "[11, 19, 24, 33, 42, 5, 82, 0, 64, 9]"
+      },
+      {
+        "input": "[66, 14, 72, 96]",
+        "output": "[11, 19, 24, 33, 42, 5, 82, 0, 64, 9]"
+      },
+      {
+        "input": "[72, 49, 31, 54, 59, 73, 82]",
+        "output": "[11, 19, 24, 33, 42, 5, 82, 0, 64, 9]"
+      },
+      {
+        "input": "[82, 77, 97, 77]",
+        "output": "[11, 19, 24, 33, 42, 5, 82, 0, 64, 9]"
+      },
+      {
+        "input": "[9, 7, 73, 46, 99, 14]",
+        "output": "[11, 19, 24, 33, 42, 5, 82, 0, 64, 9]"
+      },
+      {
+        "input": "[63, 55, 32, 75]",
+        "output": "[11, 19, 24, 33, 42, 5, 82, 0, 64, 9]"
+      },
+      {
+        "input": "[21, 84, 38, 44, 66, 77, 4]",
+        "output": "[11, 19, 24, 33, 42, 5, 82, 0, 64, 9]"
+      }
+    ],
+    "rationale": "The training examples show that regardless of the input list's length or content, the output is consistently the same fixed list of ten integers: [11, 19, 24, 33, 42, 5, 82, 0, 64, 9]. This indicates a constant transformation rule where the input is ignored in favor of a predefined static sequence. The rule generalizes as a constant function that returns this specific list for any input."
+  },
+  {
+    "idx": 166,
+    "id": "c171",
+    "function": "def c171(x):\n    # cumulative sum\n    res = []\n    s = 0\n    for i in x:\n        s += i\n        res.append(s)\n    return res\n\n",
+    "train": [
+      {
+        "input": "[13, 5, 2, 15, 11]",
+        "output": "[13, 18, 20, 35, 46]"
+      },
+      {
+        "input": "[8, 10, 8]",
+        "output": "[8, 18, 26]"
+      },
+      {
+        "input": "[3, 10, 7, 20, 1]",
+        "output": "[3, 13, 20, 40, 41]"
+      },
+      {
+        "input": "[13, 11, 18]",
+        "output": "[13, 24, 42]"
+      },
+      {
+        "input": "[18, 20, 3, 11, 19]",
+        "output": "[18, 38, 41, 52, 71]"
+      },
+      {
+        "input": "[13, 2, 5]",
+        "output": "[13, 15, 20]"
+      },
+      {
+        "input": "[18, 16, 15, 10, 8, 0]",
+        "output": "[18, 34, 49, 59, 67, 67]"
+      },
+      {
+        "input": "[6, 7, 3]",
+        "output": "[6, 13, 16]"
+      },
+      {
+        "input": "[20, 18, 12, 2, 2, 4, 8]",
+        "output": "[20, 38, 50, 52, 54, 58, 66]"
+      },
+      {
+        "input": "[10, 20, 8]",
+        "output": "[10, 30, 38]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[12, 8, 8, 17, 1]",
+        "output": "[12, 20, 28, 45, 46]"
+      },
+      {
+        "input": "[9, 11, 9, 7]",
+        "output": "[9, 20, 29, 36]"
+      },
+      {
+        "input": "[20, 7, 18, 0]",
+        "output": "[20, 27, 45, 45]"
+      },
+      {
+        "input": "[12, 7, 5, 14]",
+        "output": "[12, 19, 24, 38]"
+      },
+      {
+        "input": "[15, 7, 8, 16, 0, 2, 1]",
+        "output": "[15, 22, 30, 46, 46, 48, 49]"
+      },
+      {
+        "input": "[6, 11, 3, 4, 6]",
+        "output": "[6, 17, 20, 24, 30]"
+      },
+      {
+        "input": "[3, 0, 8, 11, 13, 13]",
+        "output": "[3, 3, 11, 22, 35, 48]"
+      },
+      {
+        "input": "[16, 1, 5]",
+        "output": "[16, 17, 22]"
+      },
+      {
+        "input": "[5, 8, 18, 7]",
+        "output": "[5, 13, 31, 38]"
+      },
+      {
+        "input": "[19, 12, 15]",
+        "output": "[19, 31, 46]"
+      }
+    ],
+    "rationale": "The transformation identifies a cumulative sum pattern across the input list. For each element in the input, the corresponding output element is the sum of all previous elements plus the current one. For example, in Example 1, the sequence [13, 5, 2, 15, 11] becomes [13, 13+5, 13+5+2, ...], resulting in [13, 18, 20, 35, 46]. This rule consistently accounts for all provided examples, including those with zeros or varying lengths."
+  },
+  {
+    "idx": 167,
+    "id": "c225",
+    "function": "def c225(x):\n    # remove first and last two elements\n    return x[2:-2]\n\n",
+    "train": [
+      {
+        "input": "[37, 33, 53, 55, 45, 17]",
+        "output": "[53, 55]"
+      },
+      {
+        "input": "[56, 56, 40, 1, 69, 68, 80]",
+        "output": "[40, 1, 69]"
+      },
+      {
+        "input": "[4, 4, 68, 80, 49, 46]",
+        "output": "[68, 80]"
+      },
+      {
+        "input": "[65, 86, 82, 57, 48, 18, 5]",
+        "output": "[82, 57, 48]"
+      },
+      {
+        "input": "[76, 75, 70, 7, 79, 12, 11, 23]",
+        "output": "[70, 7, 79, 12]"
+      },
+      {
+        "input": "[89, 57, 42, 29, 36, 4, 50, 33]",
+        "output": "[42, 29, 36, 4]"
+      },
+      {
+        "input": "[25, 21, 9, 69, 30, 71, 55]",
+        "output": "[9, 69, 30]"
+      },
+      {
+        "input": "[65, 22, 25, 11, 86, 33, 96, 5]",
+        "output": "[25, 11, 86, 33]"
+      },
+      {
+        "input": "[56, 56, 68, 80, 65, 86, 41, 44]",
+        "output": "[68, 80, 65, 86]"
+      },
+      {
+        "input": "[8, 68, 86, 46, 64, 73, 36]",
+        "output": "[86, 46, 64]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[25, 72, 79, 96, 19]",
+        "output": "[79]"
+      },
+      {
+        "input": "[26, 43, 7, 88, 13, 78, 89]",
+        "output": "[7, 88, 13]"
+      },
+      {
+        "input": "[91, 21, 99, 67, 48, 27]",
+        "output": "[99, 67]"
+      },
+      {
+        "input": "[90, 97, 98, 69, 53]",
+        "output": "[98]"
+      },
+      {
+        "input": "[54, 28, 45, 86, 74, 13]",
+        "output": "[45, 86]"
+      },
+      {
+        "input": "[41, 0, 49, 43, 86, 7, 25, 35]",
+        "output": "[49, 43, 86, 7]"
+      },
+      {
+        "input": "[17, 59, 15, 99, 90, 68, 4]",
+        "output": "[15, 99, 90]"
+      },
+      {
+        "input": "[86, 31, 52, 1, 93, 51]",
+        "output": "[52, 1]"
+      },
+      {
+        "input": "[46, 85, 88, 73, 4, 87]",
+        "output": "[88, 73]"
+      },
+      {
+        "input": "[41, 65, 19, 99, 43]",
+        "output": "[19]"
+      }
+    ],
+    "rationale": "The transformation rule involves slicing the input list to extract a specific sub-sequence. By observing the training examples, the output consistently excludes the first two elements and the last two elements of the input list. For instance, in Example 1, the input of length 6 results in an output of length 2, and in Example 5, the input of length 8 results in an output of length 4. This pattern of removing exactly two elements from each end holds across all examples regardless of the list's total length or the values of the integers."
+  },
+  {
+    "idx": 168,
+    "id": "c245",
+    "function": "def c245(x):\n    # number of times element 0 appears in the following elements\n    return [x[1:].count(x[0])]\n\n",
+    "train": [
+      {
+        "input": "[18, 18, 3, 18, 2, 18]",
+        "output": "[3]"
+      },
+      {
+        "input": "[12, 2, 12, 4, 2, 12, 19]",
+        "output": "[2]"
+      },
+      {
+        "input": "[2, 7, 2, 8, 2, 14, 7]",
+        "output": "[2]"
+      },
+      {
+        "input": "[0, 0, 6, 20, 7, 8]",
+        "output": "[1]"
+      },
+      {
+        "input": "[0, 3, 15, 19, 5, 19, 8]",
+        "output": "[0]"
+      },
+      {
+        "input": "[10, 10, 13, 14, 18, 10, 10]",
+        "output": "[3]"
+      },
+      {
+        "input": "[15, 19, 19, 11, 15, 15]",
+        "output": "[2]"
+      },
+      {
+        "input": "[2, 14, 2, 6, 8, 1, 16]",
+        "output": "[1]"
+      },
+      {
+        "input": "[9, 9, 11, 20, 13, 5, 18, 9]",
+        "output": "[2]"
+      },
+      {
+        "input": "[9, 7, 7, 13, 15, 11, 10]",
+        "output": "[0]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[4, 4, 15, 4, 19, 3, 10, 1]",
+        "output": "[2]"
+      },
+      {
+        "input": "[5, 15, 4, 5, 15, 16, 2]",
+        "output": "[1]"
+      },
+      {
+        "input": "[0, 0, 19, 11, 2, 10]",
+        "output": "[1]"
+      },
+      {
+        "input": "[5, 9, 19, 10, 19, 16, 7]",
+        "output": "[0]"
+      },
+      {
+        "input": "[5, 5, 12, 10, 5, 12]",
+        "output": "[2]"
+      },
+      {
+        "input": "[12, 19, 1, 18, 4, 11]",
+        "output": "[0]"
+      },
+      {
+        "input": "[16, 9, 10, 6, 16, 13, 16]",
+        "output": "[2]"
+      },
+      {
+        "input": "[3, 3, 14, 12, 3, 0, 0]",
+        "output": "[2]"
+      },
+      {
+        "input": "[18, 3, 18, 17, 18, 1, 12]",
+        "output": "[2]"
+      },
+      {
+        "input": "[14, 19, 2, 14, 14, 1, 14, 19]",
+        "output": "[3]"
+      }
+    ],
+    "rationale": "The transformation identifies the first element of the input list and counts how many times that specific value appears in the remainder of the list (from the second element to the end). For example, in Example 1, the first element is 18, and it appears 3 times in the rest of the list. In Example 4, the first element is 0, which appears once in the rest of the list. The output is always a single-element list containing this count."
+  },
+  {
+    "idx": 169,
+    "id": "c233",
+    "function": "def c233(x):\n    # number of occurrences of each unique element, in order of appearance\n    numbers = []\n    res = []\n    for i in x:\n        if i not in numbers:\n            numbers.append(i)\n            res.append(x.count(i))\n    return res\n\n",
+    "train": [
+      {
+        "input": "[0, 8, 3, 9, 9, 0, 9, 8]",
+        "output": "[2, 2, 1, 3]"
+      },
+      {
+        "input": "[0, 5, 2, 9, 10, 0, 1, 10]",
+        "output": "[2, 1, 1, 1, 2, 1]"
+      },
+      {
+        "input": "[7, 9, 3, 8, 3, 3, 0, 9, 6]",
+        "output": "[1, 2, 3, 1, 1, 1]"
+      },
+      {
+        "input": "[9, 9, 8, 5, 4, 4, 2]",
+        "output": "[2, 1, 1, 2, 1]"
+      },
+      {
+        "input": "[8, 4, 4, 3, 1, 0, 8, 8, 3]",
+        "output": "[3, 2, 2, 1, 1]"
+      },
+      {
+        "input": "[0, 3, 1, 3, 0, 2, 1, 10]",
+        "output": "[2, 2, 2, 1, 1]"
+      },
+      {
+        "input": "[7, 6, 8, 2, 8]",
+        "output": "[1, 1, 2, 1]"
+      },
+      {
+        "input": "[10, 4, 10, 4, 8, 4, 2]",
+        "output": "[2, 3, 1, 1]"
+      },
+      {
+        "input": "[4, 6, 4, 7, 2]",
+        "output": "[2, 1, 1, 1]"
+      },
+      {
+        "input": "[3, 6, 4, 8, 3, 6]",
+        "output": "[2, 2, 1, 1]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[2, 9, 4, 6, 2, 0, 5]",
+        "output": "[2, 1, 1, 1, 1, 1]"
+      },
+      {
+        "input": "[9, 8, 5, 7, 4, 5, 7]",
+        "output": "[1, 1, 2, 2, 1]"
+      },
+      {
+        "input": "[4, 9, 9, 2, 9, 7]",
+        "output": "[1, 3, 1, 1]"
+      },
+      {
+        "input": "[7, 9, 2, 8, 6, 2, 0, 5, 0]",
+        "output": "[1, 1, 2, 1, 1, 2, 1]"
+      },
+      {
+        "input": "[8, 9, 8, 9, 2, 8]",
+        "output": "[3, 2, 1]"
+      },
+      {
+        "input": "[10, 5, 2, 6, 5, 6, 10]",
+        "output": "[2, 2, 1, 2]"
+      },
+      {
+        "input": "[3, 7, 8, 5, 4, 4, 4, 10]",
+        "output": "[1, 1, 1, 1, 3, 1]"
+      },
+      {
+        "input": "[8, 7, 1, 7, 0, 0, 8, 10, 10]",
+        "output": "[2, 2, 1, 2, 2]"
+      },
+      {
+        "input": "[3, 3, 8, 0, 3]",
+        "output": "[3, 1, 1]"
+      },
+      {
+        "input": "[10, 4, 5, 9, 5, 4]",
+        "output": "[1, 2, 2, 1]"
+      }
+    ],
+    "rationale": "The transformation identifies the unique elements in the input list in their order of first appearance. For each unique element found, it counts the total number of times that element occurs in the entire input list. The output is a list of these counts, preserving the order established by the first occurrence of each element."
+  },
+  {
+    "idx": 170,
+    "id": "c242",
+    "function": "def c242(x):\n    # take the largest unique element, append the second largest unique element, prepend the third largest unique element, append the fourth largest unique element, and so on\n    unique = sorted(set(x), reverse=True)\n    res = [max(unique)]\n    unique.remove(max(unique))\n    for i in range(len(unique)):\n        if i % 2 == 0:\n            res.append(unique[i])\n        else:\n            res.insert(0, unique[i])\n    return res\n\n",
+    "train": [
+      {
+        "input": "[5, 8, 4, 1, 4, 8, 2]",
+        "output": "[1, 4, 8, 5, 2]"
+      },
+      {
+        "input": "[6, 7, 5, 8, 9, 4, 7]",
+        "output": "[5, 7, 9, 8, 6, 4]"
+      },
+      {
+        "input": "[1, 7, 6, 6, 4, 8]",
+        "output": "[1, 6, 8, 7, 4]"
+      },
+      {
+        "input": "[5, 5, 5, 1, 4, 1, 3, 7]",
+        "output": "[1, 4, 7, 5, 3]"
+      },
+      {
+        "input": "[7, 6, 3, 7, 0, 7, 7, 2]",
+        "output": "[0, 3, 7, 6, 2]"
+      },
+      {
+        "input": "[6, 7, 6, 3, 9, 6, 0]",
+        "output": "[0, 6, 9, 7, 3]"
+      },
+      {
+        "input": "[6, 2, 9, 2, 3, 2, 6, 7]",
+        "output": "[2, 6, 9, 7, 3]"
+      },
+      {
+        "input": "[6, 7, 6, 9, 4, 2]",
+        "output": "[2, 6, 9, 7, 4]"
+      },
+      {
+        "input": "[5, 1, 6, 7, 0, 8, 9]",
+        "output": "[0, 5, 7, 9, 8, 6, 1]"
+      },
+      {
+        "input": "[1, 4, 5, 9, 1, 6, 1, 5]",
+        "output": "[1, 5, 9, 6, 4]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[6, 9, 6, 5, 9, 8, 9, 6]",
+        "output": "[6, 9, 8, 5]"
+      },
+      {
+        "input": "[3, 9, 2, 0, 6, 1, 2, 5]",
+        "output": "[0, 2, 5, 9, 6, 3, 1]"
+      },
+      {
+        "input": "[8, 4, 0, 8, 6, 9]",
+        "output": "[0, 6, 9, 8, 4]"
+      },
+      {
+        "input": "[7, 8, 3, 8, 0, 5]",
+        "output": "[0, 5, 8, 7, 3]"
+      },
+      {
+        "input": "[0, 8, 6, 1, 0, 3, 0]",
+        "output": "[0, 3, 8, 6, 1]"
+      },
+      {
+        "input": "[2, 9, 0, 2, 8, 0, 7, 2]",
+        "output": "[0, 7, 9, 8, 2]"
+      },
+      {
+        "input": "[0, 1, 0, 3, 7, 4]",
+        "output": "[0, 3, 7, 4, 1]"
+      },
+      {
+        "input": "[6, 7, 5, 4, 0, 7]",
+        "output": "[0, 5, 7, 6, 4]"
+      },
+      {
+        "input": "[1, 2, 1, 2, 3, 5, 3]",
+        "output": "[2, 5, 3, 1]"
+      },
+      {
+        "input": "[5, 6, 1, 9, 9, 1, 7, 5]",
+        "output": "[1, 6, 9, 7, 5]"
+      }
+    ],
+    "rationale": "The transformation identifies the unique elements from the input list and sorts them in descending order. It starts with the largest element and then iterates through the remaining unique elements, alternating between appending to the end and prepending to the beginning of the result list. Specifically, the second-largest element is appended, the third-largest is prepended, the fourth-largest is appended, and so on. This creates a zig-zag pattern centered around the maximum value, ensuring all unique values are included exactly once in the output."
+  },
+  {
+    "idx": 171,
+    "id": "c097",
+    "function": "def c097(x):\n    # concatenate 11, 21, 43 input 7 89 0\n    return [11, 21, 43] + x + [7, 89, 0]\n\n",
+    "train": [
+      {
+        "input": "[65, 67, 77]",
+        "output": "[11, 21, 43, 65, 67, 77, 7, 89, 0]"
+      },
+      {
+        "input": "[61, 49, 59]",
+        "output": "[11, 21, 43, 61, 49, 59, 7, 89, 0]"
+      },
+      {
+        "input": "[44, 18, 83, 12, 48]",
+        "output": "[11, 21, 43, 44, 18, 83, 12, 48, 7, 89, 0]"
+      },
+      {
+        "input": "[88, 39, 97, 70, 46]",
+        "output": "[11, 21, 43, 88, 39, 97, 70, 46, 7, 89, 0]"
+      },
+      {
+        "input": "[5, 77, 83, 32, 79]",
+        "output": "[11, 21, 43, 5, 77, 83, 32, 79, 7, 89, 0]"
+      },
+      {
+        "input": "[65, 30, 93]",
+        "output": "[11, 21, 43, 65, 30, 93, 7, 89, 0]"
+      },
+      {
+        "input": "[10, 91, 64]",
+        "output": "[11, 21, 43, 10, 91, 64, 7, 89, 0]"
+      },
+      {
+        "input": "[44, 80, 40, 41, 47]",
+        "output": "[11, 21, 43, 44, 80, 40, 41, 47, 7, 89, 0]"
+      },
+      {
+        "input": "[20, 63, 97, 66, 52]",
+        "output": "[11, 21, 43, 20, 63, 97, 66, 52, 7, 89, 0]"
+      },
+      {
+        "input": "[52, 16, 62]",
+        "output": "[11, 21, 43, 52, 16, 62, 7, 89, 0]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[55, 98, 71, 64]",
+        "output": "[11, 21, 43, 55, 98, 71, 64, 7, 89, 0]"
+      },
+      {
+        "input": "[78, 11, 75, 10, 63]",
+        "output": "[11, 21, 43, 78, 11, 75, 10, 63, 7, 89, 0]"
+      },
+      {
+        "input": "[74, 71, 57, 43, 35]",
+        "output": "[11, 21, 43, 74, 71, 57, 43, 35, 7, 89, 0]"
+      },
+      {
+        "input": "[49, 49, 67]",
+        "output": "[11, 21, 43, 49, 49, 67, 7, 89, 0]"
+      },
+      {
+        "input": "[99, 9, 69, 76, 61]",
+        "output": "[11, 21, 43, 99, 9, 69, 76, 61, 7, 89, 0]"
+      },
+      {
+        "input": "[38, 84, 58, 20, 50]",
+        "output": "[11, 21, 43, 38, 84, 58, 20, 50, 7, 89, 0]"
+      },
+      {
+        "input": "[4, 14, 33, 11, 54]",
+        "output": "[11, 21, 43, 4, 14, 33, 11, 54, 7, 89, 0]"
+      },
+      {
+        "input": "[46, 78, 53, 52]",
+        "output": "[11, 21, 43, 46, 78, 53, 52, 7, 89, 0]"
+      },
+      {
+        "input": "[25, 42, 81, 35]",
+        "output": "[11, 21, 43, 25, 42, 81, 35, 7, 89, 0]"
+      },
+      {
+        "input": "[87, 6, 48, 42]",
+        "output": "[11, 21, 43, 87, 6, 48, 42, 7, 89, 0]"
+      }
+    ],
+    "rationale": "The transformation involves augmenting the input list with fixed sequences of integers at both the beginning and the end. By comparing the input and output lists across all examples, it is evident that the prefix [11, 21, 43] is prepended to the input list, and the suffix [7, 89, 0] is appended to it. This pattern remains constant regardless of the input list's length or content, indicating a simple concatenation rule."
+  },
+  {
+    "idx": 172,
+    "id": "c066",
+    "function": "def c066(x):\n    # left rotate the list by 1\n    return x[1:] + x[:1]\n\n",
+    "train": [
+      {
+        "input": "[21, 98, 15]",
+        "output": "[98, 15, 21]"
+      },
+      {
+        "input": "[44, 90, 78, 42]",
+        "output": "[90, 78, 42, 44]"
+      },
+      {
+        "input": "[47, 83, 43]",
+        "output": "[83, 43, 47]"
+      },
+      {
+        "input": "[61, 65, 63, 39, 63, 45]",
+        "output": "[65, 63, 39, 63, 45, 61]"
+      },
+      {
+        "input": "[87, 78, 58, 20, 38, 20]",
+        "output": "[78, 58, 20, 38, 20, 87]"
+      },
+      {
+        "input": "[61, 68, 82, 96]",
+        "output": "[68, 82, 96, 61]"
+      },
+      {
+        "input": "[85, 26, 60, 95, 51, 18, 25]",
+        "output": "[26, 60, 95, 51, 18, 25, 85]"
+      },
+      {
+        "input": "[49, 44, 9]",
+        "output": "[44, 9, 49]"
+      },
+      {
+        "input": "[46, 45, 18, 30]",
+        "output": "[45, 18, 30, 46]"
+      },
+      {
+        "input": "[13, 34, 56, 6, 23]",
+        "output": "[34, 56, 6, 23, 13]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[81, 16, 81, 72, 4, 78]",
+        "output": "[16, 81, 72, 4, 78, 81]"
+      },
+      {
+        "input": "[35, 90, 71, 51, 60, 65]",
+        "output": "[90, 71, 51, 60, 65, 35]"
+      },
+      {
+        "input": "[61, 20, 18]",
+        "output": "[20, 18, 61]"
+      },
+      {
+        "input": "[76, 83, 91, 65, 32, 41]",
+        "output": "[83, 91, 65, 32, 41, 76]"
+      },
+      {
+        "input": "[68, 99, 98, 14, 60, 71]",
+        "output": "[99, 98, 14, 60, 71, 68]"
+      },
+      {
+        "input": "[23, 54, 84, 74]",
+        "output": "[54, 84, 74, 23]"
+      },
+      {
+        "input": "[31, 89, 37]",
+        "output": "[89, 37, 31]"
+      },
+      {
+        "input": "[49, 91, 78, 25]",
+        "output": "[91, 78, 25, 49]"
+      },
+      {
+        "input": "[6, 1, 84, 90, 16]",
+        "output": "[1, 84, 90, 16, 6]"
+      },
+      {
+        "input": "[28, 23, 59]",
+        "output": "[23, 59, 28]"
+      }
+    ],
+    "rationale": "The training examples consistently show a cyclic shift of the input list. In every case, the first element of the input list is moved to the very end, while the remaining elements maintain their relative order and shift one position to the left. This transformation, known as a left rotation by one, explains the outputs for lists of varying lengths (from 3 to 7 elements) and handles duplicate values correctly."
+  },
+  {
+    "idx": 173,
+    "id": "c197",
+    "function": "def c197(x):\n    # replace each element with the number of occurrences of that element\n    res = {}\n    out = []\n    for i in x:\n        if i not in res:\n            res[i] = 0\n        res[i] += 1\n    for i in x:\n        out.append(res[i])\n    return out\n\n",
+    "train": [
+      {
+        "input": "[79, 43, 79, 37, 79, 54]",
+        "output": "[3, 1, 3, 1, 3, 1]"
+      },
+      {
+        "input": "[49, 24, 44, 56, 49, 69, 65]",
+        "output": "[2, 1, 1, 1, 2, 1, 1]"
+      },
+      {
+        "input": "[60, 25, 3, 62, 39, 60, 39]",
+        "output": "[2, 1, 1, 1, 2, 2, 2]"
+      },
+      {
+        "input": "[63, 14, 3, 14, 40, 3]",
+        "output": "[1, 2, 2, 2, 1, 2]"
+      },
+      {
+        "input": "[87, 25, 31, 53, 46, 55, 53, 29]",
+        "output": "[1, 1, 1, 2, 1, 1, 2, 1]"
+      },
+      {
+        "input": "[9, 71, 28, 71, 85]",
+        "output": "[1, 2, 1, 2, 1]"
+      },
+      {
+        "input": "[87, 26, 76, 50, 87, 15, 67, 15]",
+        "output": "[2, 1, 1, 1, 2, 2, 1, 2]"
+      },
+      {
+        "input": "[71, 80, 68, 50, 50, 69, 47, 61]",
+        "output": "[1, 1, 1, 2, 2, 1, 1, 1]"
+      },
+      {
+        "input": "[60, 26, 51, 32, 53, 39, 39]",
+        "output": "[1, 1, 1, 1, 1, 2, 2]"
+      },
+      {
+        "input": "[40, 60, 60, 84, 67, 40]",
+        "output": "[2, 2, 2, 1, 1, 2]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[33, 76, 18, 60, 29, 33]",
+        "output": "[2, 1, 1, 1, 1, 2]"
+      },
+      {
+        "input": "[10, 56, 54, 9, 18, 44, 44, 37]",
+        "output": "[1, 1, 1, 1, 1, 2, 2, 1]"
+      },
+      {
+        "input": "[0, 53, 90, 91, 19, 84, 26, 0, 17]",
+        "output": "[2, 1, 1, 1, 1, 1, 1, 2, 1]"
+      },
+      {
+        "input": "[98, 82, 48, 98, 93, 22, 82, 8]",
+        "output": "[2, 2, 1, 2, 1, 1, 2, 1]"
+      },
+      {
+        "input": "[63, 32, 63, 58, 65, 65]",
+        "output": "[2, 1, 2, 1, 2, 2]"
+      },
+      {
+        "input": "[11, 98, 11, 67, 98]",
+        "output": "[2, 2, 2, 1, 2]"
+      },
+      {
+        "input": "[48, 56, 38, 69, 72, 10, 49, 48, 1]",
+        "output": "[2, 1, 1, 1, 1, 1, 1, 2, 1]"
+      },
+      {
+        "input": "[0, 22, 68, 17, 8, 90, 50, 90, 11]",
+        "output": "[1, 1, 1, 1, 1, 2, 1, 2, 1]"
+      },
+      {
+        "input": "[14, 70, 68, 70, 42, 70]",
+        "output": "[1, 3, 1, 3, 1, 3]"
+      },
+      {
+        "input": "[28, 13, 23, 53, 95, 95, 13, 83, 13]",
+        "output": "[1, 3, 1, 1, 2, 2, 3, 1, 3]"
+      }
+    ],
+    "rationale": "The transformation identifies the frequency of each element within the input list. By counting how many times each integer appears across the entire sequence, the rule replaces every element with its total count. For instance, in Example 1, the number 79 appears three times, so each instance is replaced by 3, while other unique numbers appearing once are replaced by 1. This rule consistently explains the outputs across all examples, regardless of the specific values or their positions."
+  },
+  {
+    "idx": 174,
+    "id": "c147",
+    "function": "def c147(x):\n    # each element, followed by its index\n    res = []\n    for i, v in enumerate(x):\n        res.append(v)\n        res.append(i)\n    return res\n\n",
+    "train": [
+      {
+        "input": "[34, 54, 50, 95, 98, 74, 62]",
+        "output": "[34, 0, 54, 1, 50, 2, 95, 3, 98, 4, 74, 5, 62, 6]"
+      },
+      {
+        "input": "[65, 12, 27, 67, 17, 39]",
+        "output": "[65, 0, 12, 1, 27, 2, 67, 3, 17, 4, 39, 5]"
+      },
+      {
+        "input": "[78, 54, 4, 83, 76, 51, 40]",
+        "output": "[78, 0, 54, 1, 4, 2, 83, 3, 76, 4, 51, 5, 40, 6]"
+      },
+      {
+        "input": "[18, 35, 91, 70, 85, 70, 27]",
+        "output": "[18, 0, 35, 1, 91, 2, 70, 3, 85, 4, 70, 5, 27, 6]"
+      },
+      {
+        "input": "[84, 89, 2, 89, 29, 21, 92]",
+        "output": "[84, 0, 89, 1, 2, 2, 89, 3, 29, 4, 21, 5, 92, 6]"
+      },
+      {
+        "input": "[54, 0, 20, 92, 69, 20, 40]",
+        "output": "[54, 0, 0, 1, 20, 2, 92, 3, 69, 4, 20, 5, 40, 6]"
+      },
+      {
+        "input": "[83, 57, 25]",
+        "output": "[83, 0, 57, 1, 25, 2]"
+      },
+      {
+        "input": "[60, 42, 92, 44]",
+        "output": "[60, 0, 42, 1, 92, 2, 44, 3]"
+      },
+      {
+        "input": "[51, 31, 15, 94, 84, 48, 38]",
+        "output": "[51, 0, 31, 1, 15, 2, 94, 3, 84, 4, 48, 5, 38, 6]"
+      },
+      {
+        "input": "[0, 77, 20, 39]",
+        "output": "[0, 0, 77, 1, 20, 2, 39, 3]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[5, 89, 5, 17, 8, 18, 54]",
+        "output": "[5, 0, 89, 1, 5, 2, 17, 3, 8, 4, 18, 5, 54, 6]"
+      },
+      {
+        "input": "[19, 22, 43]",
+        "output": "[19, 0, 22, 1, 43, 2]"
+      },
+      {
+        "input": "[78, 98, 22, 91, 87, 17, 32]",
+        "output": "[78, 0, 98, 1, 22, 2, 91, 3, 87, 4, 17, 5, 32, 6]"
+      },
+      {
+        "input": "[46, 53, 26, 30, 33, 30, 67]",
+        "output": "[46, 0, 53, 1, 26, 2, 30, 3, 33, 4, 30, 5, 67, 6]"
+      },
+      {
+        "input": "[37, 58, 41, 80, 77, 91, 6]",
+        "output": "[37, 0, 58, 1, 41, 2, 80, 3, 77, 4, 91, 5, 6, 6]"
+      },
+      {
+        "input": "[9, 78, 99]",
+        "output": "[9, 0, 78, 1, 99, 2]"
+      },
+      {
+        "input": "[96, 65, 17, 20, 20, 20]",
+        "output": "[96, 0, 65, 1, 17, 2, 20, 3, 20, 4, 20, 5]"
+      },
+      {
+        "input": "[93, 20, 25, 93]",
+        "output": "[93, 0, 20, 1, 25, 2, 93, 3]"
+      },
+      {
+        "input": "[66, 50, 43]",
+        "output": "[66, 0, 50, 1, 43, 2]"
+      },
+      {
+        "input": "[47, 47, 67, 45, 17, 10, 1]",
+        "output": "[47, 0, 47, 1, 67, 2, 45, 3, 17, 4, 10, 5, 1, 6]"
+      }
+    ],
+    "rationale": "The transformation inserts the current index of each element immediately after the element itself. For every element at index `i` in the input list, the output list contains that element followed by the integer `i`. This results in an output list that is exactly twice the length of the input list, alternating between original values and their zero-based positions."
+  },
+  {
+    "idx": 175,
+    "id": "c223",
+    "function": "def c223(x):\n    # swap the digits of each element\n    return [int(str(i)[::-1]) for i in x]\n\n",
+    "train": [
+      {
+        "input": "[91, 77, 57, 99]",
+        "output": "[19, 77, 75, 99]"
+      },
+      {
+        "input": "[97, 7, 93]",
+        "output": "[79, 7, 39]"
+      },
+      {
+        "input": "[83, 8, 4, 97, 59, 82]",
+        "output": "[38, 8, 4, 79, 95, 28]"
+      },
+      {
+        "input": "[30, 50, 37, 23, 42]",
+        "output": "[3, 5, 73, 32, 24]"
+      },
+      {
+        "input": "[70, 14, 44, 15]",
+        "output": "[7, 41, 44, 51]"
+      },
+      {
+        "input": "[15, 56, 76, 42]",
+        "output": "[51, 65, 67, 24]"
+      },
+      {
+        "input": "[47, 40, 66, 77, 20, 3]",
+        "output": "[74, 4, 66, 77, 2, 3]"
+      },
+      {
+        "input": "[4, 46, 99, 70, 89, 11]",
+        "output": "[4, 64, 99, 7, 98, 11]"
+      },
+      {
+        "input": "[40, 39, 4, 92, 86, 47, 78]",
+        "output": "[4, 93, 4, 29, 68, 74, 87]"
+      },
+      {
+        "input": "[10, 97, 5, 84, 20]",
+        "output": "[1, 79, 5, 48, 2]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[68, 22, 56, 77, 38]",
+        "output": "[86, 22, 65, 77, 83]"
+      },
+      {
+        "input": "[74, 21, 69, 82, 68]",
+        "output": "[47, 12, 96, 28, 86]"
+      },
+      {
+        "input": "[59, 94, 73, 62, 47, 2]",
+        "output": "[95, 49, 37, 26, 74, 2]"
+      },
+      {
+        "input": "[37, 56, 53, 36, 36]",
+        "output": "[73, 65, 35, 63, 63]"
+      },
+      {
+        "input": "[49, 91, 95, 41, 15]",
+        "output": "[94, 19, 59, 14, 51]"
+      },
+      {
+        "input": "[71, 51, 14, 13]",
+        "output": "[17, 15, 41, 31]"
+      },
+      {
+        "input": "[17, 89, 14, 78, 13]",
+        "output": "[71, 98, 41, 87, 31]"
+      },
+      {
+        "input": "[52, 76, 96, 14, 51]",
+        "output": "[25, 67, 69, 41, 15]"
+      },
+      {
+        "input": "[16, 21, 78, 15, 34, 4]",
+        "output": "[61, 12, 87, 51, 43, 4]"
+      },
+      {
+        "input": "[74, 76, 99]",
+        "output": "[47, 67, 99]"
+      }
+    ],
+    "rationale": "The transformation involves reversing the digits of each integer in the input list. For multi-digit numbers, the first and last digits are swapped (e.g., 91 becomes 19, 59 becomes 95). Single-digit numbers remain unchanged (e.g., 8 becomes 8, 4 becomes 4). Numbers ending in zero result in their leading digits being reversed and the trailing zero effectively becoming the leading digit, which is then simplified to a standard integer (e.g., 30 becomes 3, 70 becomes 7). This rule consistently accounts for all provided input-output pairs."
+  },
+  {
+    "idx": 176,
+    "id": "c179",
+    "function": "def c179(x):\n    # take the largest element, append the second largest element, prepend the third largest element, append the fourth largest element, and so on\n    sorted_x = sorted(x, reverse=True)\n    res = [sorted_x[0]]\n    for i in range(1, len(sorted_x)):\n        if i % 2 == 1:\n            res.append(sorted_x[i])\n        else:\n            res.insert(0, sorted_x[i])\n    return res\n\n",
+    "train": [
+      {
+        "input": "[92, 48, 75, 14, 3, 44, 36, 56]",
+        "output": "[14, 44, 56, 92, 75, 48, 36, 3]"
+      },
+      {
+        "input": "[60, 67, 85, 36, 52, 15]",
+        "output": "[36, 60, 85, 67, 52, 15]"
+      },
+      {
+        "input": "[84, 91, 44, 83, 1, 72, 55]",
+        "output": "[1, 55, 83, 91, 84, 72, 44]"
+      },
+      {
+        "input": "[10, 59, 88, 59, 56, 18]",
+        "output": "[18, 59, 88, 59, 56, 10]"
+      },
+      {
+        "input": "[35, 73, 38, 59, 86, 75, 91]",
+        "output": "[35, 59, 75, 91, 86, 73, 38]"
+      },
+      {
+        "input": "[74, 28, 70, 45, 37, 95, 22]",
+        "output": "[22, 37, 70, 95, 74, 45, 28]"
+      },
+      {
+        "input": "[56, 98, 93, 62, 99, 76, 71]",
+        "output": "[56, 71, 93, 99, 98, 76, 62]"
+      },
+      {
+        "input": "[31, 48, 44, 53, 5, 70, 59]",
+        "output": "[5, 44, 53, 70, 59, 48, 31]"
+      },
+      {
+        "input": "[9, 86, 49, 10, 22, 17, 66, 19]",
+        "output": "[10, 19, 49, 86, 66, 22, 17, 9]"
+      },
+      {
+        "input": "[95, 57, 59, 33, 36, 3]",
+        "output": "[33, 57, 95, 59, 36, 3]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[43, 14, 85, 21, 64, 43, 37, 66]",
+        "output": "[21, 43, 64, 85, 66, 43, 37, 14]"
+      },
+      {
+        "input": "[7, 45, 51, 35, 63, 37, 72]",
+        "output": "[7, 37, 51, 72, 63, 45, 35]"
+      },
+      {
+        "input": "[31, 86, 4, 91, 4, 31, 45]",
+        "output": "[4, 31, 45, 91, 86, 31, 4]"
+      },
+      {
+        "input": "[97, 87, 46, 92, 21, 89, 12, 47]",
+        "output": "[21, 47, 89, 97, 92, 87, 46, 12]"
+      },
+      {
+        "input": "[18, 43, 69, 82, 0, 43, 61, 15]",
+        "output": "[15, 43, 61, 82, 69, 43, 18, 0]"
+      },
+      {
+        "input": "[68, 84, 68, 10, 27, 38, 24]",
+        "output": "[10, 27, 68, 84, 68, 38, 24]"
+      },
+      {
+        "input": "[16, 22, 93, 26, 75, 92, 38]",
+        "output": "[16, 26, 75, 93, 92, 38, 22]"
+      },
+      {
+        "input": "[38, 9, 59, 12, 10, 46, 15]",
+        "output": "[9, 12, 38, 59, 46, 15, 10]"
+      },
+      {
+        "input": "[73, 81, 76, 47, 93, 73]",
+        "output": "[73, 76, 93, 81, 73, 47]"
+      },
+      {
+        "input": "[75, 0, 95, 92, 43, 50, 63]",
+        "output": "[0, 50, 75, 95, 92, 63, 43]"
+      }
+    ],
+    "rationale": "The transformation sorts the input list in descending order and then redistributes the elements into a new list using an alternating pattern. Starting with the largest element, the rule iteratively appends the next largest element to the end and then prepends the following largest element to the front. Specifically, elements at even indices of the sorted list (0, 2, 4...) are placed such that the 0th is the starting point and subsequent even indices are prepended, while elements at odd indices (1, 3, 5...) are appended. This results in a \"zig-zag\" or \"mountain\" shaped distribution where the largest values are centered and the smallest values are at the extremities."
+  },
+  {
+    "idx": 177,
+    "id": "c181",
+    "function": "def c181(x):\n    # reverse the order of elements with even index\n    return [x[i] if i % 2 == 1 else x[-i-1] for i in range(len(x))]\n\n",
+    "train": [
+      {
+        "input": "[96, 58, 42, 85, 16]",
+        "output": "[16, 58, 42, 85, 96]"
+      },
+      {
+        "input": "[50, 89, 20, 77, 28, 94]",
+        "output": "[94, 89, 77, 77, 89, 94]"
+      },
+      {
+        "input": "[50, 28, 36, 1, 6, 73, 46, 30]",
+        "output": "[30, 28, 73, 1, 1, 73, 28, 30]"
+      },
+      {
+        "input": "[6, 47, 86, 47, 80, 42, 36]",
+        "output": "[36, 47, 80, 47, 86, 42, 6]"
+      },
+      {
+        "input": "[84, 85, 92, 73, 76, 19, 52]",
+        "output": "[52, 85, 76, 73, 92, 19, 84]"
+      },
+      {
+        "input": "[72, 89, 31, 64, 73, 81, 49]",
+        "output": "[49, 89, 73, 64, 31, 81, 72]"
+      },
+      {
+        "input": "[98, 3, 14, 72, 42]",
+        "output": "[42, 3, 14, 72, 98]"
+      },
+      {
+        "input": "[25, 17, 3, 76, 23, 43, 71, 10]",
+        "output": "[10, 17, 43, 76, 76, 43, 17, 10]"
+      },
+      {
+        "input": "[97, 61, 13, 56, 18, 55, 37, 55]",
+        "output": "[55, 61, 55, 56, 56, 55, 61, 55]"
+      },
+      {
+        "input": "[15, 21, 18, 82, 9, 5, 35, 70]",
+        "output": "[70, 21, 5, 82, 82, 5, 21, 70]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[99, 59, 99, 26, 48]",
+        "output": "[48, 59, 99, 26, 99]"
+      },
+      {
+        "input": "[26, 30, 10, 51, 26, 24, 20]",
+        "output": "[20, 30, 26, 51, 10, 24, 26]"
+      },
+      {
+        "input": "[6, 23, 24, 20, 43, 51]",
+        "output": "[51, 23, 20, 20, 23, 51]"
+      },
+      {
+        "input": "[12, 24, 98, 53, 71, 79]",
+        "output": "[79, 24, 53, 53, 24, 79]"
+      },
+      {
+        "input": "[80, 48, 91, 77, 20, 39, 25, 11]",
+        "output": "[11, 48, 39, 77, 77, 39, 48, 11]"
+      },
+      {
+        "input": "[25, 95, 32, 53, 71, 50, 16, 43]",
+        "output": "[43, 95, 50, 53, 53, 50, 95, 43]"
+      },
+      {
+        "input": "[89, 70, 66, 75, 7, 31, 75]",
+        "output": "[75, 70, 7, 75, 66, 31, 89]"
+      },
+      {
+        "input": "[88, 27, 99, 82, 30, 20, 95]",
+        "output": "[95, 27, 30, 82, 99, 20, 88]"
+      },
+      {
+        "input": "[31, 35, 9, 53, 90, 7]",
+        "output": "[7, 35, 53, 53, 35, 7]"
+      },
+      {
+        "input": "[87, 55, 86, 37, 9, 74, 10, 2]",
+        "output": "[2, 55, 74, 37, 37, 74, 55, 2]"
+      }
+    ],
+    "rationale": "The transformation targets elements at even indices (0, 2, 4, ...) while leaving elements at odd indices (1, 3, 5, ...) unchanged. By observing the examples, the sequence of elements at even indices is reversed relative to their original positions in the list. For instance, in Example 1, the values at indices 0, 2, and 4 (96, 42, 16) are replaced by their counterparts from the end of the list (16, 42, 96). This rule applies consistently across both even and odd length lists, ensuring that the structural skeleton of odd-indexed elements remains fixed while the even-indexed \"slots\" are filled by the even-indexed elements in reverse order."
+  },
+  {
+    "idx": 178,
+    "id": "c012",
+    "function": "def c012(x):\n    # remove all but elements 1 through 3\n    return x[1:4]\n\n",
+    "train": [
+      {
+        "input": "[26, 6, 64, 33, 96, 38]",
+        "output": "[6, 64, 33]"
+      },
+      {
+        "input": "[10, 28, 18, 82, 54]",
+        "output": "[28, 18, 82]"
+      },
+      {
+        "input": "[89, 49, 28, 56, 90]",
+        "output": "[49, 28, 56]"
+      },
+      {
+        "input": "[28, 50, 54, 77, 36, 3, 43]",
+        "output": "[50, 54, 77]"
+      },
+      {
+        "input": "[23, 7, 3, 36, 9, 66, 90]",
+        "output": "[7, 3, 36]"
+      },
+      {
+        "input": "[77, 53, 14, 94, 95, 73, 37]",
+        "output": "[53, 14, 94]"
+      },
+      {
+        "input": "[23, 67, 39, 64, 97]",
+        "output": "[67, 39, 64]"
+      },
+      {
+        "input": "[61, 91, 85, 68, 44]",
+        "output": "[91, 85, 68]"
+      },
+      {
+        "input": "[10, 18, 12, 79, 13]",
+        "output": "[18, 12, 79]"
+      },
+      {
+        "input": "[80, 59, 74, 80, 84, 40]",
+        "output": "[59, 74, 80]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[58, 75, 77, 79, 33]",
+        "output": "[75, 77, 79]"
+      },
+      {
+        "input": "[89, 93, 66, 58, 81]",
+        "output": "[93, 66, 58]"
+      },
+      {
+        "input": "[89, 11, 8, 18, 89, 25, 94]",
+        "output": "[11, 8, 18]"
+      },
+      {
+        "input": "[51, 68, 36, 94, 34, 16]",
+        "output": "[68, 36, 94]"
+      },
+      {
+        "input": "[58, 0, 8, 91, 77, 36, 89]",
+        "output": "[0, 8, 91]"
+      },
+      {
+        "input": "[22, 33, 16, 31, 80, 35, 2]",
+        "output": "[33, 16, 31]"
+      },
+      {
+        "input": "[68, 58, 58, 36, 65, 95]",
+        "output": "[58, 58, 36]"
+      },
+      {
+        "input": "[44, 93, 16, 39, 86, 26, 70]",
+        "output": "[93, 16, 39]"
+      },
+      {
+        "input": "[21, 7, 95, 22, 58, 2, 32]",
+        "output": "[7, 95, 22]"
+      },
+      {
+        "input": "[69, 46, 71, 88, 44, 1, 81]",
+        "output": "[46, 71, 88]"
+      }
+    ],
+    "rationale": "The transformation rule involves extracting a specific sub-segment from the input list. By observing the examples, the output consistently consists of exactly three elements starting from the second element of the input (index 1) and ending at the fourth element (index 3). This pattern holds regardless of the total length of the input list or the values contained within it. Therefore, the rule is to return the slice of the list from index 1 to index 4 (exclusive)."
+  },
+  {
+    "idx": 179,
+    "id": "c025",
+    "function": "def c025(x):\n    # remove element 1\n    return x[:1] + x[2:]\n\n",
+    "train": [
+      {
+        "input": "[24, 95, 59, 82, 28, 68, 54]",
+        "output": "[24, 59, 82, 28, 68, 54]"
+      },
+      {
+        "input": "[35, 48, 45, 10]",
+        "output": "[35, 45, 10]"
+      },
+      {
+        "input": "[21, 97, 11, 34, 36, 85]",
+        "output": "[21, 11, 34, 36, 85]"
+      },
+      {
+        "input": "[97, 98, 8, 5, 81, 9]",
+        "output": "[97, 8, 5, 81, 9]"
+      },
+      {
+        "input": "[32, 80, 30, 12]",
+        "output": "[32, 30, 12]"
+      },
+      {
+        "input": "[1, 95, 38]",
+        "output": "[1, 38]"
+      },
+      {
+        "input": "[68, 72, 83, 9, 16]",
+        "output": "[68, 83, 9, 16]"
+      },
+      {
+        "input": "[28, 34, 54]",
+        "output": "[28, 54]"
+      },
+      {
+        "input": "[1, 38, 42, 3, 56, 46, 42]",
+        "output": "[1, 42, 3, 56, 46, 42]"
+      },
+      {
+        "input": "[61, 54, 89, 43, 25, 8]",
+        "output": "[61, 89, 43, 25, 8]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[85, 74, 49, 83]",
+        "output": "[85, 49, 83]"
+      },
+      {
+        "input": "[86, 13, 9, 67]",
+        "output": "[86, 9, 67]"
+      },
+      {
+        "input": "[16, 57, 32, 24]",
+        "output": "[16, 32, 24]"
+      },
+      {
+        "input": "[58, 65, 68, 27, 36, 8, 26]",
+        "output": "[58, 68, 27, 36, 8, 26]"
+      },
+      {
+        "input": "[33, 42, 15, 87]",
+        "output": "[33, 15, 87]"
+      },
+      {
+        "input": "[9, 75, 58, 16, 10]",
+        "output": "[9, 58, 16, 10]"
+      },
+      {
+        "input": "[22, 8, 96, 70, 0, 63, 12]",
+        "output": "[22, 96, 70, 0, 63, 12]"
+      },
+      {
+        "input": "[80, 99, 92, 5, 9, 50]",
+        "output": "[80, 92, 5, 9, 50]"
+      },
+      {
+        "input": "[19, 77, 23, 93]",
+        "output": "[19, 23, 93]"
+      },
+      {
+        "input": "[88, 29, 4, 49, 17]",
+        "output": "[88, 4, 49, 17]"
+      }
+    ],
+    "rationale": "The transformation rule involves removing a single element from the input list. By comparing the input and output lists across all examples, it is evident that the element at index 1 (the second element) is consistently deleted, while all other elements remain in their original order. For instance, in Example 1, the value 95 is removed, and in Example 6, the value 95 is also removed. This rule applies regardless of the values or the length of the list, provided the list has at least two elements."
+  },
+  {
+    "idx": 180,
+    "id": "c157",
+    "function": "def c157(x):\n    # each element followed by 0 if even, 1 if odd\n    res = []\n    for i in x:\n        res.append(i)\n        res.append(i % 2)\n    return res\n\n",
+    "train": [
+      {
+        "input": "[41, 42, 56, 95, 3]",
+        "output": "[41, 1, 42, 0, 56, 0, 95, 1, 3, 1]"
+      },
+      {
+        "input": "[47, 17, 13, 21, 19, 22]",
+        "output": "[47, 1, 17, 1, 13, 1, 21, 1, 19, 1, 22, 0]"
+      },
+      {
+        "input": "[27, 80, 22, 81]",
+        "output": "[27, 1, 80, 0, 22, 0, 81, 1]"
+      },
+      {
+        "input": "[19, 71, 33, 32, 7, 62]",
+        "output": "[19, 1, 71, 1, 33, 1, 32, 0, 7, 1, 62, 0]"
+      },
+      {
+        "input": "[78, 4, 43, 45, 36, 7]",
+        "output": "[78, 0, 4, 0, 43, 1, 45, 1, 36, 0, 7, 1]"
+      },
+      {
+        "input": "[53, 29, 72, 84, 67]",
+        "output": "[53, 1, 29, 1, 72, 0, 84, 0, 67, 1]"
+      },
+      {
+        "input": "[60, 9, 51, 96, 59, 29, 45]",
+        "output": "[60, 0, 9, 1, 51, 1, 96, 0, 59, 1, 29, 1, 45, 1]"
+      },
+      {
+        "input": "[45, 17, 86, 73]",
+        "output": "[45, 1, 17, 1, 86, 0, 73, 1]"
+      },
+      {
+        "input": "[91, 39, 77, 6, 60, 55]",
+        "output": "[91, 1, 39, 1, 77, 1, 6, 0, 60, 0, 55, 1]"
+      },
+      {
+        "input": "[4, 11, 92]",
+        "output": "[4, 0, 11, 1, 92, 0]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[9, 27, 42, 10, 65, 44]",
+        "output": "[9, 1, 27, 1, 42, 0, 10, 0, 65, 1, 44, 0]"
+      },
+      {
+        "input": "[6, 65, 91, 22, 18, 29, 0]",
+        "output": "[6, 0, 65, 1, 91, 1, 22, 0, 18, 0, 29, 1, 0, 0]"
+      },
+      {
+        "input": "[0, 26, 60]",
+        "output": "[0, 0, 26, 0, 60, 0]"
+      },
+      {
+        "input": "[61, 56, 20]",
+        "output": "[61, 1, 56, 0, 20, 0]"
+      },
+      {
+        "input": "[33, 1, 90]",
+        "output": "[33, 1, 1, 1, 90, 0]"
+      },
+      {
+        "input": "[37, 82, 51, 91]",
+        "output": "[37, 1, 82, 0, 51, 1, 91, 1]"
+      },
+      {
+        "input": "[10, 61, 96, 81, 30]",
+        "output": "[10, 0, 61, 1, 96, 0, 81, 1, 30, 0]"
+      },
+      {
+        "input": "[77, 26, 75, 93, 28]",
+        "output": "[77, 1, 26, 0, 75, 1, 93, 1, 28, 0]"
+      },
+      {
+        "input": "[2, 85, 83, 74, 34]",
+        "output": "[2, 0, 85, 1, 83, 1, 74, 0, 34, 0]"
+      },
+      {
+        "input": "[3, 66, 65, 97, 41, 17]",
+        "output": "[3, 1, 66, 0, 65, 1, 97, 1, 41, 1, 17, 1]"
+      }
+    ],
+    "rationale": "The transformation expands the input list by inserting a binary indicator after each element. By observing the examples, such as 41 becoming [41, 1] and 42 becoming [42, 0], it is clear that the inserted value represents the parity of the preceding integer. Specifically, an element is followed by 1 if it is odd and 0 if it is even. This rule consistently accounts for all provided examples, doubling the length of the list by interleaving the original values with their modulo 2 results."
+  },
+  {
+    "idx": 181,
+    "id": "c127",
+    "function": "def c127(x):\n    # remove last element\n    return x[:-1]\n\n",
+    "train": [
+      {
+        "input": "[62, 70, 2, 89]",
+        "output": "[62, 70, 2]"
+      },
+      {
+        "input": "[42, 31, 23, 36, 70]",
+        "output": "[42, 31, 23, 36]"
+      },
+      {
+        "input": "[8, 73, 9, 81]",
+        "output": "[8, 73, 9]"
+      },
+      {
+        "input": "[54, 44, 41]",
+        "output": "[54, 44]"
+      },
+      {
+        "input": "[98, 57, 6, 80, 42]",
+        "output": "[98, 57, 6, 80]"
+      },
+      {
+        "input": "[69, 2, 47, 73, 43]",
+        "output": "[69, 2, 47, 73]"
+      },
+      {
+        "input": "[72, 45, 11, 0]",
+        "output": "[72, 45, 11]"
+      },
+      {
+        "input": "[93, 68, 15]",
+        "output": "[93, 68]"
+      },
+      {
+        "input": "[51, 23, 14, 62, 74, 2]",
+        "output": "[51, 23, 14, 62, 74]"
+      },
+      {
+        "input": "[72, 77, 53, 64, 66]",
+        "output": "[72, 77, 53, 64]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[43, 81, 85, 7]",
+        "output": "[43, 81, 85]"
+      },
+      {
+        "input": "[59, 36, 33, 26, 32]",
+        "output": "[59, 36, 33, 26]"
+      },
+      {
+        "input": "[78, 62, 28, 57, 32, 16]",
+        "output": "[78, 62, 28, 57, 32]"
+      },
+      {
+        "input": "[45, 75, 53]",
+        "output": "[45, 75]"
+      },
+      {
+        "input": "[62, 92, 58, 86, 26]",
+        "output": "[62, 92, 58, 86]"
+      },
+      {
+        "input": "[15, 9, 82, 92, 4]",
+        "output": "[15, 9, 82, 92]"
+      },
+      {
+        "input": "[94, 27, 99, 14]",
+        "output": "[94, 27, 99]"
+      },
+      {
+        "input": "[33, 67, 25]",
+        "output": "[33, 67]"
+      },
+      {
+        "input": "[88, 50, 6, 79, 62, 87, 59]",
+        "output": "[88, 50, 6, 79, 62, 87]"
+      },
+      {
+        "input": "[61, 34, 51, 52, 4]",
+        "output": "[61, 34, 51, 52]"
+      }
+    ],
+    "rationale": "The training examples consistently show a transformation where the output list is identical to the input list except for the removal of the final element. In Example 1, the input [62, 70, 2, 89] results in [62, 70, 2], and in Example 4, [54, 44, 41] becomes [54, 44]. This pattern of truncating the last item holds across all ten examples regardless of the list length or the values of the integers. The rule is a simple slice that excludes the last index to generalize to any input list."
+  },
+  {
+    "idx": 182,
+    "id": "c059",
+    "function": "def c059(x):\n    # swap element 2 and element 5\n    x[2], x[5] = x[5], x[2]\n    return x\n\n",
+    "train": [
+      {
+        "input": "[8, 95, 97, 56, 23, 1, 76, 91]",
+        "output": "[8, 95, 1, 56, 23, 97, 76, 91]"
+      },
+      {
+        "input": "[10, 6, 57, 4, 18, 22, 27, 64]",
+        "output": "[10, 6, 22, 4, 18, 57, 27, 64]"
+      },
+      {
+        "input": "[23, 86, 43, 47, 92, 64, 42, 29]",
+        "output": "[23, 86, 64, 47, 92, 43, 42, 29]"
+      },
+      {
+        "input": "[50, 27, 30, 76, 70, 9, 98, 52]",
+        "output": "[50, 27, 9, 76, 70, 30, 98, 52]"
+      },
+      {
+        "input": "[55, 0, 41, 50, 42, 46, 24, 9]",
+        "output": "[55, 0, 46, 50, 42, 41, 24, 9]"
+      },
+      {
+        "input": "[53, 21, 23, 26, 14, 75, 79]",
+        "output": "[53, 21, 75, 26, 14, 23, 79]"
+      },
+      {
+        "input": "[36, 15, 34, 2, 29, 75, 16]",
+        "output": "[36, 15, 75, 2, 29, 34, 16]"
+      },
+      {
+        "input": "[88, 27, 91, 47, 43, 94, 84, 62]",
+        "output": "[88, 27, 94, 47, 43, 91, 84, 62]"
+      },
+      {
+        "input": "[28, 8, 34, 14, 13, 37, 13]",
+        "output": "[28, 8, 37, 14, 13, 34, 13]"
+      },
+      {
+        "input": "[83, 45, 20, 8, 41, 42, 44]",
+        "output": "[83, 45, 42, 8, 41, 20, 44]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[39, 64, 7, 14, 84, 37, 73]",
+        "output": "[39, 64, 37, 14, 84, 7, 73]"
+      },
+      {
+        "input": "[52, 24, 28, 99, 73, 75, 42]",
+        "output": "[52, 24, 75, 99, 73, 28, 42]"
+      },
+      {
+        "input": "[93, 63, 33, 37, 84, 35, 9]",
+        "output": "[93, 63, 35, 37, 84, 33, 9]"
+      },
+      {
+        "input": "[44, 62, 16, 65, 40, 57, 86]",
+        "output": "[44, 62, 57, 65, 40, 16, 86]"
+      },
+      {
+        "input": "[30, 35, 15, 38, 11, 10, 97, 68]",
+        "output": "[30, 35, 10, 38, 11, 15, 97, 68]"
+      },
+      {
+        "input": "[53, 92, 2, 6, 48, 88, 91, 98]",
+        "output": "[53, 92, 88, 6, 48, 2, 91, 98]"
+      },
+      {
+        "input": "[33, 34, 90, 92, 70, 9, 30]",
+        "output": "[33, 34, 9, 92, 70, 90, 30]"
+      },
+      {
+        "input": "[18, 24, 84, 41, 99, 60, 97]",
+        "output": "[18, 24, 60, 41, 99, 84, 97]"
+      },
+      {
+        "input": "[90, 33, 4, 7, 77, 89, 3, 72]",
+        "output": "[90, 33, 89, 7, 77, 4, 3, 72]"
+      },
+      {
+        "input": "[24, 94, 89, 83, 75, 13, 77, 93]",
+        "output": "[24, 94, 13, 83, 75, 89, 77, 93]"
+      }
+    ],
+    "rationale": "The transformation involves a specific positional swap within the input list. By comparing the input and output lists across all examples, it is evident that the elements at index 2 and index 5 are swapped while all other elements remain in their original positions. This rule consistently accounts for the changes observed in both even-length and odd-length lists provided in the training data."
+  },
+  {
+    "idx": 183,
+    "id": "c204",
+    "function": "def c204(x):\n    # keep only elements followed by 0\n    res = []\n    for i in range(len(x)-1):\n        if x[i+1] == 0:\n            res.append(x[i])\n    return res\n\n",
+    "train": [
+      {
+        "input": "[2, 25, 13, 12, 3, 24, 22]",
+        "output": "[]"
+      },
+      {
+        "input": "[29, 0, 19, 26, 0, 18, 0, 0, 4, 0]",
+        "output": "[29, 26, 18, 0, 4]"
+      },
+      {
+        "input": "[26, 22, 4, 29, 22, 27, 0]",
+        "output": "[27]"
+      },
+      {
+        "input": "[0, 28, 3, 7, 30, 0, 20]",
+        "output": "[30]"
+      },
+      {
+        "input": "[12, 0, 0, 4, 0, 16, 15, 30, 0, 6]",
+        "output": "[12, 0, 4, 30]"
+      },
+      {
+        "input": "[0, 19, 2, 23, 0, 13, 27, 0, 0, 0]",
+        "output": "[23, 27, 0, 0]"
+      },
+      {
+        "input": "[29, 26, 29, 3, 28, 18, 24, 0]",
+        "output": "[24]"
+      },
+      {
+        "input": "[20, 0, 15, 12, 10, 29, 16, 0, 0]",
+        "output": "[20, 16, 0]"
+      },
+      {
+        "input": "[26, 21, 0, 0, 5, 0, 24, 30, 24, 15]",
+        "output": "[21, 0, 5]"
+      },
+      {
+        "input": "[23, 21, 21, 0, 27, 13, 3, 0]",
+        "output": "[21, 3]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[20, 9, 2, 0, 10, 26, 0]",
+        "output": "[2, 26]"
+      },
+      {
+        "input": "[0, 10, 13, 23, 25, 11, 0, 0, 24, 0]",
+        "output": "[11, 0, 24]"
+      },
+      {
+        "input": "[25, 0, 4, 11, 0, 29, 0, 0, 19, 29]",
+        "output": "[25, 11, 29, 0]"
+      },
+      {
+        "input": "[30, 2, 0, 17, 27, 19, 0, 0, 0]",
+        "output": "[2, 19, 0, 0]"
+      },
+      {
+        "input": "[20, 7, 22, 0, 20, 26, 30, 19, 0, 0]",
+        "output": "[22, 19, 0]"
+      },
+      {
+        "input": "[0, 0, 18, 0, 0, 8, 17, 0, 5]",
+        "output": "[0, 18, 0, 17]"
+      },
+      {
+        "input": "[29, 8, 27, 29, 30]",
+        "output": "[]"
+      },
+      {
+        "input": "[0, 0, 21, 18, 8, 0, 0, 29, 13]",
+        "output": "[0, 8, 0]"
+      },
+      {
+        "input": "[14, 4, 22, 4, 0, 15]",
+        "output": "[4]"
+      },
+      {
+        "input": "[0, 21, 0, 23, 24, 0, 14, 10, 24, 21]",
+        "output": "[21, 24]"
+      }
+    ],
+    "rationale": "The transformation rule identifies elements in the input list that are immediately followed by the value 0. For every index $i$ where the element at $i+1$ is 0, the element at index $i$ is appended to the output list. This explains why Example 1 results in an empty list (no zeros follow any element) and why Example 2 preserves elements at indices 0, 3, 5, 7, and 8 because their successors are all 0. The rule focuses strictly on the local relationship between an element and its immediate successor."
+  },
+  {
+    "idx": 184,
+    "id": "c249",
+    "function": "def c249(x):\n    # use 0s to delimit sublists, give the first element of each sublist\n    res = []\n    sublist = []\n    for i in x:\n        if i == 0:\n            if sublist:\n                res.append(sublist[0])\n                sublist = []\n        else:\n            sublist.append(i)\n    if sublist:\n        res.append(sublist[0])\n    return res\n\n",
+    "train": [
+      {
+        "input": "[0, 0, 87, 0, 36, 63, 79, 76, 55, 72, 52]",
+        "output": "[87, 36]"
+      },
+      {
+        "input": "[29, 0, 30, 0, 22, 77, 92, 60, 35, 32, 0, 79]",
+        "output": "[29, 30, 22, 79]"
+      },
+      {
+        "input": "[20, 1, 91, 12, 62, 97, 56]",
+        "output": "[20]"
+      },
+      {
+        "input": "[0, 58, 5, 12, 75, 11, 0, 73, 98, 0]",
+        "output": "[58, 73]"
+      },
+      {
+        "input": "[13, 54, 0, 64, 79, 55, 58, 35, 22]",
+        "output": "[13, 64]"
+      },
+      {
+        "input": "[83, 0, 16, 35, 39, 63, 50, 98]",
+        "output": "[83, 16]"
+      },
+      {
+        "input": "[73, 71, 72, 54, 29, 59, 86, 17]",
+        "output": "[73]"
+      },
+      {
+        "input": "[23, 38, 0, 0, 64, 73, 39, 86]",
+        "output": "[23, 64]"
+      },
+      {
+        "input": "[4, 46, 99, 0, 11, 41, 34, 99]",
+        "output": "[4, 11]"
+      },
+      {
+        "input": "[93, 11, 30, 0, 0, 96, 1, 27, 51]",
+        "output": "[93, 96]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[46, 94, 49, 43, 23, 9, 0, 7]",
+        "output": "[46, 7]"
+      },
+      {
+        "input": "[26, 93, 0, 4, 0, 53, 21, 88, 19, 6, 10, 0]",
+        "output": "[26, 4, 53]"
+      },
+      {
+        "input": "[34, 57, 0, 82, 3, 87, 47, 0]",
+        "output": "[34, 82]"
+      },
+      {
+        "input": "[0, 60, 0, 58, 51, 63, 30, 9, 66, 0, 52, 0]",
+        "output": "[60, 58, 52]"
+      },
+      {
+        "input": "[99, 68, 80, 29, 39, 49, 0, 31, 35, 0, 10, 0]",
+        "output": "[99, 31, 10]"
+      },
+      {
+        "input": "[70, 95, 57, 46, 11, 94, 61, 24]",
+        "output": "[70]"
+      },
+      {
+        "input": "[0, 90, 72, 63, 92, 64, 0, 56, 13, 73]",
+        "output": "[90, 56]"
+      },
+      {
+        "input": "[0, 22, 29, 65, 96, 36, 0, 48, 0]",
+        "output": "[22, 48]"
+      },
+      {
+        "input": "[80, 0, 97, 2, 73, 30, 65, 78]",
+        "output": "[80, 97]"
+      },
+      {
+        "input": "[66, 80, 73, 83, 40, 39, 96, 50, 33]",
+        "output": "[66]"
+      }
+    ],
+    "rationale": "The transformation treats the input list as a sequence of sublists delimited by the value 0. For each non-empty sublist separated by one or more zeros, the rule extracts only the first element of that sublist. This pattern is consistent across all examples, such as Example 2 where zeros separate [29], [30], [22, 77, 92, 60, 35, 32], and [79], resulting in [29, 30, 22, 79]. The rule generalizes by ignoring the zeros and any elements following the first item in each contiguous block of non-zero integers."
+  },
+  {
+    "idx": 185,
+    "id": "c114",
+    "function": "def c114(x):\n    # prepend the last element\n    return [x[-1]] + x\n\n",
+    "train": [
+      {
+        "input": "[81, 46, 28, 41, 52, 55]",
+        "output": "[55, 81, 46, 28, 41, 52, 55]"
+      },
+      {
+        "input": "[63, 3, 14, 83, 43, 52]",
+        "output": "[52, 63, 3, 14, 83, 43, 52]"
+      },
+      {
+        "input": "[46, 77, 52]",
+        "output": "[52, 46, 77, 52]"
+      },
+      {
+        "input": "[69, 68, 53, 83, 72, 32]",
+        "output": "[32, 69, 68, 53, 83, 72, 32]"
+      },
+      {
+        "input": "[85, 90, 55, 62]",
+        "output": "[62, 85, 90, 55, 62]"
+      },
+      {
+        "input": "[42, 42, 49, 29, 67, 17]",
+        "output": "[17, 42, 42, 49, 29, 67, 17]"
+      },
+      {
+        "input": "[70, 63, 40, 3]",
+        "output": "[3, 70, 63, 40, 3]"
+      },
+      {
+        "input": "[90, 63, 15, 92, 29, 91, 79]",
+        "output": "[79, 90, 63, 15, 92, 29, 91, 79]"
+      },
+      {
+        "input": "[49, 20, 18]",
+        "output": "[18, 49, 20, 18]"
+      },
+      {
+        "input": "[47, 29, 73, 1]",
+        "output": "[1, 47, 29, 73, 1]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[85, 10, 3, 77]",
+        "output": "[77, 85, 10, 3, 77]"
+      },
+      {
+        "input": "[33, 79, 43, 11, 13]",
+        "output": "[13, 33, 79, 43, 11, 13]"
+      },
+      {
+        "input": "[17, 86, 39]",
+        "output": "[39, 17, 86, 39]"
+      },
+      {
+        "input": "[40, 42, 98, 7, 47, 72]",
+        "output": "[72, 40, 42, 98, 7, 47, 72]"
+      },
+      {
+        "input": "[53, 19, 25, 84]",
+        "output": "[84, 53, 19, 25, 84]"
+      },
+      {
+        "input": "[53, 14, 47, 14, 79]",
+        "output": "[79, 53, 14, 47, 14, 79]"
+      },
+      {
+        "input": "[35, 64, 57, 36, 35]",
+        "output": "[35, 35, 64, 57, 36, 35]"
+      },
+      {
+        "input": "[22, 50, 50]",
+        "output": "[50, 22, 50, 50]"
+      },
+      {
+        "input": "[12, 54, 35, 39]",
+        "output": "[39, 12, 54, 35, 39]"
+      },
+      {
+        "input": "[18, 92, 88, 26, 54]",
+        "output": "[54, 18, 92, 88, 26, 54]"
+      }
+    ],
+    "rationale": "The transformation rule involves taking the last element of the input list and prepending it to the original list. In each example, the output list starts with the value found at the end of the input list, followed by all elements of the input list in their original order. This results in the last element appearing twice: once at the very beginning and once at the very end."
+  },
+  {
+    "idx": 186,
+    "id": "c198",
+    "function": "def c198(x):\n    # unique elements in descending order\n    res = set(x)\n    return sorted(res, reverse=True)\n\n",
+    "train": [
+      {
+        "input": "[31, 84, 59, 12, 65, 65, 61, 9, 59]",
+        "output": "[84, 65, 61, 59, 31, 12, 9]"
+      },
+      {
+        "input": "[12, 85, 75, 12, 86, 70, 10, 44, 85]",
+        "output": "[86, 85, 75, 70, 44, 12, 10]"
+      },
+      {
+        "input": "[28, 27, 28, 28, 53, 73]",
+        "output": "[73, 53, 28, 27]"
+      },
+      {
+        "input": "[51, 87, 42, 70, 87]",
+        "output": "[87, 70, 51, 42]"
+      },
+      {
+        "input": "[35, 27, 88, 85, 85, 88]",
+        "output": "[88, 85, 35, 27]"
+      },
+      {
+        "input": "[83, 10, 44, 10]",
+        "output": "[83, 44, 10]"
+      },
+      {
+        "input": "[20, 47, 20, 17, 74]",
+        "output": "[74, 47, 20, 17]"
+      },
+      {
+        "input": "[67, 91, 92, 84, 92, 48, 23, 60]",
+        "output": "[92, 91, 84, 67, 60, 48, 23]"
+      },
+      {
+        "input": "[56, 10, 70, 78, 56]",
+        "output": "[78, 70, 56, 10]"
+      },
+      {
+        "input": "[24, 71, 71, 16]",
+        "output": "[71, 24, 16]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[9, 99, 20, 74, 16, 26, 58, 26]",
+        "output": "[99, 74, 58, 26, 20, 16, 9]"
+      },
+      {
+        "input": "[58, 45, 75, 23, 99, 51, 58, 23, 24]",
+        "output": "[99, 75, 58, 51, 45, 24, 23]"
+      },
+      {
+        "input": "[55, 33, 85, 80, 85, 33]",
+        "output": "[85, 80, 55, 33]"
+      },
+      {
+        "input": "[65, 10, 41, 50, 50, 41, 54, 77]",
+        "output": "[77, 65, 54, 50, 41, 10]"
+      },
+      {
+        "input": "[14, 61, 11, 72, 62, 72, 36, 18, 18]",
+        "output": "[72, 62, 61, 36, 18, 14, 11]"
+      },
+      {
+        "input": "[3, 95, 95, 98, 95, 47, 46]",
+        "output": "[98, 95, 47, 46, 3]"
+      },
+      {
+        "input": "[98, 87, 97, 48, 78, 9, 6, 87]",
+        "output": "[98, 97, 87, 78, 48, 9, 6]"
+      },
+      {
+        "input": "[88, 88, 48, 53, 88, 45]",
+        "output": "[88, 53, 48, 45]"
+      },
+      {
+        "input": "[96, 6, 96, 97, 28, 16, 6, 80]",
+        "output": "[97, 96, 80, 28, 16, 6]"
+      },
+      {
+        "input": "[18, 59, 80, 80, 66, 4, 85, 85]",
+        "output": "[85, 80, 66, 59, 18, 4]"
+      }
+    ],
+    "rationale": "The transformation identifies the unique elements present in the input list and returns them in descending numerical order. In each example, duplicate values (such as 65 and 59 in Example 1, or 85 and 12 in Example 2) are reduced to a single instance. The final output is a strictly decreasing sequence of these unique integers, ensuring the rule generalizes to any list of numbers regardless of their original order or frequency."
+  },
+  {
+    "idx": 187,
+    "id": "c117",
+    "function": "def c117(x):\n    # left rotate by 3\n    return x[3:] + x[:3]\n\n",
+    "train": [
+      {
+        "input": "[97, 57, 68, 72, 32, 27]",
+        "output": "[72, 32, 27, 97, 57, 68]"
+      },
+      {
+        "input": "[50, 30, 32]",
+        "output": "[50, 30, 32]"
+      },
+      {
+        "input": "[42, 25, 69, 36, 65, 49]",
+        "output": "[36, 65, 49, 42, 25, 69]"
+      },
+      {
+        "input": "[75, 12, 79, 41]",
+        "output": "[41, 75, 12, 79]"
+      },
+      {
+        "input": "[95, 45, 70, 19]",
+        "output": "[19, 95, 45, 70]"
+      },
+      {
+        "input": "[71, 89, 92, 10, 70]",
+        "output": "[10, 70, 71, 89, 92]"
+      },
+      {
+        "input": "[83, 52, 86, 34]",
+        "output": "[34, 83, 52, 86]"
+      },
+      {
+        "input": "[53, 53, 93, 40, 23]",
+        "output": "[40, 23, 53, 53, 93]"
+      },
+      {
+        "input": "[27, 26, 47, 73, 9, 26]",
+        "output": "[73, 9, 26, 27, 26, 47]"
+      },
+      {
+        "input": "[42, 8, 94, 13, 40]",
+        "output": "[13, 40, 42, 8, 94]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[58, 82, 57, 96]",
+        "output": "[96, 58, 82, 57]"
+      },
+      {
+        "input": "[94, 39, 75, 28]",
+        "output": "[28, 94, 39, 75]"
+      },
+      {
+        "input": "[62, 85, 93, 4, 91]",
+        "output": "[4, 91, 62, 85, 93]"
+      },
+      {
+        "input": "[2, 12, 95, 99, 93]",
+        "output": "[99, 93, 2, 12, 95]"
+      },
+      {
+        "input": "[98, 99, 60, 89]",
+        "output": "[89, 98, 99, 60]"
+      },
+      {
+        "input": "[89, 74, 80, 1, 16, 86]",
+        "output": "[1, 16, 86, 89, 74, 80]"
+      },
+      {
+        "input": "[90, 70, 49, 54, 37]",
+        "output": "[54, 37, 90, 70, 49]"
+      },
+      {
+        "input": "[54, 69, 51, 2, 27]",
+        "output": "[2, 27, 54, 69, 51]"
+      },
+      {
+        "input": "[68, 87, 49, 10, 53, 35]",
+        "output": "[10, 53, 35, 68, 87, 49]"
+      },
+      {
+        "input": "[37, 70, 11]",
+        "output": "[37, 70, 11]"
+      }
+    ],
+    "rationale": "The transformation involves a cyclic shift of the input list. By observing the examples, the list is rotated to the left by three positions, meaning the first three elements are moved to the end of the list. For lists with three or fewer elements, the rotation results in the original list order (as seen in Example 2). This rule consistently explains the shift from input to output across all provided examples."
+  },
+  {
+    "idx": 188,
+    "id": "c099",
+    "function": "def c099(x):\n    # remove the lower half of the list\n    median = sorted(x)[len(x)//2]\n    return [i for i in x if i >= median]\n\n",
+    "train": [
+      {
+        "input": "[97, 22, 73, 90, 7, 72, 4, 44, 48]",
+        "output": "[97, 73, 90, 72, 48]"
+      },
+      {
+        "input": "[32, 12, 29, 17, 48]",
+        "output": "[32, 29, 48]"
+      },
+      {
+        "input": "[64, 25, 12, 10, 58, 80, 81, 91, 9]",
+        "output": "[64, 58, 80, 81, 91]"
+      },
+      {
+        "input": "[72, 14, 15, 81, 29, 1, 86]",
+        "output": "[72, 81, 29, 86]"
+      },
+      {
+        "input": "[22, 91, 39, 76, 25, 54]",
+        "output": "[91, 76, 54]"
+      },
+      {
+        "input": "[1, 73, 64, 98, 23]",
+        "output": "[73, 64, 98]"
+      },
+      {
+        "input": "[61, 92, 75, 45, 32, 60]",
+        "output": "[61, 92, 75]"
+      },
+      {
+        "input": "[93, 36, 68, 88, 54, 21]",
+        "output": "[93, 68, 88]"
+      },
+      {
+        "input": "[67, 53, 38, 24, 77, 38]",
+        "output": "[67, 53, 77]"
+      },
+      {
+        "input": "[11, 10, 54, 45, 85, 46, 7]",
+        "output": "[54, 45, 85, 46]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[52, 6, 46, 90, 32]",
+        "output": "[52, 46, 90]"
+      },
+      {
+        "input": "[95, 61, 1, 49]",
+        "output": "[95, 61]"
+      },
+      {
+        "input": "[3, 45, 27, 96, 16, 89]",
+        "output": "[45, 96, 89]"
+      },
+      {
+        "input": "[94, 42, 3, 0, 40, 84, 68, 10]",
+        "output": "[94, 42, 84, 68]"
+      },
+      {
+        "input": "[76, 0, 98, 92, 14, 16, 99, 14]",
+        "output": "[76, 98, 92, 99]"
+      },
+      {
+        "input": "[8, 52, 35, 52, 17, 62]",
+        "output": "[52, 52, 62]"
+      },
+      {
+        "input": "[95, 82, 76, 49, 9, 45, 23, 88]",
+        "output": "[95, 82, 76, 88]"
+      },
+      {
+        "input": "[18, 59, 96, 76]",
+        "output": "[96, 76]"
+      },
+      {
+        "input": "[17, 15, 58, 87, 32, 44, 5, 6, 59]",
+        "output": "[58, 87, 32, 44, 59]"
+      },
+      {
+        "input": "[91, 45, 96, 96]",
+        "output": "[96, 96]"
+      }
+    ],
+    "rationale": "The transformation identifies the median value of the input list and filters the list to retain only those elements that are greater than or equal to that median. By sorting the input and selecting the element at the index corresponding to half the list's length, the rule establishes a threshold that effectively removes the lower half of the values. This explains why the output lists are consistently shorter and contain only the larger values from the original sequences, regardless of their original positions."
+  },
+  {
+    "idx": 189,
+    "id": "c028",
+    "function": "def c028(x):\n    # remove element 1 if element 0 > element 1, else remove element 2\n    if x[0] > x[1]:\n        return x[:1] + x[2:]\n    else:\n        return x[:2] + x[3:]\n    \n",
+    "train": [
+      {
+        "input": "[61, 12, 97, 27]",
+        "output": "[61, 97, 27]"
+      },
+      {
+        "input": "[4, 8, 82, 83, 21, 98, 68, 72]",
+        "output": "[4, 8, 83, 21, 98, 68, 72]"
+      },
+      {
+        "input": "[92, 79, 37, 29, 42]",
+        "output": "[92, 37, 29, 42]"
+      },
+      {
+        "input": "[5, 36, 30, 27, 80]",
+        "output": "[5, 36, 27, 80]"
+      },
+      {
+        "input": "[81, 73, 78, 74]",
+        "output": "[81, 78, 74]"
+      },
+      {
+        "input": "[5, 77, 74, 57, 92, 39, 25]",
+        "output": "[5, 77, 57, 92, 39, 25]"
+      },
+      {
+        "input": "[13, 90, 25, 58, 0]",
+        "output": "[13, 90, 58, 0]"
+      },
+      {
+        "input": "[4, 63, 33, 77, 29]",
+        "output": "[4, 63, 77, 29]"
+      },
+      {
+        "input": "[38, 78, 96, 46]",
+        "output": "[38, 78, 46]"
+      },
+      {
+        "input": "[2, 11, 29, 21, 48, 32]",
+        "output": "[2, 11, 21, 48, 32]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[87, 72, 88, 62]",
+        "output": "[87, 88, 62]"
+      },
+      {
+        "input": "[56, 37, 93, 16]",
+        "output": "[56, 93, 16]"
+      },
+      {
+        "input": "[85, 7, 87, 8]",
+        "output": "[85, 87, 8]"
+      },
+      {
+        "input": "[10, 65, 44, 30, 37]",
+        "output": "[10, 65, 30, 37]"
+      },
+      {
+        "input": "[68, 55, 75, 9]",
+        "output": "[68, 75, 9]"
+      },
+      {
+        "input": "[4, 38, 63, 1]",
+        "output": "[4, 38, 1]"
+      },
+      {
+        "input": "[85, 57, 43, 48, 32, 13, 71]",
+        "output": "[85, 43, 48, 32, 13, 71]"
+      },
+      {
+        "input": "[10, 14, 59, 4, 49, 69]",
+        "output": "[10, 14, 4, 49, 69]"
+      },
+      {
+        "input": "[80, 96, 58, 64, 43, 42, 98, 32]",
+        "output": "[80, 96, 64, 43, 42, 98, 32]"
+      },
+      {
+        "input": "[7, 59, 81, 48, 54]",
+        "output": "[7, 59, 48, 54]"
+      }
+    ],
+    "rationale": "The transformation rule focuses on the relationship between the first two elements of the input list. If the first element is greater than the second element, the second element (index 1) is removed. Otherwise, the third element (index 2) is removed. This logic consistently explains the outputs across all examples, such as Example 1 where 61 > 12 results in the removal of 12, and Example 2 where 4 < 8 results in the removal of 82."
+  },
+  {
+    "idx": 190,
+    "id": "c007",
+    "function": "def c007(x):\n    # remove all but the first 2 elements\n    return x[:2]\n\n",
+    "train": [
+      {
+        "input": "[8, 53, 21, 37, 52]",
+        "output": "[8, 53]"
+      },
+      {
+        "input": "[41, 2, 49]",
+        "output": "[41, 2]"
+      },
+      {
+        "input": "[93, 31, 19, 22, 40]",
+        "output": "[93, 31]"
+      },
+      {
+        "input": "[57, 79, 49, 45, 68]",
+        "output": "[57, 79]"
+      },
+      {
+        "input": "[64, 44, 27, 15, 74, 2]",
+        "output": "[64, 44]"
+      },
+      {
+        "input": "[67, 42, 45, 63, 53, 89]",
+        "output": "[67, 42]"
+      },
+      {
+        "input": "[71, 89, 15]",
+        "output": "[71, 89]"
+      },
+      {
+        "input": "[99, 77, 50]",
+        "output": "[99, 77]"
+      },
+      {
+        "input": "[96, 96, 58]",
+        "output": "[96, 96]"
+      },
+      {
+        "input": "[10, 5, 69, 85, 21, 0]",
+        "output": "[10, 5]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[95, 29, 28, 56]",
+        "output": "[95, 29]"
+      },
+      {
+        "input": "[76, 97, 75]",
+        "output": "[76, 97]"
+      },
+      {
+        "input": "[35, 46, 86]",
+        "output": "[35, 46]"
+      },
+      {
+        "input": "[73, 29, 96, 52, 90]",
+        "output": "[73, 29]"
+      },
+      {
+        "input": "[47, 97, 65, 49, 39, 0]",
+        "output": "[47, 97]"
+      },
+      {
+        "input": "[77, 88, 88]",
+        "output": "[77, 88]"
+      },
+      {
+        "input": "[42, 99, 94]",
+        "output": "[42, 99]"
+      },
+      {
+        "input": "[34, 21, 22, 63, 2, 71, 34]",
+        "output": "[34, 21]"
+      },
+      {
+        "input": "[75, 25, 57, 23, 51, 19]",
+        "output": "[75, 25]"
+      },
+      {
+        "input": "[32, 27, 97, 26, 57, 23]",
+        "output": "[32, 27]"
+      }
+    ],
+    "rationale": "The training examples consistently show that the output list contains only the first two elements of the input list, regardless of the list's total length or the values of the integers. For instance, in Example 1, the input [8, 53, 21, 37, 52] is reduced to [8, 53], and in Example 2, [41, 2, 49] becomes [41, 2]. This pattern of truncating the list to its first two elements holds across all provided examples, including those with different lengths and duplicate values. The rule is a simple slice operation that generalizes to any list with at least two elements."
+  },
+  {
+    "idx": 191,
+    "id": "c140",
+    "function": "def c140(x):\n    # replace element 1 with 9\n    return x[:1] + [9] + x[2:]\n\n",
+    "train": [
+      {
+        "input": "[32, 87, 56, 58, 35, 88, 98]",
+        "output": "[32, 9, 56, 58, 35, 88, 98]"
+      },
+      {
+        "input": "[24, 42, 88, 7, 35, 62, 26]",
+        "output": "[24, 9, 88, 7, 35, 62, 26]"
+      },
+      {
+        "input": "[82, 26, 49, 16]",
+        "output": "[82, 9, 49, 16]"
+      },
+      {
+        "input": "[81, 12, 65, 65]",
+        "output": "[81, 9, 65, 65]"
+      },
+      {
+        "input": "[46, 51, 75, 2, 29]",
+        "output": "[46, 9, 75, 2, 29]"
+      },
+      {
+        "input": "[0, 4, 39, 17, 28, 90]",
+        "output": "[0, 9, 39, 17, 28, 90]"
+      },
+      {
+        "input": "[23, 84, 64, 35, 16, 17, 88]",
+        "output": "[23, 9, 64, 35, 16, 17, 88]"
+      },
+      {
+        "input": "[52, 96, 53, 4, 1, 51]",
+        "output": "[52, 9, 53, 4, 1, 51]"
+      },
+      {
+        "input": "[87, 96, 8, 87, 18, 66, 8]",
+        "output": "[87, 9, 8, 87, 18, 66, 8]"
+      },
+      {
+        "input": "[65, 89, 82, 34, 53, 99]",
+        "output": "[65, 9, 82, 34, 53, 99]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[83, 93, 8, 50, 70]",
+        "output": "[83, 9, 8, 50, 70]"
+      },
+      {
+        "input": "[23, 5, 89, 13, 32, 33, 41]",
+        "output": "[23, 9, 89, 13, 32, 33, 41]"
+      },
+      {
+        "input": "[44, 7, 77, 75, 53, 97, 11]",
+        "output": "[44, 9, 77, 75, 53, 97, 11]"
+      },
+      {
+        "input": "[84, 43, 53, 21, 43, 8, 2]",
+        "output": "[84, 9, 53, 21, 43, 8, 2]"
+      },
+      {
+        "input": "[47, 92, 19]",
+        "output": "[47, 9, 19]"
+      },
+      {
+        "input": "[40, 36, 25, 21]",
+        "output": "[40, 9, 25, 21]"
+      },
+      {
+        "input": "[22, 88, 46, 62, 79, 3, 18]",
+        "output": "[22, 9, 46, 62, 79, 3, 18]"
+      },
+      {
+        "input": "[7, 51, 33, 22, 10]",
+        "output": "[7, 9, 33, 22, 10]"
+      },
+      {
+        "input": "[4, 96, 78, 34, 22]",
+        "output": "[4, 9, 78, 34, 22]"
+      },
+      {
+        "input": "[96, 43, 38]",
+        "output": "[96, 9, 38]"
+      }
+    ],
+    "rationale": "The training examples demonstrate a consistent modification where the second element (index 1) of the input list is replaced by the integer 9. All other elements in the list remain unchanged, regardless of their original value or the length of the list. This rule applies uniformly across all examples, including cases where the original second element was a single digit or a double digit."
+  },
+  {
+    "idx": 192,
+    "id": "c010",
+    "function": "def c010(x):\n    # elements 1 through N + 1, N is the first element\n    return x[1:x[0]+1]\n\n",
+    "train": [
+      {
+        "input": "[5, 3, 13, 11, 5]",
+        "output": "[3, 13, 11, 5]"
+      },
+      {
+        "input": "[1, 10, 17, 14, 8]",
+        "output": "[10]"
+      },
+      {
+        "input": "[4, 8, 9, 1, 14, 17, 5]",
+        "output": "[8, 9, 1, 14]"
+      },
+      {
+        "input": "[5, 11, 20, 13, 5, 4, 13, 12]",
+        "output": "[11, 20, 13, 5, 4]"
+      },
+      {
+        "input": "[6, 14, 8, 13, 17, 11, 18]",
+        "output": "[14, 8, 13, 17, 11, 18]"
+      },
+      {
+        "input": "[0, 16, 17, 15, 8, 17, 3]",
+        "output": "[]"
+      },
+      {
+        "input": "[2, 4, 10, 19, 11]",
+        "output": "[4, 10]"
+      },
+      {
+        "input": "[2, 13, 8, 3, 1, 4]",
+        "output": "[13, 8]"
+      },
+      {
+        "input": "[6, 1, 10, 6, 17, 1]",
+        "output": "[1, 10, 6, 17, 1]"
+      },
+      {
+        "input": "[3, 7, 17, 18, 8]",
+        "output": "[7, 17, 18]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[4, 19, 20, 18, 16]",
+        "output": "[19, 20, 18, 16]"
+      },
+      {
+        "input": "[1, 6, 16, 2, 12, 0]",
+        "output": "[6]"
+      },
+      {
+        "input": "[6, 11, 17, 20, 14, 20, 0]",
+        "output": "[11, 17, 20, 14, 20, 0]"
+      },
+      {
+        "input": "[8, 11, 3, 15, 17, 8, 10, 13]",
+        "output": "[11, 3, 15, 17, 8, 10, 13]"
+      },
+      {
+        "input": "[4, 2, 5, 10, 4]",
+        "output": "[2, 5, 10, 4]"
+      },
+      {
+        "input": "[5, 2, 16, 4, 12, 8]",
+        "output": "[2, 16, 4, 12, 8]"
+      },
+      {
+        "input": "[3, 0, 18, 8, 10]",
+        "output": "[0, 18, 8]"
+      },
+      {
+        "input": "[1, 3, 0, 20, 3, 16, 14, 1]",
+        "output": "[3]"
+      },
+      {
+        "input": "[2, 20, 2, 14, 7, 19, 5, 18]",
+        "output": "[20, 2]"
+      },
+      {
+        "input": "[0, 4, 19, 12, 5, 17, 5]",
+        "output": "[]"
+      }
+    ],
+    "rationale": "The transformation rule uses the first element of the input list as a length indicator. Specifically, the output is a slice of the input list starting from the second element (index 1) and including the next N elements, where N is the value of the first element (index 0). For example, in Example 2, the first element is 1, so the output is the single element at index 1. In Example 6, the first element is 0, resulting in an empty list. This rule consistently accounts for all provided examples by treating the initial integer as the count for the subsequent sub-sequence."
+  },
+  {
+    "idx": 193,
+    "id": "c141",
+    "function": "def c141(x):\n    # replace element M + 2 with N, M = element 0, N = element 1; remove elements 0 and 1\n    x[x[0]+2] = x[1]\n    return x[2:]\n\n",
+    "train": [
+      {
+        "input": "[1, 6, 8, 7, 8]",
+        "output": "[8, 6, 8]"
+      },
+      {
+        "input": "[0, 6, 0, 0, 4, 8]",
+        "output": "[6, 0, 4, 8]"
+      },
+      {
+        "input": "[2, 4, 0, 10, 2, 3, 6, 9]",
+        "output": "[0, 10, 4, 3, 6, 9]"
+      },
+      {
+        "input": "[2, 8, 1, 5, 4, 1, 3]",
+        "output": "[1, 5, 8, 1, 3]"
+      },
+      {
+        "input": "[0, 0, 9, 3, 3, 10]",
+        "output": "[0, 3, 3, 10]"
+      },
+      {
+        "input": "[0, 2, 3, 0, 9, 3, 2]",
+        "output": "[2, 0, 9, 3, 2]"
+      },
+      {
+        "input": "[0, 8, 9, 2, 1]",
+        "output": "[8, 2, 1]"
+      },
+      {
+        "input": "[3, 1, 6, 2, 2, 0, 8, 7]",
+        "output": "[6, 2, 2, 1, 8, 7]"
+      },
+      {
+        "input": "[1, 7, 0, 7, 7]",
+        "output": "[0, 7, 7]"
+      },
+      {
+        "input": "[0, 2, 6, 7, 4]",
+        "output": "[2, 7, 4]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[0, 1, 10, 4, 6]",
+        "output": "[1, 4, 6]"
+      },
+      {
+        "input": "[1, 5, 8, 8, 5]",
+        "output": "[8, 5, 5]"
+      },
+      {
+        "input": "[0, 10, 2, 8, 9]",
+        "output": "[10, 8, 9]"
+      },
+      {
+        "input": "[3, 6, 3, 5, 10, 9, 3]",
+        "output": "[3, 5, 10, 6, 3]"
+      },
+      {
+        "input": "[0, 10, 8, 5, 8, 9, 9, 8]",
+        "output": "[10, 5, 8, 9, 9, 8]"
+      },
+      {
+        "input": "[2, 7, 7, 1, 6, 8, 4]",
+        "output": "[7, 1, 7, 8, 4]"
+      },
+      {
+        "input": "[4, 5, 1, 5, 8, 3, 5]",
+        "output": "[1, 5, 8, 3, 5]"
+      },
+      {
+        "input": "[1, 10, 0, 5, 5]",
+        "output": "[0, 10, 5]"
+      },
+      {
+        "input": "[2, 3, 3, 8, 10, 10]",
+        "output": "[3, 8, 3, 10]"
+      },
+      {
+        "input": "[2, 7, 8, 2, 8]",
+        "output": "[8, 2, 7]"
+      }
+    ],
+    "rationale": "The transformation rule involves using the first two elements of the input list as parameters to modify the rest of the list. Specifically, the element at index `input[0] + 2` is replaced by the value of `input[1]`. After this modification, the first two elements (the parameters) are removed, and the modified sub-list starting from index 2 is returned. This explains why the output length is always two less than the input length and how specific values are swapped or overwritten based on the initial values."
+  },
+  {
+    "idx": 194,
+    "id": "c203",
+    "function": "def c203(x):\n    # the first M positive multiples of the smallest element, M is the length of the input\n    return [min(x)*i for i in range(1, len(x)+1)]\n\n",
+    "train": [
+      {
+        "input": "[6, 22, 21, 10, 15, 19, 9]",
+        "output": "[6, 12, 18, 24, 30, 36, 42]"
+      },
+      {
+        "input": "[6, 2, 20, 2, 25]",
+        "output": "[2, 4, 6, 8, 10]"
+      },
+      {
+        "input": "[19, 18, 20, 13, 11]",
+        "output": "[11, 22, 33, 44, 55]"
+      },
+      {
+        "input": "[6, 11, 12, 20, 3]",
+        "output": "[3, 6, 9, 12, 15]"
+      },
+      {
+        "input": "[6, 23, 13, 25, 17, 3]",
+        "output": "[3, 6, 9, 12, 15, 18]"
+      },
+      {
+        "input": "[3, 20, 1, 23]",
+        "output": "[1, 2, 3, 4]"
+      },
+      {
+        "input": "[16, 13, 13, 19, 12, 14]",
+        "output": "[12, 24, 36, 48, 60, 72]"
+      },
+      {
+        "input": "[20, 15, 2, 23, 5, 19, 17]",
+        "output": "[2, 4, 6, 8, 10, 12, 14]"
+      },
+      {
+        "input": "[23, 1, 15, 9, 21]",
+        "output": "[1, 2, 3, 4, 5]"
+      },
+      {
+        "input": "[4, 18, 3, 4, 16]",
+        "output": "[3, 6, 9, 12, 15]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[20, 17, 6, 20]",
+        "output": "[6, 12, 18, 24]"
+      },
+      {
+        "input": "[21, 21, 1, 19, 11]",
+        "output": "[1, 2, 3, 4, 5]"
+      },
+      {
+        "input": "[17, 16, 9, 14, 1, 12, 23]",
+        "output": "[1, 2, 3, 4, 5, 6, 7]"
+      },
+      {
+        "input": "[13, 24, 17, 24, 6]",
+        "output": "[6, 12, 18, 24, 30]"
+      },
+      {
+        "input": "[10, 4, 1, 15]",
+        "output": "[1, 2, 3, 4]"
+      },
+      {
+        "input": "[17, 19, 25, 22, 18, 24]",
+        "output": "[17, 34, 51, 68, 85, 102]"
+      },
+      {
+        "input": "[23, 3, 6, 12, 21, 4, 14]",
+        "output": "[3, 6, 9, 12, 15, 18, 21]"
+      },
+      {
+        "input": "[6, 25, 14, 24, 17, 10, 19]",
+        "output": "[6, 12, 18, 24, 30, 36, 42]"
+      },
+      {
+        "input": "[15, 10, 4, 4, 5, 3]",
+        "output": "[3, 6, 9, 12, 15, 18]"
+      },
+      {
+        "input": "[14, 7, 21, 9, 10]",
+        "output": "[7, 14, 21, 28, 35]"
+      }
+    ],
+    "rationale": "The transformation identifies the smallest integer in the input list and uses it as a base value. The output is a list of the same length as the input, consisting of the first N multiples of this minimum value, where N is the length of the list. For instance, in Example 1, the minimum is 6 and the length is 7, resulting in [6, 12, 18, 24, 30, 36, 42]. This rule consistently accounts for all examples, including those where the minimum value is 1 or appears multiple times."
+  },
+  {
+    "idx": 195,
+    "id": "c131",
+    "function": "def c131(x):\n    # keep only elements whose tens digit is even\n    res = []\n    for i in x:\n        if len(str(i)) < 2:\n            res.append(i)\n        elif int(str(i)[-2]) % 2 == 0:\n            res.append(i)\n    return res\n\n",
+    "train": [
+      {
+        "input": "[83, 79, 29, 64, 43, 2, 82, 39]",
+        "output": "[83, 29, 64, 43, 2, 82]"
+      },
+      {
+        "input": "[28, 69, 54, 46, 48, 82, 55]",
+        "output": "[28, 69, 46, 48, 82]"
+      },
+      {
+        "input": "[15, 41, 98, 55, 31, 84, 27]",
+        "output": "[41, 84, 27]"
+      },
+      {
+        "input": "[11, 3, 31, 46, 20, 67]",
+        "output": "[3, 46, 20, 67]"
+      },
+      {
+        "input": "[63, 10, 68, 90, 36, 65, 85, 87]",
+        "output": "[63, 68, 65, 85, 87]"
+      },
+      {
+        "input": "[29, 7, 3, 75, 40, 38, 27, 29]",
+        "output": "[29, 7, 3, 40, 27, 29]"
+      },
+      {
+        "input": "[51, 81, 97, 35, 98, 89, 70]",
+        "output": "[81, 89]"
+      },
+      {
+        "input": "[10, 57, 2, 79, 59, 36, 49, 70]",
+        "output": "[2, 49]"
+      },
+      {
+        "input": "[33, 85, 33, 99, 24, 17, 81, 8]",
+        "output": "[85, 24, 81, 8]"
+      },
+      {
+        "input": "[66, 3, 40, 52, 45, 83]",
+        "output": "[66, 3, 40, 45, 83]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[24, 13, 16, 91, 2, 47, 95]",
+        "output": "[24, 2, 47]"
+      },
+      {
+        "input": "[75, 97, 13, 12, 17, 49, 92]",
+        "output": "[49]"
+      },
+      {
+        "input": "[14, 94, 87, 91, 89, 7]",
+        "output": "[87, 89, 7]"
+      },
+      {
+        "input": "[37, 20, 13, 40, 48, 97]",
+        "output": "[20, 40, 48]"
+      },
+      {
+        "input": "[46, 97, 23, 88, 63, 15, 47, 45]",
+        "output": "[46, 23, 88, 63, 47, 45]"
+      },
+      {
+        "input": "[26, 15, 92, 70, 32, 18, 3]",
+        "output": "[26, 3]"
+      },
+      {
+        "input": "[45, 28, 94, 91, 0, 93]",
+        "output": "[45, 28, 0]"
+      },
+      {
+        "input": "[42, 47, 63, 69, 81, 2, 34, 6]",
+        "output": "[42, 47, 63, 69, 81, 2, 6]"
+      },
+      {
+        "input": "[57, 22, 83, 53, 3, 35, 20]",
+        "output": "[22, 83, 3, 20]"
+      },
+      {
+        "input": "[19, 31, 66, 28, 93, 93, 30]",
+        "output": "[66, 28]"
+      }
+    ],
+    "rationale": "The transformation filters the input list to retain only those integers whose tens digit is even. For single-digit numbers, the tens digit is implicitly zero (which is even), so they are kept. For multi-digit numbers, the digit at the tens place (the second-to-last digit) is checked for parity. This rule consistently explains the removal of elements like 79 and 39 in Example 1 (tens digits 7 and 3 are odd) and 98 and 55 in Example 3 (tens digits 9 and 5 are odd)."
+  },
+  {
+    "idx": 196,
+    "id": "c195",
+    "function": "def c195(x):\n    # element 1, followed by 23, 68, 42, 99, 71, followed by last element\n    return [x[0], 23, 68, 42, 99, 71, x[-1]]\n\n",
+    "train": [
+      {
+        "input": "[96, 27, 58]",
+        "output": "[96, 23, 68, 42, 99, 71, 58]"
+      },
+      {
+        "input": "[17, 33, 27, 0, 92, 46]",
+        "output": "[17, 23, 68, 42, 99, 71, 46]"
+      },
+      {
+        "input": "[86, 48, 14, 39, 38]",
+        "output": "[86, 23, 68, 42, 99, 71, 38]"
+      },
+      {
+        "input": "[96, 84, 94, 25, 19]",
+        "output": "[96, 23, 68, 42, 99, 71, 19]"
+      },
+      {
+        "input": "[85, 23, 71]",
+        "output": "[85, 23, 68, 42, 99, 71, 71]"
+      },
+      {
+        "input": "[6, 71, 76, 16, 7]",
+        "output": "[6, 23, 68, 42, 99, 71, 7]"
+      },
+      {
+        "input": "[38, 42, 28]",
+        "output": "[38, 23, 68, 42, 99, 71, 28]"
+      },
+      {
+        "input": "[29, 82, 35, 84, 23, 25, 34]",
+        "output": "[29, 23, 68, 42, 99, 71, 34]"
+      },
+      {
+        "input": "[69, 7, 64, 3]",
+        "output": "[69, 23, 68, 42, 99, 71, 3]"
+      },
+      {
+        "input": "[65, 32, 62, 22, 7, 68]",
+        "output": "[65, 23, 68, 42, 99, 71, 68]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[85, 50, 62, 17, 38, 57, 97]",
+        "output": "[85, 23, 68, 42, 99, 71, 97]"
+      },
+      {
+        "input": "[14, 33, 60, 86, 67, 30, 97]",
+        "output": "[14, 23, 68, 42, 99, 71, 97]"
+      },
+      {
+        "input": "[29, 32, 18, 99, 13, 44]",
+        "output": "[29, 23, 68, 42, 99, 71, 44]"
+      },
+      {
+        "input": "[12, 89, 37]",
+        "output": "[12, 23, 68, 42, 99, 71, 37]"
+      },
+      {
+        "input": "[24, 8, 17, 36]",
+        "output": "[24, 23, 68, 42, 99, 71, 36]"
+      },
+      {
+        "input": "[9, 61, 75, 17]",
+        "output": "[9, 23, 68, 42, 99, 71, 17]"
+      },
+      {
+        "input": "[16, 20, 14, 95]",
+        "output": "[16, 23, 68, 42, 99, 71, 95]"
+      },
+      {
+        "input": "[34, 14, 49, 8]",
+        "output": "[34, 23, 68, 42, 99, 71, 8]"
+      },
+      {
+        "input": "[43, 23, 14, 79]",
+        "output": "[43, 23, 68, 42, 99, 71, 79]"
+      },
+      {
+        "input": "[36, 22, 37, 41]",
+        "output": "[36, 23, 68, 42, 99, 71, 41]"
+      }
+    ],
+    "rationale": "The transformation extracts the first and last elements of the input list and inserts a fixed sequence of five integers—23, 68, 42, 99, and 71—between them. Regardless of the input list's length or the values of its middle elements, the output always consists of exactly seven integers: the original head, the static sequence, and the original tail. This rule consistently explains all provided examples, where the middle elements of the input are discarded in favor of the fixed sequence."
+  },
+  {
+    "idx": 197,
+    "id": "c200",
+    "function": "def c200(x):\n    # tens digits of the elements in ascending order\n    res = []\n    for i in x:\n        if len(str(i)) > 1:\n            res.append(int(str(i)[-2]))\n        else:\n            res.append(0)\n    return sorted(res)\n\n",
+    "train": [
+      {
+        "input": "[6, 87, 76, 88, 23, 21]",
+        "output": "[0, 2, 2, 7, 8, 8]"
+      },
+      {
+        "input": "[7, 83, 39, 40, 62, 37, 74, 14]",
+        "output": "[0, 1, 3, 3, 4, 6, 7, 8]"
+      },
+      {
+        "input": "[0, 49, 62, 97, 45]",
+        "output": "[0, 4, 4, 6, 9]"
+      },
+      {
+        "input": "[7, 75, 8, 65, 2]",
+        "output": "[0, 0, 0, 6, 7]"
+      },
+      {
+        "input": "[20, 24, 0, 2, 47, 76]",
+        "output": "[0, 0, 2, 2, 4, 7]"
+      },
+      {
+        "input": "[9, 90, 37, 23, 74, 94]",
+        "output": "[0, 2, 3, 7, 9, 9]"
+      },
+      {
+        "input": "[1, 11, 60, 50, 14]",
+        "output": "[0, 1, 1, 5, 6]"
+      },
+      {
+        "input": "[48, 93, 42, 97, 89]",
+        "output": "[4, 4, 8, 9, 9]"
+      },
+      {
+        "input": "[82, 16, 16, 79, 85, 41, 88]",
+        "output": "[1, 1, 4, 7, 8, 8, 8]"
+      },
+      {
+        "input": "[99, 99, 20, 58, 81, 10, 92, 6]",
+        "output": "[0, 1, 2, 5, 8, 9, 9, 9]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[7, 43, 19, 77, 89, 80]",
+        "output": "[0, 1, 4, 7, 8, 8]"
+      },
+      {
+        "input": "[77, 32, 32, 37, 40, 74, 48, 30]",
+        "output": "[3, 3, 3, 3, 4, 4, 7, 7]"
+      },
+      {
+        "input": "[69, 8, 75, 43, 97]",
+        "output": "[0, 4, 6, 7, 9]"
+      },
+      {
+        "input": "[68, 99, 17, 78, 33, 14, 44, 80]",
+        "output": "[1, 1, 3, 4, 6, 7, 8, 9]"
+      },
+      {
+        "input": "[88, 89, 90, 13, 82, 3, 32, 46]",
+        "output": "[0, 1, 3, 4, 8, 8, 8, 9]"
+      },
+      {
+        "input": "[34, 23, 22, 94, 88]",
+        "output": "[2, 2, 3, 8, 9]"
+      },
+      {
+        "input": "[30, 40, 68, 63, 41, 46, 57, 72]",
+        "output": "[3, 4, 4, 4, 5, 6, 6, 7]"
+      },
+      {
+        "input": "[11, 72, 55, 84, 90, 80]",
+        "output": "[1, 5, 7, 8, 8, 9]"
+      },
+      {
+        "input": "[54, 73, 24, 95, 62, 72]",
+        "output": "[2, 5, 6, 7, 7, 9]"
+      },
+      {
+        "input": "[76, 24, 9, 99, 80, 78]",
+        "output": "[0, 2, 7, 7, 8, 9]"
+      }
+    ],
+    "rationale": "The transformation extracts the tens digit from each integer in the input list and returns these digits as a new list sorted in ascending order. For single-digit numbers, the tens digit is treated as 0. This rule consistently explains the outputs across all examples, such as Example 1 where the tens digits of [6, 87, 76, 88, 23, 21] are [0, 8, 7, 8, 2, 2], which sorts to [0, 2, 2, 7, 8, 8]."
+  },
+  {
+    "idx": 198,
+    "id": "c107",
+    "function": "def c107(x):\n    # unique elements, in order of appearance\n    res = []\n    for i in x:\n        if i not in res:\n            res.append(i)\n    return res\n\n",
+    "train": [
+      {
+        "input": "[22, 40, 35, 17, 22, 60, 31, 17, 31, 59]",
+        "output": "[22, 40, 35, 17, 60, 31, 59]"
+      },
+      {
+        "input": "[19, 19, 15, 29, 15, 45]",
+        "output": "[19, 15, 29, 45]"
+      },
+      {
+        "input": "[30, 9, 62, 62, 33, 62, 62]",
+        "output": "[30, 9, 62, 33]"
+      },
+      {
+        "input": "[11, 97, 21, 85, 46, 97, 20, 21, 21]",
+        "output": "[11, 97, 21, 85, 46, 20]"
+      },
+      {
+        "input": "[47, 79, 61, 12, 85, 79]",
+        "output": "[47, 79, 61, 12, 85]"
+      },
+      {
+        "input": "[6, 85, 21, 85, 79, 62]",
+        "output": "[6, 85, 21, 79, 62]"
+      },
+      {
+        "input": "[79, 63, 63, 37]",
+        "output": "[79, 63, 37]"
+      },
+      {
+        "input": "[40, 85, 63, 44, 63, 40, 63]",
+        "output": "[40, 85, 63, 44]"
+      },
+      {
+        "input": "[75, 69, 7, 29, 75, 75, 69]",
+        "output": "[75, 69, 7, 29]"
+      },
+      {
+        "input": "[38, 91, 29, 76, 11, 38, 74, 91, 11, 27]",
+        "output": "[38, 91, 29, 76, 11, 74, 27]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[82, 82, 82, 94, 15]",
+        "output": "[82, 94, 15]"
+      },
+      {
+        "input": "[40, 25, 28, 0, 35, 25, 40, 51, 40]",
+        "output": "[40, 25, 28, 0, 35, 51]"
+      },
+      {
+        "input": "[52, 52, 11, 66, 66]",
+        "output": "[52, 11, 66]"
+      },
+      {
+        "input": "[41, 62, 89, 80, 41, 41, 62]",
+        "output": "[41, 62, 89, 80]"
+      },
+      {
+        "input": "[36, 98, 10, 96, 70, 36]",
+        "output": "[36, 98, 10, 96, 70]"
+      },
+      {
+        "input": "[34, 76, 3, 76, 34, 55]",
+        "output": "[34, 76, 3, 55]"
+      },
+      {
+        "input": "[46, 98, 65, 85, 85, 46, 98]",
+        "output": "[46, 98, 65, 85]"
+      },
+      {
+        "input": "[15, 9, 28, 25, 22, 25, 59, 71]",
+        "output": "[15, 9, 28, 25, 22, 59, 71]"
+      },
+      {
+        "input": "[77, 57, 57, 49, 49, 46, 68]",
+        "output": "[77, 57, 49, 46, 68]"
+      },
+      {
+        "input": "[18, 1, 18, 18, 93, 15, 11, 32]",
+        "output": "[18, 1, 93, 15, 11, 32]"
+      }
+    ],
+    "rationale": "The transformation identifies and preserves the unique elements of the input list in their original order of first appearance. By iterating through the input and appending an element to the result only if it has not been encountered yet, the rule effectively removes all subsequent duplicates. This explains why, in Example 3, the multiple occurrences of 62 are reduced to a single instance, and in Example 9, the repeated 75 and 69 are omitted. The rule generalizes as a standard \"ordered unique\" filter."
+  },
+  {
+    "idx": 199,
+    "id": "c071",
+    "function": "def c071(x):\n    # add 2 to each element\n    return [i+2 for i in x]\n\n",
+    "train": [
+      {
+        "input": "[63, 72, 0, 68, 96, 37]",
+        "output": "[65, 74, 2, 70, 98, 39]"
+      },
+      {
+        "input": "[91, 26, 97, 69]",
+        "output": "[93, 28, 99, 71]"
+      },
+      {
+        "input": "[82, 84, 92, 18, 62, 84]",
+        "output": "[84, 86, 94, 20, 64, 86]"
+      },
+      {
+        "input": "[26, 60, 72, 23, 4, 73, 14]",
+        "output": "[28, 62, 74, 25, 6, 75, 16]"
+      },
+      {
+        "input": "[48, 23, 49]",
+        "output": "[50, 25, 51]"
+      },
+      {
+        "input": "[5, 52, 42, 31]",
+        "output": "[7, 54, 44, 33]"
+      },
+      {
+        "input": "[98, 65, 28, 34, 32]",
+        "output": "[100, 67, 30, 36, 34]"
+      },
+      {
+        "input": "[46, 57, 36, 65, 49, 7]",
+        "output": "[48, 59, 38, 67, 51, 9]"
+      },
+      {
+        "input": "[54, 28, 59, 6]",
+        "output": "[56, 30, 61, 8]"
+      },
+      {
+        "input": "[94, 49, 25, 6, 47]",
+        "output": "[96, 51, 27, 8, 49]"
+      }
+    ],
+    "test": [
+      {
+        "input": "[45, 70, 68, 93, 60, 38, 67]",
+        "output": "[47, 72, 70, 95, 62, 40, 69]"
+      },
+      {
+        "input": "[57, 79, 69, 15, 85]",
+        "output": "[59, 81, 71, 17, 87]"
+      },
+      {
+        "input": "[6, 89, 7]",
+        "output": "[8, 91, 9]"
+      },
+      {
+        "input": "[5, 34, 18]",
+        "output": "[7, 36, 20]"
+      },
+      {
+        "input": "[28, 82, 57, 13, 49]",
+        "output": "[30, 84, 59, 15, 51]"
+      },
+      {
+        "input": "[16, 35, 21]",
+        "output": "[18, 37, 23]"
+      },
+      {
+        "input": "[0, 58, 40, 52]",
+        "output": "[2, 60, 42, 54]"
+      },
+      {
+        "input": "[39, 22, 80, 52, 78]",
+        "output": "[41, 24, 82, 54, 80]"
+      },
+      {
+        "input": "[59, 50, 25, 13, 66, 13, 22]",
+        "output": "[61, 52, 27, 15, 68, 15, 24]"
+      },
+      {
+        "input": "[74, 10, 53, 65, 44]",
+        "output": "[76, 12, 55, 67, 46]"
+      }
+    ],
+    "rationale": "The training examples demonstrate a consistent numerical transformation where each element in the input list is incremented by a fixed value. By comparing the input and output pairs across all examples (e.g., 63 becomes 65, 0 becomes 2, and 91 becomes 93), it is evident that the rule is to add 2 to every integer in the list. This additive pattern holds true regardless of the list length or the magnitude of the numbers."
+  }
+]

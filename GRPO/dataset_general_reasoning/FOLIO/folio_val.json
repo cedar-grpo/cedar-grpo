@@ -1,0 +1,1658 @@
+[
+  {
+    "premises": [
+      "No students who work in the library are from the computer science department. ",
+      "All students who have part-time jobs offered by the university are students who work in the library. ",
+      "All students who take the database course are from the computer science department. ",
+      "All students instructed by professor David are taking the database course. ",
+      "All students working in the lab are instructed by professor David. ",
+      "James is a student working in the lab. ",
+      "Jack neither has a part-time job offered by the university nor works in the lab. "
+    ],
+    "premises-FOL": [
+      "∀x (WorkLibrary(x) → ¬ComputerScience(x))",
+      "∀x (PartTime(x) → WorkLibrary(x))",
+      "∀x (Database(x) → ComputerScience(x))",
+      "∀x (ProfessorDavid(x) → Database(x))",
+      "∀x (WorkInLab(x) → ProfessorDavid(x))",
+      "WorkInLab(james)",
+      "¬PartTime(jack) ∧ ¬WorkInLab(jack)"
+    ],
+    "conclusion": "James has a part-time job offered by the university.",
+    "conclusion-FOL": "PartTime(james)",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Susan flies to LGA airport.",
+      "The departure and arrival can not be the same airport.",
+      "John flies from LGA airport."
+    ],
+    "premises-FOL": [
+      "FlyTo(susan, lga)",
+      "∀x ∀y (FlyFrom(x, y) ⊕ FlyTo(x, y))",
+      "FlyFrom(john, lga)"
+    ],
+    "conclusion": "John flies to LGA airport.",
+    "conclusion-FOL": "FlyTo(john, lga)",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "If something can transport multiple passengers, then they are not empty.",
+      "All airlines can transport multiple passengers.",
+      "All planes are empty.",
+      "All Boeing 707s are planes.",
+      "If Greyhound is not an airline, then there are no Greyhound planes."
+    ],
+    "premises-FOL": [
+      "∀x (TransportMultiplePassengers(x) → ¬Empty(x))",
+      "∀x (Airline(x) → TransportMultiplePassengers(x))",
+      "∀x (Plane(x) → Empty(x))",
+      "∀x (Boeing707(x) → Plane(x))",
+      "¬Airline(greyhound) → ¬(Airline(greyhound) ∨ Plane(greyhound))"
+    ],
+    "conclusion": "A Greyhound is a Boeing 707.",
+    "conclusion-FOL": "Boeing707(greyhound)",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "If something can transport multiple passengers, then they are not empty.",
+      "All airlines can transport multiple passengers.",
+      "All planes are empty.",
+      "All Boeing 707s are planes.",
+      "If Greyhound is not an airline, then there are no Greyhound planes."
+    ],
+    "premises-FOL": [
+      "∀x (TransportMultiplePassengers(x) → ¬Empty(x))",
+      "∀x (Airline(x) → TransportMultiplePassengers(x))",
+      "∀x (Plane(x) → Empty(x))",
+      "∀x (Boeing707(x) → Plane(x))",
+      "¬Airline(greyhound) → ¬(Airline(greyhound) ∨ Plane(greyhound))"
+    ],
+    "conclusion": "Greyhound is an airline.",
+    "conclusion-FOL": "Airline(greyhound)",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Some basketball players are not American.",
+      "All basketball players are tall.",
+      "If someone is tall, they wear large shoes.",
+      "If someone wears large shoes, they wear large-sized clothes.",
+      "Yuri does not wear large-size clothes."
+    ],
+    "premises-FOL": [
+      "∃x (BasketballPlayer(x) ∧ ¬American(x))",
+      "∀x (BasketballPlayer(x) → Tall(x))",
+      "∀x (Tall(x) → WearLargeShoes(x))",
+      "∀x (WearLargeShoes(x) → WearLargeClothes(x))",
+      "¬WearLargeClothes(yuri)"
+    ],
+    "conclusion": "If Yuri does not wear large shoes, then Yuri is an American basketball player.",
+    "conclusion-FOL": "¬WearLargeShoes(yuri) → (American(yuri) ∧ BasketballPlayer(yuri))",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "All humans are mortal.",
+      "All Greeks are humans."
+    ],
+    "premises-FOL": [
+      "∀x (Human(x) → Mortal(x))",
+      "∀x (Greek(x) → Human(x))"
+    ],
+    "conclusion": "Some Greeks are mortal.",
+    "conclusion-FOL": "∃x (Greek(x) ∧ Mortal(x))",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Natural language processing tasks can be categorized as either language generation task or language understanding task.",
+      "If the output of a natural language processing task is a text sequence, then it is a language generation task.",
+      "Machine translation is a natural language processing task.",
+      "The output of machine translation is a text sequence."
+    ],
+    "premises-FOL": [
+      "∀x (NLP(x) → NLG(x) ⊕ NLU(x))",
+      "∀x (NLP(x) ∧ OutputSequence(x) → NLG(x))",
+      "NLP(machineTranslation)",
+      "OutputSequence(machineTranslation)"
+    ],
+    "conclusion": "Machine translation is a language understanding task.",
+    "conclusion-FOL": "NLU(machineTranslation)",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "If people perform in school talent shows often, then they attend and are very engaged with school events.",
+      "People either perform in school talent shows often or are inactive and disinterested members of their community.",
+      "If people chaperone high school dances, then they are not students who attend the school.",
+      "All people who are inactive and disinterested members of their community chaperone high school dances.",
+      "All young children and teenagers who wish to further their academic careers and educational opportunities are students who attend the school.",
+      "Bonnie either both attends and is very engaged with school events and is a student who attends the school, or she neither attends and is very engaged with school events nor is a student who attends the school. "
+    ],
+    "premises-FOL": [
+      "∀x (TalentShows(x) → Engaged(x))",
+      "∀x (TalentShows(x) ∨ Inactive(x))",
+      "∀x (Chaperone(x) → ¬Students(x))",
+      "∀x (Inactive(x) → Chaperone(x))",
+      "∀x (AcademicCareer(x) → Students(x))",
+      "(Engaged(bonnie) ∧ Students(bonnie)) ⊕ (¬Engaged(bonnie) ∧ ¬Students(bonnie))"
+    ],
+    "conclusion": "If Bonnie either chaperones high school dances or, if she does not, she performs in school talent shows often, then Bonnie is both a young child or teenager who wishes to further her academic career and educational opportunities and an inactive and disinterested member of the community.",
+    "conclusion-FOL": "Chaperone(bonnie) ⊕ TalentShows(bonnie) → AcademicCareer(bonnie) ∧ Inactive(bonnie))",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "All growth companies’ stocks are volatile.",
+      "If the stock price is volatile, then it is not suitable for a retirement fund.",
+      "Some companies’ stocks are growth companies’ stocks.",
+      "All mature companies’ stocks are suitable for a retirement fund.",
+      "KO is a mature company’s stock."
+    ],
+    "premises-FOL": [
+      "∀x (GrowthCompanies’Stocks(x) → PriceVolatile(x))",
+      " ∀x (PriceVolatile(x) → ¬SuitableForRetirementRund(x)) ",
+      " ∃x (Companies’Stocks(x) ∧ GrowthCompanies’Stocks(x))",
+      " ∀x (MatureCompanies’Stocks(x) → SuitableForRetirementRund(x))",
+      " MatureCompanies’Stocks(kO)"
+    ],
+    "conclusion": "KO is a company stock and a growth company’s stock.",
+    "conclusion-FOL": "Companies’Stocks(kO) ∧ GrowthCompanies’Stocks(kO)",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "[BG] There are four seasons in a year: Spring, Summer, Fall, and Winter.",
+      "All students who want to have a long vacation love summer the most.",
+      "Emma's favorite season is summer.",
+      "Mia's favorite season is not the same as Emma's. ",
+      "James wants to have a long vacation."
+    ],
+    "premises-FOL": [
+      "Season(spring) ∨ Season(summer) ∨ Season(fall) ∨ Season(winter)",
+      "∀x (WantlongVacation(x) → Love(x, summer))",
+      "Love(emma, summer)",
+      "¬Love(mia, emma)",
+      "WantlongVacation(james)"
+    ],
+    "conclusion": "James's favorite season is fall.",
+    "conclusion-FOL": "Love(james, fall)",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "If people work in student jobs on campus, then they need to earn money to help pay for their college tuition.",
+      "If people order takeout frequently in college, then they work in student jobs on campus.",
+      "People either order takeout frequently in college or enjoy the dining hall meals and recipes.",
+      "If people enjoy the dining hall meals and recipes, then they are not picky eaters.",
+      "If people enjoy the dining hall meals and recipes, then they spend a lot of their time eating and catching up with friends in the campus dining halls.",
+      "If Mary works in student jobs on campus and needs to earn money to help pay for her college tuition, then Mary is neither picky nor needs to earn money to help pay for her college tuition."
+    ],
+    "premises-FOL": [
+      "∀x (StudentJobs(x) → Tuition(x))",
+      "∀x (Takeout(x) → StudentJobs(x))",
+      "∀x (Takeout(x) ∨ DiningHall(x))",
+      "∀x (DiningHall(x) → NotPicky(x))",
+      "∀x (DiningHall(x) → Eating(x))",
+      "StudentJobs(mary) ∧ Tuition(mary) → ¬(NotPicky(mary) ∨ Tuition(mary))"
+    ],
+    "conclusion": "Mary needs to earn money to help pay for her college tuition.",
+    "conclusion-FOL": "Tuition(mary)",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Natural language processing tasks can be categorized as either language generation task or language understanding task.",
+      "If the output of a natural language processing task is a text sequence, then it is a language generation task.",
+      "Machine translation is a natural language processing task.",
+      "The output of machine translation is a text sequence."
+    ],
+    "premises-FOL": [
+      "∀x (NLP(x) → NLG(x) ⊕ NLU(x))",
+      "∀x (NLP(x) ∧ OutputSequence(x) → NLG(x))",
+      "NLP(machineTranslation)",
+      "OutputSequence(machineTranslation)"
+    ],
+    "conclusion": "Machine translation is a language generation task.",
+    "conclusion-FOL": "NLG(machineTranslation)",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "[BG] Some mammals have teeth.",
+      "Platypus have no teeth.",
+      "Platypus are mammals. ",
+      "Humans have teeth."
+    ],
+    "premises-FOL": [
+      "∃x (Mammal(x) ∧ Have(x, teeth))",
+      "¬Have(platypus, teeth)",
+      "Mammal(platypus)",
+      "Have(humans, teeth)"
+    ],
+    "conclusion": "Humans are mammals.",
+    "conclusion-FOL": "Mammal(humans)",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Events are either happy or sad.",
+      "At least one event is happy. "
+    ],
+    "premises-FOL": [
+      "∀x (Event(x) → Happy(x) ⊕ Sad(x))",
+      "∃x (Event(x) ∧ Happy(x)) "
+    ],
+    "conclusion": "All events are sad.",
+    "conclusion-FOL": "∀x (Event(x) → Sad(x))",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Some basketball players are not American.",
+      "All basketball players are tall.",
+      "If someone is tall, they wear large shoes.",
+      "If someone wears large shoes, they wear large-sized clothes.",
+      "Yuri does not wear large-size clothes."
+    ],
+    "premises-FOL": [
+      "∃x (BasketballPlayer(x) ∧ ¬American(x))",
+      "∀x (BasketballPlayer(x) → Tall(x))",
+      "∀x (Tall(x) → WearLargeShoes(x))",
+      "∀x (WearLargeShoes(x) → WearLargeClothes(x))",
+      "¬WearLargeClothes(yuri)"
+    ],
+    "conclusion": "Yuri is an American.",
+    "conclusion-FOL": "American(yuri)",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Beijing is the capital of the People's Republic of China. ",
+      "Beijing is the world's most populous national capital city.",
+      "Beijing is located in Northern China.",
+      "Beijing hosted the 2008 Summer Olympics and 2008 Summer Paralympics Games.",
+      "Beijing has hosted both the Summer and Winter Olympics, along with the Summer and Winter Paralympics",
+      "Many of Beijing's 91 universities consistently rank among the best in the Asia-Pacific and the world."
+    ],
+    "premises-FOL": [
+      "CapitalOf(beijing, prx)",
+      "MostPopulousNationalCapitalCity(beijing)",
+      "InNorthernChina(beijing)",
+      "Hosted(beijing, summer2008olympic) ∧ Hosted(beijing, summer2008paralympicgames)",
+      "Hosted(beijing, summerolympic) ∧ Hosted(beijing, winterolympic) ∧ Hosted(beijing, summerparalympicgames)  ∧ Hosted(beijing, winterparalympicgames)",
+      "∃x (BeijingUniversity(x) ∧ ConsistentlyRankAmongTheBest(x))"
+    ],
+    "conclusion": "Beijing is located in southern China.",
+    "conclusion-FOL": "InSouthernChina(beijing)",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "All students are humans. ",
+      "If someone studies, then they are a student.",
+      "A person either studys or teaches.",
+      "No young person teaches.",
+      "Jerry neither teaches nor is a manager.",
+      "Rose is young or a student."
+    ],
+    "premises-FOL": [
+      "∀x (Student(x) → Human(x))",
+      "∀x (Study(x) → Student(x))",
+      "∀x (Study(x) ∨ Teach(x))",
+      "∀x (Young(x) → ¬Teach(x))",
+      "¬Teach(jerry) ∧ ¬Manager(jerry)",
+      "Young(rose) ∨ Student(rose)"
+    ],
+    "conclusion": "Rose is a human or Jerry is a manager.",
+    "conclusion-FOL": "Human(rose) ∨ Manager(jerry)",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "If people own a large desktop monitor at their home, then they work regularly and often at home.",
+      "All people who have a fully stocked and impressive home office are people who own a large desktop monitor at their home.",
+      "All people who work regularly and often at home spend their free time tidying and organizing the spaces in their homes.",
+      "All people who work regularly and often at home visit the office supply store regularly.",
+      "If people spend their free time tidying and organizing the spaces in their home, then they do not go to bed late and wake up every day after noon. ",
+      "Remy either both goes to bed late and wakes up every day after noon and spends their free time tidying and organizing the spaces in their home, or they do not go to bed late and wake up every day after noon nor spend their free time tidying and organizing the spaces in their home. "
+    ],
+    "premises-FOL": [
+      "∀x (Desktop(x) → WorkHome(x))",
+      "∀x (HomeOffice(x) → Desktop(x))",
+      "∀x (WorkHome(x) → Tidying(x))",
+      "∀x (WorkHome(x) → OfficeStore(x))",
+      "∀x (Tidying(x) → ¬Late(x))",
+      "(Late(remy) ∧ Tidying(remy)) ⊕ (¬Late(remy) ∧ ¬Tidying(remy))"
+    ],
+    "conclusion": "If Remy either goes to bed late and wakes up every day after noon or visits the office supply store regularly, then Remy neither spends their free time tidying and organizing the spaces in their home nor has a fully stocked and impressive home office.",
+    "conclusion-FOL": "Late(remy) ∨ OfficeStore(remy) → ¬(Tidying(remy) ∨ HomeOffice(remy))",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "If a player is ranked highly by the Women's Tennis Association, then they are among the most active players in major tennis. ",
+      "Everyone who lost to Iga Świątek is ranked highly by the Women's Tennis Association.",
+      "All female tennis players at Roland Garros 2022 lost to Iga Świątek.",
+      "Either female tennis players at Roland Garros 2022 or male tennis players at Roland Garros 2022. ",
+      "All male tennis players at Roland Garros 2022 lost to Rafael Nadal.",
+      "If Coco Gauff is a player who is ranked highly by the Women's Tennis Association or a player who lost to Rafael Nadal, then Coco Gauff is not a male tennis player at Roland Garros 2022."
+    ],
+    "premises-FOL": [
+      "∀x (RankedHighlyByWomenTennisAssociation(x) → AmongMostActivePlayersInMajorTennis(x))",
+      "∀x (LostToIgaŚwiątek(x) → RankedHighlyByWomenTennisAssociation(x))",
+      "∀x (FemaleTennisPlayersAtRolandGarros2022(x) → LostToIgaŚwiątek(x)) ",
+      "∀x (FemaleTennisPlayersAtRolandGarros2022(x) ∨ MaleTennisPlayersAtRolandGarros2022(x)) ",
+      "∀x (MaleTennisPlayersAtRolandGarros2022(x) → LostToRafaelNadal(x))",
+      "RankedHighlyByWomenTennisAssociation(cocoGauff) ∨ LostToRafaelNadal(cocoGauff) → ¬MaleTennisPlayersAtRolandGarros2022(cocoGauff)"
+    ],
+    "conclusion": "Coco Gauff has lost to Rafael Nadal.",
+    "conclusion-FOL": "LostToRafaelNadal(cocoGauff)",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "All employees who schedule a meeting with their customers will appear in the company today. ",
+      "Everyone who has lunch in the company schedules meetings with their customers. ",
+      "Employees will either have lunch in the company or have lunch at home.",
+      "If an employee has lunch at home, then he/she is working remotely from home.",
+      "All employees who are in other countries work remotely from home. ",
+      "No managers work remotely from home. ",
+      "James is either a manager and appears in the company today or neither a manager nor appears in the company today."
+    ],
+    "premises-FOL": [
+      "∀x (Meeting(x) → AppearInCompany(x))",
+      "∀x (LunchInCompany(x) → Meetings(x))",
+      "∀x (LunchInCompany(x) ∨ LunchAtHome(x))",
+      "∀x (LunchAtHome(x) → WorkRemotelyFromHome(x))",
+      "∀x (InOtherCountries(x) → WorkRemotelyFromHome(x))",
+      "∀x (Manager(x) → ¬WorkRemotelyFromHome(x))",
+      "Manager(james) ⊕ AppearInCompany(james)"
+    ],
+    "conclusion": "James does not have lunch in the company.",
+    "conclusion-FOL": "¬LunchInCompany(james)",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "In superhero movies, the good guys always win.",
+      "The Surprising Adventures of Sir Digby Chicken Caesar is a superhero movie.",
+      "Good guys fight bad guys and vice versa.",
+      "Sir Digby fights his nemesis.",
+      "If a superhero movie is named after a character, that character is a good guy.",
+      "The Surprising Adventures of Sir Digby Chicken Caesar is named after Sir Digby.",
+      "If somebody wins a fight, the person they are fighting loses.",
+      "If a superhero movie is named after a character, that character appears in the movie."
+    ],
+    "premises-FOL": [
+      "∀x ∀y (SuperheroMovie(x) ∧ GoodGuy(y) ∧ AppearsIn(y, x) → Wins(y))",
+      "SuperheroMovie(surprisingAdventuresofSirDigbyChickenCaesar)",
+      "∀x ∀y (GoodGuy(x) ∧ Fights(x, y) ⟷ BadGuy(y) ∧ Fights(y, x))",
+      "Fights(sirDigby, sirDigbyNemesis)",
+      "∀x ∀y (SuperheroMovie(x), NamedAfter(x, y) → GoodGuy(y))",
+      "NamedAfter(surprisingAdventuresofSirDigbyChickenCaesar, sirDigby)",
+      "∀x ∀y (Fights(x, y) ∧ Wins(x) → ¬Wins(y))"
+    ],
+    "conclusion": "Sir Digby’s nemesis loses.",
+    "conclusion-FOL": "∀x ∀y (SuperheroMovie(x) ∧ AppearsIn(y, x) → GoodGuy(y))",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Diamond Mine is a professional wrestling stable, formed in WWE.",
+      "Roderick Strong leads Diamond Mine.",
+      "Diamond Mine includes the Creed Brothers, and Ivy Nile.",
+      "Imperium has a feud with Diamond Mine."
+    ],
+    "premises-FOL": [
+      "ProfessionalWrestlingStable(diamondmine) ∧ FormedIn(diamondmine, wwe)",
+      "Leads(roderickstrong, diamondmine)",
+      "Includes(diamondmine, creedbrothers) ∧ Includes(diamondmine, ivynile)",
+      "HasFeud(imperium, diamondmine)"
+    ],
+    "conclusion": "Roderick strong leads a professional wrestling stable.",
+    "conclusion-FOL": "∃x (Leads(roderickstrong, x) ∧ ProfessionalWrestlingStable(x))",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "All of Zaha Hadid's design styles are timeless.",
+      "No mass product design is timeless.",
+      "Either Zaha Hadid's design style or Kelly Wearstler's design style. ",
+      "All of Kelly Wearstler's design styles are evocative.",
+      "All of Kelly Wearstler's design styles are dreamy.",
+      "If a design by Max is timeless, then a design by Max is a mass product design and evocative."
+    ],
+    "premises-FOL": [
+      "∀x (ZahaHadidDesignStyle(x) → Timeless(x))",
+      "∀x (MassProductDesign(x) → ¬Timeless(x))",
+      "∀x (ZahaHadidDesignStyle(x) ∨ KellyWearstlerDesignStyle(x)) ",
+      "∀x (KellyWearstlerDesignStyle(x) → Evocative(x))",
+      "∀x (KellyWearstlerDesignStyle(x) → Dreamy(x))",
+      "Timeless(aDesignByMax) → MassProductDesign(aDesignByMax) ∧ Evocative(aDesignByMax)"
+    ],
+    "conclusion": "A design by Max is evocative and dreamy.",
+    "conclusion-FOL": "Evocative(aDesignByMax) ∧ Dreamy(aDesignByMax)",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Robert Lewandowski is a striker.",
+      "[BG] Strikers are soccer players.",
+      "Robert Lewandowski left Bayern Munchen.",
+      "[BG] If a player left a team they no longer play for that team."
+    ],
+    "premises-FOL": [
+      "IsStriker(robertLewandowski)",
+      "∀x (IsStriker(x) → IsSoccerPlayer(x))",
+      "LeftTeam(robertLewandowski, bayernMunchen)",
+      "∀x ∀y (LeftTeam(x, y) → ¬PlaysForTeam(x, y))"
+    ],
+    "conclusion": "Robert Lewandowski is a soccer player.",
+    "conclusion-FOL": "IsSoccerPlayer(robertLewandowski)",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Breeding back is a form of artificial selection by the deliberate selective breeding of domestic animals.",
+      "Heck cattle were bred-back in the 1920s to resemble the aurochs.",
+      "[BG] Heck cattle are animals.",
+      "[BG] Aurochs are animals.",
+      "Some animals to be bred-back resemble animals that are extinct."
+    ],
+    "premises-FOL": [
+      "∀x ∀y (BreedingBack(x, y) → ArtificiallySelect(x))",
+      "∃x ∃y (HeckCattle(x) ∧ Aurochs(y) ∧ BreedingBack(x, y))",
+      "∀x (HeckCattle(x) → Animal(x))",
+      "∀x (Aurochs(x) → Animal(x))",
+      "∃x ∃y (Animal(x) ∧ Animal(y) ∧ BreedingBack(x, y) ∧ Extinct(y))"
+    ],
+    "conclusion": "Aurochs are extinct.",
+    "conclusion-FOL": "∀x (Aurochs(x) → Extinct(x))",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Heinrich Scmidt was a Nazi German politician. ",
+      "Heeinrich Scmidt was also a member of the Prussian State Parliament and the Nazi Reichstag."
+    ],
+    "premises-FOL": [
+      "From(heinrichScmidt, naziGermany) ∧ Politician(heinrichScmidt)",
+      "Member(heinrichScmidt, prussianStateParliament) ∧ Member(heinrichScmidt, naziReichstag)"
+    ],
+    "conclusion": "Heinrich Schmidt was either German or Russian.",
+    "conclusion-FOL": "From(heinrichScmidt, naziGermany) ∨ From(heinrichScmidt, russia)",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "If a cartoon character is funny, then it is popular.",
+      "If a cartoon character is ugly, then it is not popular.",
+      "If a cartoon character is loved by children, then it is funny.",
+      "If a cartoon character is from The Simpsons, then it is loved by children.",
+      "If a cartoon character is yellow, then it is from The Simpsons.",
+      "Ben is either from The Simpsons or funny."
+    ],
+    "premises-FOL": [
+      "∀x (Funny(x) → Popular(x))",
+      "∀x (Ugly(x) → ¬Popular(x))",
+      "∀x (Love(children, x) → Funny(x))",
+      "∀x (Simpsons(x) → Love(children, x))",
+      "∀x (Yellow(x) → Simpsons(x))",
+      "Simpsons(ben) ⊕ Funny(ben)"
+    ],
+    "conclusion": "Ben is loved by children.",
+    "conclusion-FOL": "Love(children, ben)",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "A Japanese game company created the game the Legend of Zelda.",
+      "All games in the Top 10 list are made by Japanese game companies.",
+      "[BG] If a game sells more than one million copies, then it will be selected into the Top 10 list.",
+      "The Legend of Zelda sold more than one million copies."
+    ],
+    "premises-FOL": [
+      "∃x (Japanese(x) ∧ VideoGameCompany(x) ∧ Game(thelegendofzelda) ∧ Created(x, thelegendofzelda))",
+      "∀x ∀y (Game(x) ∧ InTop10(x) ∧ Created(x, y) → Japanese(y))",
+      "∀x (Game(x) ∧ SellsMoreThan(x, onemillioncopies) → Top10(x))",
+      "SellsMoreThan(thelegendofzelda, onemillioncopies)"
+    ],
+    "conclusion": "FIFA 22 is made by a Japanese video game company.",
+    "conclusion-FOL": "∀x (Created(fifa22, x) → Japanese(x) ∧ VideoGameCompany(x))",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "All cats are mammals.",
+      "Some pets are not mammals."
+    ],
+    "premises-FOL": [
+      "∀x (Cat(x) → Mammal(x))",
+      "∃x (Pet(x) ∧ ¬Mammal(x))"
+    ],
+    "conclusion": "No pets are cats.",
+    "conclusion-FOL": "∀x (Pet(x) → ¬Cat(x))",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "All aliens are extraterrestrial.",
+      "If someone is from Mars, then they are aliens.",
+      "No extraterrestrial is human.",
+      "Everyone from Earth is a human.",
+      "Marvin cannot be from Earth and from Mars.",
+      "If Marvin is not from Earth, then Marvin is an extraterrestrial."
+    ],
+    "premises-FOL": [
+      "∀x (Alien(x) → Extraterrestrial(x))",
+      "∀x (FromMars(x) → Alien(x))",
+      "∀x (Extraterrestrial(x) → ¬Human(x))",
+      "∀x (FromEarth(x) → Human(x))",
+      "¬FromEarth(marvin) ∧ ¬FromMars(marvin)",
+      "¬FromEarth(marvin) → Extraterrestrial(marvin)"
+    ],
+    "conclusion": "Marvin is an alien.",
+    "conclusion-FOL": "Alien(marvin)",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Monkeypox is an infectious disease caused by the monkeypox virus.",
+      "Monkeypox virus can occur in certain animals, including humans.",
+      "Humans are mammals.",
+      "Mammals are animals.",
+      "Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.",
+      "People feel tired when they get a glu."
+    ],
+    "premises-FOL": [
+      "∃x (OccurMonkeypoxVirus(x) ∧ GetMonkeypox(x))",
+      "∃x (Animal(x) ∧ OccurMonkeypoxVirus(x))",
+      "∀x (Human(x) → Mammal(x))",
+      "∀x (Mammal(x) → Animal(x))",
+      "∃x (GetMonkeypox(x) ∧ (Fever(x) ∨ Headache(x) ∨ MusclePain(x) ∨ Tired(x)))",
+      "∀x (Human(x) ∧ Flu(x) → Tired(x))"
+    ],
+    "conclusion": "No one gets flu.",
+    "conclusion-FOL": "∀x (Human(x) → ¬Flu(x))",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "All people who eat salads regularly are very conscious about their health and eating habits.",
+      "All people who grew up in health-conscious childhood homes eat salads regularly.",
+      "All people who fulfill their nutritional daily intakes grew up in health-conscious childhood homes.",
+      "If people have good relationships with their parents, then they fulfill their nutritional daily intakes.",
+      "If people have good relationships with their parents, then they do not eat salads regularly.",
+      "If people visit the gym at least once a day, then they always fulfill their daily nutritional intakes.",
+      "It is either both true that Taylor grew up in a health-conscious childhood home and she has a good relationship with her parents, or it is true that Taylor neither grew up in a health-conscious childhood home nor has a good relationship with her parents."
+    ],
+    "premises-FOL": [
+      "∀x (Salad(x) → HealthyHabits(x))",
+      "∀x (HealthyChildhood(x) → Salad(x))",
+      "∀x (Nutritional(x) → HealthyChildhood(x))",
+      "∀x (GoodRelationship(x) → ¬HealthyHabits(x))",
+      "∀x (Gym(x) → Nutritional(x))",
+      "(HealthyChildhood(taylor) ∧ GoodRelationship(taylor)) ∨ ¬HealthyChildhood(taylor) ∧ ¬GoodRelationship(marcy)"
+    ],
+    "conclusion": "Taylor visits the gym at least once a day.",
+    "conclusion-FOL": "Gym(taylor)",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "No one nice to animals is mean to animals.",
+      "Some grumpy people are mean to animals.",
+      "All animal lovers are nice to animals.",
+      "If someone owns a pet, then they love animals.",
+      "Tom is a pet owner."
+    ],
+    "premises-FOL": [
+      "∀x (Nice(x) → ¬Mean(x))",
+      "∃x (Grumpy(x) ∧ Mean(x))",
+      "∀x (AnimalLover(x) → Nice(x))",
+      "∀x (PetOwner(x) → AnimalLover(x))",
+      "PetOwner(tom)"
+    ],
+    "conclusion": "Tom is a grumpy person.",
+    "conclusion-FOL": "Grumpy(tom)",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "A Japanese game company created the game the Legend of Zelda.",
+      "All games in the Top 10 list are made by Japanese game companies.",
+      "[BG] If a game sells more than one million copies, then it will be selected into the Top 10 list.",
+      "The Legend of Zelda sold more than one million copies."
+    ],
+    "premises-FOL": [
+      "∃x (Japanese(x) ∧ VideoGameCompany(x) ∧ Game(thelegendofzelda) ∧ Created(x, thelegendofzelda))",
+      "∀x ∀y (Game(x) ∧ InTop10(x) ∧ Created(x, y) → Japanese(y))",
+      "∀x (Game(x) ∧ SellsMoreThan(x, onemillioncopies) → Top10(x))",
+      "SellsMoreThan(thelegendofzelda, onemillioncopies)"
+    ],
+    "conclusion": "The Legend of Zelda is in the Top 10 list.",
+    "conclusion-FOL": "Top10(thelegendofzelda)",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "[BG] Books contain tons of knowledge.",
+      "[BG] When a person reads a book, that person gains knowledge. ",
+      "[BG] If a person gains knowledge, they become smarter.",
+      "Harry read the book “Walden” by Henry Thoreau."
+    ],
+    "premises-FOL": [
+      "∀x (Book(x) → Knowledge(x))",
+      "∀x ∀y (ReadBook(x, y) → GainKnowledge(x))",
+      "∀x (GainKnowledge(x) → Smarter(x))",
+      "ReadBook(harry, walden) ∧ Book(walden)"
+    ],
+    "conclusion": "Walden contains knowledge.",
+    "conclusion-FOL": "Knowledge(walden)",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Some basketball players are not American.",
+      "All basketball players are tall.",
+      "If someone is tall, they wear large shoes.",
+      "If someone wears large shoes, they wear large-sized clothes.",
+      "Yuri does not wear large-size clothes."
+    ],
+    "premises-FOL": [
+      "∃x (BasketballPlayer(x) ∧ ¬American(x))",
+      "∀x (BasketballPlayer(x) → Tall(x))",
+      "∀x (Tall(x) → WearLargeShoes(x))",
+      "∀x (WearLargeShoes(x) → WearLargeClothes(x))",
+      "¬WearLargeClothes(yuri)"
+    ],
+    "conclusion": "If Yuri is not an American basketball player, then Yuri is a basketball player.",
+    "conclusion-FOL": "¬(American(yuri) ∧ BasketballPlayer(yuri)) → BasketballPlayer(yuri)",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "All vehicle registration plates in Istanbul begin with the number 34.",
+      "Plates that do not begin with the number 34 are not from Istanbul. ",
+      "Joe's vehicle registration plate is from Istanbul. ",
+      "Tom's license plate begins with the number 35. ",
+      "[BG] If a license plate begins with the number 35, then it does not begin with the number 34."
+    ],
+    "premises-FOL": [
+      "∀x (Vehicleregistrationplate(x, istanbul) → Beginwith(x, number34))",
+      "∀x (¬Beginwith(x, number34) → ¬FromIstanbul(x))",
+      "Vehicleregistrationplate(joe, istanbul)",
+      "Beginwith(tom, number35)",
+      "∀x (Beginwith(x, number35) → ¬Beginwith(x, number34))"
+    ],
+    "conclusion": "Joe's license plate begins with the number 34.",
+    "conclusion-FOL": "Beginwith(joe, number34)",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "It costs US $205 to take the GRE test.",
+      "ETS provides financial aid to those GRE applicants who prove economic hardship.",
+      "Economic hardship refers to difficulty caused by having too little money or too few resources.",
+      "Tom lives in a single-parent family.",
+      "His dad has been out of work for more than a year."
+    ],
+    "premises-FOL": [
+      "Cost205(gre)",
+      "∀x (Cost205(x) → CostBelow300(x))",
+      "∀x (Hardship(x) → FinancialAid(x))",
+      "∀x (SingleParent(x) ∨ FewResources(x) → Hardship(x))",
+      "SingleParent(tom)",
+      "FewResources(tom)"
+    ],
+    "conclusion": "There is no financial aid available for the GRE test.",
+    "conclusion-FOL": "¬(∃x (FinancialAid(x)))",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Diamond Mine is a professional wrestling stable, formed in WWE.",
+      "Roderick Strong leads Diamond Mine.",
+      "Diamond Mine includes the Creed Brothers, and Ivy Nile.",
+      "Imperium has a feud with Diamond Mine."
+    ],
+    "premises-FOL": [
+      "ProfessionalWrestlingStable(diamondmine) ∧ FormedIn(diamondmine, wwe)",
+      "Leads(roderickstrong, diamondmine)",
+      "Includes(diamondmine, creedbrothers) ∧ Includes(diamondmine, ivynile)",
+      "HasFeud(imperium, diamondmine)"
+    ],
+    "conclusion": "Imperium doesn't have a feud with a professional wrestling stable that includes Ivy Nile.",
+    "conclusion-FOL": "∀x (ProfessionalWrestlingStable(x) ∧ Includes(x, ivynile) → ¬HasFeud(imperium, x))",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Some basketball players are not American.",
+      "All basketball players are tall.",
+      "If someone is tall, they wear large shoes.",
+      "If someone wears large shoes, they wear large-sized clothes.",
+      "Yuri does not wear large-size clothes."
+    ],
+    "premises-FOL": [
+      "∃x (BasketballPlayer(x) ∧ ¬American(x))",
+      "∀x (BasketballPlayer(x) → Tall(x))",
+      "∀x (Tall(x) → WearLargeShoes(x))",
+      "∀x (WearLargeShoes(x) → WearLargeClothes(x))",
+      "¬WearLargeClothes(yuri)"
+    ],
+    "conclusion": "Yuri is an American basketball player.",
+    "conclusion-FOL": "American(yuri) ∧ BasketballPlayer(yuri)",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "All people who have a wedding are people who have at least one child.",
+      "All people who travel to Paris for their honeymoon are people who have a wedding.",
+      "All weddings that occur in July belong to people who travel to Paris for their honeymoon.",
+      "Some weddings in July are well-attended.",
+      "If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.",
+      "If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon. "
+    ],
+    "premises-FOL": [
+      "∀x (Wedding(x) → Child(x))",
+      "∀x (Paris(x) → Wedding(x))",
+      "∀x (July(x) → Paris(x))",
+      "∃x (July(x) ∧ WellAttended(x))",
+      "Child(john) → ¬(Paris(john) ∧ Wedding(john))",
+      "WellAttended(john) → July(john) ⊕ Paris(john)"
+    ],
+    "conclusion": "John does not have a wedding that is well-attended.",
+    "conclusion-FOL": "¬WellAttended(john)",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Pets are allowed in some managed buildings.",
+      "[BG] A deposit is required to rent an apartment in a managed building.",
+      "The security deposit can be either equal to one month's rent or more.",
+      "Fluffy is Tom's cat.",
+      "Cats are pets.",
+      "The Olive Garden is a managed building.",
+      "The monthly rent at the Olive Garden is $2000.",
+      "Tom will rent an apartment in a managed building if and only if he is allowed to move in with Fluffy, and the security deposit is no more than $1500.",
+      "2000$ is more than $1500."
+    ],
+    "premises-FOL": [
+      "∃x (ManagedBuilding(x) ∧ AllowPet(x))",
+      "∀x (ManagedBuilding(x) → RequireDeposit(x))",
+      "∀x (Rent2000(x) ↔ ¬DepositNoMoreThan1500(x))",
+      "∀x (Rent2000(x) ↔ DepositNoLessThan2000(x))",
+      "Cat(fluffy)",
+      "∀x (Cat(x) → Pet(x))",
+      "ManagedBuilding(oliveGarden)",
+      "Rent2000(oliveGarden)",
+      "∀x (TomRent(x) ↔ (ManagedBuilding(x) ∧ AllowPet(x) ∧ DepositNoMoreThan1500(x)))"
+    ],
+    "conclusion": "The security deposit at the Olive Garden is either $2000 or more.",
+    "conclusion-FOL": "DepositNoLessThan2000(oliveGarden)",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "[BG] Some mammals have teeth.",
+      "Platypus have no teeth.",
+      "Platypus are mammals. ",
+      "Humans have teeth."
+    ],
+    "premises-FOL": [
+      "∃x (Mammal(x) ∧ Have(x, teeth))",
+      "¬Have(platypus, teeth)",
+      "Mammal(platypus)",
+      "Have(humans, teeth)"
+    ],
+    "conclusion": "Platypus are reptiles.",
+    "conclusion-FOL": "Reptile(platypus)",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "No bakery is spicy.",
+      "All cupcakes are bakeries.",
+      "All hotpots are spicy.",
+      "All products of Baked by Melissa are cupcakes.",
+      "If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy."
+    ],
+    "premises-FOL": [
+      "∀x (Bakery(x) → ¬Spicy(x))",
+      "∀x (Cupcakes(x) → Bakery(x))",
+      "∀x (Hotpot(x) → Spicy(x))",
+      "∀x (ProductsOfBakedByMelissa(x) → Cupcakes(x))",
+      "Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies) → Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)"
+    ],
+    "conclusion": "Dried Thai chilies are a hotpot.",
+    "conclusion-FOL": "Hotpot(driedThaiChilies)",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "All people who have a wedding are people who have at least one child.",
+      "All people who travel to Paris for their honeymoon are people who have a wedding.",
+      "All weddings that occur in July belong to people who travel to Paris for their honeymoon.",
+      "Some weddings in July are well-attended.",
+      "If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.",
+      "If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon. "
+    ],
+    "premises-FOL": [
+      "∀x (Wedding(x) → Child(x))",
+      "∀x (Paris(x) → Wedding(x))",
+      "∀x (July(x) → Paris(x))",
+      "∃x (July(x) ∧ WellAttended(x))",
+      "Child(john) → ¬(Paris(john) ∧ Wedding(john))",
+      "WellAttended(john) → July(john) ⊕ Paris(john)"
+    ],
+    "conclusion": "John has neither a wedding that is well-attended nor does he travel to Paris for his honeymoon.",
+    "conclusion-FOL": "¬(WellAttended(john) ∨ July(john))",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "If a man is taller than another man, the taller one can block the other's shooting.",
+      "Michael is a man who is taller than everyone else in his class.",
+      "If person x is taller than person y, and person y is taller than person z, than x is taller than z",
+      "Peter is a man who is taller than Michael.",
+      "Michael can block any shooting from a person as long as the person does not jump when shooting.",
+      "Michael cannot block Windy's shooting.",
+      "Every shooter who can jump when shooting is a great shooter."
+    ],
+    "premises-FOL": [
+      "∀x ∀y (IsMan(x) ∧ IsMan(y) ∧ Taller(x, y) → CanBlock(x, y))",
+      "∀x (IsMan(x) ∧ SameClass(x, michael) ∧ ¬Be(x, michael) → Taller(michael, x))",
+      "∀x ∀y ∀z ((Taller(x, y) ∧ Taller(y, z)) → Taller(x, z))",
+      "IsMan(peter) ∧ Taller(peter, michael)",
+      "∀x (¬JumpWhenShooting(x) → CanBlock(michael, x))",
+      "¬CanBlock(michael, windy)",
+      "∀x (JumpWhenShooting(x) → GreatShooter(x))"
+    ],
+    "conclusion": "Peter is shorter than a man in Michael's class.",
+    "conclusion-FOL": "∃x (IsMan(x) ∧ SameClass(x, michael) ∧ ¬Be(x, michael) ∧ ¬Taller(peter, x))",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "No one nice to animals is mean to animals.",
+      "Some grumpy people are mean to animals.",
+      "All animal lovers are nice to animals.",
+      "If someone owns a pet, then they love animals.",
+      "Tom is a pet owner."
+    ],
+    "premises-FOL": [
+      "∀x (Nice(x) → ¬Mean(x))",
+      "∃x (Grumpy(x) ∧ Mean(x))",
+      "∀x (AnimalLover(x) → Nice(x))",
+      "∀x (PetOwner(x) → AnimalLover(x))",
+      "PetOwner(tom)"
+    ],
+    "conclusion": "Tom is not a grumpy person and mean to animals.",
+    "conclusion-FOL": "¬(Grumpy(tom) ∧ Mean(tom))",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "[BG] There are four seasons in a year: Spring, Summer, Fall, and Winter.",
+      "All students who want to have a long vacation love summer the most.",
+      "Emma's favorite season is summer.",
+      "Mia's favorite season is not the same as Emma's. ",
+      "James wants to have a long vacation."
+    ],
+    "premises-FOL": [
+      "Season(spring) ∨ Season(summer) ∨ Season(fall) ∨ Season(winter)",
+      "∀x (WantlongVacation(x) → Love(x, summer))",
+      "Love(emma, summer)",
+      "¬Love(mia, emma)",
+      "WantlongVacation(james)"
+    ],
+    "conclusion": "Mia's favorite season is spring.",
+    "conclusion-FOL": "Love(mia, spring)",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "All vehicle registration plates in Istanbul begin with the number 34.",
+      "Plates that do not begin with the number 34 are not from Istanbul. ",
+      "Joe's vehicle registration plate is from Istanbul. ",
+      "Tom's license plate begins with the number 35. ",
+      "[BG] If a license plate begins with the number 35, then it does not begin with the number 34."
+    ],
+    "premises-FOL": [
+      "∀x (Vehicleregistrationplate(x, istanbul) → Beginwith(x, number34))",
+      "∀x (¬Beginwith(x, number34) → ¬FromIstanbul(x))",
+      "Vehicleregistrationplate(joe, istanbul)",
+      "Beginwith(tom, number35)",
+      "∀x (Beginwith(x, number35) → ¬Beginwith(x, number34))"
+    ],
+    "conclusion": "Tom's license plate is from Istanbul.",
+    "conclusion-FOL": "Vehicleregistrationplate(tom, istanbul)",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "[BG] Books contain tons of knowledge.",
+      "[BG] When a person reads a book, that person gains knowledge. ",
+      "[BG] If a person gains knowledge, they become smarter.",
+      "Harry read the book “Walden” by Henry Thoreau."
+    ],
+    "premises-FOL": [
+      "∀x (Book(x) → Knowledge(x))",
+      "∀x ∀y (ReadBook(x, y) → GainKnowledge(x))",
+      "∀x (GainKnowledge(x) → Smarter(x))",
+      "ReadBook(harry, walden) ∧ Book(walden)"
+    ],
+    "conclusion": "A person who is smarter has gained knowledge.",
+    "conclusion-FOL": "∀x (Smarter(x) → GainKnowledge(x))",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "If people spill a lot of food on their clothing, then they do not tidy their spaces consistently and enjoy the process of cleaning.",
+      "All foodies who go out frequently to find new food restaurants to try are people who spill a lot of food on their clothing.",
+      "If people grew up as only children with no siblings, then they tidy their spaces consistently and enjoy the process of cleaning.",
+      "If people have parents who are very busy with their regular jobs, then they grew up as only children with no siblings.",
+      "All households with a high net income have people who have parents who are very busy with their regular jobs.",
+      "Peter is either both a person who spills a lot of food on his clothing and grew up as an only child with no siblings, or he is neither a person who spills a lot of food on his clothing nor grew up as an only child with no siblings. "
+    ],
+    "premises-FOL": [
+      "∀x (Spill(x) → ¬Tidy(x))",
+      "∀x (Foodie(x) → Spill(x))",
+      "∀x (OnlyChild(x) → Tidy(x))",
+      "∀x (BusyParents(x) → OnlyChild(x))",
+      "∀x (HighIncome(x) → BusyParents(x))",
+      "(Spill(peter) ∧ OnlyChild(peter)) ∨ ¬Spill(peter) ∧ ¬OnlyChild(peter))"
+    ],
+    "conclusion": "Peter is either a foodie who goes out frequently to find new food restaurants to try or belongs to a household with a high net income.",
+    "conclusion-FOL": "Foodie(peter) ∨ HighIncome(peter)",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "If an animal barks, then Jane does not like it.",
+      "All dogs are animals that bark.",
+      "If an animal jumps, then Jane likes it.",
+      "If an animal has legs, then it jumps.",
+      "If an animal is terricolous, then it has legs. ",
+      "If KiKi neither jumps nor has legs, then KiKi is terricolous or has legs."
+    ],
+    "premises-FOL": [
+      "∀x (Bark(x) → ¬Like(jane, x))",
+      "∀x (Dog(x) → Bark(x))",
+      "∀x (Jump(x) → Like(jane, x))",
+      "∀x (HaveLegs(x) → Jump(x))",
+      "∀x (Terricolous(x) → HaveLegs(x))",
+      "(¬Jump(kiki) ∧ ¬HaveLegs(kiki)) → (Terricolous(kiki) ∨ HaveLegs(kiki))"
+    ],
+    "conclusion": "KiKi neither barks nor is a dog.",
+    "conclusion-FOL": "¬Bark(kiki) ∧ ¬Dog(kiki)",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Barutin Cove is named after the Bulgarian settlement of Barutin.",
+      "Barutin Cove is on the southwest coast of Snow Island.",
+      "The South Shetland Islands include Snow Island, Greenwich Island, and Deception Island.",
+      "The South Shetland Islands are considered part of Antarctica.",
+      "If A is located in B and B is located in C, then A is located in C."
+    ],
+    "premises-FOL": [
+      "Cove(barutin) ∧ NameAfter(barutin, settlement) ∧ Locate(settlement, bulgaria)",
+      "Locate(barutin, snow)",
+      "Locate(snow, shetland) ∧ Locate(greenwich, shetland) ∧ Locate(deception, shetland)",
+      "Locate(shetland, antarctica)",
+      "∀x ∀y ∀z ((Locate(x, y) ∧ Locate(y, z)) → Locate(x, z))"
+    ],
+    "conclusion": "Barutin is named after all islands in Antarctica.",
+    "conclusion-FOL": "∀x (Locate(x, antarctica) → NameAfter(barutin, x))",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "No bakery is spicy.",
+      "All cupcakes are bakeries.",
+      "All hotpots are spicy.",
+      "All products of Baked by Melissa are cupcakes.",
+      "If dried Thai chilies are spicy or a bakery, then dried Thai chilies are a hotpot or are spicy."
+    ],
+    "premises-FOL": [
+      "∀x (Bakery(x) → ¬Spicy(x))",
+      "∀x (Cupcakes(x) → Bakery(x))",
+      "∀x (Hotpot(x) → Spicy(x))",
+      "∀x (ProductsOfBakedByMelissa(x) → Cupcakes(x))",
+      "Spicy(driedThaiChilies) ∨ Bakery(driedThaiChilies) → Hotpot(driedThaiChilies) ∨ Spicy(driedThaiChilies)"
+    ],
+    "conclusion": "Dried Thai chilies are cupcakes and a product of Baked by Melissa.",
+    "conclusion-FOL": "Cupcake(driedThaiChilies) ∧ ProductsOfBakedByMelissa(driedThaiChilies)",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Pets are allowed in some managed buildings.",
+      "[BG] A deposit is required to rent an apartment in a managed building.",
+      "The security deposit can be either equal to one month's rent or more.",
+      "Fluffy is Tom's cat.",
+      "Cats are pets.",
+      "The Olive Garden is a managed building.",
+      "The monthly rent at the Olive Garden is $2000.",
+      "Tom will rent an apartment in a managed building if and only if he is allowed to move in with Fluffy, and the security deposit is no more than $1500.",
+      "2000$ is more than $1500."
+    ],
+    "premises-FOL": [
+      "∃x (ManagedBuilding(x) ∧ AllowPet(x))",
+      "∀x (ManagedBuilding(x) → RequireDeposit(x))",
+      "∀x (Rent2000(x) ↔ ¬DepositNoMoreThan1500(x))",
+      "∀x (Rent2000(x) ↔ DepositNoLessThan2000(x))",
+      "Cat(fluffy)",
+      "∀x (Cat(x) → Pet(x))",
+      "ManagedBuilding(oliveGarden)",
+      "Rent2000(oliveGarden)",
+      "∀x (TomRent(x) ↔ (ManagedBuilding(x) ∧ AllowPet(x) ∧ DepositNoMoreThan1500(x)))"
+    ],
+    "conclusion": "Tom is allowed to move in an apartment in The Olive Garden with Fluffy.",
+    "conclusion-FOL": "AllowPet(oliveGarden)",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "A person is either a Grand Slam champion or an Oscar-nominated actor.",
+      "All people who are Grand Slam champions are professional tennis players.",
+      "All Oscar-nominated actors are celebrities.",
+      "All professional tennis players are athletes.",
+      "If a person is a celebrity then they are well paid.",
+      "If a person is an athlete then they are famous.",
+      "All well-paid people live in tax havens.",
+      "If Djokovic is famous and is an athlete, then Djokovic lives in well paid."
+    ],
+    "premises-FOL": [
+      "∀x (GrandSlamChampion(x) ⊕ OscarNominatedActor(x))",
+      "∀x (GrandSlamChampion(x) → ProfessionalTennisPlayer(x))",
+      "∀x (OscarNominatedActor(x) → Celebrity(x))",
+      "∀x (ProfessionalTennisPlayer(x) → Athlete(x))",
+      "∀x (Celebrity(x) → WellPaid(x))",
+      "∀x (Athlete(x) → Famous(x))",
+      "∀x (WellPaid(x) → LivesInTaxHaven(x))",
+      "Famous(djokovic) ∧ Athlete(djokovic) → LivesInTaxHaven(djokovic)"
+    ],
+    "conclusion": "Djokovic does not live in a tax haven.",
+    "conclusion-FOL": "¬LivesInTaxHaven(djokovic)",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "If a man is taller than another man, the taller one can block the other's shooting.",
+      "Michael is a man who is taller than everyone else in his class.",
+      "If person x is taller than person y, and person y is taller than person z, than x is taller than z",
+      "Peter is a man who is taller than Michael.",
+      "Michael can block any shooting from a person as long as the person does not jump when shooting.",
+      "Michael cannot block Windy's shooting.",
+      "Every shooter who can jump when shooting is a great shooter."
+    ],
+    "premises-FOL": [
+      "∀x ∀y (IsMan(x) ∧ IsMan(y) ∧ Taller(x, y) → CanBlock(x, y))",
+      "∀x (IsMan(x) ∧ SameClass(x, michael) ∧ ¬Be(x, michael) → Taller(michael, x))",
+      "∀x ∀y ∀z ((Taller(x, y) ∧ Taller(y, z)) → Taller(x, z))",
+      "IsMan(peter) ∧ Taller(peter, michael)",
+      "∀x (¬JumpWhenShooting(x) → CanBlock(michael, x))",
+      "¬CanBlock(michael, windy)",
+      "∀x (JumpWhenShooting(x) → GreatShooter(x))"
+    ],
+    "conclusion": "Peter can block Windy's shooting.",
+    "conclusion-FOL": "CanBlock(peter, windy)",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "\"Stranger Things\" is a popular Netflix show.",
+      "If a Netflix show is popular, Karen will binge-watch it.",
+      "If and only if Karen binge-watches a Netflix show, she will download it.",
+      "Karen does not download \"Black Mirror\".",
+      "\"Black Mirror\" is a Netflix show.",
+      "If Karen binge-watches a Netflix show, she will share it to Lisa."
+    ],
+    "premises-FOL": [
+      "NetflixShow(strangerThings) ∧ Popular(strangerThings)",
+      "∀x ((NetflixShow(x) ∧ Popular(x)) → BingeWatch(karen, x))",
+      "∀x ((NetflixShow(x) ∧ BingeWatch(karen, x)) ↔ Download(karen, x))",
+      "¬Download(karen, blackMirror)",
+      "NetflixShow(blackMirror)",
+      "∀x ((NetflixShow(x) ∧ BingeWatch(karen, x)) → Share(x, lisa))"
+    ],
+    "conclusion": "Karen will share \"Stranger Things\" to Lisa.",
+    "conclusion-FOL": "Share(strangerThings, lisa)",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "A man is either kind or evil.",
+      "No ugly person is handsome.",
+      "All evil people are ugly.",
+      "All gentlemen are handsome.",
+      "All CEOs are gentlemen.",
+      "Harry is a gentleman."
+    ],
+    "premises-FOL": [
+      "∀x (Kind(x) ⊕ Evil(x))",
+      "∀x (Ugly(x) → ¬Handsome(x))",
+      "∀x (Evil(x) → Ugly(x))",
+      "∀x (Gentleman(x) → Handsome(x))",
+      "∀x (CEO(x) → Gentleman(x))",
+      "Gentleman(harry)"
+    ],
+    "conclusion": "If Harry is either both evil and ugly, or neither evil nor ugly, then Harry is neither kind nor a CEO.",
+    "conclusion-FOL": "(Evil(harry) ∧ Ugly(harry)) ⊕ (¬Evil(harry) ∧ ¬Ugly(harry)) → ¬Kind(harry) ∧ ¬CEO(harry)",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "All Romance languages are Indo-European languages.",
+      "The Romance languages are a language family.",
+      "All languages within a language family are related to each other.",
+      "French and Spanish are both Romance languages.",
+      "German is related to Spanish.",
+      "Basque is not related to any other language."
+    ],
+    "premises-FOL": [
+      "∀x (RomanceLanguage(x) → IndoEuropeanLanguage(x))",
+      "∀x (RomanceLanguage(x) → MemberOf(x, romancefamily))",
+      "∀x ∀y ∀z ((MemberOf(x, z) ∧ MemberOf(y, z)) → (Related(x, y) ∧ Related(y, x)))",
+      "RomanceLanguage(french) ∧ RomanceLanguage(spanish)",
+      "Related(german, spanish)",
+      "∀x (¬Related(basque, x))"
+    ],
+    "conclusion": "French is an Indo-European language.",
+    "conclusion-FOL": "IndoEuropeanLanguage(french)",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "The winner of the 1992 du Maurier Classic was Steinhauer.",
+      "Steinhauer participated in the 1992 du Maurier Classic.",
+      "There was one six-way tie on the leaderboard and one person in the six-way tie was from Belgium.",
+      "Descampe is from Belgium and is on the leaderboard of the 1992 du Maurier Classic.",
+      "All people on the leaderboard of the 1992 du Maurier Classic participated in the 1992 du Maurier Classic."
+    ],
+    "premises-FOL": [
+      "Winner(maurier, steinhauer)",
+      "Participate(maurier, steinhauer)",
+      "∃x (LeaderBoard(maurier, x) ∧ SixWayTie(x) ∧ Belgium(x))",
+      "Belgium(descampe) ∧ LeaderBoard(maurier, descampe)",
+      "∀x (LeaderBoard(maurier, x) → Participate(maurier, x))"
+    ],
+    "conclusion": "Steinhauer was not the winner of the 1992 du Maurier Classic.",
+    "conclusion-FOL": "¬Winner(maurier, steinhauer)",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Some affection is love.",
+      "Some love is positive."
+    ],
+    "premises-FOL": [
+      "∃x (Affection(x) ∧ Love(x))",
+      "∃x (Love(x) ∧ Positive(x))"
+    ],
+    "conclusion": "Some affection is positive.",
+    "conclusion-FOL": "∃x (Affection(x) ∧ Positive(x))",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "All mammals are animals.",
+      "All monkeys are mammals. ",
+      "An animal is either a monkey or a bird.",
+      "All birds fly.",
+      "All animals breathe.",
+      "If something can fly, then it has wings.",
+      "If Rock is neither a fly nor a bird, then Rock neither flies nor breathes."
+    ],
+    "premises-FOL": [
+      "∀x  (Mammal (x)→  Animal (x))",
+      "∀x  (Monkey (x)→  Mammal (x))",
+      "∀x ( Monkey (x) ∨  Bird (x))",
+      "∀x  (Bird (x)→  Fly (x))",
+      "∀x  (Animal (x)→  Breathe (x))",
+      "∀x  (Fly (x)→  HaveWings (x))",
+      "¬ Fly (rock) ∧ ¬ Bird (rock) → ¬ Fly (rock) ∧ ¬ Breathe (rock) "
+    ],
+    "conclusion": "Rock does not have wings.",
+    "conclusion-FOL": "¬ HaveWings(rock)",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Monkeypox is an infectious disease caused by the monkeypox virus.",
+      "Monkeypox virus can occur in certain animals, including humans.",
+      "Humans are mammals.",
+      "Mammals are animals.",
+      "Symptons of Monkeypox include fever, headache, muscle pains, feeling tired, and so on.",
+      "People feel tired when they get a glu."
+    ],
+    "premises-FOL": [
+      "∃x (OccurMonkeypoxVirus(x) ∧ GetMonkeypox(x))",
+      "∃x (Animal(x) ∧ OccurMonkeypoxVirus(x))",
+      "∀x (Human(x) → Mammal(x))",
+      "∀x (Mammal(x) → Animal(x))",
+      "∃x (GetMonkeypox(x) ∧ (Fever(x) ∨ Headache(x) ∨ MusclePain(x) ∨ Tired(x)))",
+      "∀x (Human(x) ∧ Flu(x) → Tired(x))"
+    ],
+    "conclusion": "Symptons of Monkeypox include coughing.",
+    "conclusion-FOL": "∃x (GetMonkeypox(x) ∧ Coughing(x))",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "All rabbits are cute. ",
+      "Some turtles exist. ",
+      "An animal is either a rabbit or a squirrel.",
+      "If something is skittish, then it is not still.",
+      "All squirrels are skittish.",
+      "Rock is still."
+    ],
+    "premises-FOL": [
+      "∀x (Rabbit(x) → Cute(x))",
+      "∃x (Turtle(x))",
+      "∀x (Rabbit(x) ∨ Squirrel(x))",
+      "∀x (Skittish(x) → ¬Still(x))",
+      "∀x (Squirrel(x) → Skittish(x))",
+      "Still(rock)"
+    ],
+    "conclusion": "Rock is not a turtle.",
+    "conclusion-FOL": "¬Turtle(rock)",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "All people who have a wedding are people who have at least one child.",
+      "All people who travel to Paris for their honeymoon are people who have a wedding.",
+      "All weddings that occur in July belong to people who travel to Paris for their honeymoon.",
+      "Some weddings in July are well-attended.",
+      "If John has at least one child, then John does not travel to Paris for his honeymoon and does not have a wedding.",
+      "If John has a wedding that is well-attended, then John has a wedding in July or, if not, then John travels to Paris for their honeymoon. "
+    ],
+    "premises-FOL": [
+      "∀x (Wedding(x) → Child(x))",
+      "∀x (Paris(x) → Wedding(x))",
+      "∀x (July(x) → Paris(x))",
+      "∃x (July(x) ∧ WellAttended(x))",
+      "Child(john) → ¬(Paris(john) ∧ Wedding(john))",
+      "WellAttended(john) → July(john) ⊕ Paris(john)"
+    ],
+    "conclusion": "John has at least one child.",
+    "conclusion-FOL": "Child(john)",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "No digital media are analog.",
+      "Every printed text is analog.",
+      "All streaming services are digital.",
+      "If an object is a hardcover book then it is printed text.",
+      "If 1984 is a streaming service, then 1984 is a hardcover book."
+    ],
+    "premises-FOL": [
+      "∀x (Digital(x) → ¬Analog(x))",
+      "∀x (PrintedText(x) → Analog(x))",
+      "∀x (StreamingService(x) → Digital(x))",
+      "∀x (HardcoverBook(x) → PrintedText(x))",
+      "StreamingService(y1984) → HardcoverBook(y1984)"
+    ],
+    "conclusion": "1984 is printed text.",
+    "conclusion-FOL": "PrintedText(y1984)",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "A podcast is not a novel.",
+      "[BG] If a person is born in American City, the person is American.",
+      "[BG] If a book is novel and it is written by a person, then the person is a novel writer.",
+      "Dani Shapiro is an American writer.",
+      "Family History is written by Dani Shapiro.",
+      "Family History is a novel written in 2003.",
+      "Dani Shapiro created a podcast called Family Secrets.",
+      "[BG] Boston is an American city."
+    ],
+    "premises-FOL": [
+      "∀x (IsPodcast(x) → ¬IsNovel(x))",
+      "∀x ∃y (BornIn(x, y) ∧ IsCity(y) ∧ IsAmerican(y) → IsAmerican(x))",
+      "∀x ∀y (IsNovel(x) ∧ WrittenBy(x, y) → WritesNovel(y))",
+      "IsAmerican(dani_Shapiro) ∧ IsWriter(dani_Shapiro)",
+      "WrittenBy(family_History, dani_Shapiro)",
+      "IsNovel(family_History) ∧ WrittenIn(family_History, y2003)",
+      "IsPodcast(family_Secrets) ∧ CreatedBy(family_Secrets, dani_Shapiro)",
+      "IsCity(boston) ∧ IsAmerican(boston)"
+    ],
+    "conclusion": "Dani Shapiro is a novel writer.",
+    "conclusion-FOL": "WritesNovel(dani_Shapiro)",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "No students who work in the library are from the computer science department. ",
+      "All students who have part-time jobs offered by the university are students who work in the library. ",
+      "All students who take the database course are from the computer science department. ",
+      "All students instructed by professor David are taking the database course. ",
+      "All students working in the lab are instructed by professor David. ",
+      "James is a student working in the lab. ",
+      "Jack neither has a part-time job offered by the university nor works in the lab. "
+    ],
+    "premises-FOL": [
+      "∀x (WorkLibrary(x) → ¬ComputerScience(x))",
+      "∀x (PartTime(x) → WorkLibrary(x))",
+      "∀x (Database(x) → ComputerScience(x))",
+      "∀x (ProfessorDavid(x) → Database(x))",
+      "∀x (WorkInLab(x) → ProfessorDavid(x))",
+      "WorkInLab(james)",
+      "¬PartTime(jack) ∧ ¬WorkInLab(jack)"
+    ],
+    "conclusion": "James either takes the database course or has a part-time job offered by the university.",
+    "conclusion-FOL": "Database(james) ⊕ PartTime(james)",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "[BG] The Olympic games is a sporting event. ",
+      "The last Olympic games was in Tokyo.",
+      "The United States won the most medals in Tokyo. "
+    ],
+    "premises-FOL": [
+      "SportingEvent(olympics)",
+      "LastOlympics(tokyo)",
+      "MostMedals(unitedStates, tokyo)"
+    ],
+    "conclusion": "The last Olympic games were not in Tokyo.",
+    "conclusion-FOL": "¬LastOlympics(tokyo)",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Billings is a city in Montana.",
+      "Montana includes the cities of Butte, Helena, and Missoula.",
+      "White Sulphur Springs and Butte are cities in the same state.",
+      "The city of Pierre is not in Montana.",
+      "Any city in Butte is not in Pierre."
+    ],
+    "premises-FOL": [
+      "CityIn(billings, montana)",
+      "CityIn(butte, montana) ∧ CityIn(helena, montana) ∧ CityIn(missoula, montana)",
+      "∃x (CityIn(whitesulphursprings, x) ∧ CityIn(butte, x))",
+      "¬CityIn(pierre, montana)",
+      "∀x (CityIn(butte, x) → ¬CityIn(pierre, x))"
+    ],
+    "conclusion": "Montana is home to the city of Missoula.",
+    "conclusion-FOL": "CityIn(missoula, montana)",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "International students in US have either an F1 visa or a J1 visa.",
+      "An international student in US with an F1 visa needs to apply for CPT or OPT if the student wants to work in the US.",
+      "Mike is an international student.",
+      "Mike needs to apply for CPT if he wants to work in the US."
+    ],
+    "premises-FOL": [
+      "∀x (InternationalStudent(x) → F1(x) ⊕ J1(x))",
+      "∀x (InternationalStudent(x) ∧ F1(x) ∧ WantWorkInUS(x) → Apply(x, cpt) ∨ Apply(x, opt))",
+      "InternationalStudent(mike)",
+      "WantWorkInUS(mike) → Apply(mike, cpt)"
+    ],
+    "conclusion": "Mike has an F1 visa.",
+    "conclusion-FOL": "F1(mike)",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "All Romance languages are Indo-European languages.",
+      "The Romance languages are a language family.",
+      "All languages within a language family are related to each other.",
+      "French and Spanish are both Romance languages.",
+      "German is related to Spanish.",
+      "Basque is not related to any other language."
+    ],
+    "premises-FOL": [
+      "∀x (RomanceLanguage(x) → IndoEuropeanLanguage(x))",
+      "∀x (RomanceLanguage(x) → MemberOf(x, romancefamily))",
+      "∀x ∀y ∀z ((MemberOf(x, z) ∧ MemberOf(y, z)) → (Related(x, y) ∧ Related(y, x)))",
+      "RomanceLanguage(french) ∧ RomanceLanguage(spanish)",
+      "Related(german, spanish)",
+      "∀x (¬Related(basque, x))"
+    ],
+    "conclusion": "German is a Romance language.",
+    "conclusion-FOL": "RomanceLanguage(german)",
+    "label": "Uncertain",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "A man is either kind or evil.",
+      "No ugly person is handsome.",
+      "All evil people are ugly.",
+      "All gentlemen are handsome.",
+      "All CEOs are gentlemen.",
+      "Harry is a gentleman."
+    ],
+    "premises-FOL": [
+      "∀x (Kind(x) ⊕ Evil(x))",
+      "∀x (Ugly(x) → ¬Handsome(x))",
+      "∀x (Evil(x) → Ugly(x))",
+      "∀x (Gentleman(x) → Handsome(x))",
+      "∀x (CEO(x) → Gentleman(x))",
+      "Gentleman(harry)"
+    ],
+    "conclusion": "Harry is kind or a CEO.",
+    "conclusion-FOL": "Kind(harry) ∨ CEO(harry)",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Breeding back is a form of artificial selection by the deliberate selective breeding of domestic animals.",
+      "Heck cattle were bred-back in the 1920s to resemble the aurochs.",
+      "[BG] Heck cattle are animals.",
+      "[BG] Aurochs are animals.",
+      "Some animals to be bred-back resemble animals that are extinct."
+    ],
+    "premises-FOL": [
+      "∀x ∀y (BreedingBack(x, y) → ArtificiallySelect(x))",
+      "∃x ∃y (HeckCattle(x) ∧ Aurochs(y) ∧ BreedingBack(x, y))",
+      "∀x (HeckCattle(x) → Animal(x))",
+      "∀x (Aurochs(x) → Animal(x))",
+      "∃x ∃y (Animal(x) ∧ Animal(y) ∧ BreedingBack(x, y) ∧ Extinct(y))"
+    ],
+    "conclusion": "Some Heck cattle are artificially selected.",
+    "conclusion-FOL": "∃x (HeckCattle(x) ∧ ArtificiallySelect(x))",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Symphony No. 9 is a music piece.",
+      "Composers write music pieces.",
+      "Beethoven wrote Symphony No. 9.",
+      "Vienna Music Society premiered Symphony No. 9.",
+      "Vienna Music Society is an orchestra.",
+      "Beethoven leads the Vienna Music Society.",
+      "Orchestras are led by conductors."
+    ],
+    "premises-FOL": [
+      "MusicPiece(symphony9)",
+      "∀x ∀y ((MusicPiece(x) ∧ Writtenby(x, y)) → Composer(y))",
+      "Writtenby(symphony9, beethoven)",
+      "Premiered(viennamusicsociety, symphony9)",
+      "Orchestra(viennamusicsociety)",
+      "Lead(beethoven, viennamusicsociety)",
+      "∀x ∀y ((Orchestra(x) ∧ Lead(y, x)) → Conductor(y))"
+    ],
+    "conclusion": "Some orchestras premiered music pieces.",
+    "conclusion-FOL": "∃x ∃y (Orchestra(x) ∧ MusicPiece(y) ∧ Premiered(x, y))",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "It costs US $205 to take the GRE test.",
+      "ETS provides financial aid to those GRE applicants who prove economic hardship.",
+      "Economic hardship refers to difficulty caused by having too little money or too few resources.",
+      "Tom lives in a single-parent family.",
+      "His dad has been out of work for more than a year."
+    ],
+    "premises-FOL": [
+      "Cost205(gre)",
+      "∀x (Cost205(x) → CostBelow300(x))",
+      "∀x (Hardship(x) → FinancialAid(x))",
+      "∀x (SingleParent(x) ∨ FewResources(x) → Hardship(x))",
+      "SingleParent(tom)",
+      "FewResources(tom)"
+    ],
+    "conclusion": "It cost below US $300 to take the GRE test.",
+    "conclusion-FOL": "CostBelow300(gre)",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "All rabbits are cute. ",
+      "Some turtles exist. ",
+      "An animal is either a rabbit or a squirrel.",
+      "If something is skittish, then it is not still.",
+      "All squirrels are skittish.",
+      "Rock is still."
+    ],
+    "premises-FOL": [
+      "∀x (Rabbit(x) → Cute(x))",
+      "∃x (Turtle(x))",
+      "∀x (Rabbit(x) ∨ Squirrel(x))",
+      "∀x (Skittish(x) → ¬Still(x))",
+      "∀x (Squirrel(x) → Skittish(x))",
+      "Still(rock)"
+    ],
+    "conclusion": "If Rock is not both a turtle and a squirrel, then Rock is either cute or skittish.",
+    "conclusion-FOL": "¬(Turtle(rock) ∧ Squirrel(rock)) → Cute(rock) ⊕ Skittish(rock)",
+    "label": "True",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "Pets are allowed in some managed buildings.",
+      "[BG] A deposit is required to rent an apartment in a managed building.",
+      "The security deposit can be either equal to one month's rent or more.",
+      "Fluffy is Tom's cat.",
+      "Cats are pets.",
+      "The Olive Garden is a managed building.",
+      "The monthly rent at the Olive Garden is $2000.",
+      "Tom will rent an apartment in a managed building if and only if he is allowed to move in with Fluffy, and the security deposit is no more than $1500.",
+      "2000$ is more than $1500."
+    ],
+    "premises-FOL": [
+      "∃x (ManagedBuilding(x) ∧ AllowPet(x))",
+      "∀x (ManagedBuilding(x) → RequireDeposit(x))",
+      "∀x (Rent2000(x) ↔ ¬DepositNoMoreThan1500(x))",
+      "∀x (Rent2000(x) ↔ DepositNoLessThan2000(x))",
+      "Cat(fluffy)",
+      "∀x (Cat(x) → Pet(x))",
+      "ManagedBuilding(oliveGarden)",
+      "Rent2000(oliveGarden)",
+      "∀x (TomRent(x) ↔ (ManagedBuilding(x) ∧ AllowPet(x) ∧ DepositNoMoreThan1500(x)))"
+    ],
+    "conclusion": "Tom will rent an apartment in The Olive Garden.",
+    "conclusion-FOL": "TomRent(oliveGarden)",
+    "label": "False",
+    "datasetName": "folio"
+  },
+  {
+    "premises": [
+      "The Picuris Mountains are a mountain range in New Mexico or Texas.",
+      "Juan de Onate visited the Picuris Mountains.",
+      "The Harding Pegmatite Mine, located in the Picuris Mountains, was donated.",
+      "There are no mountain ranges in texas that have mines which have been donated."
+    ],
+    "premises-FOL": [
+      "MountainRange(picurismountains) ∧ In(picurismountains, newmexico) ∨ In(picurismountains, texas)",
+      "Visited(juandeonate, picurismountains)",
+      "In(hardingpegmatitemine, picurismountains) ∧ Mine(hardingpegmatitemine) ∧ Donated(hardingpegmatitemine)",
+      "∀x ∀y (Mine(x) ∧ Donated(x) ∧ In(x, y) ∧ MountainRange(y) → ¬In(y, texas))"
+    ],
+    "conclusion": "The Harding Pegmatite Mine is not located in a mountain range in New Mexico.",
+    "conclusion-FOL": "∀x (MountainRange(x) ∧ In(hardingpegmatitemine, x) → ¬In(x, newmexico))",
+    "label": "False",
+    "datasetName": "folio"
+  }
+]

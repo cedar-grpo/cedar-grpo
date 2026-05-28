@@ -1,0 +1,1069 @@
+Added By,Model,Method Used,Test Dataset,Source,Notes,Accuracy,Domain,Abrivation
+Aren golazizian,T5-780M,SFT on Ab-Train (UniADILR-PSy),Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Table 2)  
+COLING 2024 ","perfect on Ab-test, but large drops on De-test & In-test.",100,Abduction,
+Aren golazizian,T5-780M,SFT on Complement-train (UniADILR-PSy),Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Table 2)  
+COLING 2024 ","Complement-train = Training on the other two reasoning types (not the test type)
+Complement-train produces much more balanced performance",55.7,Abduction,
+Aren golazizian,T5-3B,SFT on Ab-Train (UniADILR-PSy),Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Table 2)  
+COLING 2024 ","perfect on Ab-test, but large drops on De-test & In-test.",100,Abduction,
+Aren golazizian,T5-3B,SFT on Complement-train (UniADILR-PSy),Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Table 2)  
+COLING 2024 ","Complement-train = Training on the other two reasoning types (not the test type)
+Complement-train produces much more balanced performance",59.2,Abduction,
+Aren golazizian,T5-3B,SFT on Ab-Train (UniADILR-PSy),UniADILR-HGc-Ab  UniADILR-HGc-De  UniADILR-HGc-In,"UniADILR (Figure 3) 
+COLING 2024 ",UniADILR-HGc: human-GPT annotated ,53.4,Abduction,
+Aren golazizian,LLaMA2-7B,Mixed 3-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Model struggles the most in abductive,0.6,Abduction,
+Aren golazizian,LLaMA2-7B,  1-shot prompting from Ab-test,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Although the 1 shot example is from Ab-test but still the model struggles the most in abductive!,0.8,Abduction,
+Aren golazizian,LLaMA2-7B,0-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Still struggles the most in abductive,0.4,Abduction,
+Aren golazizian,LLaMA2-13B,Mixed 3-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Model struggles the most in abductive,0.8,Abduction,
+Aren golazizian,LLaMA2-13B,  1-shot prompting from Ab-test,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Although the 1 shot example is from Ab-test but still the model struggles the most in abductive!,1.2,Abduction,
+Aren golazizian,LLaMA2-13B,0-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Still struggles the most in abductive,1.2,Abduction,
+Aren golazizian,LLaMA2-70B,Mixed 3-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Model struggles the most in abductive,4.5,Abduction,
+Aren golazizian,LLaMA2-70B,  1-shot prompting from Ab-test,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Although the 1 shot example is from Ab-test but still the model struggles the most in abductive!,4,Abduction,
+Aren golazizian,LLaMA2-70B,0-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Still struggles the most in abductive,0.5,Abduction,
+Aren golazizian,LLaMA2-70B,0-shot prompting,UniADILR-HGc-Ab  UniADILR-HGc-De  UniADILR-HGc-In,"UniADILR (Figure 3) 
+COLING 2024 ",UniADILR-HGc: human-GPT annotated ,8.3,Abduction,
+Aren golazizian,GPT-3.5,Mixed 3-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Model struggles the most in abductive,3.5,Abduction,
+Aren golazizian,GPT-3.5,  1-shot prompting from Ab-test,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Improvement in Inductive and Deductive but Abductive is the same,3.5,Abduction,
+Aren golazizian,GPT-3.5,0-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Still struggles the most in abductive,3,Abduction,
+Aren golazizian,GPT-3.5,0-shot prompting,UniADILR-HGc-Ab  UniADILR-HGc-De  UniADILR-HGc-In,"UniADILR (Figure 3) 
+COLING 2024 ",UniADILR-HGc: human-GPT annotated ,42.5,Abduction,
+Aren golazizian,GPT-4,Mixed 3-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Model struggles the most in abductive,18.9,Abduction,
+Aren golazizian,GPT-4,  1-shot prompting from Ab-test,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Improvement in all reasoning types but abductive is still the lowest,28.5,Abduction,
+Aren golazizian,GPT-4,0-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Significant drops in abductive and deductive,11.9,Abduction,
+Aren golazizian,T5-780M,SFT on Ab-Train (UniADILR-PSy),Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Table 2)  
+COLING 2024 ","perfect on Ab-test, but large drops on De-test & In-test.",32.3,Deduction,
+Aren golazizian,T5-780M,SFT on Complement-train (UniADILR-PSy),Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Table 2)  
+COLING 2024 ","Complement-train = Training on the other two reasoning types (not the test type)
+Complement-train produces much more balanced performance",60.8,Deduction,
+Aren golazizian,T5-3B,SFT on Ab-Train (UniADILR-PSy),Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Table 2)  
+COLING 2024 ","perfect on Ab-test, but large drops on De-test & In-test.",66.9,Deduction,
+Aren golazizian,T5-3B,SFT on Complement-train (UniADILR-PSy),Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Table 2)  
+COLING 2024 ","Complement-train = Training on the other two reasoning types (not the test type)
+Complement-train produces much more balanced performance",53.3,Deduction,
+Aren golazizian,T5-3B,SFT on Ab-Train (UniADILR-PSy),UniADILR-HGc-Ab  UniADILR-HGc-De  UniADILR-HGc-In,"UniADILR (Figure 3) 
+COLING 2024 ",UniADILR-HGc: human-GPT annotated ,59.4,Deduction,
+Aren golazizian,LLaMA2-7B,Mixed 3-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Model struggles the most in abductive,3.9,Deduction,
+Aren golazizian,LLaMA2-7B,  1-shot prompting from Ab-test,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Although the 1 shot example is from Ab-test but still the model struggles the most in abductive!,2.1,Deduction,
+Aren golazizian,LLaMA2-7B,0-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Still struggles the most in abductive,3.3,Deduction,
+Aren golazizian,LLaMA2-13B,Mixed 3-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Model struggles the most in abductive,7.2,Deduction,
+Aren golazizian,LLaMA2-13B,  1-shot prompting from Ab-test,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Although the 1 shot example is from Ab-test but still the model struggles the most in abductive!,5.5,Deduction,
+Aren golazizian,LLaMA2-13B,0-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Still struggles the most in abductive,3.3,Deduction,
+Aren golazizian,LLaMA2-70B,Mixed 3-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Model struggles the most in abductive,19.3,Deduction,
+Aren golazizian,LLaMA2-70B,  1-shot prompting from Ab-test,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Although the 1 shot example is from Ab-test but still the model struggles the most in abductive!,9.2,Deduction,
+Aren golazizian,LLaMA2-70B,0-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Still struggles the most in abductive,12.5,Deduction,
+Aren golazizian,LLaMA2-70B,0-shot prompting,UniADILR-HGc-Ab  UniADILR-HGc-De  UniADILR-HGc-In,"UniADILR (Figure 3) 
+COLING 2024 ",UniADILR-HGc: human-GPT annotated ,12.3,Deduction,
+Aren golazizian,GPT-3.5,Mixed 3-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Model struggles the most in abductive,9,Deduction,
+Aren golazizian,GPT-3.5,  1-shot prompting from Ab-test,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Improvement in Inductive and Deductive but Abductive is the same,20,Deduction,
+Aren golazizian,GPT-3.5,0-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Still struggles the most in abductive,12.5,Deduction,
+Aren golazizian,GPT-3.5,0-shot prompting,UniADILR-HGc-Ab  UniADILR-HGc-De  UniADILR-HGc-In,"UniADILR (Figure 3) 
+COLING 2024 ",UniADILR-HGc: human-GPT annotated ,40.7,Deduction,
+Aren golazizian,GPT-4,Mixed 3-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Model struggles the most in abductive,56.5,Deduction,
+Aren golazizian,GPT-4,  1-shot prompting from Ab-test,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Improvement in all reasoning types but abductive is still the lowest,60.9,Deduction,
+Aren golazizian,GPT-4,0-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Significant drops in abductive and deductive,35.6,Deduction,
+Aren golazizian,T5-780M,SFT on Ab-Train (UniADILR-PSy),Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Table 2)  
+COLING 2024 ","perfect on Ab-test, but large drops on De-test & In-test.",10.7,Induction,
+Aren golazizian,T5-780M,SFT on Complement-train (UniADILR-PSy),Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Table 2)  
+COLING 2024 ","Complement-train = Training on the other two reasoning types (not the test type)
+Complement-train produces much more balanced performance",70,Induction,
+Aren golazizian,T5-3B,SFT on Ab-Train (UniADILR-PSy),Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Table 2)  
+COLING 2024 ","perfect on Ab-test, but large drops on De-test & In-test.",28.6,Induction,
+Aren golazizian,T5-3B,SFT on Complement-train (UniADILR-PSy),Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Table 2)  
+COLING 2024 ","Complement-train = Training on the other two reasoning types (not the test type)
+Complement-train produces much more balanced performance",69.3,Induction,
+Aren golazizian,T5-3B,SFT on Ab-Train (UniADILR-PSy),UniADILR-HGc-Ab  UniADILR-HGc-De  UniADILR-HGc-In,"UniADILR (Figure 3) 
+COLING 2024 ",UniADILR-HGc: human-GPT annotated ,37.5,Induction,
+Aren golazizian,LLaMA2-7B,Mixed 3-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Model struggles the most in abductive,4,Induction,
+Aren golazizian,LLaMA2-7B,  1-shot prompting from Ab-test,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Although the 1 shot example is from Ab-test but still the model struggles the most in abductive!,2.5,Induction,
+Aren golazizian,LLaMA2-7B,0-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Still struggles the most in abductive,5.4,Induction,
+Aren golazizian,LLaMA2-13B,Mixed 3-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Model struggles the most in abductive,9.7,Induction,
+Aren golazizian,LLaMA2-13B,  1-shot prompting from Ab-test,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Although the 1 shot example is from Ab-test but still the model struggles the most in abductive!,8,Induction,
+Aren golazizian,LLaMA2-13B,0-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Still struggles the most in abductive,10.5,Induction,
+Aren golazizian,LLaMA2-70B,Mixed 3-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Model struggles the most in abductive,15,Induction,
+Aren golazizian,LLaMA2-70B,  1-shot prompting from Ab-test,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Although the 1 shot example is from Ab-test but still the model struggles the most in abductive!,10.7,Induction,
+Aren golazizian,LLaMA2-70B,0-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Still struggles the most in abductive,3.5,Induction,
+Aren golazizian,LLaMA2-70B,0-shot prompting,UniADILR-HGc-Ab  UniADILR-HGc-De  UniADILR-HGc-In,"UniADILR (Figure 3) 
+COLING 2024 ",UniADILR-HGc: human-GPT annotated ,8,Induction,
+Aren golazizian,GPT-3.5,Mixed 3-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Model struggles the most in abductive,28.5,Induction,
+Aren golazizian,GPT-3.5,  1-shot prompting from Ab-test,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Improvement in Inductive and Deductive but Abductive is the same,41.2,Induction,
+Aren golazizian,GPT-3.5,0-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Still struggles the most in abductive,28.5,Induction,
+Aren golazizian,GPT-3.5,0-shot prompting,UniADILR-HGc-Ab  UniADILR-HGc-De  UniADILR-HGc-In,"UniADILR (Figure 3) 
+COLING 2024 ",UniADILR-HGc: human-GPT annotated ,38.1,Induction,
+Aren golazizian,GPT-4,Mixed 3-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Model struggles the most in abductive,71,Induction,
+Aren golazizian,GPT-4,  1-shot prompting from Ab-test,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Improvement in all reasoning types but abductive is still the lowest,76.5,Induction,
+Aren golazizian,GPT-4,0-shot prompting,Ab-test/De-test/In-test (UniADILR-PSy),"UniADILR (Figure 2) 
+COLING 2024 ",Significant drops in abductive and deductive,72.8,Induction,
+Nima1313,Claude V3 Sonnet,ZS no-Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",66.67,Abduction,
+Nima1313,Claude V3 Sonnet,M-Cot no-Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",76.67,Abduction,
+Nima1313,Claude V3 Sonnet,ZS Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",70,Abduction,
+Nima1313,Claude V3 Sonnet,ZS Cot Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",70,Abduction,
+Nima1313,Claude V3 Sonnet,M-Cot Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",70,Abduction,
+Nima1313,GPT-4,ZS no-Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",70,Abduction,
+Nima1313,GPT-4,M-Cot no-Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",73.33,Abduction,
+Nima1313,GPT-4,ZS Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",63.33,Abduction,
+Nima1313,GPT-4,ZS Cot Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",63.33,Abduction,
+Nima1313,GPT-4,M-Cot Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",63.33,Abduction,
+Nima1313,GPT-4o,ZS no-Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",60,Abduction,
+Nima1313,GPT-4o,M-Cot no-Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",70,Abduction,
+Nima1313,GPT-4o,ZS Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",70,Abduction,
+Nima1313,GPT-4o,ZS Cot Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",70,Abduction,
+Nima1313,GPT-4o,M-Cot Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",63.33,Abduction,
+Nima1313,Claude V3 Sonnet,ZS no-Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",59.8,Abduction,
+Nima1313,Claude V3 Sonnet,M-Cot no-Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",58.16,Abduction,
+Nima1313,Claude V3 Sonnet,ZS Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",47.06,Abduction,
+Nima1313,Claude V3 Sonnet,ZS Cot Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",43.14,Abduction,
+Nima1313,Claude V3 Sonnet,M-Cot Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",42.16,Abduction,
+Nima1313,GPT-4,ZS no-Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",79.41,Abduction,
+Nima1313,GPT-4,M-Cot no-Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",72.55,Abduction,
+Nima1313,GPT-4,ZS Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",52.94,Abduction,
+Nima1313,GPT-4,ZS Cot Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",42.16,Abduction,
+Nima1313,GPT-4,M-Cot Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",64.71,Abduction,
+Nima1313,GPT-4o,ZS no-Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",66.67,Abduction,
+Nima1313,GPT-4o,M-Cot no-Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",74.51,Abduction,
+Nima1313,GPT-4o,ZS Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",57.84,Abduction,
+Nima1313,GPT-4o,ZS Cot Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",44.12,Abduction,
+Nima1313,GPT-4o,M-Cot Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",57.84,Abduction,
+Nima1313,Claude V3 Sonnet,ZS no-Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",61.11,Abduction,
+Nima1313,Claude V3 Sonnet,M-Cot no-Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",61.11,Abduction,
+Nima1313,Claude V3 Sonnet,ZS Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",58.33,Abduction,
+Nima1313,Claude V3 Sonnet,ZS Cot Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",50,Abduction,
+Nima1313,Claude V3 Sonnet,M-Cot Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",48,Abduction,
+Nima1313,GPT-4,ZS no-Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",61.11,Abduction,
+Nima1313,GPT-4,M-Cot no-Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",47.22,Abduction,
+Nima1313,GPT-4,ZS Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",47.22,Abduction,
+Nima1313,GPT-4,ZS Cot Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",50,Abduction,
+Nima1313,GPT-4,M-Cot Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",55.56,Abduction,
+Nima1313,GPT-4o,ZS no-Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",58.33,Abduction,
+Nima1313,GPT-4o,M-Cot no-Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",52.78,Abduction,
+Nima1313,GPT-4o,ZS Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",55.56,Abduction,
+Nima1313,GPT-4o,ZS Cot Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",55.56,Abduction,
+Nima1313,GPT-4o,M-Cot Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",52.78,Abduction,
+Nima1313,Claude V3 Sonnet,ZS no-Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",86.38,Deduction,
+Nima1313,Claude V3 Sonnet,M-Cot no-Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",87.23,Deduction,
+Nima1313,Claude V3 Sonnet,ZS Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",90.21,Deduction,
+Nima1313,Claude V3 Sonnet,ZS Cot Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",88.94,Deduction,
+Nima1313,Claude V3 Sonnet,M-Cot Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",91.28,Deduction,
+Nima1313,GPT-4,ZS no-Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",87.87,Deduction,
+Nima1313,GPT-4,M-Cot no-Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",91.7,Deduction,
+Nima1313,GPT-4,ZS Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",89.36,Deduction,
+Nima1313,GPT-4,ZS Cot Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",90,Deduction,
+Nima1313,GPT-4,M-Cot Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",91.28,Deduction,
+Nima1313,GPT-4o,ZS no-Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",89.57,Deduction,
+Nima1313,GPT-4o,M-Cot no-Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",89.57,Deduction,
+Nima1313,GPT-4o,ZS Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",90.85,Deduction,
+Nima1313,GPT-4o,ZS Cot Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",90.64,Deduction,
+Nima1313,GPT-4o,M-Cot Exp,VitaminC,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"VitaminC – Wikipedia-based claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",91.06,Deduction,
+Nima1313,Claude V3 Sonnet,ZS no-Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",87.19,Deduction,
+Nima1313,Claude V3 Sonnet,M-Cot no-Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",87.19,Deduction,
+Nima1313,Claude V3 Sonnet,ZS Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",82.66,Deduction,
+Nima1313,Claude V3 Sonnet,ZS Cot Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",77.39,Deduction,
+Nima1313,Claude V3 Sonnet,M-Cot Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",82.41,Deduction,
+Nima1313,GPT-4,ZS no-Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",91.21,Deduction,
+Nima1313,GPT-4,M-Cot no-Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",89.95,Deduction,
+Nima1313,GPT-4,ZS Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",84.92,Deduction,
+Nima1313,GPT-4,ZS Cot Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",85.68,Deduction,
+Nima1313,GPT-4,M-Cot Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",88.69,Deduction,
+Nima1313,GPT-4o,ZS no-Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",90.45,Deduction,
+Nima1313,GPT-4o,M-Cot no-Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",90.95,Deduction,
+Nima1313,GPT-4o,ZS Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",85.93,Deduction,
+Nima1313,GPT-4o,ZS Cot Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",85.93,Deduction,
+Nima1313,GPT-4o,M-Cot Exp,CLIMATE-FEVER,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"CLIMATE-FEVER – climate-related online claims
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",86.18,Deduction,
+Nima1313,Claude V3 Sonnet,ZS no-Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",80.6,Deduction,
+Nima1313,Claude V3 Sonnet,M-Cot no-Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",81.47,Deduction,
+Nima1313,Claude V3 Sonnet,ZS Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",79.96,Deduction,
+Nima1313,Claude V3 Sonnet,ZS Cot Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",78.66,Deduction,
+Nima1313,Claude V3 Sonnet,M-Cot Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",76.51,Deduction,
+Nima1313,GPT-4,ZS no-Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",79.31,Deduction,
+Nima1313,GPT-4,M-Cot no-Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",77.59,Deduction,
+Nima1313,GPT-4,ZS Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",79.96,Deduction,
+Nima1313,GPT-4,ZS Cot Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",78.88,Deduction,
+Nima1313,GPT-4,M-Cot Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",80.39,Deduction,
+Nima1313,GPT-4o,ZS no-Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",79.96,Deduction,
+Nima1313,GPT-4o,M-Cot no-Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",80.6,Deduction,
+Nima1313,GPT-4o,ZS Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",81.68,Deduction,
+Nima1313,GPT-4o,ZS Cot Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",81.03,Deduction,
+Nima1313,GPT-4o,M-Cot Exp,PHEMEPlus,assessing the reasoning capabilities of llms in the context of evidence-based claim verification,"PHEMEPlus – social media rumors + evidence from news
+
+No-Exp= > we prompt LLMs to predict the claim veracity without any rationale generation.
+Exp => we first prompt LLMs to produce a rationale and then use the generated information to predict claim
+Zero-Shot (ZS), and Manual Chain-of-Thought (M-CoT) Zero-Shot Chain-of-Thought (ZS CoT)
+ZS CoT was applied only under Exp as rationale
+generation is integral to ZS CoT prompting. In all
+the prompts, we provide dataset specific personas
+and instructions in the system prompt and CoT examples in the user prompt. ",81.25,Deduction,
+Nima1313, LLaMA3.1-Chat,0-shot-Direct,bAbI-15,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,89,Deduction,
+Nima1313, LLaMA3.1-Chat,0-shot-Direct,EntailmentBank,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,72,Deduction,
+Nima1313, LLaMA3.1-Chat,0-shot-Direct,RuleTaker,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,62,Deduction,
+Nima1313, LLaMA3.1-Chat,0-shot-Direct,FOLIO,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,53,Deduction,
+Nima1313, LLaMA3.1-Chat,0-shot-Direct,Leap-Of-Thought,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,81,Deduction,
+Nima1313, LLaMA3.1-Chat,0-shot-CoT,bAbI-15,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,90,Deduction,
+Nima1313, LLaMA3.1-Chat,0-shot-CoT,EntailmentBank,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,74,Deduction,
+Nima1313, LLaMA3.1-Chat,0-shot-CoT,RuleTaker,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,64,Deduction,
+Nima1313, LLaMA3.1-Chat,0-shot-CoT,FOLIO,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,56,Deduction,
+Nima1313, LLaMA3.1-Chat,0-shot-CoT,Leap-Of-Thought,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,80,Deduction,
+Nima1313, LLaMA3.1-Chat,0-shot-Direct,bAbI-16,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,92,Induction,
+Nima1313, LLaMA3.1-Chat,0-shot-Direct,CLUTRR,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,39,Induction,
+Nima1313, LLaMA3.1-Chat,0-shot-CoT,bAbI-16,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,88,Induction,
+Nima1313, LLaMA3.1-Chat,0-shot-CoT,CLUTRR,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,40,Induction,
+Nima1313, LLaMA3.1-Chat,0-shot-Direct,α-NLI,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,39,Abduction,
+Nima1313, LLaMA3.1-Chat,0-shot-Direct,α-NLG,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,17,Abduction,
+Nima1313, LLaMA3.1-Chat,0-shot-Direct,AbductiveRules,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,42,Abduction,
+Nima1313, LLaMA3.1-Chat,0-shot-Direct,D*Ab,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,10,Abduction,
+Nima1313, LLaMA3.1-Chat,0-shot-CoT,α-NLI,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,37,Abduction,
+Nima1313, LLaMA3.1-Chat,0-shot-CoT,α-NLG,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,17,Abduction,
+Nima1313, LLaMA3.1-Chat,0-shot-CoT,AbductiveRules,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,22,Abduction,
+Nima1313, LLaMA3.1-Chat,0-shot-CoT,D*Ab,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,24,Abduction,
+Nima1313, LLaMA3.1-Chat,0-shot-Direct,ReClor,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,67,MIX (A-D-I),
+Nima1313, LLaMA3.1-Chat,0-shot-Direct,LogiQA,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,46.54,MIX (A-D-I),
+Nima1313, LLaMA3.1-Chat,0-shot-Direct,LogiQA 2.0,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,63,MIX (A-D-I),
+Nima1313, LLaMA3.1-Chat,0-shot-Direct,LogiQA2NLI,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,61,MIX (A-D-I),
+Nima1313, LLaMA3.1-Chat,0-shot-CoT,ReClor,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,63,MIX (A-D-I),
+Nima1313, LLaMA3.1-Chat,0-shot-CoT,LogiQA,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,44.55,MIX (A-D-I),
+Nima1313, LLaMA3.1-Chat,0-shot-CoT,LogiQA 2.0,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,55,MIX (A-D-I),
+Nima1313, LLaMA3.1-Chat,0-shot-CoT,LogiQA2NLI,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,51,MIX (A-D-I),
+Nima1313,Mistral-Ins-v0.3,0-shot-Direct,bAbI-15,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,59,Deduction,
+Nima1313,Mistral-Ins-v0.3,0-shot-Direct,EntailmentBank,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,82,Deduction,
+Nima1313,Mistral-Ins-v0.3,0-shot-Direct,RuleTaker,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,45,Deduction,
+Nima1313,Mistral-Ins-v0.3,0-shot-Direct,FOLIO,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,48,Deduction,
+Nima1313,Mistral-Ins-v0.3,0-shot-Direct,Leap-Of-Thought,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,78,Deduction,
+Nima1313,Mistral-Ins-v0.3,0-shot-CoT,bAbI-15,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,51,Deduction,
+Nima1313,Mistral-Ins-v0.3,0-shot-CoT,EntailmentBank,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,86,Deduction,
+Nima1313,Mistral-Ins-v0.3,0-shot-CoT,RuleTaker,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,64,Deduction,
+Nima1313,Mistral-Ins-v0.3,0-shot-CoT,FOLIO,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,45,Deduction,
+Nima1313,Mistral-Ins-v0.3,0-shot-CoT,Leap-Of-Thought,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,73,Deduction,
+Nima1313,Mistral-Ins-v0.3,0-shot-Direct,bAbI-16,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,36,Induction,
+Nima1313,Mistral-Ins-v0.3,0-shot-Direct,CLUTRR,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,15,Induction,
+Nima1313,Mistral-Ins-v0.3,0-shot-CoT,bAbI-16,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,23,Induction,
+Nima1313,Mistral-Ins-v0.3,0-shot-CoT,CLUTRR,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,20,Induction,
+Nima1313,Mistral-Ins-v0.3,0-shot-Direct,α-NLI,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,31,Abduction,
+Nima1313,Mistral-Ins-v0.3,0-shot-Direct,α-NLG,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,16,Abduction,
+Nima1313,Mistral-Ins-v0.3,0-shot-Direct,AbductiveRules,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,35,Abduction,
+Nima1313,Mistral-Ins-v0.3,0-shot-Direct,D*Ab,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,6,Abduction,
+Nima1313,Mistral-Ins-v0.3,0-shot-CoT,α-NLI,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,28,Abduction,
+Nima1313,Mistral-Ins-v0.3,0-shot-CoT,α-NLG,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,15,Abduction,
+Nima1313,Mistral-Ins-v0.3,0-shot-CoT,AbductiveRules,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,25,Abduction,
+Nima1313,Mistral-Ins-v0.3,0-shot-CoT,D*Ab,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,3,Abduction,
+Nima1313,Mistral-Ins-v0.3,0-shot-Direct,ReClor,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,55,MIX (A-D-I),
+Nima1313,Mistral-Ins-v0.3,0-shot-Direct,LogiQA,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,50.23,MIX (A-D-I),
+Nima1313,Mistral-Ins-v0.3,0-shot-Direct,LogiQA 2.0,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,45,MIX (A-D-I),
+Nima1313,Mistral-Ins-v0.3,0-shot-Direct,LogiQA2NLI,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,54,MIX (A-D-I),
+Nima1313,Mistral-Ins-v0.3,0-shot-CoT,ReClor,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,52,MIX (A-D-I),
+Nima1313,Mistral-Ins-v0.3,0-shot-CoT,LogiQA,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,42.7,MIX (A-D-I),
+Nima1313,Mistral-Ins-v0.3,0-shot-CoT,LogiQA 2.0,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,47,MIX (A-D-I),
+Nima1313,Mistral-Ins-v0.3,0-shot-CoT,LogiQA2NLI,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,54,MIX (A-D-I),
+Nima1313,Claude-3.5,0-shot-Direct,bAbI-15,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,97,Deduction,
+Nima1313,Claude-3.5,0-shot-Direct,EntailmentBank,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,85,Deduction,
+Nima1313,Claude-3.5,0-shot-Direct,RuleTaker,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,61,Deduction,
+Nima1313,Claude-3.5,0-shot-Direct,FOLIO,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,81,Deduction,
+Nima1313,Claude-3.5,0-shot-Direct,Leap-Of-Thought,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,55,Deduction,
+Nima1313,Claude-3.5,0-shot-CoT,bAbI-15,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,100,Deduction,
+Nima1313,Claude-3.5,0-shot-CoT,EntailmentBank,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,73,Deduction,
+Nima1313,Claude-3.5,0-shot-CoT,RuleTaker,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,64,Deduction,
+Nima1313,Claude-3.5,0-shot-CoT,FOLIO,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,84,Deduction,
+Nima1313,Claude-3.5,0-shot-CoT,Leap-Of-Thought,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,53,Deduction,
+Nima1313,Claude-3.5,0-shot-Direct,bAbI-16,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,80,Induction,
+Nima1313,Claude-3.5,0-shot-Direct,CLUTRR,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,29,Induction,
+Nima1313,Claude-3.5,0-shot-CoT,bAbI-16,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,86,Induction,
+Nima1313,Claude-3.5,0-shot-CoT,CLUTRR,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,21,Induction,
+Nima1313,Claude-3.5,0-shot-Direct,α-NLI,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,36,Abduction,
+Nima1313,Claude-3.5,0-shot-Direct,α-NLG,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,26,Abduction,
+Nima1313,Claude-3.5,0-shot-Direct,AbductiveRules,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,49,Abduction,
+Nima1313,Claude-3.5,0-shot-Direct,D*Ab,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,38,Abduction,
+Nima1313,Claude-3.5,0-shot-CoT,α-NLI,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,38,Abduction,
+Nima1313,Claude-3.5,0-shot-CoT,α-NLG,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,14,Abduction,
+Nima1313,Claude-3.5,0-shot-CoT,AbductiveRules,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,41,Abduction,
+Nima1313,Claude-3.5,0-shot-CoT,D*Ab,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,27,Abduction,
+Nima1313,Claude-3.5,0-shot-Direct,ReClor,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,88,MIX (A-D-I),
+Nima1313,Claude-3.5,0-shot-Direct,LogiQA,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,64,MIX (A-D-I),
+Nima1313,Claude-3.5,0-shot-Direct,LogiQA 2.0,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,74,MIX (A-D-I),
+Nima1313,Claude-3.5,0-shot-Direct,LogiQA2NLI,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,60,MIX (A-D-I),
+Nima1313,Claude-3.5,0-shot-CoT,ReClor,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,90,MIX (A-D-I),
+Nima1313,Claude-3.5,0-shot-CoT,LogiQA,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,68,MIX (A-D-I),
+Nima1313,Claude-3.5,0-shot-CoT,LogiQA 2.0,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,79,MIX (A-D-I),
+Nima1313,Claude-3.5,0-shot-CoT,LogiQA2NLI,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,61,MIX (A-D-I),
+Nima1313,GPT-4,0-shot-Direct,bAbI-15,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,98,Deduction,
+Nima1313,GPT-4,0-shot-Direct,EntailmentBank,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,84,Deduction,
+Nima1313,GPT-4,0-shot-Direct,RuleTaker,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,59,Deduction,
+Nima1313,GPT-4,0-shot-Direct,FOLIO,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,70,Deduction,
+Nima1313,GPT-4,0-shot-Direct,Leap-Of-Thought,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,75,Deduction,
+Nima1313,GPT-4,0-shot-CoT,bAbI-15,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,98,Deduction,
+Nima1313,GPT-4,0-shot-CoT,EntailmentBank,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,77,Deduction,
+Nima1313,GPT-4,0-shot-CoT,RuleTaker,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,67,Deduction,
+Nima1313,GPT-4,0-shot-CoT,FOLIO,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,69,Deduction,
+Nima1313,GPT-4,0-shot-CoT,Leap-Of-Thought,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,80,Deduction,
+Nima1313,GPT-4,0-shot-Direct,bAbI-16,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,91,Induction,
+Nima1313,GPT-4,0-shot-Direct,CLUTRR,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,33,Induction,
+Nima1313,GPT-4,0-shot-CoT,bAbI-16,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,92,Induction,
+Nima1313,GPT-4,0-shot-CoT,CLUTRR,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,26,Induction,
+Nima1313,GPT-4,0-shot-Direct,α-NLI,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,37,Abduction,
+Nima1313,GPT-4,0-shot-Direct,α-NLG,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,29,Abduction,
+Nima1313,GPT-4,0-shot-Direct,AbductiveRules,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,40,Abduction,
+Nima1313,GPT-4,0-shot-Direct,D*Ab,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,35,Abduction,
+Nima1313,GPT-4,0-shot-CoT,α-NLI,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,38,Abduction,
+Nima1313,GPT-4,0-shot-CoT,α-NLG,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,23,Abduction,
+Nima1313,GPT-4,0-shot-CoT,AbductiveRules,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,34.18,Abduction,
+Nima1313,GPT-4,0-shot-CoT,D*Ab,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,33,Abduction,
+Nima1313,GPT-4,0-shot-Direct,ReClor,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,88,MIX (A-D-I),
+Nima1313,GPT-4,0-shot-Direct,LogiQA,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,64,MIX (A-D-I),
+Nima1313,GPT-4,0-shot-Direct,LogiQA 2.0,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,81,MIX (A-D-I),
+Nima1313,GPT-4,0-shot-Direct,LogiQA2NLI,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,59,MIX (A-D-I),
+Nima1313,GPT-4,0-shot-CoT,ReClor,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,85,MIX (A-D-I),
+Nima1313,GPT-4,0-shot-CoT,LogiQA,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,65,MIX (A-D-I),
+Nima1313,GPT-4,0-shot-CoT,LogiQA 2.0,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,82,MIX (A-D-I),
+Nima1313,GPT-4,0-shot-CoT,LogiQA2NLI,Are Large Language Models Really Good Logical Reasoners? A Comprehensive Evaluation and Beyond,the value represents the answer correctness. the paper has some fantastic visualizations on other metrics (like no-hallucination or being Rigorous) too.,48,MIX (A-D-I),

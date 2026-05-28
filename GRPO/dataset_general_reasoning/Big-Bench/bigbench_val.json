@@ -1,0 +1,1565 @@
+[
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "tracking_shuffled_objects",
+    "bigbench_idx": 187,
+    "split": "validation",
+    "input": "Alice, Bob, Claire, Dave, Eve, Fred, and Gertrude are friends and avid readers who occasionally trade books. At the start of the semester, they each buy one new book: Alice gets Catch-22, Bob gets The Fellowship of the Ring, Claire gets Lolita, Dave gets The Great Gatsby, Eve gets Frankenstein, Fred gets The Odyssey, and Gertrude gets Moby Dick. As the semester proceeds, they start trading around the new books. First, Fred and Alice swap books. Then, Fred and Eve swap books. Then, Fred and Dave swap books. Then, Claire and Fred swap books. Then, Gertrude and Dave swap books. Then, Fred and Alice swap books. Finally, Fred and Bob swap books. At the end of the semester, Claire has",
+    "answer_choices": [
+      "Catch-22.",
+      "The Fellowship of the Ring.",
+      "Lolita.",
+      "The Great Gatsby.",
+      "Frankenstein.",
+      "The Odyssey.",
+      "Moby Dick."
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_text": "The Great Gatsby.",
+    "answer": "The Great Gatsby.",
+    "answer_letter": "D",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "penguins_in_a_table",
+    "bigbench_idx": 27,
+    "split": "validation",
+    "input": "Here is a table where the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg) Louis, 7, 50, 11 Bernard, 5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15 For example: the age of Louis is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm. Which is the youngest penguin? Answer:",
+    "answer_choices": [
+      "Louis",
+      "Bernard",
+      "Vincent",
+      "Gwen",
+      "James"
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_text": "Bernard",
+    "answer": "Bernard",
+    "answer_letter": "B",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "date_understanding",
+    "bigbench_idx": 21,
+    "split": "validation",
+    "input": "Q: Today is Sep 9, 1909. What is the date a month ago in MM/DD/YYYY? A:",
+    "answer_choices": [
+      "08/09/1909",
+      "08/19/1909",
+      "08/09/1820",
+      "08/08/1909",
+      "08/10/1909",
+      "05/09/1910"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "08/09/1909",
+    "answer": "08/09/1909",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "tracking_shuffled_objects",
+    "bigbench_idx": 315,
+    "split": "validation",
+    "input": "Alice, Bob, Claire, Dave, Eve, Fred, and Gertrude are holding a white elephant gift exchange. At the start of the event, they are each holding a present of a different color: Alice has a blue present, Bob has a purple present, Claire has a white present, Dave has a orange ball, Eve has a yellow present, Fred has a brown present, and Gertrude has a pink ball. As the event progresses, pairs of people swap gifts. First, Bob and Gertrude swap their gifts. Then, Gertrude and Dave swap their gifts. Then, Eve and Gertrude swap their gifts. Then, Bob and Dave swap their gifts. Then, Claire and Dave swap their gifts. Then, Fred and Alice swap their gifts. Finally, Bob and Eve swap their gifts. At the end of the event, Claire has the",
+    "answer_choices": [
+      "blue present.",
+      "purple present.",
+      "white present.",
+      "orange ball.",
+      "yellow present.",
+      "brown present.",
+      "pink ball."
+    ],
+    "correct_answer_index": 6,
+    "correct_answer_text": "pink ball.",
+    "answer": "pink ball.",
+    "answer_letter": "G",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "date_understanding",
+    "bigbench_idx": 17,
+    "split": "validation",
+    "input": "Q: The day before yesterday was 11/23/1933. What is the date one week from today in MM/DD/YYYY? A:",
+    "answer_choices": [
+      "12/02/1933",
+      "12/16/1933",
+      "12/23/1933",
+      "11/11/1933",
+      "11/25/1933",
+      "12/02/1974"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "12/02/1933",
+    "answer": "12/02/1933",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "tracking_shuffled_objects",
+    "bigbench_idx": 151,
+    "split": "validation",
+    "input": "Alice, Bob, Claire, Dave, and Eve are dancers at a square dance. At the start of a song, they each have a partner: Alice is dancing with Lola, Bob is dancing with Melissa, Claire is dancing with Sam, Dave is dancing with Karl, and Eve is dancing with Helga. Throughout the song, the dancers often trade partners. First, Dave and Alice switch partners. Then, Claire and Dave switch partners. Then, Alice and Dave switch partners. Then, Bob and Eve switch partners. Finally, Bob and Alice switch partners. At the end of the dance, Alice is dancing with",
+    "answer_choices": [
+      "Lola.",
+      "Melissa.",
+      "Sam.",
+      "Karl.",
+      "Helga."
+    ],
+    "correct_answer_index": 4,
+    "correct_answer_text": "Helga.",
+    "answer": "Helga.",
+    "answer_letter": "E",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "penguins_in_a_table",
+    "bigbench_idx": 4,
+    "split": "validation",
+    "input": "Here is a table where the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg) Louis, 7, 50, 11 Bernard, 5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15 For example: the age of Louis is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm. What animals are listed in the table? Answer:",
+    "answer_choices": [
+      "bears",
+      "crocodiles",
+      "elephants",
+      "giraffes",
+      "penguins"
+    ],
+    "correct_answer_index": 4,
+    "correct_answer_text": "penguins",
+    "answer": "penguins",
+    "answer_letter": "E",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "penguins_in_a_table",
+    "bigbench_idx": 0,
+    "split": "validation",
+    "input": "Here is a table where the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg) Louis, 7, 50, 11 Bernard, 5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15 For example: the age of Louis is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm. We then delete the penguin named Bernard from the table. How many penguins are less than 8 years old and weight less than 12 kg? Answer:",
+    "answer_choices": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "1",
+    "answer": "1",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "tracking_shuffled_objects",
+    "bigbench_idx": 65,
+    "split": "validation",
+    "input": "Alice, Bob, Claire, Dave, Eve, Fred, and Gertrude are on the same team in a soccer match. At the start of the match, they are each assigned to a position: Alice is playing right midfielder, Bob is playing goalkeeper, Claire is playing striker, Dave is playing cheerleader, Eve is playing fullback, Fred is playing benchwarmer, and Gertrude is playing left winger. As the game progresses, pairs of players occasionally swap positions. First, Gertrude and Eve trade positions. Then, Alice and Claire trade positions. Then, Eve and Dave trade positions. Then, Bob and Alice trade positions. Then, Fred and Dave trade positions. Then, Alice and Gertrude trade positions. Finally, Gertrude and Eve trade positions. At the end of the match, Alice is playing",
+    "answer_choices": [
+      "right midfielder.",
+      "goalkeeper.",
+      "striker.",
+      "cheerleader.",
+      "fullback.",
+      "benchwarmer.",
+      "left winger."
+    ],
+    "correct_answer_index": 4,
+    "correct_answer_text": "fullback.",
+    "answer": "fullback.",
+    "answer_letter": "E",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "date_understanding",
+    "bigbench_idx": 49,
+    "split": "validation",
+    "input": "Q: It was Sept. 1st, 2021 a week ago. What is the date 24 hours later in MM/DD/YYYY? A:",
+    "answer_choices": [
+      "09/09/2021",
+      "09/10/2021",
+      "09/02/2021",
+      "09/17/2021",
+      "08/31/2021",
+      "03/09/2022"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "09/09/2021",
+    "answer": "09/09/2021",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "tracking_shuffled_objects",
+    "bigbench_idx": 324,
+    "split": "validation",
+    "input": "Alice, Bob, Claire, Dave, Eve, Fred, and Gertrude are holding a white elephant gift exchange. At the start of the event, they are each holding a present of a different color: Alice has a red present, Bob has a yellow present, Claire has a black ball, Dave has a blue present, Eve has a purple present, Fred has a white present, and Gertrude has a brown present. As the event progresses, pairs of people swap gifts. First, Gertrude and Dave swap their gifts. Then, Claire and Dave swap their gifts. Then, Eve and Claire swap their gifts. Then, Dave and Alice swap their gifts. Then, Alice and Gertrude swap their gifts. Then, Gertrude and Eve swap their gifts. Finally, Fred and Bob swap their gifts. At the end of the event, Bob has the",
+    "answer_choices": [
+      "red present.",
+      "yellow present.",
+      "black ball.",
+      "blue present.",
+      "purple present.",
+      "white present.",
+      "brown present."
+    ],
+    "correct_answer_index": 5,
+    "correct_answer_text": "white present.",
+    "answer": "white present.",
+    "answer_letter": "F",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "penguins_in_a_table",
+    "bigbench_idx": 24,
+    "split": "validation",
+    "input": "Here is a table where the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg) Louis, 7, 50, 11 Bernard, 5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15 For example: the age of Louis is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm. We now add a penguin to the table: James, 12, 90, 12 Which penguin is taller than the other ones? Answer:",
+    "answer_choices": [
+      "Louis",
+      "Bernard",
+      "Vincent",
+      "Gwen",
+      "James"
+    ],
+    "correct_answer_index": 4,
+    "correct_answer_text": "James",
+    "answer": "James",
+    "answer_letter": "E",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "logical_deduction",
+    "bigbench_idx": 2,
+    "split": "validation",
+    "input": "The following paragraphs each describe a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. In an antique car show, there are five vehicles: a station wagon, a sedan, a tractor, a motorcyle, and a limousine. The tractor is newer than the motorcyle. The motorcyle is newer than the sedan. The limousine is the oldest. The station wagon is the newest.",
+    "answer_choices": [
+      "The station wagon is the oldest.",
+      "The sedan is the oldest.",
+      "The tractor is the oldest.",
+      "The motorcyle is the oldest.",
+      "The limousine is the oldest."
+    ],
+    "correct_answer_index": 4,
+    "correct_answer_text": "The limousine is the oldest.",
+    "answer": "The limousine is the oldest.",
+    "answer_letter": "E",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "logical_deduction",
+    "bigbench_idx": 10,
+    "split": "validation",
+    "input": "The following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. A fruit stand sells seven fruits: cantaloupes, plums, mangoes, apples, loquats, pears, and peaches. The apples are less expensive than the cantaloupes. The apples are more expensive than the peaches. The mangoes are the fourth-most expensive. The peaches are more expensive than the plums. The pears are the third-most expensive. The loquats are the third-cheapest.",
+    "answer_choices": [
+      "The cantaloupes are the second-most expensive.",
+      "The plums are the second-most expensive.",
+      "The mangoes are the second-most expensive.",
+      "The apples are the second-most expensive.",
+      "The loquats are the second-most expensive.",
+      "The pears are the second-most expensive.",
+      "The peaches are the second-most expensive."
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_text": "The apples are the second-most expensive.",
+    "answer": "The apples are the second-most expensive.",
+    "answer_letter": "D",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "date_understanding",
+    "bigbench_idx": 62,
+    "split": "validation",
+    "input": "Q: Today is Sep 9, 1909. What is the date 24 hours later in MM/DD/YYYY? A:",
+    "answer_choices": [
+      "09/10/1909",
+      "09/10/1892",
+      "09/24/1909",
+      "07/03/1909",
+      "12/10/1909",
+      "08/13/1909"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "09/10/1909",
+    "answer": "09/10/1909",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "penguins_in_a_table",
+    "bigbench_idx": 3,
+    "split": "validation",
+    "input": "Here is a table where the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg) Louis, 7, 50, 11 Bernard, 5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15 For example: the age of Louis is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm. We now add a penguin to the table: James, 12, 90, 12 We then delete the penguin named Bernard from the table. What is the name of the last penguin sorted by alphabetic order? Answer:",
+    "answer_choices": [
+      "Louis",
+      "Bernard",
+      "Vincent",
+      "Gwen",
+      "James"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_text": "Vincent",
+    "answer": "Vincent",
+    "answer_letter": "C",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "logical_deduction",
+    "bigbench_idx": 78,
+    "split": "validation",
+    "input": "The following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. In a golf tournament, there were seven golfers: Eve, Ana, Amy, Dan, Eli, Rob, and Mya. Mya finished above Eli. Eve finished below Rob. Amy finished second. Rob finished below Dan. Ana finished second-to-last. Dan finished fourth.",
+    "answer_choices": [
+      "Eve finished third.",
+      "Ana finished third.",
+      "Amy finished third.",
+      "Dan finished third.",
+      "Eli finished third.",
+      "Rob finished third.",
+      "Mya finished third."
+    ],
+    "correct_answer_index": 4,
+    "correct_answer_text": "Eli finished third.",
+    "answer": "Eli finished third.",
+    "answer_letter": "E",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "logical_deduction",
+    "bigbench_idx": 30,
+    "split": "validation",
+    "input": "The following paragraphs each describe a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. A fruit stand sells five fruits: watermelons, apples, kiwis, cantaloupes, and mangoes. The cantaloupes are the second-cheapest. The mangoes are more expensive than the watermelons. The kiwis are less expensive than the apples. The kiwis are more expensive than the mangoes.",
+    "answer_choices": [
+      "The watermelons are the cheapest.",
+      "The apples are the cheapest.",
+      "The kiwis are the cheapest.",
+      "The cantaloupes are the cheapest.",
+      "The mangoes are the cheapest."
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "The watermelons are the cheapest.",
+    "answer": "The watermelons are the cheapest.",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "tracking_shuffled_objects",
+    "bigbench_idx": 130,
+    "split": "validation",
+    "input": "Alice, Bob, Claire, Dave, and Eve are on the same team in a soccer match. At the start of the match, they are each assigned to a position: Alice is playing right winger, Bob is playing benchwarmer, Claire is playing right midfielder, Dave is playing goalkeeper, and Eve is playing cheerleader. As the game progresses, pairs of players occasionally swap positions. First, Bob and Alice trade positions. Then, Dave and Claire trade positions. Then, Alice and Claire trade positions. Then, Eve and Alice trade positions. Finally, Dave and Bob trade positions. At the end of the match, Eve is playing",
+    "answer_choices": [
+      "right winger.",
+      "benchwarmer.",
+      "right midfielder.",
+      "goalkeeper.",
+      "cheerleader."
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_text": "goalkeeper.",
+    "answer": "goalkeeper.",
+    "answer_letter": "D",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "tracking_shuffled_objects",
+    "bigbench_idx": 36,
+    "split": "validation",
+    "input": "Alice, Bob, Claire, Dave, and Eve are playing a game. At the start of the game, they are each holding a ball: Alice has a black ball, Bob has a brown ball, Claire has a blue ball, Dave has a white ball, and Eve has a green ball. As the game progresses, pairs of players trade balls. First, Dave and Eve swap balls. Then, Bob and Claire swap balls. Then, Claire and Alice swap balls. Then, Dave and Eve swap balls. Finally, Eve and Claire swap balls. At the end of the game, Dave has the",
+    "answer_choices": [
+      "black ball.",
+      "brown ball.",
+      "blue ball.",
+      "white ball.",
+      "green ball."
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_text": "white ball.",
+    "answer": "white ball.",
+    "answer_letter": "D",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "tracking_shuffled_objects",
+    "bigbench_idx": 346,
+    "split": "validation",
+    "input": "Alice, Bob, Claire, Dave, Eve, Fred, and Gertrude are dancers at a square dance. At the start of a song, they each have a partner: Alice is dancing with Melissa, Bob is dancing with Sam, Claire is dancing with Lola, Dave is dancing with Ophelia, Eve is dancing with Helga, Fred is dancing with Izzi, and Gertrude is dancing with Karl. Throughout the song, the dancers often trade partners. First, Eve and Fred switch partners. Then, Bob and Claire switch partners. Then, Bob and Dave switch partners. Then, Gertrude and Fred switch partners. Then, Alice and Fred switch partners. Then, Bob and Eve switch partners. Finally, Gertrude and Dave switch partners. At the end of the dance, Gertrude is dancing with",
+    "answer_choices": [
+      "Melissa.",
+      "Sam.",
+      "Lola.",
+      "Ophelia.",
+      "Helga.",
+      "Izzi.",
+      "Karl."
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_text": "Lola.",
+    "answer": "Lola.",
+    "answer_letter": "C",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "date_understanding",
+    "bigbench_idx": 51,
+    "split": "validation",
+    "input": "Q: Yesterday was 12/31/1929. Today could not be 12/32/1929 because December has only 31 days. What is the date 24 hours later in MM/DD/YYYY? A:",
+    "answer_choices": [
+      "01/02/1930",
+      "01/02/1877",
+      "01/02/1884",
+      "08/02/1930",
+      "11/06/1929",
+      "03/30/1930"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "01/02/1930",
+    "answer": "01/02/1930",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "date_understanding",
+    "bigbench_idx": 1,
+    "split": "validation",
+    "input": "Q: 2015 is coming in 36 hours. What is the date 24 hours later in MM/DD/YYYY? A:",
+    "answer_choices": [
+      "12/30/2014",
+      "01/04/2015",
+      "01/01/2015",
+      "01/09/2015",
+      "12/31/2014",
+      "12/30/2059"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "12/30/2014",
+    "answer": "12/30/2014",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "logical_deduction",
+    "bigbench_idx": 11,
+    "split": "validation",
+    "input": "The following paragraphs each describe a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. In an antique car show, there are five vehicles: a convertible, a truck, a bus, a sedan, and a motorcyle. The bus is newer than the truck. The truck is newer than the convertible. The sedan is the second-oldest. The motorcyle is newer than the bus.",
+    "answer_choices": [
+      "The convertible is the newest.",
+      "The truck is the newest.",
+      "The bus is the newest.",
+      "The sedan is the newest.",
+      "The motorcyle is the newest."
+    ],
+    "correct_answer_index": 4,
+    "correct_answer_text": "The motorcyle is the newest.",
+    "answer": "The motorcyle is the newest.",
+    "answer_letter": "E",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "penguins_in_a_table",
+    "bigbench_idx": 19,
+    "split": "validation",
+    "input": "Here is a table where the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg) Louis, 7, 50, 11 Bernard, 5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15 For example: the age of Louis is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm. We now add a penguin to the table: James, 12, 90, 12 We then delete the penguin named Bernard from the table. What is the cumulated age of the penguins? Answer:",
+    "answer_choices": [
+      "24",
+      "29",
+      "36",
+      "41",
+      "48"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_text": "36",
+    "answer": "36",
+    "answer_letter": "C",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "logical_deduction",
+    "bigbench_idx": 19,
+    "split": "validation",
+    "input": "The following paragraphs each describe a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph. On a branch, there are three birds: a cardinal, a hawk, and a hummingbird. The hummingbird is to the right of the hawk. The cardinal is to the left of the hawk.",
+    "answer_choices": [
+      "The cardinal is the leftmost.",
+      "The hawk is the leftmost.",
+      "The hummingbird is the leftmost."
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "The cardinal is the leftmost.",
+    "answer": "The cardinal is the leftmost.",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "penguins_in_a_table",
+    "bigbench_idx": 23,
+    "split": "validation",
+    "input": "Here is a table where the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg) Louis, 7, 50, 11 Bernard, 5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15 For example: the age of Louis is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm. Which penguin is a female? Answer:",
+    "answer_choices": [
+      "Louis",
+      "Bernard",
+      "Vincent",
+      "Gwen",
+      "James"
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_text": "Gwen",
+    "answer": "Gwen",
+    "answer_letter": "D",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "penguins_in_a_table",
+    "bigbench_idx": 16,
+    "split": "validation",
+    "input": "Here is a table where the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg) Louis, 7, 50, 11 Bernard, 5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15 For example: the age of Louis is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm. Which penguin is one year younger than Vincent? Answer:",
+    "answer_choices": [
+      "Louis",
+      "Bernard",
+      "Vincent",
+      "Gwen",
+      "James"
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_text": "Gwen",
+    "answer": "Gwen",
+    "answer_letter": "D",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "penguins_in_a_table",
+    "bigbench_idx": 28,
+    "split": "validation",
+    "input": "Here is a table where the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg) Louis, 7, 50, 11 Bernard, 5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15 For example: the age of Louis is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm. What is the name of the second penguin sorted by alphabetic order? Answer:",
+    "answer_choices": [
+      "Louis",
+      "Bernard",
+      "Vincent",
+      "Gwen",
+      "James"
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_text": "Gwen",
+    "answer": "Gwen",
+    "answer_letter": "D",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "tracking_shuffled_objects",
+    "bigbench_idx": 114,
+    "split": "validation",
+    "input": "Alice, Bob, Claire, Dave, and Eve are playing a game. At the start of the game, they are each holding a ball: Alice has a black ball, Bob has a purple ball, Claire has a blue ball, Dave has a white ball, and Eve has a pink ball. As the game progresses, pairs of players trade balls. First, Eve and Bob swap balls. Then, Eve and Dave swap balls. Then, Alice and Eve swap balls. Then, Alice and Claire swap balls. Finally, Claire and Dave swap balls. At the end of the game, Claire has the",
+    "answer_choices": [
+      "black ball.",
+      "purple ball.",
+      "blue ball.",
+      "white ball.",
+      "pink ball."
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_text": "purple ball.",
+    "answer": "purple ball.",
+    "answer_letter": "B",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "logical_deduction",
+    "bigbench_idx": 28,
+    "split": "validation",
+    "input": "The following paragraphs each describe a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. In an antique car show, there are five vehicles: a convertible, a bus, a minivan, a truck, and a sedan. The convertible is newer than the truck. The minivan is the newest. The bus is the third-newest. The truck is newer than the sedan.",
+    "answer_choices": [
+      "The convertible is the second-newest.",
+      "The bus is the second-newest.",
+      "The minivan is the second-newest.",
+      "The truck is the second-newest.",
+      "The sedan is the second-newest."
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "The convertible is the second-newest.",
+    "answer": "The convertible is the second-newest.",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "date_understanding",
+    "bigbench_idx": 42,
+    "split": "validation",
+    "input": "Q: Yesterday was April 30, 2021. What is the date 10 days ago in MM/DD/YYYY? A:",
+    "answer_choices": [
+      "04/21/2021",
+      "04/18/2021",
+      "04/21/1990",
+      "04/13/2021",
+      "04/22/2021",
+      "01/21/2021"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "04/21/2021",
+    "answer": "04/21/2021",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "logical_deduction",
+    "bigbench_idx": 7,
+    "split": "validation",
+    "input": "The following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. A fruit stand sells seven fruits: kiwis, cantaloupes, oranges, loquats, pears, watermelons, and peaches. The loquats are less expensive than the peaches. The pears are the third-cheapest. The oranges are less expensive than the cantaloupes. The loquats are more expensive than the watermelons. The peaches are less expensive than the oranges. The kiwis are the second-most expensive.",
+    "answer_choices": [
+      "The kiwis are the second-cheapest.",
+      "The cantaloupes are the second-cheapest.",
+      "The oranges are the second-cheapest.",
+      "The loquats are the second-cheapest.",
+      "The pears are the second-cheapest.",
+      "The watermelons are the second-cheapest.",
+      "The peaches are the second-cheapest."
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_text": "The loquats are the second-cheapest.",
+    "answer": "The loquats are the second-cheapest.",
+    "answer_letter": "D",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "date_understanding",
+    "bigbench_idx": 25,
+    "split": "validation",
+    "input": "Q: The concert was scheduled to be on 06/01/1943, but was delayed by one day to today. What is the date tomorrow in MM/DD/YYYY? A:",
+    "answer_choices": [
+      "06/03/1943",
+      "06/02/1943",
+      "05/06/1943",
+      "08/03/1942",
+      "03/15/1943",
+      "07/04/1943"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "06/03/1943",
+    "answer": "06/03/1943",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "tracking_shuffled_objects",
+    "bigbench_idx": 314,
+    "split": "validation",
+    "input": "Alice, Bob, Claire, Dave, Eve, Fred, and Gertrude are dancers at a square dance. At the start of a song, they each have a partner: Alice is dancing with Jamie, Bob is dancing with Ophelia, Claire is dancing with Patrick, Dave is dancing with Karl, Eve is dancing with Lola, Fred is dancing with Melissa, and Gertrude is dancing with Helga. Throughout the song, the dancers often trade partners. First, Bob and Dave switch partners. Then, Gertrude and Fred switch partners. Then, Fred and Bob switch partners. Then, Eve and Bob switch partners. Then, Gertrude and Alice switch partners. Then, Fred and Claire switch partners. Finally, Claire and Eve switch partners. At the end of the dance, Fred is dancing with",
+    "answer_choices": [
+      "Jamie.",
+      "Ophelia.",
+      "Patrick.",
+      "Karl.",
+      "Lola.",
+      "Melissa.",
+      "Helga."
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_text": "Patrick.",
+    "answer": "Patrick.",
+    "answer_letter": "C",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "penguins_in_a_table",
+    "bigbench_idx": 11,
+    "split": "validation",
+    "input": "Here is a table where the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg) Louis, 7, 50, 11 Bernard, 5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15 For example: the age of Louis is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm. What is the cumulated weight of the penguins? Answer:",
+    "answer_choices": [
+      "37",
+      "49",
+      "50",
+      "62",
+      "63"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_text": "50",
+    "answer": "50",
+    "answer_letter": "C",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "tracking_shuffled_objects",
+    "bigbench_idx": 190,
+    "split": "validation",
+    "input": "Alice, Bob, Claire, Dave, Eve, Fred, and Gertrude are playing a game. At the start of the game, they are each holding a ball: Alice has a green ball, Bob has a orange ball, Claire has a white ball, Dave has a pink ball, Eve has a blue ball, Fred has a yellow ball, and Gertrude has a black ball. As the game progresses, pairs of players trade balls. First, Eve and Gertrude swap balls. Then, Fred and Bob swap balls. Then, Fred and Claire swap balls. Then, Eve and Fred swap balls. Then, Fred and Claire swap balls. Then, Alice and Bob swap balls. Finally, Dave and Gertrude swap balls. At the end of the game, Eve has the",
+    "answer_choices": [
+      "green ball.",
+      "orange ball.",
+      "white ball.",
+      "pink ball.",
+      "blue ball.",
+      "yellow ball.",
+      "black ball."
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_text": "white ball.",
+    "answer": "white ball.",
+    "answer_letter": "C",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "logical_deduction",
+    "bigbench_idx": 118,
+    "split": "validation",
+    "input": "The following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. On a branch, there are seven birds: a blue jay, an owl, a hawk, a falcon, a hummingbird, a robin, and a quail. The hummingbird is to the left of the falcon. The owl is the second from the left. The robin is to the left of the hummingbird. The quail is to the right of the falcon. The robin is to the right of the owl. The blue jay is the third from the right.",
+    "answer_choices": [
+      "The blue jay is the leftmost.",
+      "The owl is the leftmost.",
+      "The hawk is the leftmost.",
+      "The falcon is the leftmost.",
+      "The hummingbird is the leftmost.",
+      "The robin is the leftmost.",
+      "The quail is the leftmost."
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_text": "The hawk is the leftmost.",
+    "answer": "The hawk is the leftmost.",
+    "answer_letter": "C",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "penguins_in_a_table",
+    "bigbench_idx": 5,
+    "split": "validation",
+    "input": "Here is a table where the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg) Louis, 7, 50, 11 Bernard, 5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15 For example: the age of Louis is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm. And here is a similar table, but listing giraffes: name, age, height (cm), weight (kg) Jody, 5, 430, 620 Gladys, 10, 420, 590 Marian, 2, 310, 410 Donna, 9, 440, 650 Which is the oldest giraffe? Answer:",
+    "answer_choices": [
+      "Jody",
+      "Gladys",
+      "Marian",
+      "Donna",
+      "Louise"
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_text": "Gladys",
+    "answer": "Gladys",
+    "answer_letter": "B",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "logical_deduction",
+    "bigbench_idx": 48,
+    "split": "validation",
+    "input": "The following paragraphs each describe a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. A fruit stand sells five fruits: mangoes, kiwis, watermelons, oranges, and apples. The oranges are the cheapest. The kiwis are less expensive than the mangoes. The watermelons are more expensive than the apples. The watermelons are less expensive than the kiwis.",
+    "answer_choices": [
+      "The mangoes are the most expensive.",
+      "The kiwis are the most expensive.",
+      "The watermelons are the most expensive.",
+      "The oranges are the most expensive.",
+      "The apples are the most expensive."
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "The mangoes are the most expensive.",
+    "answer": "The mangoes are the most expensive.",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "penguins_in_a_table",
+    "bigbench_idx": 6,
+    "split": "validation",
+    "input": "Here is a table where the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg) Louis, 7, 50, 11 Bernard, 5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15 For example: the age of Louis is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm. We now add a penguin to the table: James, 12, 90, 12 We then delete the penguin named Bernard from the table. How many penguins are more than 5 years old and weight less than 12 kg? Answer:",
+    "answer_choices": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_text": "2",
+    "answer": "2",
+    "answer_letter": "B",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "logical_deduction",
+    "bigbench_idx": 29,
+    "split": "validation",
+    "input": "The following paragraphs each describe a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. In an antique car show, there are five vehicles: a truck, a station wagon, a motorcyle, a convertible, and a hatchback. The convertible is newer than the truck. The station wagon is newer than the hatchback. The convertible is older than the hatchback. The station wagon is the second-newest.",
+    "answer_choices": [
+      "The truck is the second-newest.",
+      "The station wagon is the second-newest.",
+      "The motorcyle is the second-newest.",
+      "The convertible is the second-newest.",
+      "The hatchback is the second-newest."
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_text": "The station wagon is the second-newest.",
+    "answer": "The station wagon is the second-newest.",
+    "answer_letter": "B",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "logical_deduction",
+    "bigbench_idx": 8,
+    "split": "validation",
+    "input": "The following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. A fruit stand sells seven fruits: loquats, peaches, watermelons, plums, kiwis, mangoes, and pears. The pears are more expensive than the kiwis. The watermelons are less expensive than the peaches. The mangoes are the third-cheapest. The watermelons are the third-most expensive. The plums are the second-most expensive. The loquats are the second-cheapest.",
+    "answer_choices": [
+      "The loquats are the third-most expensive.",
+      "The peaches are the third-most expensive.",
+      "The watermelons are the third-most expensive.",
+      "The plums are the third-most expensive.",
+      "The kiwis are the third-most expensive.",
+      "The mangoes are the third-most expensive.",
+      "The pears are the third-most expensive."
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_text": "The watermelons are the third-most expensive.",
+    "answer": "The watermelons are the third-most expensive.",
+    "answer_letter": "C",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "tracking_shuffled_objects",
+    "bigbench_idx": 122,
+    "split": "validation",
+    "input": "Alice, Bob, and Claire are holding a white elephant gift exchange. At the start of the event, they are each holding a present of a different color: Alice has a blue present, Bob has a red present, and Claire has a orange ball. As the event progresses, pairs of people swap gifts. First, Claire and Bob swap their gifts. Then, Alice and Claire swap their gifts. Finally, Bob and Alice swap their gifts. At the end of the event, Alice has the",
+    "answer_choices": [
+      "blue present.",
+      "red present.",
+      "orange ball."
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_text": "orange ball.",
+    "answer": "orange ball.",
+    "answer_letter": "C",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "logical_deduction",
+    "bigbench_idx": 75,
+    "split": "validation",
+    "input": "The following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. On a shelf, there are seven books: a red book, a purple book, a green book, a white book, an orange book, a blue book, and a gray book. The green book is to the left of the white book. The red book is to the left of the purple book. The red book is to the right of the orange book. The gray book is the second from the left. The purple book is to the left of the green book. The blue book is the fourth from the left.",
+    "answer_choices": [
+      "The red book is the second from the right.",
+      "The purple book is the second from the right.",
+      "The green book is the second from the right.",
+      "The white book is the second from the right.",
+      "The orange book is the second from the right.",
+      "The blue book is the second from the right.",
+      "The gray book is the second from the right."
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_text": "The green book is the second from the right.",
+    "answer": "The green book is the second from the right.",
+    "answer_letter": "C",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "date_understanding",
+    "bigbench_idx": 43,
+    "split": "validation",
+    "input": "Q: Jane thought today is 3/11/2002, but today is in fact Mar 12, which is 1 day later. What is the date one week from today in MM/DD/YYYY? A:",
+    "answer_choices": [
+      "03/19/2002",
+      "03/20/2002",
+      "05/13/2002",
+      "11/19/2002",
+      "03/26/2002"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "03/19/2002",
+    "answer": "03/19/2002",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "penguins_in_a_table",
+    "bigbench_idx": 9,
+    "split": "validation",
+    "input": "Here is a table where the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg) Louis, 7, 50, 11 Bernard, 5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15 For example: the age of Louis is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm. We now add a penguin to the table: James, 12, 90, 12 Which is the tallest penguin? Answer:",
+    "answer_choices": [
+      "Louis",
+      "Bernard",
+      "Vincent",
+      "Gwen",
+      "James"
+    ],
+    "correct_answer_index": 4,
+    "correct_answer_text": "James",
+    "answer": "James",
+    "answer_letter": "E",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "tracking_shuffled_objects",
+    "bigbench_idx": 9,
+    "split": "validation",
+    "input": "Alice, Bob, Claire, Dave, and Eve are dancers at a square dance. At the start of a song, they each have a partner: Alice is dancing with Helga, Bob is dancing with Karl, Claire is dancing with Izzi, Dave is dancing with Sam, and Eve is dancing with Melissa. Throughout the song, the dancers often trade partners. First, Bob and Alice switch partners. Then, Bob and Claire switch partners. Then, Dave and Claire switch partners. Then, Eve and Dave switch partners. Finally, Bob and Alice switch partners. At the end of the dance, Claire is dancing with",
+    "answer_choices": [
+      "Helga.",
+      "Karl.",
+      "Izzi.",
+      "Sam.",
+      "Melissa."
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_text": "Sam.",
+    "answer": "Sam.",
+    "answer_letter": "D",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "penguins_in_a_table",
+    "bigbench_idx": 22,
+    "split": "validation",
+    "input": "Here is a table where the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg) Louis, 7, 50, 11 Bernard, 5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15 For example: the age of Louis is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm. What is the name of the first penguin sorted by alphabetic order? Answer:",
+    "answer_choices": [
+      "Louis",
+      "Bernard",
+      "Vincent",
+      "Gwen",
+      "James"
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_text": "Bernard",
+    "answer": "Bernard",
+    "answer_letter": "B",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "logical_deduction",
+    "bigbench_idx": 16,
+    "split": "validation",
+    "input": "The following paragraphs each describe a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph. In a golf tournament, there were three golfers: Amy, Ana, and Joe. Amy finished below Ana. Ana finished below Joe.",
+    "answer_choices": [
+      "Amy finished first.",
+      "Ana finished first.",
+      "Joe finished first."
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_text": "Joe finished first.",
+    "answer": "Joe finished first.",
+    "answer_letter": "C",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "date_understanding",
+    "bigbench_idx": 38,
+    "split": "validation",
+    "input": "Q: Jane and John married on Jan 2, 1958. It is their 5-year anniversary today. What is the date one week ago from today in MM/DD/YYYY? A:",
+    "answer_choices": [
+      "12/26/1960",
+      "10/01/1960",
+      "01/09/1961",
+      "07/26/1960",
+      "12/26/1936",
+      "01/02/1961"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "12/26/1960",
+    "answer": "12/26/1960",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "logical_deduction",
+    "bigbench_idx": 26,
+    "split": "validation",
+    "input": "The following paragraphs each describe a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. In a golf tournament, there were five golfers: Amy, Dan, Mya, Eli, and Mel. Amy finished above Mel. Mya finished first. Amy finished below Eli. Dan finished last.",
+    "answer_choices": [
+      "Amy finished first.",
+      "Dan finished first.",
+      "Mya finished first.",
+      "Eli finished first.",
+      "Mel finished first."
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_text": "Mya finished first.",
+    "answer": "Mya finished first.",
+    "answer_letter": "C",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "tracking_shuffled_objects",
+    "bigbench_idx": 42,
+    "split": "validation",
+    "input": "Alice, Bob, Claire, Dave, and Eve are friends and avid readers who occasionally trade books. At the start of the semester, they each buy one new book: Alice gets The Fellowship of the Ring, Bob gets Moby Dick, Claire gets The Pearl, Dave gets Ulysses, and Eve gets Frankenstein. As the semester proceeds, they start trading around the new books. First, Dave and Eve swap books. Then, Bob and Dave swap books. Then, Claire and Bob swap books. Then, Alice and Bob swap books. Finally, Claire and Eve swap books. At the end of the semester, Bob has",
+    "answer_choices": [
+      "The Fellowship of the Ring.",
+      "Moby Dick.",
+      "The Pearl.",
+      "Ulysses.",
+      "Frankenstein."
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "The Fellowship of the Ring.",
+    "answer": "The Fellowship of the Ring.",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "date_understanding",
+    "bigbench_idx": 48,
+    "split": "validation",
+    "input": "Q: Today is the last day of the first quarter of 2008. What is the date 24 hours later in MM/DD/YYYY? A:",
+    "answer_choices": [
+      "04/01/2008",
+      "04/01/2063",
+      "04/01/2007",
+      "03/22/2008",
+      "01/17/2008",
+      "03/31/2008"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "04/01/2008",
+    "answer": "04/01/2008",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "penguins_in_a_table",
+    "bigbench_idx": 14,
+    "split": "validation",
+    "input": "Here is a table where the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg) Louis, 7, 50, 11 Bernard, 5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15 For example: the age of Louis is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm. We now add a penguin to the table: James, 12, 90, 12 What is the largest height? Answer:",
+    "answer_choices": [
+      "50",
+      "80",
+      "60",
+      "70",
+      "90"
+    ],
+    "correct_answer_index": 4,
+    "correct_answer_text": "90",
+    "answer": "90",
+    "answer_letter": "E",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "logical_deduction",
+    "bigbench_idx": 3,
+    "split": "validation",
+    "input": "The following paragraphs each describe a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph. On a shelf, there are three books: a red book, a gray book, and a white book. The white book is to the left of the gray book. The red book is the second from the left.",
+    "answer_choices": [
+      "The red book is the rightmost.",
+      "The gray book is the rightmost.",
+      "The white book is the rightmost."
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_text": "The gray book is the rightmost.",
+    "answer": "The gray book is the rightmost.",
+    "answer_letter": "B",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "date_understanding",
+    "bigbench_idx": 28,
+    "split": "validation",
+    "input": "Q: Today's meeting is rescheduled to 11 am tomorrow, 10/16/1924. What is the date 10 days ago in MM/DD/YYYY? A:",
+    "answer_choices": [
+      "10/05/1924",
+      "10/12/1924",
+      "05/05/1924",
+      "10/04/1924",
+      "10/06/1924",
+      "11/02/1924"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "10/05/1924",
+    "answer": "10/05/1924",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "penguins_in_a_table",
+    "bigbench_idx": 8,
+    "split": "validation",
+    "input": "Here is a table where the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg) Louis, 7, 50, 11 Bernard, 5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15 For example: the age of Louis is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm. And here is a similar table, but listing giraffes: name, age, height (cm), weight (kg) Jody, 5, 430, 620 Gladys, 10, 420, 590 Marian, 2, 310, 410 Donna, 9, 440, 650 What is the name of the last penguin sorted by alphabetic order? Answer:",
+    "answer_choices": [
+      "Louis",
+      "Bernard",
+      "Vincent",
+      "Gwen",
+      "James"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_text": "Vincent",
+    "answer": "Vincent",
+    "answer_letter": "C",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "date_understanding",
+    "bigbench_idx": 45,
+    "split": "validation",
+    "input": "Q: This is the last day of 1899. What is the date a month ago in MM/DD/YYYY? A:",
+    "answer_choices": [
+      "11/30/1899",
+      "11/29/1899",
+      "02/07/1900",
+      "11/30/1843",
+      "12/01/1899",
+      "11/30/1983"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "11/30/1899",
+    "answer": "11/30/1899",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "date_understanding",
+    "bigbench_idx": 31,
+    "split": "validation",
+    "input": "Q: It is 4/19/1969 today. What is the date a month ago in MM/DD/YYYY? A:",
+    "answer_choices": [
+      "03/19/1969",
+      "03/18/1969",
+      "03/19/1948",
+      "03/20/1969",
+      "03/26/1969",
+      "06/01/1969"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "03/19/1969",
+    "answer": "03/19/1969",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "tracking_shuffled_objects",
+    "bigbench_idx": 107,
+    "split": "validation",
+    "input": "Alice, Bob, and Claire are on the same team in a soccer match. At the start of the match, they are each assigned to a position: Alice is playing center midfielder, Bob is playing goalkeeper, and Claire is playing left winger. As the game progresses, pairs of players occasionally swap positions. First, Claire and Alice trade positions. Then, Alice and Bob trade positions. Finally, Claire and Bob trade positions. At the end of the match, Claire is playing",
+    "answer_choices": [
+      "center midfielder.",
+      "goalkeeper.",
+      "left winger."
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_text": "left winger.",
+    "answer": "left winger.",
+    "answer_letter": "C",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "logical_deduction",
+    "bigbench_idx": 47,
+    "split": "validation",
+    "input": "The following paragraphs each describe a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph. On a shelf, there are three books: a gray book, an orange book, and a brown book. The orange book is the leftmost. The gray book is to the right of the brown book.",
+    "answer_choices": [
+      "The gray book is the rightmost.",
+      "The orange book is the rightmost.",
+      "The brown book is the rightmost."
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "The gray book is the rightmost.",
+    "answer": "The gray book is the rightmost.",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "logical_deduction",
+    "bigbench_idx": 17,
+    "split": "validation",
+    "input": "The following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. In a golf tournament, there were seven golfers: Dan, Eve, Mya, Amy, Rob, Ada, and Joe. Amy finished third. Joe finished last. Mya finished above Dan. Eve finished fourth. Amy finished above Rob. Ada finished third-to-last.",
+    "answer_choices": [
+      "Dan finished second-to-last.",
+      "Eve finished second-to-last.",
+      "Mya finished second-to-last.",
+      "Amy finished second-to-last.",
+      "Rob finished second-to-last.",
+      "Ada finished second-to-last.",
+      "Joe finished second-to-last."
+    ],
+    "correct_answer_index": 4,
+    "correct_answer_text": "Rob finished second-to-last.",
+    "answer": "Rob finished second-to-last.",
+    "answer_letter": "E",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "date_understanding",
+    "bigbench_idx": 61,
+    "split": "validation",
+    "input": "Q: In the US, Thanksgiving is on the fourth Thursday of November. Today is the US Thanksgiving of 2001. What is the date one year ago from today in MM/DD/YYYY? A:",
+    "answer_choices": [
+      "11/22/2001",
+      "11/26/2001",
+      "11/27/2001",
+      "11/22/2056",
+      "11/22/1923",
+      "11/21/2001"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "11/22/2001",
+    "answer": "11/22/2001",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "logical_deduction",
+    "bigbench_idx": 54,
+    "split": "validation",
+    "input": "The following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. In a golf tournament, there were seven golfers: Amy, Eve, Ada, Rob, Dan, Mel, and Joe. Joe finished third. Dan finished last. Eve finished first. Mel finished below Rob. Ada finished above Joe. Rob finished third-to-last.",
+    "answer_choices": [
+      "Amy finished fourth.",
+      "Eve finished fourth.",
+      "Ada finished fourth.",
+      "Rob finished fourth.",
+      "Dan finished fourth.",
+      "Mel finished fourth.",
+      "Joe finished fourth."
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "Amy finished fourth.",
+    "answer": "Amy finished fourth.",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "penguins_in_a_table",
+    "bigbench_idx": 18,
+    "split": "validation",
+    "input": "Here is a table where the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg) Louis, 7, 50, 11 Bernard, 5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15 For example: the age of Louis is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm. Which is the heaviest penguin? Answer:",
+    "answer_choices": [
+      "Louis",
+      "Bernard",
+      "Vincent",
+      "Gwen",
+      "James"
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_text": "Gwen",
+    "answer": "Gwen",
+    "answer_letter": "D",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "tracking_shuffled_objects",
+    "bigbench_idx": 77,
+    "split": "validation",
+    "input": "Alice, Bob, Claire, Dave, and Eve are dancers at a square dance. At the start of a song, they each have a partner: Alice is dancing with Helga, Bob is dancing with Patrick, Claire is dancing with Izzi, Dave is dancing with Rodrigo, and Eve is dancing with Jamie. Throughout the song, the dancers often trade partners. First, Claire and Bob switch partners. Then, Dave and Alice switch partners. Then, Dave and Bob switch partners. Then, Alice and Eve switch partners. Finally, Eve and Claire switch partners. At the end of the dance, Eve is dancing with",
+    "answer_choices": [
+      "Helga.",
+      "Patrick.",
+      "Izzi.",
+      "Rodrigo.",
+      "Jamie."
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_text": "Patrick.",
+    "answer": "Patrick.",
+    "answer_letter": "B",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "date_understanding",
+    "bigbench_idx": 27,
+    "split": "validation",
+    "input": "Q: Jane thought today is 3/11/2002, but today is in fact Mar 12, which is 1 day later. What is the date today in MM/DD/YYYY? A:",
+    "answer_choices": [
+      "03/12/2002",
+      "01/31/2002",
+      "03/12/1908",
+      "04/02/2002",
+      "03/14/2002",
+      "05/12/2001"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "03/12/2002",
+    "answer": "03/12/2002",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "date_understanding",
+    "bigbench_idx": 0,
+    "split": "validation",
+    "input": "Q: Jane thought today is 3/11/2002, but today is in fact Mar 12, which is 1 day later. What is the date tomorrow in MM/DD/YYYY? A:",
+    "answer_choices": [
+      "03/13/2002",
+      "03/10/2002",
+      "02/27/2002",
+      "12/13/2001",
+      "03/14/2002",
+      "08/13/2001"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "03/13/2002",
+    "answer": "03/13/2002",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "tracking_shuffled_objects",
+    "bigbench_idx": 308,
+    "split": "validation",
+    "input": "Alice, Bob, Claire, Dave, Eve, Fred, and Gertrude are on the same team in a soccer match. At the start of the match, they are each assigned to a position: Alice is playing striker, Bob is playing right winger, Claire is playing center midfielder, Dave is playing cheerleader, Eve is playing right midfielder, Fred is playing left winger, and Gertrude is playing left midfielder. As the game progresses, pairs of players occasionally swap positions. First, Fred and Eve trade positions. Then, Eve and Claire trade positions. Then, Gertrude and Alice trade positions. Then, Dave and Bob trade positions. Then, Claire and Alice trade positions. Then, Bob and Alice trade positions. Finally, Gertrude and Eve trade positions. At the end of the match, Eve is playing",
+    "answer_choices": [
+      "striker.",
+      "right winger.",
+      "center midfielder.",
+      "cheerleader.",
+      "right midfielder.",
+      "left winger.",
+      "left midfielder."
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "striker.",
+    "answer": "striker.",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "logical_deduction",
+    "bigbench_idx": 15,
+    "split": "validation",
+    "input": "The following paragraphs each describe a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. On a shelf, there are five books: a green book, an orange book, a gray book, a yellow book, and a purple book. The green book is the rightmost. The gray book is to the right of the orange book. The purple book is to the left of the yellow book. The purple book is to the right of the gray book.",
+    "answer_choices": [
+      "The green book is the second from the left.",
+      "The orange book is the second from the left.",
+      "The gray book is the second from the left.",
+      "The yellow book is the second from the left.",
+      "The purple book is the second from the left."
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_text": "The gray book is the second from the left.",
+    "answer": "The gray book is the second from the left.",
+    "answer_letter": "C",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "penguins_in_a_table",
+    "bigbench_idx": 7,
+    "split": "validation",
+    "input": "Here is a table where the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg) Louis, 7, 50, 11 Bernard, 5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15 For example: the age of Louis is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm. We now add a penguin to the table: James, 12, 90, 12 How many penguins are less than 8 years old and weight more than 12 kg? Answer:",
+    "answer_choices": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "1",
+    "answer": "1",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "date_understanding",
+    "bigbench_idx": 53,
+    "split": "validation",
+    "input": "Q: Today's meeting is rescheduled to 11 am tomorrow, 10/16/1924. What is the date yesterday in MM/DD/YYYY? A:",
+    "answer_choices": [
+      "10/14/1924",
+      "10/22/1924",
+      "10/15/1924",
+      "10/14/2004",
+      "10/14/1935",
+      "09/14/1925"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "10/14/1924",
+    "answer": "10/14/1924",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "tracking_shuffled_objects",
+    "bigbench_idx": 123,
+    "split": "validation",
+    "input": "Alice, Bob, Claire, Dave, Eve, Fred, and Gertrude are playing a game. At the start of the game, they are each holding a ball: Alice has a green ball, Bob has a pink ball, Claire has a orange ball, Dave has a yellow ball, Eve has a blue ball, Fred has a black ball, and Gertrude has a purple ball. As the game progresses, pairs of players trade balls. First, Gertrude and Alice swap balls. Then, Eve and Claire swap balls. Then, Claire and Gertrude swap balls. Then, Bob and Alice swap balls. Then, Eve and Alice swap balls. Then, Dave and Alice swap balls. Finally, Dave and Fred swap balls. At the end of the game, Claire has the",
+    "answer_choices": [
+      "green ball.",
+      "pink ball.",
+      "orange ball.",
+      "yellow ball.",
+      "blue ball.",
+      "black ball.",
+      "purple ball."
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "green ball.",
+    "answer": "green ball.",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "penguins_in_a_table",
+    "bigbench_idx": 2,
+    "split": "validation",
+    "input": "Here is a table where the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg) Louis, 7, 50, 11 Bernard, 5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15 For example: the age of Louis is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm. And here is a similar table, but listing giraffes: name, age, height (cm), weight (kg) Jody, 5, 430, 620 Gladys, 10, 420, 590 Marian, 2, 310, 410 Donna, 9, 440, 650 What is the cumulated age of the penguins? Answer:",
+    "answer_choices": [
+      "26",
+      "29",
+      "41",
+      "55",
+      "67"
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_text": "29",
+    "answer": "29",
+    "answer_letter": "B",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "date_understanding",
+    "bigbench_idx": 24,
+    "split": "validation",
+    "input": "Q: Today is 9/7. Jane is watching NFL 2003. What is the date a month ago in MM/DD/YYYY? A:",
+    "answer_choices": [
+      "08/07/2003",
+      "04/07/2003",
+      "06/01/2003",
+      "08/14/2003",
+      "08/08/2003",
+      "08/10/2003"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "08/07/2003",
+    "answer": "08/07/2003",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "tracking_shuffled_objects",
+    "bigbench_idx": 152,
+    "split": "validation",
+    "input": "Alice, Bob, Claire, Dave, and Eve are on the same team in a soccer match. At the start of the match, they are each assigned to a position: Alice is playing cheerleader, Bob is playing goalkeeper, Claire is playing striker, Dave is playing left midfielder, and Eve is playing right winger. As the game progresses, pairs of players occasionally swap positions. First, Claire and Eve trade positions. Then, Claire and Dave trade positions. Then, Eve and Claire trade positions. Then, Claire and Alice trade positions. Finally, Bob and Dave trade positions. At the end of the match, Alice is playing",
+    "answer_choices": [
+      "cheerleader.",
+      "goalkeeper.",
+      "striker.",
+      "left midfielder.",
+      "right winger."
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_text": "striker.",
+    "answer": "striker.",
+    "answer_letter": "C",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "date_understanding",
+    "bigbench_idx": 65,
+    "split": "validation",
+    "input": "Q: It is 4/19/1969 today. What is the date one week from today in MM/DD/YYYY? A:",
+    "answer_choices": [
+      "04/26/1969",
+      "05/11/1969",
+      "04/05/1969",
+      "04/25/1969",
+      "05/14/1969",
+      "04/27/1969"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "04/26/1969",
+    "answer": "04/26/1969",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "tracking_shuffled_objects",
+    "bigbench_idx": 128,
+    "split": "validation",
+    "input": "Alice, Bob, Claire, Dave, Eve, Fred, and Gertrude are playing a game. At the start of the game, they are each holding a ball: Alice has a blue ball, Bob has a orange ball, Claire has a black ball, Dave has a brown ball, Eve has a pink ball, Fred has a white ball, and Gertrude has a purple ball. As the game progresses, pairs of players trade balls. First, Alice and Fred swap balls. Then, Dave and Fred swap balls. Then, Eve and Gertrude swap balls. Then, Dave and Claire swap balls. Then, Claire and Bob swap balls. Then, Dave and Alice swap balls. Finally, Bob and Fred swap balls. At the end of the game, Fred has the",
+    "answer_choices": [
+      "blue ball.",
+      "orange ball.",
+      "black ball.",
+      "brown ball.",
+      "pink ball.",
+      "white ball.",
+      "purple ball."
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_text": "blue ball.",
+    "answer": "blue ball.",
+    "answer_letter": "A",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  },
+  {
+    "dataset_name": "BIG-Bench",
+    "bigbench_task": "penguins_in_a_table",
+    "bigbench_idx": 17,
+    "split": "validation",
+    "input": "Here is a table where the first line is a header and each subsequent line is a penguin: name, age, height (cm), weight (kg) Louis, 7, 50, 11 Bernard, 5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15 For example: the age of Louis is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm. Which is the oldest penguin? Answer:",
+    "answer_choices": [
+      "Louis",
+      "Bernard",
+      "Vincent",
+      "Gwen",
+      "James"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_text": "Vincent",
+    "answer": "Vincent",
+    "answer_letter": "C",
+    "reward_type": "exact_match_correct_answer_text_or_letter"
+  }
+]

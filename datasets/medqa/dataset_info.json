@@ -1,0 +1,31 @@
+{
+  "name": "MedQA",
+  "source": "https://github.com/jind11/MedQA",
+  "description": "US Medical Licensing Exam (USMLE) multiple-choice questions.",
+  "files": {
+    "test.jsonl": {
+      "split": "test",
+      "num_examples": 1273,
+      "fields": [
+        "question",
+        "answer",
+        "options",
+        "meta_info",
+        "answer_idx"
+      ]
+    },
+    "test_with_phrases.jsonl": {
+      "split": "test",
+      "num_examples": 1273,
+      "fields": [
+        "question",
+        "answer",
+        "options",
+        "meta_info",
+        "answer_idx",
+        "metamap_phrases"
+      ],
+      "note": "Augmented with MetaMap phrase extraction"
+    }
+  }
+}

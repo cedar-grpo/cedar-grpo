@@ -1,0 +1,802 @@
+[
+  {
+    "context_id": "Abduction-Person-Simple-2035",
+    "context": "Dave is huge. Harry is tiny. Alan is sad. Dave is big. People that are sad, are rough, and are imperfect, are bad. Alan is poor. Things that are strong, are heavy, and are big, are also high. Alan is imperfect. If a person is wealthy, is smart, and is clever, then that person is also nice. Dave is heavy. Harry is small. If something is small, is tiny, and is little, it is also short. Anne is wealthy. Anne is clever. Harry is thin.",
+    "query_id": "Abduction-Person-Simple-2035-Q3",
+    "query": "Harry is short.",
+    "answer": "Harry is little.",
+    "qcat": "0",
+    "question_number": 3,
+    "source_dataset": "Abduction-Person-Simple"
+  },
+  {
+    "context_id": "Abduction-Person-Simple-56",
+    "context": "If something is thin, is short, and is little, then it is also small. Anne is short. Charlie is poor. Charlie is sad. Dave is huge. Dave is heavy. If something is imperfect, is dull, and is sad, it is also bad. Bob is kind. If a person is high, is huge, and is big, then that person is also strong. Anne is tiny. All people that are wealthy, are quiet, and are kind, are also nice. Dave is big. Bob is wealthy. Charlie is dull. Anne is thin.",
+    "query_id": "Abduction-Person-Simple-56-Q4",
+    "query": "Anne is not small.",
+    "answer": "Anne is little.",
+    "qcat": "0_0",
+    "question_number": 4,
+    "source_dataset": "Abduction-Person-Simple"
+  },
+  {
+    "context_id": "Abduction-Person-1087",
+    "context": "All people that are tiny, are small, and are quiet, are also thin. Anne is bad. Alan is clever. Anne is sad. People that are bad, are rough, and are imperfect, are also dull. If a person is tiny, is strong, and is imperfect, then that person is also smart. Charlie is small. All people that are imperfect, are rough, and are strong, are also dull. All people that are short, are small, and are tiny, are also thin. Alan is quiet. If a person is short, is nice, and is big, then that person is dull. Fiona is strong. If something is rough, is small, and is quiet, it is also heavy. Charlie is little. All things that are clever, are nice, and are bad, are smart. All things that are nice, are clever, and are quiet, are smart. If something is huge, is big, and is short, it is also heavy. All people that are clever, are bad, and are huge, are also thin. Charlie is short. People that are strong, are big, and are huge, are heavy. Fiona is high. Anne is imperfect. Fiona is big.",
+    "query_id": "Abduction-Person-1087-Q3",
+    "query": "Charlie is thin.",
+    "answer": "Charlie is tiny.",
+    "qcat": "0",
+    "question_number": 3,
+    "source_dataset": "Abduction-Person"
+  },
+  {
+    "context_id": "Abduction-Animal-Simple-1946",
+    "context": "The wolf is awful. Things that are nice, are smart, and are kind, are also round. The wolf chases the cat. Things that are furry, are small, and are lovely, are beautiful. The dinosaur attacks the hamster. The hamster is nice. The dinosaur is angry. The cat is small. The hamster is kind. The hamster is quiet. The wolf is big. The dinosaur is tired. The dinosaur is boring. Animals that like the cat, attack the hamster, and are tired, are also strong. If something is angry, is rough, and is boring, it is sleepy. Things that are fierce, are awful, and are big, are heavy. The cat is furry. The cat is cute. If an animal is obese, chases the cat, and visits the hamster, it is lazy.",
+    "query_id": "Abduction-Animal-Simple-1946-Q10",
+    "query": "The dinosaur is not strong.",
+    "answer": "The dinosaur likes the cat.",
+    "qcat": "0_0",
+    "question_number": 10,
+    "source_dataset": "Abduction-Animal-Simple"
+  },
+  {
+    "context_id": "Abduction-Person-Simple-1415",
+    "context": "Harry is big. Dave is tiny. People that are kind, are clever, and are smart, are also nice. Gary is poor. Alan is smart. Gary is rough. All people that are big, are strong, and are high, are also heavy. Dave is small. Harry is high. All things that are thin, are tiny, and are little, are also short. If a person is bad, is dull, and is poor, then that person is also imperfect. Harry is huge. Alan is kind. Dave is little. Gary is bad.",
+    "query_id": "Abduction-Person-Simple-1415-Q7",
+    "query": "Gary is imperfect.",
+    "answer": "Gary is dull.",
+    "qcat": "0",
+    "question_number": 7,
+    "source_dataset": "Abduction-Person-Simple"
+  },
+  {
+    "context_id": "Abduction-Animal-Simple-96",
+    "context": "The dog is kind. The wolf sees the cat. All animals that need the dog, see the cat, and are heavy, are rough. The wolf is strong. If something is quiet, is round, and is nice, then it is smart. The dog is nice. If an animal is big, is fierce, and is strong, it is also awful. The dog is quiet. The bald eagle attacks the dog. The bald eagle is angry. The bald eagle is sleepy. The cat is furry. The cat is small. The wolf is fierce. All things that are adorable, are furry, and are funny, are lovely. Things that are slow, are angry, and are boring, are lazy. The bald eagle is slow. All animals that attack the dog, are sleepy, and visit the cat, are also obese. The cat is funny.",
+    "query_id": "Abduction-Animal-Simple-96-Q6",
+    "query": "The wolf is not awful.",
+    "answer": "The wolf is big.",
+    "qcat": "0_0",
+    "question_number": 6,
+    "source_dataset": "Abduction-Animal-Simple"
+  },
+  {
+    "context_id": "Abduction-Person-Simple-756",
+    "context": "Alan is nice. Fiona is huge. If something is strong, is huge, and is heavy, it is also high. Fiona is heavy. If something is rough, is bad, and is dull, it is sad. Bob is tiny. Fiona is big. Gary is rough. Gary is poor. Things that are nice, are kind, and are quiet, are also clever. If something is tiny, is short, and is small, it is thin. Alan is kind. Gary is bad. Bob is little. Bob is short.",
+    "query_id": "Abduction-Person-Simple-756-Q2",
+    "query": "Fiona is not high.",
+    "answer": "Fiona is strong.",
+    "qcat": "0_0",
+    "question_number": 2,
+    "source_dataset": "Abduction-Person-Simple"
+  },
+  {
+    "context_id": "Abduction-Animal-Simple-2924",
+    "context": "If an animal is furry, is adorable, and is beautiful, it is also small. The mouse is kind. The squirrel is cute. Animals that are reckless, are angry, and are sleepy, are lazy. The squirrel is furry. The cheetah is rough. The cheetah is sleepy. The cheetah attacks the mouse. The cheetah is reckless. The snake is obese. The snake is awful. If something is obese, is awful, and is fierce, it is strong. Things that visit the squirrel, are rough, and attack the mouse, are also big. The mouse is nice. The mouse is round. All things that are heavy, like the squirrel, and chase the mouse, are also slow. The squirrel is adorable. The snake likes the squirrel. Animals that are nice, are round, and are smart, are quiet.",
+    "query_id": "Abduction-Animal-Simple-2924-Q4",
+    "query": "The cheetah is not lazy.",
+    "answer": "The cheetah is angry.",
+    "qcat": "0_0",
+    "question_number": 4,
+    "source_dataset": "Abduction-Animal-Simple"
+  },
+  {
+    "context_id": "Abduction-Person-1279",
+    "context": "Gary is smart. If a person is nice, is clever, and is smart, then that person is also kind. All people that are thin, are small, and are little, are also tiny. Charlie is small. Gary is clever. Things that are poor, are bad, and are imperfect, are also dull. If a person is clever, is thin, and is bad, that person is also heavy. Charlie is short. Dave is big. All people that are huge, are high, and are strong, are also heavy. Dave is strong. If something is high, is small, and is huge, it is heavy. All people that are little, are clever, and are thin, are tiny. Things that are poor, are bad, and are strong, are also dull. Anne is poor. Anne is imperfect. Anne is rough. Charlie is thin. If something is small, is high, and is nice, then it is dull. Dave is high. If a person is strong, is poor, and is little, that person is also kind. People that are smart, are imperfect, and are huge, are also tiny. All things that are imperfect, are smart, and are nice, are kind.",
+    "query_id": "Abduction-Person-1279-Q5",
+    "query": "Gary is kind.",
+    "answer": "Gary is nice.",
+    "qcat": "0",
+    "question_number": 5,
+    "source_dataset": "Abduction-Person"
+  },
+  {
+    "context_id": "Abduction-Person-1949",
+    "context": "People that are imperfect, are big, and are short, are wealthy. If a person is poor, is sad, and is imperfect, then that person is dull. Bob is heavy. Bob is strong. If a person is smart, is kind, and is nice, then that person is wealthy. If a person is small, is tiny, and is short, then that person is thin. Erin is tiny. Things that are poor, are imperfect, and are big, are also dull. If a person is huge, is smart, and is sad, that person is also thin. Harry is imperfect. Harry is sad. Gary is smart. Erin is small. If something is heavy, is huge, and is big, then it is high. Erin is little. Bob is big. Gary is nice. Harry is rough. If a person is nice, is tiny, and is short, then that person is thin. If something is huge, is heavy, and is small, it is also high. If a person is nice, is poor, and is tiny, that person is high. All people that are small, are kind, and are heavy, are also dull. If something is kind, is smart, and is sad, it is wealthy.",
+    "query_id": "Abduction-Person-1949-Q7",
+    "query": "Harry is dull.",
+    "answer": "Harry is poor.",
+    "qcat": "0",
+    "question_number": 7,
+    "source_dataset": "Abduction-Person"
+  },
+  {
+    "context_id": "Abduction-Animal-Simple-547",
+    "context": "The cheetah is awful. The mouse is funny. Animals that chase the dog, like the mouse, and are angry, are big. The tiger is boring. The mouse is furry. The cheetah is strong. The dog is quiet. If something is smart, is quiet, and is nice, then it is kind. All animals that are sleepy, are boring, and are lazy, are also tired. The tiger is angry. The mouse is adorable. The dog is round. The tiger chases the dog. The cheetah sees the mouse. The tiger is lazy. Things that are fierce, are awful, and are strong, are also heavy. If an animal is furry, is small, and is adorable, then it is beautiful. If an animal sees the mouse, is obese, and attacks the dog, it is reckless. The dog is smart.",
+    "query_id": "Abduction-Animal-Simple-547-Q7",
+    "query": "The mouse is beautiful.",
+    "answer": "The mouse is small.",
+    "qcat": "0",
+    "question_number": 7,
+    "source_dataset": "Abduction-Animal-Simple"
+  },
+  {
+    "context_id": "Abduction-Person-Simple-2268",
+    "context": "Fiona is high. Harry is small. Fiona is huge. Harry is little. Gary is dull. All people that are huge, are heavy, and are high, are strong. Erin is quiet. Harry is tiny. Things that are wealthy, are clever, and are quiet, are also smart. Gary is rough. Erin is clever. If a person is dull, is bad, and is rough, that person is poor. All things that are tiny, are little, and are short, are thin. Gary is sad. Fiona is big.",
+    "query_id": "Abduction-Person-Simple-2268-Q3",
+    "query": "Harry is thin.",
+    "answer": "Harry is short.",
+    "qcat": "0",
+    "question_number": 3,
+    "source_dataset": "Abduction-Person-Simple"
+  },
+  {
+    "context_id": "Abduction-Animal-Simple-2562",
+    "context": "All animals that are small, are furry, and are funny, are adorable. The mouse is kind. The leopard is dull. The crocodile is strong. All animals that are smart, are round, and are nice, are also quiet. The dog is beautiful. The mouse is smart. The leopard is lazy. The crocodile likes the dog. The dog is funny. All things that are obese, are strong, and are heavy, are also big. The leopard needs the mouse. If an animal chases the mouse, is awful, and likes the dog, it is boring. The dog is furry. All animals that visit the dog, are rough, and need the mouse, are also fierce. The leopard is rough. The mouse is round. The crocodile is obese. If an animal is reckless, is dull, and is lazy, it is angry.",
+    "query_id": "Abduction-Animal-Simple-2562-Q10",
+    "query": "The leopard is not fierce.",
+    "answer": "The leopard visits the dog.",
+    "qcat": "0_0",
+    "question_number": 10,
+    "source_dataset": "Abduction-Animal-Simple"
+  },
+  {
+    "context_id": "Abduction-Animal-2746",
+    "context": "The tiger is fierce. The cheetah is lazy. The rabbit is round. If something is kind, is beautiful, and is strong, it is boring. Things that are beautiful, are strong, and are heavy, are also awful. Things that are lazy, are rough, and are tired, are boring. The cat is beautiful. The cheetah is tired. All things that are lazy, are fierce, and are adorable, are smart. The cheetah attacks the rabbit. The tiger needs the cat. All things that are nice, are heavy, and are tired, are furry. The cheetah is dull. The cat is small. Things that are lazy, are fierce, and are rough, are also boring. If an animal is adorable, is quiet, and is small, it is also furry. If an animal likes the rabbit, is big, and needs the cat, then it is also angry. The rabbit is nice. The tiger is strong. All animals that are small, are adorable, and are beautiful, are also furry. If an animal is tired, is kind, and is nice, then it is also smart. The rabbit is quiet. All things that are heavy, are fierce, and are strong, are awful. The cat is cute. If something is rough, is quiet, and is small, it is awful. If something is dull, sees the cat, and attacks the rabbit, it is obese. If an animal is kind, is quiet, and is nice, it is smart.",
+    "query_id": "Abduction-Animal-2746-Q10",
+    "query": "The cheetah is not obese.",
+    "answer": "The cheetah sees the cat.",
+    "qcat": "0_0",
+    "question_number": 10,
+    "source_dataset": "Abduction-Animal"
+  },
+  {
+    "context_id": "Abduction-Animal-Simple-481",
+    "context": "The tiger is rough. If an animal is quiet, is nice, and is kind, it is also smart. The dog is adorable. The dog is lovely. Animals that are rough, visit the cat, and like the dog, are also fierce. The snake attacks the dog. The snake is obese. The tiger is tired. All things that are slow, are lazy, and are tired, are dull. The cat is round. The cat is nice. The tiger is slow. The cat is kind. If an animal is heavy, attacks the dog, and needs the cat, then it is reckless. The dog is cute. Things that are obese, are awful, and are strong, are also big. The tiger visits the cat. The snake is strong. All things that are adorable, are lovely, and are furry, are also beautiful.",
+    "query_id": "Abduction-Animal-Simple-481-Q1",
+    "query": "The cat is smart.",
+    "answer": "The cat is quiet.",
+    "qcat": "0",
+    "question_number": 1,
+    "source_dataset": "Abduction-Animal-Simple"
+  },
+  {
+    "context_id": "Abduction-Person-Simple-2922",
+    "context": "If a person is bad, is imperfect, and is sad, that person is poor. Fiona is tiny. Erin is quiet. Gary is imperfect. Gary is bad. Fiona is thin. Things that are short, are tiny, and are thin, are small. Gary is rough. Charlie is big. Erin is wealthy. Charlie is heavy. If something is heavy, is big, and is high, it is also strong. Charlie is huge. Fiona is little. All people that are wealthy, are nice, and are quiet, are also clever.",
+    "query_id": "Abduction-Person-Simple-2922-Q2",
+    "query": "Charlie is not strong.",
+    "answer": "Charlie is high.",
+    "qcat": "0_0",
+    "question_number": 2,
+    "source_dataset": "Abduction-Person-Simple"
+  },
+  {
+    "context_id": "Abduction-Person-1888",
+    "context": "All people that are heavy, are tiny, and are smart, are also sad. Fiona is heavy. If a person is huge, is heavy, and is strong, then that person is high. Erin is tiny. Fiona is strong. All people that are clever, are poor, and are smart, are wealthy. If a person is smart, is clever, and is kind, that person is wealthy. Fiona is big. Things that are clever, are poor, and are huge, are thin. Erin is little. Things that are short, are little, and are kind, are thin. If something is short, is strong, and is imperfect, it is also wealthy. If something is bad, is little, and is kind, then it is high. Charlie is imperfect. Dave is clever. Dave is kind. If something is bad, is imperfect, and is poor, it is sad. Erin is small. Charlie is poor. All people that are short, are tiny, and are little, are thin. If something is bad, is strong, and is imperfect, it is sad. If something is huge, is heavy, and is tiny, then it is high. Charlie is dull.",
+    "query_id": "Abduction-Person-1888-Q6",
+    "query": "Dave is not wealthy.",
+    "answer": "Dave is smart.",
+    "qcat": "0_0",
+    "question_number": 6,
+    "source_dataset": "Abduction-Person"
+  },
+  {
+    "context_id": "Abduction-Person-Simple-2772",
+    "context": "Harry is rough. Fiona is tiny. Gary is high. If a person is big, is heavy, and is strong, then that person is huge. All things that are thin, are tiny, and are short, are small. Gary is big. Alan is clever. Harry is bad. Harry is sad. Alan is smart. People that are dull, are sad, and are rough, are also poor. Fiona is short. Things that are smart, are clever, and are nice, are kind. Fiona is little. Gary is heavy.",
+    "query_id": "Abduction-Person-Simple-2772-Q1",
+    "query": "Gary is huge.",
+    "answer": "Gary is strong.",
+    "qcat": "0",
+    "question_number": 1,
+    "source_dataset": "Abduction-Person-Simple"
+  },
+  {
+    "context_id": "Abduction-Animal-2361",
+    "context": "If something is reckless, is lazy, and is boring, then it is angry. The cat is adorable. The snake is lazy. The cat is small. If an animal is fierce, is boring, and is quiet, it is also lovely. The snake is boring. The cat is beautiful. If an animal is quiet, is smart, and is boring, it is round. If something sees the cat, is heavy, and attacks the squirrel, it is tired. The cheetah sees the cat. If an animal is strong, is lazy, and is reckless, it is also angry. The cheetah is big. All animals that are adorable, are cute, and are beautiful, are lovely. If an animal is big, is strong, and is fierce, it is awful. The squirrel is quiet. If something is adorable, is big, and is smart, it is angry. The snake is rough. All things that are strong, are lazy, and are cute, are round. The cheetah is strong. The squirrel is kind. If something is quiet, is smart, and is kind, it is round. If an animal is reckless, is kind, and is beautiful, it is awful. If something is kind, is cute, and is beautiful, it is lovely. Animals that are fierce, are adorable, and are big, are awful. The snake visits the squirrel. Animals that need the cat, visit the squirrel, and are rough, are also obese. The squirrel is nice.",
+    "query_id": "Abduction-Animal-2361-Q8",
+    "query": "The cat is not lovely.",
+    "answer": "The cat is cute.",
+    "qcat": "0_0",
+    "question_number": 8,
+    "source_dataset": "Abduction-Animal"
+  },
+  {
+    "context_id": "Abduction-Animal-1870",
+    "context": "The hamster is funny. The dog is round. The dinosaur chases the dog. The dinosaur is lazy. All animals that are slow, are lazy, and are angry, are sleepy. The bear is heavy. Animals that are obese, are lazy, and are angry, are also sleepy. The bear is obese. The dinosaur is slow. If an animal is cute, is nice, and is lovely, it is also furry. If an animal attacks the hamster, sees the dog, and is fierce, then it is also boring. If an animal is dull, visits the hamster, and chases the dog, then it is big. If something is heavy, is awful, and is obese, it is strong. The dinosaur is dull. Things that are obese, are lovely, and are lazy, are smart. If an animal is nice, is quiet, and is kind, it is smart. If an animal is quiet, is awful, and is slow, then it is furry. The bear attacks the hamster. Things that are heavy, are kind, and are adorable, are also sleepy. If something is adorable, is lovely, and is cute, it is furry. The hamster is cute. If something is awful, is adorable, and is heavy, it is strong. All things that are kind, are quiet, and are slow, are smart. If something is nice, is cute, and is angry, it is strong. The dog is nice. The dog is quiet. The hamster is adorable.",
+    "query_id": "Abduction-Animal-1870-Q3",
+    "query": "The dinosaur is sleepy.",
+    "answer": "The dinosaur is angry.",
+    "qcat": "0",
+    "question_number": 3,
+    "source_dataset": "Abduction-Animal"
+  },
+  {
+    "context_id": "Abduction-Animal-2115",
+    "context": "The mouse is quiet. All things that are obese, are big, and are furry, are heavy. All animals that chase the hamster, are strong, and see the mouse, are also rough. The hamster is funny. If something is awful, is obese, and is big, it is heavy. The mouse is kind. The snake is angry. The bald eagle is awful. All things that are angry, are nice, and are quiet, are also smart. If something is reckless, is angry, and is lazy, it is dull. The snake is slow. All animals that are quiet, are nice, and are kind, are smart. All animals that are kind, are lovely, and are adorable, are small. The mouse is round. The bald eagle is big. Things that like the mouse, visit the hamster, and are slow, are also fierce. The snake likes the mouse. The bald eagle chases the hamster. If an animal is quiet, is obese, and is angry, then it is also small. Things that are awful, are lazy, and are reckless, are dull. If something is big, is nice, and is furry, it is dull. The hamster is lovely. The hamster is furry. If an animal is lovely, is adorable, and is furry, it is also small. If something is lazy, is lovely, and is kind, it is also heavy. If an animal is adorable, is reckless, and is awful, then it is smart. The snake is reckless.",
+    "query_id": "Abduction-Animal-2115-Q10",
+    "query": "The snake is not fierce.",
+    "answer": "The snake visits the hamster.",
+    "qcat": "0_0",
+    "question_number": 10,
+    "source_dataset": "Abduction-Animal"
+  },
+  {
+    "context_id": "Abduction-Animal-Simple-2909",
+    "context": "The cheetah is boring. All things that are big, are obese, and are fierce, are also strong. If an animal is smart, is nice, and is round, it is also quiet. The hamster is nice. The rabbit is small. The cheetah is slow. The cheetah is angry. The hamster is kind. The dinosaur needs the rabbit. The dinosaur is fierce. If an animal needs the rabbit, chases the hamster, and is awful, it is tired. The dinosaur is obese. All things that are dull, are boring, and are slow, are rough. The rabbit is adorable. The cheetah sees the hamster. All things that attack the rabbit, are angry, and see the hamster, are also heavy. The rabbit is furry. If an animal is small, is furry, and is lovely, then it is beautiful. The hamster is smart.",
+    "query_id": "Abduction-Animal-Simple-2909-Q9",
+    "query": "The cheetah is heavy.",
+    "answer": "The cheetah attacks the rabbit.",
+    "qcat": "0",
+    "question_number": 9,
+    "source_dataset": "Abduction-Animal-Simple"
+  },
+  {
+    "context_id": "Abduction-Person-1067",
+    "context": "All things that are huge, are nice, and are tiny, are rough. Dave is big. If something is tiny, is huge, and is heavy, it is also high. If a person is strong, is imperfect, and is dull, that person is rough. People that are small, are thin, and are clever, are also little. Gary is sad. If a person is strong, is huge, and is heavy, that person is also high. Gary is bad. People that are tiny, are thin, and are small, are little. If something is sad, is kind, and is heavy, then it is also little. People that are strong, are thin, and are dull, are also quiet. If a person is small, is imperfect, and is clever, then that person is also high. If a person is nice, is kind, and is sad, that person is also quiet. Charlie is small. Alan is kind. Gary is dull. People that are clever, are kind, and are nice, are quiet. Charlie is short. Dave is strong. Dave is huge. If a person is sad, is dull, and is imperfect, then that person is also rough. Alan is clever. Charlie is tiny.",
+    "query_id": "Abduction-Person-1067-Q7",
+    "query": "Gary is rough.",
+    "answer": "Gary is imperfect.",
+    "qcat": "0",
+    "question_number": 7,
+    "source_dataset": "Abduction-Person"
+  },
+  {
+    "context_id": "Abduction-Animal-593",
+    "context": "Things that are adorable, are furry, and are nice, are also lovely. If something is beautiful, is furry, and is adorable, then it is also lovely. If something is angry, visits the squirrel, and needs the mouse, it is awful. If something is obese, is smart, and is rough, then it is also lovely. The tiger is angry. If something is rough, is reckless, and is lazy, then it is tired. All animals that are kind, are beautiful, and are fierce, are tired. The falcon is fierce. The squirrel is nice. The squirrel is quiet. The mouse is beautiful. The tiger is rough. If an animal is obese, is beautiful, and is fierce, it is also heavy. The tiger is lazy. If something is obese, is big, and is fierce, then it is also heavy. The squirrel is smart. All things that are smart, are kind, and are nice, are also round. If something is nice, is reckless, and is adorable, then it is heavy. The mouse is adorable. The falcon attacks the mouse. Animals that are lazy, are big, and are furry, are also round. All things that are lazy, are big, and are reckless, are also tired. Animals that are smart, are rough, and are kind, are round. The falcon is big. The mouse is cute. The tiger visits the squirrel. If something chases the squirrel, attacks the mouse, and is strong, then it is slow.",
+    "query_id": "Abduction-Animal-593-Q10",
+    "query": "The tiger is not awful.",
+    "answer": "The tiger needs the mouse.",
+    "qcat": "0_0",
+    "question_number": 10,
+    "source_dataset": "Abduction-Animal"
+  },
+  {
+    "context_id": "Abduction-Animal-1998",
+    "context": "The rabbit is quiet. The dinosaur chases the rabbit. The mouse is furry. If an animal is boring, is sleepy, and is rough, then it is also lazy. The rabbit is nice. If an animal is funny, is small, and is cute, then it is also beautiful. Animals that are fierce, are kind, and are sleepy, are also beautiful. All animals that are awful, are fierce, and are funny, are strong. The dinosaur is sleepy. The mouse is funny. Things that are cute, are nice, and are small, are beautiful. If something is fierce, is big, and is awful, it is also strong. The snake is awful. All animals that chase the rabbit, attack the mouse, and are slow, are also obese. The mouse is cute. All animals that are nice, are rough, and are cute, are strong. Things that visit the rabbit, are heavy, and need the mouse, are also tired. The snake needs the mouse. If an animal is rough, is big, and is boring, then it is also lazy. The rabbit is kind. If something is round, is kind, and is nice, it is also smart. If an animal is kind, is round, and is sleepy, then it is also smart. The snake is big. The dinosaur is boring. The dinosaur is slow. All things that are big, are boring, and are small, are smart. If an animal is awful, is round, and is funny, then it is lazy.",
+    "query_id": "Abduction-Animal-1998-Q6",
+    "query": "The snake is not strong.",
+    "answer": "The snake is fierce.",
+    "qcat": "0_0",
+    "question_number": 6,
+    "source_dataset": "Abduction-Animal"
+  },
+  {
+    "context_id": "Abduction-Person-1862",
+    "context": "If something is kind, is little, and is bad, it is big. Dave is kind. If something is rough, is bad, and is dull, it is also poor. Bob is high. Alan is dull. If something is short, is heavy, and is quiet, it is also poor. Things that are high, are strong, and are heavy, are big. Bob is heavy. If something is high, is tiny, and is rough, it is also wealthy. Things that are tiny, are little, and are short, are thin. Dave is smart. All things that are dull, are strong, and are smart, are also thin. All people that are rough, are bad, and are high, are also poor. Alan is imperfect. Things that are little, are kind, and are tiny, are also thin. Erin is small. People that are short, are heavy, and are strong, are also big. Erin is short. Bob is huge. Erin is little. If something is dull, is smart, and is quiet, then it is also wealthy. All people that are smart, are kind, and are quiet, are also wealthy. Alan is rough.",
+    "query_id": "Abduction-Person-1862-Q3",
+    "query": "Erin is thin.",
+    "answer": "Erin is tiny.",
+    "qcat": "0",
+    "question_number": 3,
+    "source_dataset": "Abduction-Person"
+  },
+  {
+    "context_id": "Abduction-Animal-Simple-2534",
+    "context": "The leopard is tired. The leopard is rough. The mouse is quiet. The wolf is big. All animals that are slow, are tired, and are dull, are also angry. If something is strong, is big, and is fierce, it is also awful. The mouse is kind. The wolf is strong. The wolf likes the squirrel. If something is kind, is smart, and is round, then it is also nice. The squirrel is cute. The squirrel is lovely. The squirrel is beautiful. The mouse is smart. If an animal is obese, visits the mouse, and likes the squirrel, it is sleepy. The leopard needs the mouse. The leopard is dull. If an animal needs the mouse, chases the squirrel, and is rough, then it is also heavy. Things that are adorable, are cute, and are beautiful, are small.",
+    "query_id": "Abduction-Animal-Simple-2534-Q2",
+    "query": "The mouse is not nice.",
+    "answer": "The mouse is round.",
+    "qcat": "0_0",
+    "question_number": 2,
+    "source_dataset": "Abduction-Animal-Simple"
+  },
+  {
+    "context_id": "Abduction-Animal-Simple-3188",
+    "context": "The falcon is tired. The dog is smart. Animals that are quiet, are round, and are nice, are also kind. The dog is quiet. The dinosaur is awful. The rabbit is small. Animals that are awful, are strong, and are heavy, are also big. The dinosaur likes the rabbit. The dog is nice. The falcon chases the dog. The falcon is slow. The rabbit is furry. Things that are furry, are beautiful, and are small, are funny. The rabbit is lovely. If an animal attacks the rabbit, chases the dog, and is slow, then it is also fierce. The falcon is angry. Animals that are obese, visit the dog, and like the rabbit, are dull. The dinosaur is strong. All animals that are tired, are angry, and are lazy, are also rough.",
+    "query_id": "Abduction-Animal-Simple-3188-Q2",
+    "query": "The dog is not kind.",
+    "answer": "The dog is round.",
+    "qcat": "0_0",
+    "question_number": 2,
+    "source_dataset": "Abduction-Animal-Simple"
+  },
+  {
+    "context_id": "Abduction-Person-185",
+    "context": "Erin is clever. Charlie is big. All things that are clever, are smart, and are kind, are also wealthy. People that are dull, are imperfect, and are bad, are also poor. Anne is tiny. Charlie is high. All people that are little, are tiny, and are thin, are also small. Gary is imperfect. Charlie is heavy. Gary is dull. If something is big, is huge, and is tiny, then it is strong. If something is kind, is thin, and is bad, it is also strong. Anne is short. If a person is kind, is thin, and is little, then that person is also small. Things that are huge, are big, and are high, are strong. All people that are clever, are imperfect, and are huge, are small. Gary is sad. Erin is kind. If something is smart, is tiny, and is big, it is poor. All people that are high, are dull, and are little, are wealthy. Anne is thin. All things that are high, are bad, and are dull, are poor. If something is smart, is clever, and is imperfect, then it is also wealthy.",
+    "query_id": "Abduction-Person-185-Q3",
+    "query": "Anne is small.",
+    "answer": "Anne is little.",
+    "qcat": "0",
+    "question_number": 3,
+    "source_dataset": "Abduction-Person"
+  },
+  {
+    "context_id": "Abduction-Animal-3238",
+    "context": "The mouse is furry. If an animal needs the hamster, is obese, and likes the mouse, it is rough. All things that are reckless, are slow, and are tired, are sleepy. All animals that see the hamster, chase the mouse, and are angry, are also fierce. The snake likes the mouse. The falcon is tired. The mouse is lovely. The falcon is angry. All animals that are round, are lovely, and are adorable, are also cute. The falcon is slow. If an animal is strong, is reckless, and is tired, it is also sleepy. The hamster is round. Things that are nice, are slow, and are big, are cute. If an animal is round, is reckless, and is lovely, then it is also awful. The snake is heavy. Animals that are funny, are lovely, and are adorable, are also cute. If something is slow, is nice, and is kind, then it is also smart. If something is kind, is round, and is nice, it is also smart. The mouse is funny. The falcon sees the hamster. The snake is strong. All things that are strong, are big, and are heavy, are also awful. If something is kind, is heavy, and is funny, then it is sleepy. The hamster is quiet. All things that are big, are heavy, and are funny, are awful. The hamster is nice. All things that are tired, are strong, and are adorable, are also smart.",
+    "query_id": "Abduction-Animal-3238-Q4",
+    "query": "The falcon is not sleepy.",
+    "answer": "The falcon is reckless.",
+    "qcat": "0_0",
+    "question_number": 4,
+    "source_dataset": "Abduction-Animal"
+  },
+  {
+    "context_id": "Abduction-Person-612",
+    "context": "Things that are short, are quiet, and are bad, are also huge. If something is smart, is tiny, and is strong, then it is imperfect. All things that are bad, are dull, and are high, are imperfect. If a person is smart, is quiet, and is clever, then that person is wealthy. All things that are high, are big, and are strong, are huge. Fiona is rough. Fiona is dull. If a person is bad, is dull, and is poor, then that person is imperfect. Alan is little. If a person is small, is dull, and is high, then that person is wealthy. Dave is high. Alan is tiny. If something is big, is clever, and is poor, then it is thin. If something is poor, is smart, and is clever, it is wealthy. Gary is clever. Gary is quiet. Alan is short. Dave is strong. Fiona is poor. Things that are strong, are tiny, and are big, are also huge. All people that are quiet, are small, and are short, are thin. All people that are tiny, are small, and are short, are thin. Dave is heavy.",
+    "query_id": "Abduction-Person-612-Q8",
+    "query": "Fiona is not imperfect.",
+    "answer": "Fiona is bad.",
+    "qcat": "0_0",
+    "question_number": 8,
+    "source_dataset": "Abduction-Person"
+  },
+  {
+    "context_id": "Abduction-Person-2119",
+    "context": "People that are high, are small, and are bad, are kind. Harry is little. Bob is nice. If something is nice, is wealthy, and is smart, then it is kind. All things that are smart, are huge, and are short, are poor. Dave is big. If a person is nice, is little, and is rough, that person is heavy. If something is rough, is imperfect, and is bad, it is also poor. Anne is bad. If a person is nice, is little, and is small, then that person is tiny. Harry is thin. If something is huge, is short, and is strong, then it is also heavy. Bob is wealthy. All people that are strong, are wealthy, and are imperfect, are tiny. If a person is little, is short, and is small, that person is also tiny. All things that are wealthy, are smart, and are imperfect, are also kind. Harry is short. If something is huge, is high, and is strong, then it is heavy. If a person is high, is rough, and is bad, then that person is also poor. Dave is huge. Anne is dull. Dave is high. Anne is imperfect.",
+    "query_id": "Abduction-Person-2119-Q3",
+    "query": "Harry is tiny.",
+    "answer": "Harry is small.",
+    "qcat": "0",
+    "question_number": 3,
+    "source_dataset": "Abduction-Person"
+  },
+  {
+    "context_id": "Abduction-Animal-567",
+    "context": "If something is big, is cute, and is kind, it is lazy. If an animal is slow, is angry, and is reckless, it is also lazy. The dog is furry. Animals that are quiet, are funny, and are angry, are awful. The tiger is slow. The dog is cute. The hamster is quiet. If something is funny, is cute, and is beautiful, then it is also lovely. The tiger is reckless. The hamster is round. The dog is funny. The cheetah is big. If an animal is obese, is heavy, and is big, then it is awful. Animals that are angry, are heavy, and are reckless, are also lazy. If something is kind, is quiet, and is nice, it is also smart. All things that attack the hamster, are tired, and visit the dog, are fierce. The cheetah is heavy. The cheetah needs the dog. The hamster is nice. Animals that need the dog, like the hamster, and are strong, are dull. The tiger is tired. If an animal is big, is cute, and is obese, it is also awful. If something is quiet, is beautiful, and is funny, then it is also lovely. If something is obese, is nice, and is slow, then it is lovely. All animals that are nice, are slow, and are kind, are smart. Things that are beautiful, are heavy, and are reckless, are also smart. The tiger attacks the hamster.",
+    "query_id": "Abduction-Animal-567-Q7",
+    "query": "The dog is lovely.",
+    "answer": "The dog is beautiful.",
+    "qcat": "0",
+    "question_number": 7,
+    "source_dataset": "Abduction-Animal"
+  },
+  {
+    "context_id": "Abduction-Animal-Simple-1526",
+    "context": "The hamster is kind. The crocodile is dull. The crocodile is sleepy. The crocodile is tired. If an animal is nice, is smart, and is kind, then it is also round. The hamster is nice. The bald eagle is strong. The hamster is quiet. The bald eagle is obese. If an animal is boring, is tired, and is sleepy, it is lazy. The cat is furry. Things that are furry, are cute, and are adorable, are small. The cat is adorable. The cat is lovely. The bald eagle needs the cat. All animals that are dull, chase the hamster, and visit the cat, are big. All things that are obese, are fierce, and are strong, are heavy. Animals that attack the hamster, need the cat, and are awful, are angry. The crocodile chases the hamster.",
+    "query_id": "Abduction-Animal-Simple-1526-Q5",
+    "query": "The bald eagle is heavy.",
+    "answer": "The bald eagle is fierce.",
+    "qcat": "0",
+    "question_number": 5,
+    "source_dataset": "Abduction-Animal-Simple"
+  },
+  {
+    "context_id": "Abduction-Person-1146",
+    "context": "People that are heavy, are big, and are strong, are huge. If a person is strong, is short, and is dull, then that person is also clever. If a person is quiet, is tiny, and is heavy, that person is sad. Alan is high. Charlie is little. Alan is strong. If a person is rough, is dull, and is imperfect, then that person is sad. Charlie is tiny. Dave is wealthy. If something is wealthy, is kind, and is quiet, then it is also clever. Charlie is thin. Fiona is bad. All things that are little, are kind, and are rough, are also huge. If something is little, is kind, and is short, it is small. If a person is tiny, is big, and is heavy, then that person is huge. If something is strong, is dull, and is rough, it is also sad. If something is wealthy, is imperfect, and is quiet, then it is clever. Fiona is imperfect. Dave is kind. Things that are tiny, are short, and are little, are also small. All things that are imperfect, are wealthy, and are big, are small. Fiona is dull. Alan is heavy.",
+    "query_id": "Abduction-Person-1146-Q1",
+    "query": "Alan is huge.",
+    "answer": "Alan is big.",
+    "qcat": "0",
+    "question_number": 1,
+    "source_dataset": "Abduction-Person"
+  },
+  {
+    "context_id": "Abduction-Animal-Simple-3107",
+    "context": "The dog is furry. The rabbit is kind. The dog is cute. Things that are rough, are angry, and are boring, are reckless. The rabbit is smart. The lion is awful. The lion likes the dog. Things that visit the rabbit, like the dog, and are strong, are also lazy. The falcon is angry. The rabbit is round. The lion is big. The falcon is rough. The falcon is tired. Animals that need the rabbit, are tired, and attack the dog, are also obese. The falcon needs the rabbit. If an animal is quiet, is round, and is kind, then it is also nice. All things that are big, are awful, and are heavy, are fierce. The dog is beautiful. If something is cute, is small, and is furry, then it is adorable.",
+    "query_id": "Abduction-Animal-Simple-3107-Q2",
+    "query": "The rabbit is not nice.",
+    "answer": "The rabbit is quiet.",
+    "qcat": "0_0",
+    "question_number": 2,
+    "source_dataset": "Abduction-Animal-Simple"
+  },
+  {
+    "context_id": "Abduction-Animal-Simple-2739",
+    "context": "The cheetah is slow. The dog is round. If something is lovely, is furry, and is beautiful, it is adorable. The cheetah likes the dog. The dog is kind. The cheetah is boring. The tiger is big. The cheetah is tired. All things that are quiet, are smart, and are kind, are also nice. The squirrel is beautiful. If something is big, is heavy, and is obese, it is awful. Animals that like the dog, attack the squirrel, and are boring, are also strong. The squirrel is furry. The dog is smart. The tiger visits the squirrel. If something visits the squirrel, is fierce, and chases the dog, then it is also rough. The tiger is heavy. All animals that are dull, are slow, and are tired, are sleepy. The squirrel is cute.",
+    "query_id": "Abduction-Animal-Simple-2739-Q9",
+    "query": "The cheetah is strong.",
+    "answer": "The cheetah attacks the squirrel.",
+    "qcat": "0",
+    "question_number": 9,
+    "source_dataset": "Abduction-Animal-Simple"
+  },
+  {
+    "context_id": "Abduction-Animal-929",
+    "context": "If an animal is lovely, is funny, and is round, it is also cute. All things that are beautiful, are nice, and are heavy, are also sleepy. If an animal is slow, is strong, and is lovely, it is also kind. The hamster is round. If an animal is big, sees the hamster, and likes the rabbit, it is also reckless. The rabbit is beautiful. If something is round, is funny, and is rough, it is awful. If an animal is round, is quiet, and is nice, then it is kind. All things that are quiet, are nice, and are tired, are also kind. Animals that are tired, are obese, and are quiet, are cute. All things that are heavy, are beautiful, and are obese, are also awful. The rabbit is adorable. The lion needs the hamster. The lion is tired. If something is lazy, needs the hamster, and chases the rabbit, then it is also fierce. The bald eagle is heavy. The bald eagle is strong. If something is rough, is tired, and is slow, then it is also sleepy. All animals that are heavy, are obese, and are strong, are awful. The bald eagle likes the rabbit. The rabbit is funny. If something is slow, is rough, and is strong, it is sleepy. If something is beautiful, is lovely, and is funny, then it is cute. The hamster is quiet. The lion is slow. The lion is lazy. The hamster is smart.",
+    "query_id": "Abduction-Animal-929-Q4",
+    "query": "The lion is not sleepy.",
+    "answer": "The lion is rough.",
+    "qcat": "0_0",
+    "question_number": 4,
+    "source_dataset": "Abduction-Animal"
+  },
+  {
+    "context_id": "Abduction-Person-Simple-889",
+    "context": "Anne is bad. Alan is strong. If a person is little, is tiny, and is thin, then that person is small. Bob is short. Alan is high. Anne is dull. Harry is clever. Harry is quiet. If something is huge, is heavy, and is high, then it is big. Bob is thin. If a person is rough, is sad, and is dull, then that person is imperfect. Anne is rough. If a person is quiet, is nice, and is clever, then that person is also wealthy. Alan is huge. Bob is little.",
+    "query_id": "Abduction-Person-Simple-889-Q5",
+    "query": "Harry is wealthy.",
+    "answer": "Harry is nice.",
+    "qcat": "0",
+    "question_number": 5,
+    "source_dataset": "Abduction-Person-Simple"
+  },
+  {
+    "context_id": "Abduction-Animal-Simple-475",
+    "context": "The hamster is funny. Animals that are round, are smart, and are nice, are also kind. The dinosaur is heavy. The hamster is beautiful. The squirrel is round. The tiger is dull. The squirrel is smart. If something is dull, is rough, and is angry, it is also lazy. The tiger is slow. The tiger likes the squirrel. The dinosaur is awful. The hamster is furry. The dinosaur needs the hamster. If something is funny, is beautiful, and is lovely, then it is small. If an animal is strong, needs the hamster, and chases the squirrel, then it is also sleepy. If something is heavy, is fierce, and is awful, then it is obese. If something likes the squirrel, is slow, and visits the hamster, then it is big. The squirrel is quiet. The tiger is angry.",
+    "query_id": "Abduction-Animal-Simple-475-Q8",
+    "query": "The hamster is not small.",
+    "answer": "The hamster is lovely.",
+    "qcat": "0_0",
+    "question_number": 8,
+    "source_dataset": "Abduction-Animal-Simple"
+  },
+  {
+    "context_id": "Abduction-Animal-Simple-3069",
+    "context": "The bear is awful. The falcon likes the dog. All things that are nice, are quiet, and are kind, are also smart. The falcon is sleepy. The dog is kind. The squirrel is small. The dog is round. The falcon is tired. The squirrel is cute. All animals that are reckless, are tired, and are slow, are also rough. The bear is heavy. The bear chases the squirrel. The falcon is slow. If something is heavy, is strong, and is awful, it is obese. The dog is nice. Things that visit the squirrel, like the dog, and are sleepy, are big. If an animal attacks the dog, is fierce, and chases the squirrel, then it is boring. The squirrel is lovely. If something is cute, is beautiful, and is lovely, then it is funny.",
+    "query_id": "Abduction-Animal-Simple-3069-Q8",
+    "query": "The squirrel is not funny.",
+    "answer": "The squirrel is beautiful.",
+    "qcat": "0_0",
+    "question_number": 8,
+    "source_dataset": "Abduction-Animal-Simple"
+  },
+  {
+    "context_id": "Abduction-Person-Simple-153",
+    "context": "Harry is big. Harry is heavy. Dave is clever. All people that are rough, are poor, and are dull, are also sad. All people that are clever, are smart, and are wealthy, are also nice. Anne is short. Charlie is bad. If a person is short, is thin, and is little, that person is also small. Anne is thin. If something is big, is heavy, and is huge, then it is also strong. Charlie is poor. Dave is smart. Charlie is rough. Anne is tiny. Harry is high.",
+    "query_id": "Abduction-Person-Simple-153-Q1",
+    "query": "Harry is strong.",
+    "answer": "Harry is huge.",
+    "qcat": "0",
+    "question_number": 1,
+    "source_dataset": "Abduction-Person-Simple"
+  },
+  {
+    "context_id": "Abduction-Animal-2172",
+    "context": "Animals that are big, are angry, and are rough, are reckless. The snake chases the mouse. The snake is angry. The snake is slow. The mouse is kind. All things that are round, are slow, and are nice, are smart. Things that are strong, are slow, and are round, are adorable. The dog is funny. The bear is fierce. The mouse is round. Animals that are rough, are slow, and are angry, are also reckless. The mouse is quiet. The snake is lazy. The bear needs the dog. If an animal needs the dog, is awful, and attacks the mouse, it is sleepy. If an animal is angry, is big, and is lovely, then it is smart. If something is rough, is funny, and is kind, then it is heavy. The dog is small. If something is fierce, is strong, and is small, then it is also heavy. All animals that are lazy, like the dog, and chase the mouse, are also obese. The dog is furry. Things that are fierce, are small, and are nice, are also reckless. All things that are nice, are kind, and are round, are smart. The bear is big. All things that are funny, are kind, and are lovely, are adorable. If something is lovely, is small, and is funny, it is also adorable. Animals that are fierce, are big, and are strong, are heavy.",
+    "query_id": "Abduction-Animal-2172-Q5",
+    "query": "The bear is heavy.",
+    "answer": "The bear is strong.",
+    "qcat": "0",
+    "question_number": 5,
+    "source_dataset": "Abduction-Animal"
+  },
+  {
+    "context_id": "Abduction-Person-674",
+    "context": "Dave is bad. If a person is quiet, is imperfect, and is short, then that person is also heavy. Bob is short. If a person is strong, is big, and is high, that person is heavy. Bob is thin. Anne is clever. All things that are clever, are quiet, and are kind, are also nice. If something is sad, is imperfect, and is poor, then it is also dull. Alan is huge. If a person is thin, is kind, and is big, that person is also dull. Bob is little. People that are clever, are strong, and are poor, are also small. If a person is clever, is kind, and is poor, that person is also nice. If something is imperfect, is sad, and is high, then it is also dull. If a person is short, is tiny, and is quiet, then that person is small. All things that are short, are tiny, and are thin, are also small. Alan is high. Dave is sad. Dave is poor. Alan is big. All people that are thin, are big, and are strong, are also heavy. Anne is quiet. If a person is high, is tiny, and is sad, then that person is also nice.",
+    "query_id": "Abduction-Person-674-Q5",
+    "query": "Anne is nice.",
+    "answer": "Anne is kind.",
+    "qcat": "0",
+    "question_number": 5,
+    "source_dataset": "Abduction-Person"
+  },
+  {
+    "context_id": "Abduction-Animal-2954",
+    "context": "If something is big, is lovely, and is awful, then it is also obese. The leopard is strong. All things that are awful, are big, and are strong, are obese. If something is lazy, is dull, and is slow, it is also sleepy. The cheetah is dull. All things that are beautiful, are adorable, and are round, are also funny. All things that are tired, visit the squirrel, and chase the mouse, are also heavy. The squirrel is furry. The squirrel is lovely. The cheetah chases the mouse. The cheetah is tired. If something is smart, is dull, and is quiet, it is also nice. The mouse is round. If something is lovely, is beautiful, and is adorable, then it is funny. The mouse is smart. If something needs the squirrel, is fierce, and attacks the mouse, then it is also angry. The leopard needs the squirrel. If something is slow, is lazy, and is strong, it is sleepy. The cheetah is lazy. Things that are slow, are beautiful, and are round, are obese. The mouse is kind. Things that are lovely, are big, and are quiet, are sleepy. If an animal is smart, is quiet, and is round, then it is nice. The leopard is big. If something is smart, is dull, and is awful, it is funny. The squirrel is beautiful. If an animal is strong, is adorable, and is lazy, it is also nice.",
+    "query_id": "Abduction-Animal-2954-Q4",
+    "query": "The cheetah is not sleepy.",
+    "answer": "The cheetah is slow.",
+    "qcat": "0_0",
+    "question_number": 4,
+    "source_dataset": "Abduction-Animal"
+  },
+  {
+    "context_id": "Abduction-Person-1057",
+    "context": "Alan is clever. If a person is little, is thin, and is tiny, that person is also small. Anne is dull. Charlie is thin. Bob is huge. If something is tiny, is heavy, and is high, it is strong. Alan is nice. If something is clever, is smart, and is rough, it is also kind. People that are clever, are smart, and are nice, are also kind. People that are heavy, are tiny, and are smart, are poor. If a person is sad, is nice, and is thin, that person is strong. If something is huge, is high, and is heavy, it is strong. If something is rough, is sad, and is dull, then it is poor. Anne is imperfect. If something is little, is huge, and is dull, it is kind. Things that are thin, are little, and are nice, are small. Bob is heavy. Charlie is short. If something is huge, is sad, and is dull, then it is also poor. Anne is rough. All things that are high, are clever, and are rough, are also small. Bob is big. Charlie is tiny.",
+    "query_id": "Abduction-Person-1057-Q5",
+    "query": "Alan is kind.",
+    "answer": "Alan is smart.",
+    "qcat": "0",
+    "question_number": 5,
+    "source_dataset": "Abduction-Person"
+  },
+  {
+    "context_id": "Abduction-Person-Simple-1630",
+    "context": "Dave is short. Harry is heavy. Harry is high. If something is sad, is rough, and is poor, then it is also dull. Gary is smart. Gary is nice. Dave is small. Charlie is rough. All people that are huge, are heavy, and are big, are also strong. Harry is huge. Charlie is poor. Charlie is bad. If something is tiny, is thin, and is short, then it is little. Dave is tiny. If something is wealthy, is smart, and is nice, it is kind.",
+    "query_id": "Abduction-Person-Simple-1630-Q8",
+    "query": "Charlie is not dull.",
+    "answer": "Charlie is sad.",
+    "qcat": "0_0",
+    "question_number": 8,
+    "source_dataset": "Abduction-Person-Simple"
+  },
+  {
+    "context_id": "Abduction-Person-Simple-396",
+    "context": "Alan is small. Fiona is imperfect. All people that are strong, are huge, and are heavy, are also big. Bob is wealthy. Fiona is bad. If a person is tiny, is little, and is thin, then that person is short. If a person is dull, is bad, and is rough, then that person is also sad. Fiona is dull. Dave is huge. All things that are wealthy, are nice, and are kind, are quiet. Alan is thin. Dave is high. Alan is tiny. Dave is strong. Bob is nice.",
+    "query_id": "Abduction-Person-Simple-396-Q5",
+    "query": "Bob is quiet.",
+    "answer": "Bob is kind.",
+    "qcat": "0",
+    "question_number": 5,
+    "source_dataset": "Abduction-Person-Simple"
+  },
+  {
+    "context_id": "Abduction-Animal-Simple-846",
+    "context": "The cat is small. The bear is slow. If an animal is boring, is lazy, and is slow, it is rough. If an animal is beautiful, is small, and is lovely, then it is also funny. If an animal is sleepy, attacks the cat, and needs the dog, then it is also heavy. Things that are kind, are nice, and are smart, are quiet. The dog is smart. The bear is boring. The dog is round. The cat is furry. The cheetah is strong. The cheetah is awful. The bear needs the dog. The cat is beautiful. The dog is kind. The cheetah chases the cat. The bear is sleepy. If something visits the dog, is obese, and chases the cat, it is also angry. If something is strong, is awful, and is fierce, then it is also big.",
+    "query_id": "Abduction-Animal-Simple-846-Q6",
+    "query": "The cheetah is not big.",
+    "answer": "The cheetah is fierce.",
+    "qcat": "0_0",
+    "question_number": 6,
+    "source_dataset": "Abduction-Animal-Simple"
+  },
+  {
+    "context_id": "Abduction-Animal-2246",
+    "context": "The hamster is round. If something is nice, is heavy, and is lovely, then it is lazy. The hamster is smart. If an animal is round, is nice, and is smart, it is also kind. Things that are round, are rough, and are beautiful, are fierce. All animals that are smart, are nice, and are sleepy, are also kind. The cat is beautiful. The snake is angry. If something is beautiful, is lovely, and is cute, then it is small. The cat is funny. The snake likes the hamster. The wolf is obese. Animals that like the hamster, chase the cat, and are angry, are big. The wolf attacks the cat. Animals that are obese, are rough, and are tired, are lazy. The wolf is heavy. The cat is lovely. The hamster is quiet. Animals that are cute, are round, and are beautiful, are small. If an animal is tired, is cute, and is obese, then it is kind. The snake is sleepy. If something visits the hamster, is strong, and attacks the cat, it is reckless. If something is lovely, is heavy, and is awful, then it is fierce. If something is awful, is sleepy, and is smart, it is also small. Things that are sleepy, are rough, and are tired, are also lazy. All animals that are obese, are heavy, and are awful, are fierce. The snake is tired.",
+    "query_id": "Abduction-Animal-2246-Q3",
+    "query": "The snake is lazy.",
+    "answer": "The snake is rough.",
+    "qcat": "0",
+    "question_number": 3,
+    "source_dataset": "Abduction-Animal"
+  },
+  {
+    "context_id": "Abduction-Animal-1638",
+    "context": "The rabbit is round. The mouse is cute. Things that are strong, are rough, and are round, are small. Things that see the mouse, are fierce, and like the rabbit, are angry. The mouse is lovely. The crocodile is slow. Things that are cute, are beautiful, and are lovely, are also small. The wolf is obese. The wolf sees the mouse. The wolf is heavy. If something is boring, needs the mouse, and attacks the rabbit, it is big. All things that are cute, are nice, and are beautiful, are also small. If something is heavy, is strong, and is lovely, then it is awful. The crocodile is rough. If something is strong, is obese, and is heavy, it is also awful. All things that are cute, are nice, and are reckless, are also awful. All animals that are round, are rough, and are kind, are smart. Animals that are rough, are slow, and are reckless, are sleepy. The mouse is furry. If something is obese, is reckless, and is slow, it is also sleepy. If an animal is round, is kind, and is nice, it is also smart. All animals that are slow, are beautiful, and are obese, are smart. The rabbit is quiet. All things that are lovely, are heavy, and are kind, are sleepy. The rabbit is nice. The crocodile attacks the rabbit. The crocodile is boring.",
+    "query_id": "Abduction-Animal-1638-Q5",
+    "query": "The wolf is awful.",
+    "answer": "The wolf is strong.",
+    "qcat": "0",
+    "question_number": 5,
+    "source_dataset": "Abduction-Animal"
+  },
+  {
+    "context_id": "Abduction-Animal-Simple-2544",
+    "context": "The leopard is rough. Animals that are dull, are rough, and are tired, are lazy. The rabbit is adorable. The rabbit is small. The squirrel is smart. The leopard is reckless. If something is heavy, chases the squirrel, and likes the rabbit, it is angry. The leopard needs the squirrel. Animals that are adorable, are lovely, and are beautiful, are cute. All things that need the squirrel, attack the rabbit, and are reckless, are big. The squirrel is round. The leopard is dull. The wolf likes the rabbit. The squirrel is nice. The wolf is obese. If something is awful, is obese, and is fierce, then it is strong. The wolf is awful. The rabbit is beautiful. If something is quiet, is nice, and is round, then it is kind.",
+    "query_id": "Abduction-Animal-Simple-2544-Q8",
+    "query": "The rabbit is not cute.",
+    "answer": "The rabbit is lovely.",
+    "qcat": "0_0",
+    "question_number": 8,
+    "source_dataset": "Abduction-Animal-Simple"
+  },
+  {
+    "context_id": "Abduction-Person-Simple-635",
+    "context": "Anne is big. Fiona is kind. Fiona is wealthy. Alan is thin. Anne is heavy. Things that are dull, are sad, and are rough, are poor. Alan is small. If a person is huge, is big, and is high, that person is also strong. Harry is imperfect. If a person is wealthy, is kind, and is nice, then that person is also clever. People that are little, are small, and are thin, are also short. Harry is sad. Harry is dull. Alan is tiny. Anne is high.",
+    "query_id": "Abduction-Person-Simple-635-Q6",
+    "query": "Fiona is not clever.",
+    "answer": "Fiona is nice.",
+    "qcat": "0_0",
+    "question_number": 6,
+    "source_dataset": "Abduction-Person-Simple"
+  },
+  {
+    "context_id": "Abduction-Animal-791",
+    "context": "The cat is adorable. Things that are heavy, visit the cat, and attack the mouse, are sleepy. The snake is fierce. The cat is funny. The bear is dull. The bear sees the mouse. If something chases the cat, sees the mouse, and is angry, it is awful. Animals that are funny, are round, and are fierce, are also reckless. The bear is angry. If something is lovely, is big, and is dull, it is also nice. If something is adorable, is kind, and is lovely, then it is beautiful. The mouse is smart. All animals that are smart, are kind, and are round, are nice. If something is dull, is tired, and is rough, then it is also reckless. The cat is small. If an animal is funny, is lovely, and is adorable, it is also beautiful. The mouse is quiet. The snake is big. The mouse is kind. The bear is tired. The snake visits the cat. If something is adorable, is rough, and is kind, then it is obese. Things that are fierce, are strong, and are big, are obese. All things that are round, are tired, and are smart, are also nice. If something is dull, is big, and is rough, then it is reckless. Animals that are tired, are smart, and are strong, are beautiful. If an animal is strong, is funny, and is fierce, it is obese.",
+    "query_id": "Abduction-Animal-791-Q7",
+    "query": "The cat is beautiful.",
+    "answer": "The cat is lovely.",
+    "qcat": "0",
+    "question_number": 7,
+    "source_dataset": "Abduction-Animal"
+  },
+  {
+    "context_id": "Abduction-Person-172",
+    "context": "All people that are poor, are nice, and are clever, are kind. People that are clever, are big, and are thin, are also dull. If a person is short, is small, and is smart, that person is also tiny. Things that are huge, are thin, and are big, are heavy. If something is huge, is poor, and is nice, it is tiny. Anne is little. Anne is thin. Erin is smart. Anne is small. Alan is strong. Erin is nice. If a person is rough, is short, and is high, that person is also kind. Harry is poor. If a person is thin, is small, and is short, that person is also tiny. If something is high, is bad, and is rough, it is also dull. If a person is big, is huge, and is high, that person is heavy. People that are clever, are nice, and are smart, are also kind. Harry is rough. Alan is big. Harry is sad. Things that are rough, are poor, and are bad, are dull. Alan is high. All people that are small, are bad, and are smart, are heavy.",
+    "query_id": "Abduction-Person-172-Q7",
+    "query": "Harry is dull.",
+    "answer": "Harry is bad.",
+    "qcat": "0",
+    "question_number": 7,
+    "source_dataset": "Abduction-Person"
+  },
+  {
+    "context_id": "Abduction-Person-Simple-1762",
+    "context": "Alan is smart. All things that are imperfect, are dull, and are rough, are also sad. Things that are heavy, are big, and are high, are huge. Erin is small. Erin is short. Dave is dull. Fiona is heavy. Dave is bad. Fiona is high. Fiona is strong. If something is clever, is smart, and is nice, it is also quiet. Erin is tiny. Dave is rough. If something is small, is short, and is thin, then it is also little. Alan is nice.",
+    "query_id": "Abduction-Person-Simple-1762-Q2",
+    "query": "Fiona is not huge.",
+    "answer": "Fiona is big.",
+    "qcat": "0_0",
+    "question_number": 2,
+    "source_dataset": "Abduction-Person-Simple"
+  },
+  {
+    "context_id": "Abduction-Animal-2378",
+    "context": "If an animal is obese, is fierce, and is cute, then it is heavy. Animals that are small, are nice, and are funny, are also beautiful. Animals that are smart, are obese, and are reckless, are also beautiful. All things that are sleepy, are tired, and are reckless, are also lazy. If an animal is smart, is reckless, and is round, then it is kind. The rabbit is funny. The dog is nice. All things that see the dog, are awful, and visit the rabbit, are dull. The snake is tired. Animals that are fierce, are obese, and are big, are heavy. The falcon visits the rabbit. The falcon is fierce. The rabbit is furry. Animals that are sleepy, are funny, and are nice, are also heavy. The snake is reckless. All animals that are round, are cute, and are fierce, are lazy. Animals that need the dog, are angry, and like the rabbit, are strong. The snake is angry. Things that are tired, are big, and are sleepy, are also lazy. All things that are small, are cute, and are funny, are beautiful. If an animal is smart, is nice, and is round, then it is also kind. The dog is quiet. If an animal is tired, is small, and is big, it is kind. The rabbit is cute. The dog is smart. The falcon is big. The snake needs the dog.",
+    "query_id": "Abduction-Animal-2378-Q8",
+    "query": "The rabbit is not beautiful.",
+    "answer": "The rabbit is small.",
+    "qcat": "0_0",
+    "question_number": 8,
+    "source_dataset": "Abduction-Animal"
+  },
+  {
+    "context_id": "Abduction-Person-2056",
+    "context": "Fiona is strong. All people that are wealthy, are high, and are imperfect, are small. Dave is rough. If something is huge, is dull, and is tiny, it is also smart. If something is poor, is huge, and is dull, then it is also bad. Fiona is big. Fiona is huge. Dave is dull. If a person is short, is nice, and is strong, then that person is also bad. People that are huge, are high, and are strong, are heavy. Anne is quiet. People that are poor, are little, and are quiet, are also heavy. Harry is thin. Harry is short. If a person is quiet, is wealthy, and is nice, that person is smart. If a person is little, is quiet, and is tiny, then that person is small. Harry is little. Dave is imperfect. Anne is wealthy. If something is imperfect, is wealthy, and is nice, then it is smart. Things that are little, are short, and are tiny, are small. Things that are imperfect, are dull, and are poor, are bad. If something is short, is strong, and is high, it is also heavy.",
+    "query_id": "Abduction-Person-2056-Q4",
+    "query": "Harry is not small.",
+    "answer": "Harry is tiny.",
+    "qcat": "0_0",
+    "question_number": 4,
+    "source_dataset": "Abduction-Person"
+  },
+  {
+    "context_id": "Abduction-Person-Simple-2616",
+    "context": "Fiona is dull. Gary is thin. Gary is little. Harry is clever. Gary is small. Alan is strong. Fiona is sad. Alan is big. All people that are small, are tiny, and are thin, are short. If a person is clever, is quiet, and is wealthy, that person is kind. Harry is quiet. If something is sad, is dull, and is imperfect, it is rough. Fiona is bad. Alan is heavy. If something is heavy, is strong, and is high, then it is also huge.",
+    "query_id": "Abduction-Person-Simple-2616-Q2",
+    "query": "Alan is not huge.",
+    "answer": "Alan is high.",
+    "qcat": "0_0",
+    "question_number": 2,
+    "source_dataset": "Abduction-Person-Simple"
+  },
+  {
+    "context_id": "Abduction-Animal-2465",
+    "context": "The leopard is reckless. If an animal attacks the cat, is sleepy, and sees the hamster, it is awful. Things that are furry, are lovely, and are small, are also adorable. If something is reckless, is rough, and is dull, then it is also tired. Animals that are furry, are lovely, and are kind, are also adorable. The cat is nice. The leopard is sleepy. The hamster is small. If something is dull, is strong, and is round, then it is adorable. If an animal needs the cat, chases the hamster, and is heavy, then it is lazy. The cat is round. All things that are rough, are kind, and are lovely, are fierce. If an animal is small, is strong, and is obese, then it is fierce. If an animal is small, is obese, and is quiet, then it is tired. If something is obese, is big, and is strong, it is also fierce. The cat is kind. The leopard attacks the cat. The hamster is funny. Animals that are reckless, are rough, and are big, are also tired. The bear chases the hamster. The leopard is dull. Animals that are quiet, are round, and are dull, are also smart. The bear is obese. All things that are kind, are round, and are quiet, are smart. The hamster is lovely. All things that are furry, are reckless, and are big, are also smart. The bear is big.",
+    "query_id": "Abduction-Animal-2465-Q6",
+    "query": "The bear is not fierce.",
+    "answer": "The bear is strong.",
+    "qcat": "0_0",
+    "question_number": 6,
+    "source_dataset": "Abduction-Animal"
+  },
+  {
+    "context_id": "Abduction-Person-Simple-1639",
+    "context": "Dave is short. Alan is imperfect. Things that are heavy, are big, and are high, are also strong. Fiona is nice. If a person is nice, is smart, and is clever, then that person is also wealthy. Anne is huge. Fiona is clever. Dave is small. Alan is rough. Anne is high. If a person is tiny, is small, and is short, that person is also little. Anne is big. Alan is sad. All things that are rough, are bad, and are imperfect, are also poor. Dave is thin.",
+    "query_id": "Abduction-Person-Simple-1639-Q7",
+    "query": "Alan is poor.",
+    "answer": "Alan is bad.",
+    "qcat": "0",
+    "question_number": 7,
+    "source_dataset": "Abduction-Person-Simple"
+  },
+  {
+    "context_id": "Abduction-Animal-77",
+    "context": "If something is strong, likes the rabbit, and sees the dog, then it is also tired. The lion is obese. If an animal is heavy, is awful, and is obese, then it is big. If an animal is kind, is smart, and is rough, then it is also nice. The bald eagle is boring. If something is reckless, is sleepy, and is awful, then it is also angry. All things that are beautiful, are reckless, and are quiet, are also big. If something is beautiful, is small, and is quiet, it is also cute. If an animal is sleepy, is small, and is awful, it is nice. All things that are beautiful, are small, and are funny, are also cute. All animals that attack the dog, are boring, and visit the rabbit, are also fierce. The rabbit is quiet. The dog is beautiful. The dog is adorable. The dog is funny. If something is heavy, is kind, and is rough, then it is cute. The rabbit is round. Things that are obese, are smart, and are funny, are also angry. Things that are sleepy, are reckless, and are rough, are angry. Animals that are quiet, are smart, and are kind, are also nice. The bald eagle is sleepy. If something is heavy, is funny, and is obese, then it is also big. The lion sees the dog. The lion is awful. The bald eagle visits the rabbit. The bald eagle is rough. The rabbit is kind.",
+    "query_id": "Abduction-Animal-77-Q10",
+    "query": "The bald eagle is not fierce.",
+    "answer": "The bald eagle attacks the dog.",
+    "qcat": "0_0",
+    "question_number": 10,
+    "source_dataset": "Abduction-Animal"
+  },
+  {
+    "context_id": "Abduction-Animal-Simple-2761",
+    "context": "The cheetah is angry. The cat is nice. The cheetah sees the cat. The dog is funny. The dog is adorable. Things that attack the cat, are fierce, and like the dog, are also dull. If something is lazy, is tired, and is angry, then it is also boring. The bear is obese. The cheetah is reckless. If an animal is big, is obese, and is heavy, it is awful. If an animal is adorable, is cute, and is funny, then it is beautiful. The bear likes the dog. The cheetah is tired. The bear is big. If something is round, is nice, and is smart, then it is also quiet. The cat is round. The dog is small. The cat is kind. If an animal sees the cat, visits the dog, and is reckless, then it is also strong.",
+    "query_id": "Abduction-Animal-Simple-2761-Q7",
+    "query": "The dog is beautiful.",
+    "answer": "The dog is cute.",
+    "qcat": "0",
+    "question_number": 7,
+    "source_dataset": "Abduction-Animal-Simple"
+  },
+  {
+    "context_id": "Abduction-Person-2441",
+    "context": "Harry is rough. All things that are rough, are heavy, and are nice, are little. People that are smart, are wealthy, and are nice, are quiet. Things that are high, are heavy, and are big, are strong. All people that are rough, are poor, and are imperfect, are dull. If something is smart, is short, and is imperfect, it is strong. Harry is sad. Bob is smart. All things that are tiny, are smart, and are short, are little. Anne is big. Gary is small. Anne is huge. All people that are tiny, are poor, and are high, are quiet. Bob is nice. Anne is high. If something is thin, is big, and is heavy, it is also strong. Things that are tiny, are thin, and are short, are also little. People that are nice, are wealthy, and are rough, are also quiet. People that are poor, are imperfect, and are high, are dull. If something is big, is wealthy, and is thin, then it is dull. Harry is poor. Gary is short. Gary is thin.",
+    "query_id": "Abduction-Person-2441-Q6",
+    "query": "Bob is not quiet.",
+    "answer": "Bob is wealthy.",
+    "qcat": "0_0",
+    "question_number": 6,
+    "source_dataset": "Abduction-Person"
+  },
+  {
+    "context_id": "Abduction-Person-Simple-2176",
+    "context": "Charlie is wealthy. Gary is high. People that are kind, are wealthy, and are clever, are also smart. Dave is dull. Gary is heavy. Dave is sad. Harry is small. People that are sad, are imperfect, and are rough, are also bad. Charlie is kind. Dave is rough. Harry is thin. If a person is big, is strong, and is heavy, that person is huge. Gary is strong. Harry is short. If something is thin, is tiny, and is small, it is little.",
+    "query_id": "Abduction-Person-Simple-2176-Q2",
+    "query": "Gary is not huge.",
+    "answer": "Gary is big.",
+    "qcat": "0_0",
+    "question_number": 2,
+    "source_dataset": "Abduction-Person-Simple"
+  },
+  {
+    "context_id": "Abduction-Animal-Simple-1160",
+    "context": "All animals that are strong, are awful, and are fierce, are also heavy. The hamster is adorable. Things that attack the rabbit, see the hamster, and are rough, are also obese. The cheetah is fierce. The lion is rough. All things that are nice, are smart, and are quiet, are kind. The rabbit is smart. If something is adorable, is funny, and is furry, it is also cute. The rabbit is round. The cheetah is strong. The lion is reckless. If something is dull, is reckless, and is lazy, then it is also slow. The hamster is lovely. The lion is lazy. The rabbit is quiet. The hamster is furry. All things that need the rabbit, are big, and chase the hamster, are tired. The cheetah chases the hamster. The lion attacks the rabbit.",
+    "query_id": "Abduction-Animal-Simple-1160-Q7",
+    "query": "The hamster is cute.",
+    "answer": "The hamster is funny.",
+    "qcat": "0",
+    "question_number": 7,
+    "source_dataset": "Abduction-Animal-Simple"
+  },
+  {
+    "context_id": "Abduction-Person-Simple-2329",
+    "context": "Fiona is kind. Harry is little. Charlie is strong. Anne is bad. Charlie is huge. Anne is sad. If a person is small, is short, and is little, then that person is thin. Things that are bad, are sad, and are poor, are dull. Harry is tiny. Harry is short. Anne is rough. All people that are heavy, are high, and are strong, are also big. Charlie is high. Fiona is wealthy. If a person is wealthy, is kind, and is quiet, that person is also nice.",
+    "query_id": "Abduction-Person-Simple-2329-Q5",
+    "query": "Fiona is nice.",
+    "answer": "Fiona is quiet.",
+    "qcat": "0",
+    "question_number": 5,
+    "source_dataset": "Abduction-Person-Simple"
+  },
+  {
+    "context_id": "Abduction-Person-929",
+    "context": "If something is dull, is sad, and is bad, then it is rough. People that are sad, are nice, and are quiet, are also clever. Harry is dull. Anne is strong. If something is high, is bad, and is dull, it is rough. Gary is kind. Harry is poor. If a person is little, is small, and is short, that person is also thin. Bob is small. Bob is tiny. Harry is sad. Anne is huge. If a person is quiet, is heavy, and is sad, then that person is also thin. Things that are high, are heavy, and are strong, are big. If something is strong, is heavy, and is small, then it is also big. Things that are short, are little, and are kind, are thin. Gary is quiet. All people that are strong, are nice, and are small, are rough. All people that are kind, are short, and are bad, are big. Bob is short. If a person is high, is little, and is dull, that person is clever. Anne is high. People that are kind, are quiet, and are nice, are clever.",
+    "query_id": "Abduction-Person-929-Q4",
+    "query": "Bob is not thin.",
+    "answer": "Bob is little.",
+    "qcat": "0_0",
+    "question_number": 4,
+    "source_dataset": "Abduction-Person"
+  },
+  {
+    "context_id": "Abduction-Animal-Simple-2547",
+    "context": "The leopard is angry. All things that are smart, are nice, and are quiet, are also round. The leopard is boring. If something visits the hamster, sees the dog, and is fierce, then it is also dull. If an animal is big, is awful, and is strong, it is also obese. The hamster is kind. The wolf is strong. The hamster is nice. The dog is adorable. The wolf sees the dog. If something is adorable, is cute, and is beautiful, it is furry. The hamster is smart. The leopard is tired. The wolf is big. The leopard attacks the hamster. The dog is lovely. If an animal is reckless, is angry, and is boring, then it is also slow. The dog is cute. If an animal chases the dog, attacks the hamster, and is tired, it is also heavy.",
+    "query_id": "Abduction-Animal-Simple-2547-Q9",
+    "query": "The leopard is heavy.",
+    "answer": "The leopard chases the dog.",
+    "qcat": "0",
+    "question_number": 9,
+    "source_dataset": "Abduction-Animal-Simple"
+  },
+  {
+    "context_id": "Abduction-Animal-2081",
+    "context": "If something is cute, is boring, and is kind, then it is big. The dinosaur is angry. The mouse is smart. Animals that are dull, are obese, and are quiet, are adorable. The mouse is quiet. If an animal is heavy, is obese, and is strong, it is big. Things that are rough, are strong, and are boring, are also lazy. The falcon likes the cat. The cat is funny. The mouse is kind. Things that are quiet, are round, and are dull, are nice. The cat is lovely. If something is obese, is lovely, and is heavy, then it is big. The falcon is strong. Things that chase the cat, are angry, and visit the mouse, are fierce. The dinosaur visits the mouse. Things that are kind, are beautiful, and are cute, are also adorable. The dinosaur is rough. If something is beautiful, is strong, and is rough, then it is nice. The cat is cute. All animals that are awful, like the cat, and attack the mouse, are also tired. The dinosaur is dull. All animals that are quiet, are kind, and are round, are also nice. Animals that are round, are lovely, and are heavy, are lazy. If an animal is boring, is rough, and is dull, then it is lazy. The falcon is heavy. If something is beautiful, is lovely, and is cute, then it is adorable.",
+    "query_id": "Abduction-Animal-2081-Q7",
+    "query": "The cat is adorable.",
+    "answer": "The cat is beautiful.",
+    "qcat": "0",
+    "question_number": 7,
+    "source_dataset": "Abduction-Animal"
+  },
+  {
+    "context_id": "Abduction-Animal-3283",
+    "context": "The falcon likes the mouse. Things that are big, are funny, and are nice, are reckless. If something is heavy, sees the mouse, and attacks the rabbit, it is rough. If an animal is tired, is boring, and is dull, it is reckless. The falcon is lazy. The cheetah is obese. The rabbit is funny. The cheetah is big. Things that are boring, are kind, and are small, are also awful. The falcon is tired. The mouse is kind. The rabbit is small. If something is cute, is funny, and is small, then it is furry. The mouse is round. If an animal is tired, is smart, and is nice, it is quiet. If an animal needs the rabbit, likes the mouse, and is lazy, it is fierce. If something is kind, is small, and is cute, then it is furry. The cheetah attacks the rabbit. All things that are big, are strong, and are funny, are also awful. All animals that are smart, are kind, and are nice, are also quiet. The mouse is smart. If something is dull, is boring, and is obese, it is reckless. The falcon is dull. All animals that are tired, are strong, and are smart, are also furry. All things that are obese, are cute, and are dull, are quiet. If an animal is big, is obese, and is strong, then it is awful. The rabbit is adorable.",
+    "query_id": "Abduction-Animal-3283-Q1",
+    "query": "The mouse is quiet.",
+    "answer": "The mouse is nice.",
+    "qcat": "0",
+    "question_number": 1,
+    "source_dataset": "Abduction-Animal"
+  },
+  {
+    "context_id": "Abduction-Person-2043",
+    "context": "Things that are nice, are wealthy, and are smart, are clever. Charlie is rough. If something is short, is wealthy, and is thin, it is also little. Anne is nice. Anne is wealthy. If a person is smart, is big, and is tiny, then that person is dull. If a person is heavy, is big, and is high, then that person is also strong. Charlie is bad. If something is thin, is imperfect, and is heavy, it is also clever. Harry is small. Harry is tiny. If something is high, is tiny, and is big, it is also strong. If a person is tiny, is short, and is thin, that person is also little. Erin is big. Charlie is imperfect. Things that are rough, are smart, and are nice, are also clever. Things that are wealthy, are sad, and are short, are strong. If something is heavy, is imperfect, and is sad, then it is dull. Erin is heavy. Harry is short. Erin is huge. People that are high, are nice, and are rough, are little. If something is rough, is imperfect, and is sad, then it is dull.",
+    "query_id": "Abduction-Person-2043-Q8",
+    "query": "Charlie is not dull.",
+    "answer": "Charlie is sad.",
+    "qcat": "0_0",
+    "question_number": 8,
+    "source_dataset": "Abduction-Person"
+  },
+  {
+    "context_id": "Abduction-Person-Simple-2826",
+    "context": "If something is smart, is quiet, and is clever, then it is nice. Gary is imperfect. Alan is huge. All people that are imperfect, are poor, and are rough, are also dull. Gary is poor. Alan is strong. Gary is sad. Fiona is tiny. Charlie is quiet. If something is huge, is strong, and is heavy, then it is also big. If something is short, is little, and is tiny, then it is also small. Alan is high. Fiona is thin. Charlie is clever. Fiona is little.",
+    "query_id": "Abduction-Person-Simple-2826-Q1",
+    "query": "Alan is big.",
+    "answer": "Alan is heavy.",
+    "qcat": "0",
+    "question_number": 1,
+    "source_dataset": "Abduction-Person-Simple"
+  },
+  {
+    "context_id": "Abduction-Animal-Simple-2005",
+    "context": "Things that chase the squirrel, need the hamster, and are big, are boring. The snake is heavy. The squirrel is round. The squirrel is quiet. The hamster is funny. The hamster is small. If something visits the hamster, is rough, and sees the squirrel, then it is also fierce. All things that are obese, are heavy, and are strong, are also awful. The squirrel is nice. All things that are quiet, are kind, and are nice, are smart. The dinosaur is rough. If an animal is reckless, is angry, and is tired, it is dull. The dinosaur sees the squirrel. Animals that are lovely, are funny, and are beautiful, are furry. The snake needs the hamster. The hamster is beautiful. The snake is strong. The dinosaur is reckless. The dinosaur is angry.",
+    "query_id": "Abduction-Animal-Simple-2005-Q4",
+    "query": "The dinosaur is not dull.",
+    "answer": "The dinosaur is tired.",
+    "qcat": "0_0",
+    "question_number": 4,
+    "source_dataset": "Abduction-Animal-Simple"
+  },
+  {
+    "context_id": "Abduction-Person-Simple-2273",
+    "context": "If a person is big, is strong, and is heavy, then that person is huge. Erin is dull. Gary is quiet. Harry is thin. Gary is wealthy. Harry is small. Erin is imperfect. Harry is short. Things that are quiet, are nice, and are wealthy, are also clever. Anne is big. Anne is strong. All people that are imperfect, are sad, and are poor, are also bad. Erin is sad. Anne is high. If a person is tiny, is thin, and is small, then that person is little.",
+    "query_id": "Abduction-Person-Simple-2273-Q3",
+    "query": "Harry is little.",
+    "answer": "Harry is tiny.",
+    "qcat": "0",
+    "question_number": 3,
+    "source_dataset": "Abduction-Person-Simple"
+  },
+  {
+    "context_id": "Abduction-Person-309",
+    "context": "Anne is short. Anne is little. If something is heavy, is short, and is high, it is also huge. If something is clever, is sad, and is heavy, then it is also small. All things that are heavy, are high, and are big, are also huge. Dave is poor. If something is kind, is clever, and is quiet, it is also wealthy. If a person is tiny, is bad, and is quiet, then that person is huge. Charlie is high. Fiona is quiet. Things that are thin, are tiny, and are quiet, are small. Charlie is strong. All people that are bad, are dull, and are big, are imperfect. Fiona is clever. All people that are dull, are big, and are thin, are also wealthy. If something is tiny, is short, and is thin, then it is small. Dave is sad. Dave is dull. Anne is tiny. Charlie is big. If something is short, is high, and is kind, then it is also imperfect. If something is kind, is clever, and is sad, then it is also wealthy. Things that are dull, are bad, and are sad, are also imperfect.",
+    "query_id": "Abduction-Person-309-Q1",
+    "query": "Charlie is huge.",
+    "answer": "Charlie is heavy.",
+    "qcat": "0",
+    "question_number": 1,
+    "source_dataset": "Abduction-Person"
+  },
+  {
+    "context_id": "Abduction-Person-2595",
+    "context": "If a person is rough, is strong, and is short, that person is kind. If something is dull, is nice, and is quiet, then it is kind. If a person is rough, is bad, and is strong, that person is also sad. Erin is smart. Gary is small. If a person is bad, is rough, and is dull, then that person is also sad. Harry is strong. Harry is heavy. Things that are big, are nice, and are dull, are also tiny. Erin is nice. If something is little, is quiet, and is heavy, it is also sad. People that are short, are small, and are little, are also tiny. If something is heavy, is big, and is strong, it is huge. Bob is dull. Gary is thin. People that are smart, are small, and are bad, are also huge. If something is smart, is small, and is short, then it is also tiny. Bob is imperfect. If something is big, is heavy, and is little, it is also huge. All things that are nice, are quiet, and are smart, are also kind. Gary is little. Bob is rough. Harry is high.",
+    "query_id": "Abduction-Person-2595-Q2",
+    "query": "Harry is not huge.",
+    "answer": "Harry is big.",
+    "qcat": "0_0",
+    "question_number": 2,
+    "source_dataset": "Abduction-Person"
+  },
+  {
+    "context_id": "Abduction-Animal-3137",
+    "context": "If something is kind, is boring, and is adorable, then it is also big. The falcon is angry. If something is strong, is awful, and is funny, it is also big. All things that are funny, are adorable, and are furry, are lovely. The dog is adorable. The wolf attacks the dog. Animals that are angry, are boring, and are tired, are also dull. The rabbit is smart. All things that are furry, are angry, and are fierce, are round. Animals that need the dog, are lazy, and like the rabbit, are heavy. The dog is small. Animals that are strong, are awful, and are fierce, are big. The rabbit is nice. The falcon is lazy. Animals that attack the dog, are obese, and visit the rabbit, are sleepy. The falcon is tired. The wolf is fierce. The wolf is awful. If something is boring, is fierce, and is angry, then it is dull. The rabbit is kind. Things that are strong, are tired, and are nice, are also lovely. Animals that are quiet, are nice, and are kind, are round. All things that are kind, are adorable, and are furry, are lovely. The dog is funny. The falcon likes the rabbit. If something is quiet, is tired, and is nice, then it is round. Animals that are awful, are quiet, and are funny, are dull.",
+    "query_id": "Abduction-Animal-3137-Q5",
+    "query": "The wolf is big.",
+    "answer": "The wolf is strong.",
+    "qcat": "0",
+    "question_number": 5,
+    "source_dataset": "Abduction-Animal"
+  },
+  {
+    "context_id": "Abduction-Person-Simple-173",
+    "context": "If something is big, is high, and is strong, then it is also heavy. Alan is big. Anne is thin. Erin is smart. Gary is sad. Anne is short. If a person is kind, is quiet, and is smart, then that person is nice. If a person is small, is short, and is tiny, then that person is also little. Erin is kind. Alan is high. Anne is small. If something is imperfect, is poor, and is rough, then it is also bad. Gary is rough. Gary is poor. Alan is huge.",
+    "query_id": "Abduction-Person-Simple-173-Q1",
+    "query": "Alan is heavy.",
+    "answer": "Alan is strong.",
+    "qcat": "0",
+    "question_number": 1,
+    "source_dataset": "Abduction-Person-Simple"
+  },
+  {
+    "context_id": "Abduction-Person-657",
+    "context": "If a person is thin, is little, and is tiny, that person is small. Erin is strong. Fiona is nice. Fiona is kind. Charlie is poor. Things that are clever, are high, and are little, are bad. Erin is high. If a person is rough, is thin, and is nice, then that person is heavy. Erin is big. Charlie is sad. Charlie is dull. If a person is kind, is clever, and is nice, then that person is also quiet. If something is huge, is high, and is little, it is also heavy. If a person is huge, is kind, and is poor, then that person is also small. If a person is nice, is tiny, and is thin, then that person is also small. If a person is kind, is poor, and is clever, then that person is quiet. Alan is short. Alan is little. If something is rough, is sad, and is poor, then it is bad. Alan is thin. If a person is rough, is big, and is sad, that person is also bad. Things that are big, are high, and are huge, are heavy. If a person is big, is sad, and is tiny, that person is also quiet.",
+    "query_id": "Abduction-Person-657-Q1",
+    "query": "Erin is heavy.",
+    "answer": "Erin is huge.",
+    "qcat": "0",
+    "question_number": 1,
+    "source_dataset": "Abduction-Person"
+  }
+]

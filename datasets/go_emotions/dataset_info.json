@@ -1,0 +1,15 @@
+{
+  "name": "GoEmotions",
+  "source": "https://huggingface.co/datasets/google-research-datasets/go_emotions",
+  "description": "Reddit comments labeled with 28 fine-grained emotion categories.",
+  "files": {
+    "data.jsonl": {
+      "num_examples": 1628,
+      "fields": [
+        "text",
+        "labels",
+        "id"
+      ]
+    }
+  }
+}
